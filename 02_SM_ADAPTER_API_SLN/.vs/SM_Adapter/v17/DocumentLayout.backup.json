@@ -1,14 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Repos\\TestAutomation\\02_SM_ADAPTER_API_SLN\\SM_Adapter\\",
+  "WorkspaceRootPath": "C:\\Workspace\\TestAutomation\\02_SM_ADAPTER_API_SLN\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Repos\\TestAutomation\\02_SM_ADAPTER_API_SLN\\SM_Adapter\\SM_Adapter\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SM_Adapter\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{18B9FB8F-F04A-4CE2-8C62-D43C89179B8E}|SM_Adapter\\SM_Adapter.csproj|c:\\workspace\\testautomation\\02_sm_adapter_api_sln\\sm_adapter\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18B9FB8F-F04A-4CE2-8C62-D43C89179B8E}|SM_Adapter\\SM_Adapter.csproj|solutionrelative:sm_adapter\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Repos\\TestAutomation\\02_SM_ADAPTER_API_SLN\\SM_Adapter\\SM_Adapter\\SM_Adapter.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SM_Adapter\\SM_Adapter.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{18B9FB8F-F04A-4CE2-8C62-D43C89179B8E}|SM_Adapter\\SM_Adapter.csproj|c:\\workspace\\testautomation\\02_sm_adapter_api_sln\\sm_adapter\\sm_adapter.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{18B9FB8F-F04A-4CE2-8C62-D43C89179B8E}|SM_Adapter\\SM_Adapter.csproj|solutionrelative:sm_adapter\\sm_adapter.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,10 +23,10 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "SM_Adapter.csproj",
-              "DocumentMoniker": "C:\\Repos\\TestAutomation\\02_SM_ADAPTER_API_SLN\\SM_Adapter\\SM_Adapter\\SM_Adapter.csproj",
+              "Title": "SM_Adapter",
+              "DocumentMoniker": "C:\\Workspace\\TestAutomation\\02_SM_ADAPTER_API_SLN\\SM_Adapter\\SM_Adapter.csproj",
               "RelativeDocumentMoniker": "SM_Adapter\\SM_Adapter.csproj",
-              "ToolTip": "C:\\Repos\\TestAutomation\\02_SM_ADAPTER_API_SLN\\SM_Adapter\\SM_Adapter\\SM_Adapter.csproj",
+              "ToolTip": "C:\\Workspace\\TestAutomation\\02_SM_ADAPTER_API_SLN\\SM_Adapter\\SM_Adapter.csproj",
               "RelativeToolTip": "SM_Adapter\\SM_Adapter.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2024-11-05T15:51:23.365Z"
@@ -35,14 +35,18 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Repos\\TestAutomation\\02_SM_ADAPTER_API_SLN\\SM_Adapter\\SM_Adapter\\Class1.cs",
+              "DocumentMoniker": "C:\\Workspace\\TestAutomation\\02_SM_ADAPTER_API_SLN\\SM_Adapter\\Class1.cs",
               "RelativeDocumentMoniker": "SM_Adapter\\Class1.cs",
-              "ToolTip": "C:\\Repos\\TestAutomation\\02_SM_ADAPTER_API_SLN\\SM_Adapter\\SM_Adapter\\Class1.cs",
+              "ToolTip": "C:\\Workspace\\TestAutomation\\02_SM_ADAPTER_API_SLN\\SM_Adapter\\Class1.cs",
               "RelativeToolTip": "SM_Adapter\\Class1.cs",
-              "ViewState": "AgIAALgAAAAAAAAAAAAUwAIBAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAcwKYAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-05T15:50:40.063Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }

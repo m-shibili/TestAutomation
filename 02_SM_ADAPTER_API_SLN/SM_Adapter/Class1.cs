@@ -164,6 +164,7 @@ namespace SM_Adapter
             int result = sysMonApi.GetStringValue1AxisMap(AppID, ParameterName, ref Pvalue);
 
             // Check if Pvalue is an array or a single object
+            Console.WriteLine(result);
             if (result == 0 && Pvalue is Array)
             {
                 foreach (object p in (Array)Pvalue)
@@ -178,7 +179,7 @@ namespace SM_Adapter
             }
             else
             {
-                Console.WriteLine("Failed to retrieve values or invalid type for Pvalue.");
+                Console.WriteLine("C# : Failed to retrieve values or invalid type for Pvalue.");
             }
 
             return ParamValues;
@@ -216,7 +217,7 @@ namespace SM_Adapter
             }
             else
             {
-                Console.WriteLine("Failed to retrieve values or invalid type for value.");
+                Console.WriteLine("C# : Failed to retrieve values or invalid type for value.");
             }
 
             return paramValues;

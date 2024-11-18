@@ -7,7 +7,7 @@
 
   <ItemGroup>
     <Reference Include="Interop.SystemMonitor">
-      <HintPath>..\..\SM_Library\SM_Library\Resources\Interop.SystemMonitor.dll</HintPath>
+      <HintPath>..\..\..\..\Users\Muhammed.Shibili\source\repos\SM_Library\SM_Library\Resources\Interop.SystemMonitor.dll</HintPath>
     </Reference>
   </ItemGroup>
 
