@@ -1,0 +1,52 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               Intel64 Family 6 Model 158 Stepping 9, GenuineIntel
+Number of CPUs:    8
+RAM:               31.9GB
+Diskinfo:          35.3GB/446.5GB
+Operating system:  Windows-10-10.0.19045
+Long path support: False
+-------------------------------------------------------------------------
+
+= 18.11.2024 15:44:15 (UTC +0:00) === ecu.test 2024.4.0.157279+6cc6544af3d9-FeatureSet 157279+6cc6544af3d9 (2024/10/15 14:58:06) (64bit) ===
+Python 3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)] / wx: 4.2.1+tt.5
+Protocol: log level Default. Additional logging active: default output
+
+License: ecu.test
+         - License options:
+             + ecu.test diagnostics
+             + trace.check
+         - valid up to version: 2024.4
+         - valid until: 2025-01-28
+         - licensed for: Mahindra_Racing_UK
+         - runner: False
+         - Server: license01.tracetronic.de
+
+
+
+2024-11-18 15:44:15.686 2292 ManagedWorker-4*PE.Run() INFO:
+                        Start package '01_StaticTest.pkg' with test case execution with sequential analysis job execution
+2024-11-18 15:44:15.706 2292 ManagedWorker-4*PE.Run() INFO:
+                        Test case "01_StaticTest" started
+2024-11-18 15:44:15.746 2292 ManagedWorker-4*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2024-11-18 15:44:15.808 2292 ManagedWorker-4*PE.Run() INFO:
+                        Model time mode with continuous simulation activated, time source is port "MDL-DEFAULT01"
+2024-11-18 15:44:40.721 2292 ManagedWorker-4*PE.Run() ERROR:Read Error : Cannot Convert value to float for NSIUSteeringButtonStatus from app number APP1_Input result Value: NONE
+                        Package "C:\Repos\TestAutomation\01_ECU-TEST-WORKSPACE\Packages\01_StaticTest.pkg"#27
+2024-11-18 15:44:45.738 2292 ManagedWorker-4*PE.Run() ERROR:Read Error : Cannot Convert value to float for NSIUSteeringButtonStatus from app number APP1_Input result Value: NONE
+                        Package "C:\Repos\TestAutomation\01_ECU-TEST-WORKSPACE\Packages\01_StaticTest.pkg"#33
+2024-11-18 15:44:47.735 2292 ManagedWorker-4*PE.Run() ERROR:Read Error : Cannot Convert value to float for NSIUSteeringButtonStatus from app number APP1_Input result Value: NONE
+                        Package "C:\Repos\TestAutomation\01_ECU-TEST-WORKSPACE\Packages\01_StaticTest.pkg"#39
+2024-11-18 15:44:49.751 2292 ManagedWorker-4*PE.Run() ERROR:Read Error : Cannot Convert value to float for NSIUSteeringButtonStatus from app number APP1_Input result Value: NONE
+                        Package "C:\Repos\TestAutomation\01_ECU-TEST-WORKSPACE\Packages\01_StaticTest.pkg"#45
+2024-11-18 15:44:51.764 2292 ManagedWorker-4*PE.Run() ERROR:Read Error : Cannot Convert value to float for NSIUSteeringButtonStatus from app number APP1_Input result Value: NONE
+                        Package "C:\Repos\TestAutomation\01_ECU-TEST-WORKSPACE\Packages\01_StaticTest.pkg"#51
+2024-11-18 15:44:53.772 2292 ManagedWorker-4*PE.Run() ERROR:Read Error : Cannot Convert value to float for NSIUSteeringButtonStatus from app number APP1_Input result Value: NONE
+                        Package "C:\Repos\TestAutomation\01_ECU-TEST-WORKSPACE\Packages\01_StaticTest.pkg"#57
+2024-11-18 15:44:55.785 2292 ManagedWorker-4*PE.Run() ERROR:Read Error : Cannot Convert value to float for NSIUSteeringButtonStatus from app number APP1_Input result Value: NONE
+                        Package "C:\Repos\TestAutomation\01_ECU-TEST-WORKSPACE\Packages\01_StaticTest.pkg"#63
+2024-11-18 15:44:57.793 2292 ManagedWorker-4*PE.Run() ERROR:Read Error : Cannot Convert value to float for NSIUSteeringButtonStatus from app number APP1_Input result Value: NONE
+                        Package "C:\Repos\TestAutomation\01_ECU-TEST-WORKSPACE\Packages\01_StaticTest.pkg"#69

@@ -21,9 +21,9 @@ import subprocess
 import psutil
 
 import clr
-assets_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../..', '02_SM_ADAPTER_API_SLN'))
-print(assets_dir)
-clr.AddReference(r"..\..\..\02_SM_ADAPTER_API_SLN\SM_Adapter\SM_Adapter\bin\Debug\netstandard2.1\SM_Adapter.dll")
+dll_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../..', '02_SM_ADAPTER_API_SLN/SM_Adapter/bin/Debug/netstandard2.1/'))
+print(dll_dir)
+clr.AddReference(os.path.join(dll_dir,"SM_Adapter.dll"))
 from SM_Adapter import SM_Adapter
 SysMon = SM_Adapter()
 
