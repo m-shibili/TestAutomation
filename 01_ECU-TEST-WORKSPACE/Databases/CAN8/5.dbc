@@ -1,0 +1,96 @@
+VERSION "Firmware Version V12.1"
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: VCU WaterPump
+
+
+BO_ 1360 SOBEK_Master: 8 Vector__XXX
+
+BO_ 1361 SOBEK_Command: 2 VCU
+ SG_ Target_Speed : 0|16@1- (1,0) [-32768|32767] "rpm" Vector__XXX
+
+BO_ 1362 SOBEK_Status: 8 WaterPump
+ SG_ ESC_Temperature : 32|16@1+ (0.1,0) [0|200] "Celsius" Vector__XXX
+ SG_ DC_Voltage : 48|16@1+ (0.001,0) [0|65.535] "V" Vector__XXX
+ SG_ Motor_Speed : 0|16@1- (1,0) [-32768|32767] "rpm" Vector__XXX
+ SG_ Motor_Current : 16|16@1+ (0.1,0) [0|6553.5] "A" Vector__XXX
+
+BO_ 1363 SOBEK_Diagnostic: 5 WaterPump
+ SG_ HW_ID3 m9 : 8|32@1+ (1,0) [0|4294967295] "" Vector__XXX
+ SG_ HW_ID2 m8 : 8|32@1+ (1,0) [0|4294967295] "" Vector__XXX
+ SG_ HW_ID1 m7 : 8|32@1+ (1,0) [0|4294967295] "" Vector__XXX
+ SG_ Operation_Warning m16 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Bootloader_Version m6 : 8|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Bootloader_Update_Counter m6 : 24|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Operation_Error m16 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Parameter_Version m4 : 24|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Self_Test m1 : 8|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Diagnostic_Header M : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Master_ID m2 : 8|11@1+ (1,0) [0|2047] "" Vector__XXX
+ SG_ Status_ID m3 : 24|11@1+ (1,0) [0|2047] "" Vector__XXX
+ SG_ Command_ID m3 : 8|11@1+ (1,0) [0|2047] "" Vector__XXX
+ SG_ Software_Version m4 : 8|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Operation_Counter m5 : 8|32@1+ (1,0) [0|4294967295] "s" Vector__XXX
+
+
+
+CM_ "bit/s";
+CM_ BO_ 1360 "The SOBEK_Master message is only activated when a SOBEK bootloader or SOBEK software configuration tool is connected.";
+CM_ BO_ 1363 "triggered: at initialization and only on occurrence.
+periodic: at initialization and periodic.
+periodic&triggered: at initialization, periodic and on occurrence.
+deactivated: no diagnostic messages will be sent.";
+BA_DEF_  "DBName" STRING ;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "cyclic","triggered","cyclic/triggered","deactivated";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 50 2000;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BU_  "ILUsed" ENUM  "No","Yes";
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_  "Baudrate" INT 0 1000000;
+BA_DEF_DEF_  "DBName" "PTFC Water Pump";
+BA_DEF_DEF_  "GenMsgSendType" "cyclic";
+BA_DEF_DEF_  "GenMsgCycleTime" 50;
+BA_DEF_DEF_  "GenMsgILSupport" "Yes";
+BA_DEF_DEF_  "ILUsed" "Yes";
+BA_DEF_DEF_  "NodeLayerModules" "CANoeILNLDefault.dll";
+BA_DEF_DEF_  "Baudrate" 0;
+BA_ "Baudrate" 1000000;
+BA_ "DBName" "PTFCWaterPump";
+BA_ "GenMsgCycleTime" BO_ 1360 100;
+BA_ "GenMsgSendType" BO_ 1360 2;
+BA_ "GenMsgCycleTime" BO_ 1361 100;
+BA_ "GenMsgCycleTime" BO_ 1362 100;
+BA_ "GenMsgCycleTime" BO_ 1363 1000;
+

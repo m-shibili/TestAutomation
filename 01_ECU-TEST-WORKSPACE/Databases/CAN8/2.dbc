@@ -1,0 +1,369 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: VCU RS_RPS
+
+
+BO_ 260 Tool_RealTimeClock_Cmd: 6 VCU
+ SG_ RPS_RTC_Second : 40|8@1- (1,0) [0|59] "" Vector__XXX
+ SG_ RPS_RTC_Minute : 32|8@1- (1,0) [0|59] "" Vector__XXX
+ SG_ RPS_RTC_Hour : 24|8@1- (1,0) [0|23] "" Vector__XXX
+ SG_ RPS_RTC_Day : 16|8@1- (1,0) [0|31] "" Vector__XXX
+ SG_ RPS_RTC_Month : 8|8@1- (1,0) [0|12] "" Vector__XXX
+ SG_ RPS_RTC_Year : 0|8@1- (1,0) [0|255] "" Vector__XXX
+
+BO_ 259 RPS_RealTimeClock_Data: 6 RS_RPS
+ SG_ RPS_RTC_Second : 40|8@1- (1,0) [0|59] "" Vector__XXX
+ SG_ RPS_RTC_Minute : 32|8@1- (1,0) [0|59] "" Vector__XXX
+ SG_ RPS_RTC_Hour : 24|8@1- (1,0) [0|23] "" Vector__XXX
+ SG_ RPS_RTC_Day : 16|8@1- (1,0) [0|31] "" Vector__XXX
+ SG_ RPS_RTC_Month : 8|8@1- (1,0) [0|12] "" Vector__XXX
+ SG_ RPS_RTC_Year : 0|8@1- (1,0) [0|255] "" Vector__XXX
+
+BO_ 289 RPS_BMS_ASICStateInfo: 8 RS_RPS
+ SG_ RPS_NBMSASICBalanceCond : 31|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ RPS_NBMSASICPowerOffCnt : 39|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ RPS_NBMSASICFirstResetType : 15|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ RPS_NBMSASICResetCount : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ RPS_NBMSASICState : 23|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ RPS_NBMSASICBalanceMask : 55|16@0+ (1,0) [0|66535] "" Vector__XXX
+
+BO_ 258 RPS_Programming_Command: 8 Vector__XXX
+
+BO_ 257 RPS_Programming_Response: 8 Vector__XXX
+
+BO_ 276 RPS_OutputStates4: 8 RS_RPS
+ SG_ RPS_BBalancingActive : 20|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ RPS_BPackOverloadWarning : 19|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ RPS_VOutput : 39|8@0+ (0.08,0) [0|20.4] "V" Vector__XXX
+ SG_ RPS_VBattery : 47|8@0+ (0.08,0) [0|20.4] "V" Vector__XXX
+ SG_ RPS_NRPSLatestFault : 31|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ RPS_NBMSControlState : 23|3@0+ (1,0) [0|5] "" Vector__XXX
+ SG_ RPS_IBattery : 55|16@0- (0.01,0) [-327.68|327.67] "A" Vector__XXX
+ SG_ RPS_BPrimaryOutoutEnableState : 17|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ RPS_BPackHealthState : 18|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ RPS_BMasterEnableInputState : 16|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ RPS_IOutput26 : 15|8@0+ (0.01,0) [0|2.55] "A" Vector__XXX
+ SG_ RPS_IOutput25 : 7|8@0+ (0.01,0) [0|2.55] "A" Vector__XXX
+
+BO_ 275 RPS_OutputStates3: 8 RS_RPS
+ SG_ RPS_IOutput24 : 63|8@0+ (0.01,0) [0|2.55] "A" Vector__XXX
+ SG_ RPS_IOutput23 : 55|8@0+ (0.01,0) [0|2.55] "A" Vector__XXX
+ SG_ RPS_IOutput22 : 47|8@0+ (0.01,0) [0|2.55] "A" Vector__XXX
+ SG_ RPS_IOutput21 : 39|8@0+ (0.01,0) [0|2.55] "A" Vector__XXX
+ SG_ RPS_IOutput20 : 31|8@0+ (0.01,0) [0|2.55] "A" Vector__XXX
+ SG_ RPS_IOutput19 : 23|8@0+ (0.01,0) [0|2.55] "A" Vector__XXX
+ SG_ RPS_IOutput18 : 15|8@0+ (0.01,0) [0|2.55] "A" Vector__XXX
+ SG_ RPS_IOutput17 : 7|8@0+ (0.01,0) [0|2.55] "A" Vector__XXX
+
+BO_ 274 RPS_OutputStates2: 8 RS_RPS
+ SG_ RPS_IOutput9 : 7|8@0+ (0.04,0) [0|10.2] "A" Vector__XXX
+ SG_ RPS_IOutput12 : 31|8@0+ (0.04,0) [0|10.2] "A" Vector__XXX
+ SG_ RPS_IOutput16 : 63|8@0+ (0.04,0) [0|10.2] "A" Vector__XXX
+ SG_ RPS_IOutput15 : 55|8@0+ (0.04,0) [0|10.2] "A" Vector__XXX
+ SG_ RPS_IOutput14 : 47|8@0+ (0.04,0) [0|10.2] "A" Vector__XXX
+ SG_ RPS_IOutput13 : 39|8@0+ (0.04,0) [0|10.2] "A" Vector__XXX
+ SG_ RPS_IOutput11 : 23|8@0+ (0.04,0) [0|10.2] "A" Vector__XXX
+ SG_ RPS_IOutput10 : 15|8@0+ (0.04,0) [0|10.2] "A" Vector__XXX
+
+BO_ 273 RPS_OutputStates1: 8 RS_RPS
+ SG_ RPS_IOutput8 : 63|8@0+ (0.08,0) [0|20.4] "A" Vector__XXX
+ SG_ RPS_IOutput7 : 55|8@0+ (0.08,0) [0|20.4] "A" Vector__XXX
+ SG_ RPS_IOutput6 : 47|8@0+ (0.08,0) [0|20.4] "A" Vector__XXX
+ SG_ RPS_IOutput5 : 39|8@0+ (0.08,0) [0|20.4] "A" Vector__XXX
+ SG_ RPS_IOutput4 : 31|8@0+ (0.08,0) [0|20.4] "A" Vector__XXX
+ SG_ RPS_IOutput3 : 23|8@0+ (0.08,0) [0|20.4] "A" Vector__XXX
+ SG_ RPS_IOutput2 : 15|8@0+ (0.08,0) [0|20.4] "A" Vector__XXX
+ SG_ RPS_IOutput1 : 7|8@0+ (0.08,0) [0|20.4] "A" Vector__XXX
+
+BO_ 272 RPS_OutputStates0: 8 RS_RPS
+ SG_ RPS_BOutputResetState : 54|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ RPS_BIsolatorStateRequestFB : 53|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ RPS_BIsolatorOverrideActive : 52|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ RPS_NOutput9State : 17|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ RPS_NOutput8State : 15|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ RPS_NOutput7State : 13|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ RPS_NOutput6State : 11|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ RPS_NOutput5State : 9|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ RPS_NOutput4State : 7|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ RPS_NOutput3State : 5|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ RPS_NOutput2State : 3|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ RPS_NOutput26State : 51|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ RPS_NOutput25State : 49|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ RPS_NOutput24State : 47|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ RPS_NOutput23State : 45|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ RPS_NOutput22State : 43|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ RPS_NOutput21State : 41|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ RPS_NOutput20State : 39|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ RPS_NOutput1State : 1|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ RPS_NOutput19State : 37|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ RPS_NOutput18State : 35|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ RPS_NOutput17State : 33|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ RPS_NOutput16State : 31|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ RPS_NOutput15State : 29|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ RPS_NOutput14State : 27|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ RPS_NOutput13State : 25|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ RPS_NOutput12State : 23|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ RPS_NOutput11State : 21|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ RPS_NOutput10State : 19|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 256 RPS_OutputCommand: 8 VCU
+ SG_ RPS_BIsolatorOverrideStateDem : 28|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ RPS_BIsolatorOverrideEnableDem : 27|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ RPS_BOutput23EnableDem : 22|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ RPS_BOutputResetDem : 26|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ RPS_BOutput9EnableDem : 8|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ RPS_BOutput8EnableDem : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ RPS_BOutput7EnableDem : 6|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ RPS_BOutput6EnableDem : 5|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ RPS_BOutput5EnableDem : 4|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ RPS_BOutput4EnableDem : 3|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ RPS_BOutput3EnableDem : 2|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ RPS_BOutput2EnableDem : 1|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ RPS_BOutput26EnableDem : 25|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ RPS_BOutput25EnableDem : 24|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ RPS_BOutput24EnableDem : 23|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ RPS_BOutput22EnableDem : 21|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ RPS_BOutput21EnableDem : 20|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ RPS_BOutput20EnableDem : 19|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ RPS_BOutput1EnableDem : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ RPS_BOutput19EnableDem : 18|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ RPS_BOutput18EnableDem : 17|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ RPS_BOutput17EnableDem : 16|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ RPS_BOutput16EnableDem : 15|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ RPS_BOutput15EnableDem : 14|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ RPS_BOutput14EnableDem : 13|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ RPS_BOutput13EnableDem : 12|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ RPS_BOutput12EnableDem : 11|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ RPS_BOutput11EnableDem : 10|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ RPS_BOutput10EnableDem : 9|1@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 305 RPS_Rotations: 8 RS_RPS
+ SG_ RPS_nRotationZ : 39|16@0- (0.01,0) [-500|500] "°/s" Vector__XXX
+ SG_ RPS_nRotationY : 23|16@0- (0.01,0) [-500|500] "°/s" Vector__XXX
+ SG_ RPS_nRotationX : 7|16@0- (0.01,0) [-500|500] "°/s" Vector__XXX
+
+BO_ 304 RPS_Accels: 8 RS_RPS
+ SG_ RPS_gAccelZ : 39|16@0- (0.001,0) [-16|16] "g" Vector__XXX
+ SG_ RPS_gAccelY : 23|16@0- (0.001,0) [-16|16] "g" Vector__XXX
+ SG_ RPS_gAccelX : 7|16@0- (0.001,0) [-16|16] "g" Vector__XXX
+
+BO_ 288 RPS_VersionInfo: 8 RS_RPS
+ SG_ RPS_HWVersion_DMinor : 31|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ RPS_HWVersion_DMajor : 23|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ RPS_SWVersionIDMinor : 15|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ RPS_SWVersionIDMajor : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 278 RPS_BatteryTemps: 8 RS_RPS
+ SG_ RPS_TPack3 : 23|8@0+ (0.5,-20) [-20|105] "degC" Vector__XXX
+ SG_ RPS_TPack2 : 15|8@0+ (0.5,-20) [-20|105] "degC" Vector__XXX
+ SG_ RPS_TPack1 : 7|8@0+ (0.5,-20) [-20|105] "degC" Vector__XXX
+
+BO_ 277 RPS_BatteryVoltages: 8 RS_RPS
+ SG_ RPS_VCellStack4 : 55|16@0+ (0.0001,0) [0|6] "V" Vector__XXX
+ SG_ RPS_VCellStack3 : 39|16@0+ (0.0001,0) [0|6] "V" Vector__XXX
+ SG_ RPS_VCellStack2 : 23|16@0+ (0.0001,0) [0|6] "V" Vector__XXX
+ SG_ RPS_VCellStack1 : 7|16@0+ (0.0001,0) [0|6] "V" Vector__XXX
+
+
+
+CM_ BO_ 260 "Send by a CAN Tool to set current date/time
+Cycle time: on demand
+Please assign message ID";
+CM_ BO_ 259 "Send by RPS received by RVI. 
+Cycle time 1s (periodic)
+Please assign message ID";
+CM_ SG_ 289 RPS_NBMSASICBalanceCond "ASIC state conditions leading to a balancing command (before a balancing command)";
+CM_ SG_ 289 RPS_NBMSASICPowerOffCnt "When not balancing BMS ASIC triggers sequence of SPI communication leading to a capture of new measurements";
+CM_ SG_ 289 RPS_NBMSASICFirstResetType "Only a cause of a first erroneous BMS ASIC reset is stored
+";
+CM_ SG_ 289 RPS_NBMSASICResetCount "Count saturated at 255";
+CM_ SG_ 289 RPS_NBMSASICState "Each value indicates an ongoing phase of balancing related BMS ASIC SPI communication ";
+CM_ SG_ 289 RPS_NBMSASICBalanceMask "Bits corresponding to balancing conditions evaluated as TRUE are set to 1";
+CM_ SG_ 276 RPS_BBalancingActive "Control command state for main battery contactor";
+CM_ SG_ 276 RPS_BPackOverloadWarning "Control command state for main battery contactor";
+CM_ SG_ 276 RPS_VOutput "BMS measured pack total output voltage";
+CM_ SG_ 276 RPS_VBattery "BMS measured pack total output voltage";
+CM_ SG_ 276 RPS_NRPSLatestFault "Control state of BMS control function
+";
+CM_ SG_ 276 RPS_NBMSControlState "Control state of BMS control function
+";
+CM_ SG_ 276 RPS_IBattery "Measured battery pack current.";
+CM_ SG_ 276 RPS_BPrimaryOutoutEnableState "State of main enable input pin (Low=TurnOn, High=TurnOff)";
+CM_ SG_ 276 RPS_BPackHealthState "State of main enable input pin (Low=TurnOn, High=TurnOff)";
+CM_ SG_ 276 RPS_BMasterEnableInputState "State of main enable input pin (Low=TurnOn, High=TurnOff)";
+CM_ SG_ 276 RPS_IOutput26 "Measured battery pack current.";
+CM_ SG_ 276 RPS_IOutput25 "Measured battery pack current.";
+CM_ SG_ 275 RPS_IOutput24 "Measured battery pack current.";
+CM_ SG_ 275 RPS_IOutput23 "Measured battery pack current.";
+CM_ SG_ 275 RPS_IOutput22 "Measured battery pack current.";
+CM_ SG_ 275 RPS_IOutput21 "Measured battery pack current.";
+CM_ SG_ 275 RPS_IOutput20 "Measured battery pack current.";
+CM_ SG_ 275 RPS_IOutput19 "Measured battery pack current.";
+CM_ SG_ 275 RPS_IOutput18 "Measured battery pack current.";
+CM_ SG_ 275 RPS_IOutput17 "Measured battery pack current.";
+CM_ SG_ 274 RPS_IOutput9 "Measured battery pack current.";
+CM_ SG_ 274 RPS_IOutput12 "Measured battery pack current.";
+CM_ SG_ 274 RPS_IOutput16 "Measured battery pack current.";
+CM_ SG_ 274 RPS_IOutput15 "Measured battery pack current.";
+CM_ SG_ 274 RPS_IOutput14 "Measured battery pack current.";
+CM_ SG_ 274 RPS_IOutput13 "Measured battery pack current.";
+CM_ SG_ 274 RPS_IOutput11 "Measured battery pack current.";
+CM_ SG_ 274 RPS_IOutput10 "Measured battery pack current.";
+CM_ SG_ 273 RPS_IOutput8 "Measured battery pack current.";
+CM_ SG_ 273 RPS_IOutput7 "Measured battery pack current.";
+CM_ SG_ 273 RPS_IOutput6 "Measured battery pack current.";
+CM_ SG_ 273 RPS_IOutput5 "Measured battery pack current.";
+CM_ SG_ 273 RPS_IOutput4 "Measured battery pack current.";
+CM_ SG_ 273 RPS_IOutput3 "Measured battery pack current.";
+CM_ SG_ 273 RPS_IOutput2 "Measured battery pack current.";
+CM_ SG_ 273 RPS_IOutput1 "Measured battery pack current.";
+CM_ SG_ 272 RPS_BIsolatorStateRequestFB "Control command state for main battery contactor";
+CM_ SG_ 278 RPS_TPack3 "Cell measured temperature #3
+";
+CM_ SG_ 278 RPS_TPack2 "Cell measured temperature #2";
+CM_ SG_ 278 RPS_TPack1 "Cell measured temperature #1";
+CM_ SG_ 277 RPS_VCellStack4 "Cell module #1 measured voltage (top in series)";
+CM_ SG_ 277 RPS_VCellStack3 "Cell module #1 measured voltage (upper middle in series)";
+CM_ SG_ 277 RPS_VCellStack2 "Cell module #1 measured voltage (lower middle in series)";
+CM_ SG_ 277 RPS_VCellStack1 "Cell module #1 measured voltage (lowest in series)";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 100000;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 1000;
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 999999;
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 2 50000;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "cyclic","spontaneous","cyclicIfActive","spontaneousWithDelay","cyclicAndSpontaneous","cyclicAndSpontaneousWithDelay","spontaneousWithRepetition","cyclicIfActiveAndSpontaneousWD";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 2 50000;
+BA_DEF_ BU_  "ECU" STRING ;
+BA_DEF_ BU_  "CANoeJitterMax" INT 0 0;
+BA_DEF_ BU_  "CANoeJitterMin" INT 0 0;
+BA_DEF_ BU_  "CANoeDrift" INT 0 0;
+BA_DEF_ BU_  "CANoeStartDelay" INT 0 0;
+BA_DEF_ BU_  "ILUsed" ENUM  "No","Yes";
+BA_DEF_ SG_  "GenSigStartValue" FLOAT 0 100000000000;
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition";
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 100000;
+BA_DEF_DEF_  "BusType" "";
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 100;
+BA_DEF_DEF_  "GenMsgILSupport" "Yes";
+BA_DEF_DEF_  "GenMsgSendType" "cyclic";
+BA_DEF_DEF_  "GenMsgCycleTime" 100;
+BA_DEF_DEF_  "ECU" "";
+BA_DEF_DEF_  "CANoeJitterMax" 0;
+BA_DEF_DEF_  "CANoeJitterMin" 0;
+BA_DEF_DEF_  "CANoeDrift" 0;
+BA_DEF_DEF_  "CANoeStartDelay" 0;
+BA_DEF_DEF_  "ILUsed" "Yes";
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenSigSendType" "Cyclic";
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_ "BusType" "CAN";
+BA_ "GenMsgCycleTime" BO_ 259 100;
+BA_ "GenMsgCycleTime" BO_ 289 1000;
+BA_ "GenMsgCycleTime" BO_ 305 10;
+BA_ "GenMsgCycleTime" BO_ 304 10;
+BA_ "GenMsgCycleTime" BO_ 288 1000;
+BA_ "GenMsgCycleTime" BO_ 277 100;
+VAL_ 289 RPS_NBMSASICFirstResetType 7 "ASIC configuration error" 6 "Balance start cmd error" 5 "Balance configuration cmd error" 4 "Balance stop cmd error" 3 "Measurement data error" 2 "ASIC Rollcall error" 1 "ASIC Data ready timeout" 0 "None" ;
+VAL_ 276 RPS_BBalancingActive 1 "Balancing" 0 "Idle" ;
+VAL_ 276 RPS_BPackOverloadWarning 1 "Closed" 0 "Open" ;
+VAL_ 276 RPS_NRPSLatestFault 17 "IPackHigh" 16 "TPack3Low" 15 "TPack3High" 14 "TPack2Low" 13 "TPack2High" 12 "TPack1Low" 11 "TPack1High" 10 "vPackLow" 9 "vPackHigh" 8 "vCell4Low" 7 "vCell4High" 6 "vCell3Low" 5 "vCell3High" 4 "vCell2Low" 3 "vCell2High" 2 "vCell1Low" 1 "vCell1High" 0 "None" ;
+VAL_ 276 RPS_NBMSControlState 5 "Shutdown Wait" 4 "Isolator Open" 3 "Balancing Active" 2 "Isolator Closed" 1 "Initialise" 0 "Undefined" ;
+VAL_ 276 RPS_BPrimaryOutoutEnableState 1 "TurnOn" 0 "TurnOff" ;
+VAL_ 276 RPS_BPackHealthState 1 "Battery Unsafe" 0 "Battery Safe" ;
+VAL_ 276 RPS_BMasterEnableInputState 1 "TurnOn" 0 "TurnOff" ;
+VAL_ 272 RPS_BOutputResetState 1 "Reset" 0 "None" ;
+VAL_ 272 RPS_BIsolatorStateRequestFB 1 "Closed" 0 "Open" ;
+VAL_ 272 RPS_BIsolatorOverrideActive 1 "On" 0 "Off" ;
+VAL_ 272 RPS_NOutput9State 3 "Fault" 2 "Trip" 1 "On" 0 "Off" ;
+VAL_ 272 RPS_NOutput8State 3 "Fault" 2 "Trip" 1 "On" 0 "Off" ;
+VAL_ 272 RPS_NOutput7State 3 "Fault" 2 "Trip" 1 "On" 0 "Off" ;
+VAL_ 272 RPS_NOutput6State 3 "Fault" 2 "Trip" 1 "On" 0 "Off" ;
+VAL_ 272 RPS_NOutput5State 3 "Fault" 2 "Trip" 1 "On" 0 "Off" ;
+VAL_ 272 RPS_NOutput4State 3 "Fault" 2 "Trip" 1 "On" 0 "Off" ;
+VAL_ 272 RPS_NOutput3State 3 "Fault" 2 "Trip" 1 "On" 0 "Off" ;
+VAL_ 272 RPS_NOutput2State 3 "Fault" 2 "Trip" 1 "On" 0 "Off" ;
+VAL_ 272 RPS_NOutput26State 3 "Fault" 2 "Trip" 1 "On" 0 "Off" ;
+VAL_ 272 RPS_NOutput25State 3 "Fault" 2 "Trip" 1 "On" 0 "Off" ;
+VAL_ 272 RPS_NOutput24State 3 "Fault" 2 "Trip" 1 "On" 0 "Off" ;
+VAL_ 272 RPS_NOutput23State 3 "Fault" 2 "Trip" 1 "On" 0 "Off" ;
+VAL_ 272 RPS_NOutput22State 3 "Fault" 2 "Trip" 1 "On" 0 "Off" ;
+VAL_ 272 RPS_NOutput21State 3 "Fault" 2 "Trip" 1 "On" 0 "Off" ;
+VAL_ 272 RPS_NOutput20State 3 "Fault" 2 "Trip" 1 "On" 0 "Off" ;
+VAL_ 272 RPS_NOutput1State 3 "Fault" 2 "Trip" 1 "On" 0 "Off" ;
+VAL_ 272 RPS_NOutput19State 3 "Fault" 2 "Trip" 1 "On" 0 "Off" ;
+VAL_ 272 RPS_NOutput18State 3 "Fault" 2 "Trip" 1 "On" 0 "Off" ;
+VAL_ 272 RPS_NOutput17State 3 "Fault" 2 "Trip" 1 "On" 0 "Off" ;
+VAL_ 272 RPS_NOutput16State 3 "Fault" 2 "Trip" 1 "On" 0 "Off" ;
+VAL_ 272 RPS_NOutput15State 3 "Fault" 2 "Trip" 1 "On" 0 "Off" ;
+VAL_ 272 RPS_NOutput14State 3 "Fault" 2 "Trip" 1 "On" 0 "Off" ;
+VAL_ 272 RPS_NOutput13State 3 "Fault" 2 "Trip" 1 "On" 0 "Off" ;
+VAL_ 272 RPS_NOutput12State 3 "Fault" 2 "Trip" 1 "On" 0 "Off" ;
+VAL_ 272 RPS_NOutput11State 3 "Fault" 2 "Trip" 1 "On" 0 "Off" ;
+VAL_ 272 RPS_NOutput10State 3 "Fault" 2 "Trip" 1 "On" 0 "Off" ;
+VAL_ 256 RPS_BIsolatorOverrideStateDem 1 "Closed" 0 "Open" ;
+VAL_ 256 RPS_BIsolatorOverrideEnableDem 1 "On" 0 "Off" ;
+VAL_ 256 RPS_BOutput23EnableDem 1 "On" 0 "Off" ;
+VAL_ 256 RPS_BOutputResetDem 1 "Reset" 0 "None" ;
+VAL_ 256 RPS_BOutput9EnableDem 1 "On" 0 "Off" ;
+VAL_ 256 RPS_BOutput8EnableDem 1 "On" 0 "Off" ;
+VAL_ 256 RPS_BOutput7EnableDem 1 "On" 0 "Off" ;
+VAL_ 256 RPS_BOutput6EnableDem 1 "On" 0 "Off" ;
+VAL_ 256 RPS_BOutput5EnableDem 1 "On" 0 "Off" ;
+VAL_ 256 RPS_BOutput4EnableDem 1 "On" 0 "Off" ;
+VAL_ 256 RPS_BOutput3EnableDem 1 "On" 0 "Off" ;
+VAL_ 256 RPS_BOutput2EnableDem 1 "On" 0 "Off" ;
+VAL_ 256 RPS_BOutput26EnableDem 1 "On" 0 "Off" ;
+VAL_ 256 RPS_BOutput25EnableDem 1 "On" 0 "Off" ;
+VAL_ 256 RPS_BOutput24EnableDem 1 "On" 0 "Off" ;
+VAL_ 256 RPS_BOutput22EnableDem 1 "On" 0 "Off" ;
+VAL_ 256 RPS_BOutput21EnableDem 1 "On" 0 "Off" ;
+VAL_ 256 RPS_BOutput20EnableDem 1 "On" 0 "Off" ;
+VAL_ 256 RPS_BOutput1EnableDem 1 "On" 0 "Off" ;
+VAL_ 256 RPS_BOutput19EnableDem 1 "On" 0 "Off" ;
+VAL_ 256 RPS_BOutput18EnableDem 1 "On" 0 "Off" ;
+VAL_ 256 RPS_BOutput17EnableDem 1 "On" 0 "Off" ;
+VAL_ 256 RPS_BOutput16EnableDem 1 "On" 0 "Off" ;
+VAL_ 256 RPS_BOutput15EnableDem 1 "On" 0 "Off" ;
+VAL_ 256 RPS_BOutput14EnableDem 1 "On" 0 "Off" ;
+VAL_ 256 RPS_BOutput13EnableDem 1 "On" 0 "Off" ;
+VAL_ 256 RPS_BOutput12EnableDem 1 "On" 0 "Off" ;
+VAL_ 256 RPS_BOutput11EnableDem 1 "On" 0 "Off" ;
+VAL_ 256 RPS_BOutput10EnableDem 1 "On" 0 "Off" ;
+

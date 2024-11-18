@@ -1,0 +1,687 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: TEAM_ECU FIA_MLS
+VAL_TABLE_ NLED_Emulate 3 "Attack Mode LED mode" 2 "Boost Charge LED mode" 1 "Ready to Drive LED mode" 0 "OFF" ;
+VAL_TABLE_ BGen3_5 1 "Gen3.5 Season 11 & 12" 0 "Gen3 Season 9 & 10" ;
+VAL_TABLE_ NOnThrottleMode 1 "Power Control" 0 "Torque Control" ;
+VAL_TABLE_ BAccident 1 "Accident detected and recorded" 0 "No accident detected" ;
+VAL_TABLE_ NHighPowerScenario 3 "6 + 2 min" 2 "4 + 4 min" 1 "2 + 6 min" ;
+VAL_TABLE_ RCS_Flag 17 "DOUBLE YELLOW" 16 "Do not use" 15 "Do not use" 14 "SC - IN" 13 "SC" 12 "Do not use" 11 "FINISH" 10 "SLIPPERY" 9 "FCY" 8 "WHITE" 7 "YELLOW" 6 "Do not use" 5 "BLACK&WHITE" 4 "BLACK" 3 "RED" 2 "BLUE" 1 "GREEN" 0 "No Flag displayed" ;
+VAL_TABLE_ NMux165 2 "Current PTT Beep settings" 1 "Current volume config" ;
+VAL_TABLE_ NMux164 4 "PTT Default settings" 3 "Audio Default settings" 2 "PTT Custom settings" 1 "Audio Custom settings" ;
+VAL_TABLE_ PowerMode 128 "Gen3.5 activation (Season 11&12)" 3 "350kW" 2 "300kW" 1 "110kW" ;
+VAL_TABLE_ CarManufacturer_FIA 10 "Porsche" 9 "Penske" 8 "Mercedes" 7 "NIO" 6 "Mahindra" 5 "Jaguar" 4 "DS" 3 "Nissan" 2 "BMW" 1 "Audi" 0 "None" ;
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ Team_TAuxBattCell : 0|8@0+ (1,0) [0|255] "°C" Vector__XXX
+
+BO_ 385 FIA_2_ECU_0x181: 8 FIA_MLS
+ SG_ PMaxFPK_Control_Level : 55|8@0+ (0.19608,0) [0|50.0004] "kW"  TEAM_ECU
+ SG_ PIllegalT_Release : 35|12@0+ (0.01,0) [0|40.95] "kj"  TEAM_ECU
+ SG_ PIllegalF_Release : 31|12@0+ (0.01,0) [0|40.95] "kj"  TEAM_ECU
+ SG_ gLongFIA : 11|12@0- (0.02,0) [-40.96|40.94] "g"  TEAM_ECU
+ SG_ gLatFIA : 7|12@0- (0.02,0) [-40.96|40.94] "g"  TEAM_ECU
+
+BO_ 365 FIA_2_ECU_0x16D: 8 FIA_MLS
+ SG_ IVT1_Result_U1_FMGU : 39|32@0- (1,0) [-2147483648|2147483647] "mV"  TEAM_ECU
+ SG_ IVT1_Result_I_FMGU : 7|32@0- (1,0) [-2147483648|2147483647] "mA"  TEAM_ECU
+
+BO_ 367 FIA_2_ECU_0x16F: 8 FIA_MLS
+ SG_ IVT3_Result_I_DCDC : 39|32@0- (1,0) [-2147483648|2147483647] "mA"  TEAM_ECU
+ SG_ IVT2_Result_I_RMGU : 7|32@0- (1,0) [-2147483648|2147483647] "mA"  TEAM_ECU
+
+BO_ 1055 FIA_Forbidden13: 8 FIA_MLS
+
+BO_ 1054 FIA_Forbidden12: 8 FIA_MLS
+
+BO_ 1053 FIA_Forbidden11: 8 FIA_MLS
+
+BO_ 1052 FIA_Forbidden10: 8 FIA_MLS
+
+BO_ 1039 FIA_Forbidden09: 8 FIA_MLS
+
+BO_ 1038 FIA_Forbidden08: 8 FIA_MLS
+
+BO_ 1037 FIA_Forbidden07: 8 FIA_MLS
+
+BO_ 1036 FIA_Forbidden06: 8 FIA_MLS
+
+BO_ 128 FIA_Forbidden05: 8 FIA_MLS
+
+BO_ 1147 FIA_Forbidden04: 8 FIA_MLS
+
+BO_ 1146 FIA_Forbidden03: 8 FIA_MLS
+
+BO_ 1145 FIA_Forbidden02: 8 FIA_MLS
+
+BO_ 1144 FIA_Forbidden01: 8 FIA_MLS
+
+BO_ 98 FIA_2_ECU_0x62: 8 FIA_MLS
+ SG_ TFPKCoolantOutlet_FIA : 55|8@0+ (1,-40) [-40|215] "°C"  TEAM_ECU
+ SG_ TFPKAir_FIA : 47|8@0+ (0.4,-20) [-20|82] "°C"  TEAM_ECU
+ SG_ VpBrakeSBSRaw_FIA : 27|12@0+ (1.2210012210012,0) [0|4999.99999999991] "mV"  TEAM_ECU
+ SG_ NCounter0x62 : 7|4@0+ (1,0) [0|15] ""  TEAM_ECU
+ SG_ VTBrakeFRRaw_FIA : 23|12@0+ (1.2210012210012,0) [0|4999.99999999991] "mV"  TEAM_ECU
+ SG_ VTBrakeFLRaw_FIA : 3|12@0+ (1.2210012210012,0) [0|4999.99999999991] "mV"  TEAM_ECU
+
+BO_ 362 ECU_2_FIA_0x16A: 8 TEAM_ECU
+ SG_ Team_NLED_Emulate : 23|8@0+ (1,0) [0|255] ""  FIA_MLS
+ SG_ Team_NOnThrottleMode : 8|1@0+ (1,0) [0|1] ""  FIA_MLS
+ SG_ Team_NRCS_Flag_Emulate : 7|8@0+ (1,0) [0|15] ""  FIA_MLS
+
+BO_ 363 FIA_2_ECU_0x16B: 8 FIA_MLS
+ SG_ MMDRRMeasuredOffsetUsedFIA : 39|16@0- (0.015625,0) [-512|511.984375] "Nm"  TEAM_ECU
+ SG_ MMDRLMeasuredOffsetUsedFIA : 55|16@0- (0.015625,0) [-512|511.984375] "Nm"  TEAM_ECU
+ SG_ NSA_VerBugfix : 31|8@0+ (1,0) [0|255] ""  TEAM_ECU
+ SG_ NSA_VerMaintenance : 23|8@0+ (1,0) [0|255] ""  TEAM_ECU
+ SG_ NSA_VerMinor : 15|8@0+ (1,0) [0|255] ""  TEAM_ECU
+ SG_ NSA_VerMajor : 7|8@0+ (1,0) [0|255] ""  TEAM_ECU
+
+BO_ 357 FIA_2_ECU_0x165: 8 FIA_MLS
+ SG_ tPTTBeep m2 : 47|16@0+ (1,0) [0|2000] "ms"  TEAM_ECU
+ SG_ fPTTBeepOFF m2 : 31|16@0+ (1,0) [0|1000] "Hz"  TEAM_ECU
+ SG_ fPTTBeepON m2 : 15|16@0+ (1,0) [0|1000] "Hz"  TEAM_ECU
+ SG_ INGARAGEBeepVol m1 : 55|8@0- (1,0) [-36|0] "dB"  TEAM_ECU
+ SG_ OUTGARAGEBeepVol m1 : 47|8@0- (1,0) [-36|0] "dB"  TEAM_ECU
+ SG_ INGARAGEHeadphoneVol m1 : 39|8@0- (1,0) [-24|24] "dB"  TEAM_ECU
+ SG_ OUTGARAGEHeadphoneVol m1 : 23|8@0- (1,0) [-24|24] "dB"  TEAM_ECU
+ SG_ INGARAGEMicVol m1 : 31|8@0- (1,0) [-24|24] "dB"  TEAM_ECU
+ SG_ OUTGARAGEMicVol m1 : 15|8@0- (1,0) [-24|24] "dB"  TEAM_ECU
+ SG_ NMux165 M : 7|8@0+ (1,0) [0|255] ""  TEAM_ECU
+
+BO_ 356 ECU_2_FIA_0x164: 8 TEAM_ECU
+ SG_ tPTTBeepDefaultSet m4 : 47|16@0+ (1,0) [0|2000] "ms"  FIA_MLS
+ SG_ fPTTBeepONDefaultSet m4 : 15|16@0+ (1,0) [0|65535] "Hz"  FIA_MLS
+ SG_ fPTTBeepOFFDefaultSet m4 : 31|16@0+ (1,0) [0|1000] "Hz"  FIA_MLS
+ SG_ tPTTBeepCustomSet m2 : 47|16@0+ (1,0) [0|2000] "ms"  FIA_MLS
+ SG_ fPTTBeepONCustomSet m2 : 15|16@0+ (1,0) [0|1000] "Hz"  FIA_MLS
+ SG_ fPTTBeepOFFCustomSet m2 : 31|16@0+ (1,0) [0|1000] "Hz"  FIA_MLS
+ SG_ OUTGARAGEMicVolDefaultSet m3 : 15|8@0- (1,0) [-24|24] "dB"  FIA_MLS
+ SG_ OUTGARAGEHeadphoneVolDefaultSet m3 : 23|8@0- (1,0) [-24|24] "dB"  FIA_MLS
+ SG_ OUTGARAGEBeepVolDefaultSet m3 : 47|8@0- (1,0) [-36|0] "dB"  FIA_MLS
+ SG_ INGARAGEMicVolDefaultSet m3 : 31|8@0- (1,0) [-24|24] "dB"  FIA_MLS
+ SG_ INGARAGEHeadphoneVolDefaultSet m3 : 39|8@0- (1,0) [-24|24] "dB"  FIA_MLS
+ SG_ INGARAGEBeepVolDefaultSet m3 : 55|8@0- (1,0) [-36|0] "dB"  FIA_MLS
+ SG_ OUTGARAGEMicVolCustomSet m1 : 15|8@0- (1,0) [-24|24] "dB"  FIA_MLS
+ SG_ OUTGARAGEHeadphoneVolCustomSet m1 : 23|8@0- (1,0) [-24|24] "dB"  FIA_MLS
+ SG_ OUTGARAGEBeepVolCustomSet m1 : 47|8@0- (1,0) [-36|0] "dB"  FIA_MLS
+ SG_ INGARAGEMicVolCustomSet m1 : 31|8@0- (1,0) [-24|24] "dB"  FIA_MLS
+ SG_ INGARAGEHeadphoneVolCustomSet m1 : 39|8@0- (1,0) [-24|24] "dB"  FIA_MLS
+ SG_ INGARAGEBeepVolCustomSet m1 : 55|8@0- (1,0) [-36|0] "dB"  FIA_MLS
+ SG_ NMux164 M : 7|8@0+ (1,0) [0|255] ""  FIA_MLS
+
+BO_ 383 FIA_2_ECU_0x17F: 8 FIA_MLS
+ SG_ BBCStopTimeIllegal_FIA : 7|1@0+ (1,0) [0|1] ""  TEAM_ECU
+ SG_ tBoostCharge_FIA : 3|12@0+ (0.01,0) [0|40.95] "s"  TEAM_ECU
+ SG_ PIllegal_TC : 55|16@0+ (0.01,0) [0|655.35] "kj"  TEAM_ECU
+ SG_ PERSADC_Min_FIA : 39|16@0+ (0.01,-200) [-200|455.35] "kW"  TEAM_ECU
+ SG_ PERSADC_Max_FIA : 23|16@0+ (0.01,-200) [-200|455.35] "kW"  TEAM_ECU
+
+BO_ 102 FIA_2_ECU_0x66: 8 FIA_MLS
+ SG_ NOnThrottleMode_FIA : 59|1@0+ (1,0) [0|1] ""  TEAM_ECU
+ SG_ ADR_BAccident : 56|1@0+ (1,0) [0|1] ""  TEAM_ECU
+ SG_ nDriveshaftRR_FIA : 55|12@0+ (0.5,0) [0|2047.5] "rpm"  TEAM_ECU
+ SG_ nDriveshaftRL_FIA : 35|12@0+ (0.5,0) [0|2047.5] "rpm"  TEAM_ECU
+ SG_ ADR_AccZ : 31|12@0- (0.1526,0) [-312.5248|312.3722] "g"  TEAM_ECU
+ SG_ ADR_AccY : 11|12@0- (0.1526,0) [-312.5248|312.3722] "g"  TEAM_ECU
+ SG_ ADR_AccX : 7|12@0- (0.1526,0) [-312.5248|312.3722] "g"  TEAM_ECU
+
+BO_ 381 FIA_2_ECU_0x17D: 8 FIA_MLS
+ SG_ BLaunchModeActive_FIA : 31|1@0+ (1,0) [0|1] ""  TEAM_ECU
+ SG_ PERSAR_Filtered_FIA : 55|16@0- (0.015,0) [-491.52|491.505] "kW"  TEAM_ECU
+ SG_ PERSAF_Filtered_FIA : 39|16@0- (0.01,0) [-327.68|327.67] "kW"  TEAM_ECU
+ SG_ NHighPower_Mode_ArmedSuccess : 25|1@0+ (1,0) [0|1] ""  TEAM_ECU
+ SG_ NAttack_Loop3 : 28|1@0+ (1,0) [0|1] ""  TEAM_ECU
+ SG_ NAttack_Loop2 : 27|1@0+ (1,0) [0|1] ""  TEAM_ECU
+ SG_ NAttack_Loop1 : 26|1@0+ (1,0) [0|1] ""  TEAM_ECU
+ SG_ NHighPower_Mode_Active : 29|1@0+ (1,0) [0|1] ""  TEAM_ECU
+ SG_ NHighPower_Mode_Armed : 24|1@0+ (1,0) [0|1] ""  TEAM_ECU
+ SG_ PERSADC_Control_Level : 23|8@0+ (2,0) [0|510] "kW"  TEAM_ECU
+ SG_ tHighPower_Mode_Timer : 7|16@0+ (0.01,0) [0|655.35] "s"  TEAM_ECU
+
+BO_ 379 FIA_2_ECU_0x17B: 8 FIA_MLS
+ SG_ EnergyReleaseF_Launch_FIA : 47|8@0+ (1,0) [0|255] "kJ"  TEAM_ECU
+ SG_ BCarInPit_FIA : 53|1@0+ (1,0) [0|1] ""  TEAM_ECU
+ SG_ BLearnZeroLocked_FIA : 55|1@0+ (1,0) [0|1] ""  TEAM_ECU
+ SG_ BGen3_5_FIA : 54|1@0+ (1,0) [0|1] ""  TEAM_ECU
+ SG_ rThrottlePedal_FIA : 27|12@0- (0.1,0) [-204.8|204.7] "%"  TEAM_ECU
+ SG_ ADR_AccidentSeverity : 23|12@0+ (0.0763,0) [0|312.4485] "g"  TEAM_ECU
+ SG_ NBox_FIA : 52|13@0+ (1,0) [0|8191] ""  TEAM_ECU
+ SG_ dIllegalFCY_RED_PitSpeed : 7|16@0+ (0.01,0) [0|655.35] ""  TEAM_ECU
+
+BO_ 358 ECU_2_FIA_0x166: 8 TEAM_ECU
+ SG_ Team_NBeep_Reserved : 47|24@0+ (1,0) [0|16777215] ""  FIA_MLS
+ SG_ Team_NFreq_Beep_Audio : 7|16@0+ (1,0) [200|4000] "Hz"  FIA_MLS
+ SG_ Team_NDuration_Beep : 23|16@0+ (1,0) [0|2000] "ms"  FIA_MLS
+ SG_ Team_NVolume_Beep : 39|8@0- (1,0) [-40|0] "dB"  FIA_MLS
+
+BO_ 359 FIA_2_ECU_0x167: 8 FIA_MLS
+ SG_ NBeep_Reserved_Ack : 55|16@0+ (1,0) [0|65535] ""  TEAM_ECU
+ SG_ NACK_Beep : 47|8@0+ (1,0) [0|255] ""  TEAM_ECU
+ SG_ NVolume_Beep_FIA_Ack : 39|8@0- (1,0) [-40|0] "dB"  TEAM_ECU
+ SG_ NDuration_Beep_FIA_Ack : 23|16@0+ (1,0) [0|2000] "ms"  TEAM_ECU
+ SG_ NFreq_Beep_Audio_Ack : 7|16@0+ (1,0) [200|4000] "Hz"  TEAM_ECU
+
+BO_ 377 FIA_2_ECU_0x179: 8 FIA_MLS
+ SG_ PIllegalRTorq_Regen : 55|12@0+ (0.01,0) [0|40.95] "kj"  TEAM_ECU
+ SG_ PIllegalT_Regen : 31|12@0+ (0.01,0) [0|40.95] "kj"  TEAM_ECU
+ SG_ PIllegalR_Regen : 11|12@0+ (0.01,0) [0|40.95] "kj"  TEAM_ECU
+ SG_ PIllegalF_Regen : 7|12@0+ (0.01,0) [0|40.95] "kj"  TEAM_ECU
+ SG_ PIllegalR_Release : 35|12@0+ (0.01,0) [0|40.95] "kj"  TEAM_ECU
+
+BO_ 375 FIA_2_ECU_0x177: 8 FIA_MLS
+ SG_ EnergyDCDC_FIA : 7|16@0+ (0.0005,0) [0|32.7675] "kJ"  TEAM_ECU
+ SG_ EnergyReleaseF_FIA : 23|16@0+ (0.001,0) [0|65.535] "kWh"  TEAM_ECU
+ SG_ EnergyRegenF_FIA : 39|16@0+ (0.001,0) [0|65.535] "kWh"  TEAM_ECU
+ SG_ EERSA1DC_Total_FIA : 55|16@0- (0.01,0) [-327.68|327.67] "kWh"  TEAM_ECU
+
+BO_ 373 FIA_2_ECU_0x175: 8 FIA_MLS
+ SG_ aGPSLongitude_FIA : 39|32@0- (1E-007,0) [-214.7483648|214.7483647] "•"  TEAM_ECU
+ SG_ aGPSLatitude_FIA : 7|32@0- (1E-007,0) [-214.7483648|214.7483647] "•"  TEAM_ECU
+
+BO_ 371 FIA_2_ECU_0x173: 8 FIA_MLS
+ SG_ NDBCVersion : 7|8@0+ (1,0) [0|255] ""  TEAM_ECU
+ SG_ BrThrottlePdlLearningMax_FIA : 14|1@0+ (1,0) [0|1] ""  TEAM_ECU
+ SG_ BrThrottlePdlLearningMin_FIA : 13|1@0+ (1,0) [0|1] ""  TEAM_ECU
+ SG_ BAttackMode_FIA : 9|1@0+ (1,0) [0|1] ""  TEAM_ECU
+ SG_ BPower_ShutDown_Trig : 15|1@0+ (1,0) [0|1] ""  TEAM_ECU
+ SG_ FCY_FIA : 59|1@0+ (1,0) [0|1] ""  TEAM_ECU
+ SG_ SafetyCarInLap_FIA : 58|1@0+ (1,0) [0|1] ""  TEAM_ECU
+ SG_ SafetyCar_FIA : 57|1@0+ (1,0) [0|1] ""  TEAM_ECU
+ SG_ WhiteFlag_FIA : 56|1@0+ (1,0) [0|1] ""  TEAM_ECU
+ SG_ DoubleYellowFlag_FIA : 55|1@0+ (1,0) [0|1] ""  TEAM_ECU
+ SG_ BlackWhiteFlag_FIA : 53|1@0+ (1,0) [0|1] ""  TEAM_ECU
+ SG_ BlackOrangeFlag_FIA : 54|1@0+ (1,0) [0|1] ""  TEAM_ECU
+ SG_ BlackFlag_FIA : 52|1@0+ (1,0) [0|1] ""  TEAM_ECU
+ SG_ BlueFlag_FIA : 51|1@0+ (1,0) [0|1] ""  TEAM_ECU
+ SG_ YellowFlag_FIA : 50|1@0+ (1,0) [0|1] ""  TEAM_ECU
+ SG_ RedFlag_FIA : 49|1@0+ (1,0) [0|1] ""  TEAM_ECU
+ SG_ GreenFlag_FIA : 48|1@0+ (1,0) [0|1] ""  TEAM_ECU
+ SG_ EnergyRegen_FIA : 39|16@0+ (0.001,0) [0|65.535] "kWh"  TEAM_ECU
+ SG_ EnergyRelease_FIA : 23|16@0+ (0.002,0) [0|131.07] "kWh"  TEAM_ECU
+ SG_ PitOutBeacon_FIA : 12|1@0+ (1,0) [0|1] ""  TEAM_ECU
+ SG_ PitInBeacon_FIA : 11|1@0+ (1,0) [0|1] ""  TEAM_ECU
+ SG_ StartFinishBeacon_FIA : 10|1@0+ (1,0) [0|1] ""  TEAM_ECU
+ SG_ BFanBoost_FIA : 8|1@0+ (1,0) [0|1] ""  TEAM_ECU
+
+BO_ 361 FIA_2_ECU_0x169: 8 FIA_MLS
+ SG_ PERSARTorq_Filtered_FIA : 55|16@0- (0.015,0) [-491.52|491.505] "kW"  TEAM_ECU
+ SG_ WspRR_FIA : 35|12@0+ (0.1,0) [0|409.5] "kph"  TEAM_ECU
+ SG_ WspRL_FIA : 31|12@0+ (0.1,0) [0|409.5] "kph"  TEAM_ECU
+ SG_ WspFR_FIA : 11|12@0+ (0.1,0) [0|409.5] "kph"  TEAM_ECU
+ SG_ WspFL_FIA : 7|12@0+ (0.1,0) [0|409.5] "kph"  TEAM_ECU
+
+BO_ 372 ECU_2_FIA_0x174: 8 TEAM_ECU
+ SG_ Team_TInvPowerMod : 63|8@0+ (1,0) [0|255] "°C"  FIA_MLS
+ SG_ Team_TOilGB : 55|8@0+ (1,0) [0|255] "°C"  FIA_MLS
+ SG_ Team_fInverter : 39|16@0+ (1,0) [0|65535] "Hz"  FIA_MLS
+ SG_ Team_pRadiator : 31|8@0+ (0.01,0) [0|2.55] "BarA"  FIA_MLS
+ SG_ Team_TRadiator : 23|8@0+ (1,0) [0|255] "°C"  FIA_MLS
+ SG_ Team_TInverter : 15|8@0+ (1,0) [0|255] "°C"  FIA_MLS
+ SG_ Team_TMGU : 7|8@0+ (1,0) [0|255] "°C"  FIA_MLS
+
+BO_ 370 ECU_2_FIA_0x172: 8 TEAM_ECU
+ SG_ Team_MFrictionFTgt : 55|16@0+ (-0.1,0) [-6553.5|0] "Nm"  FIA_MLS
+ SG_ Team_MDriverBrakeRq : 39|16@0+ (-0.1,0) [-6553.5|0] "Nm"  FIA_MLS
+ SG_ Team_VDCInverter : 23|16@0+ (0.02,0) [0|1310.7] "V"  FIA_MLS
+ SG_ Team_IDCInverter : 7|16@0- (0.1,0) [-3276.8|3276.7] "A"  FIA_MLS
+
+BO_ 368 ECU_2_FIA_0x170: 8 TEAM_ECU
+ SG_ Team_BLaunchActive : 27|1@0+ (1,0) [0|1] ""  FIA_MLS
+ SG_ Team_BChargeFlapOpen : 11|1@0+ (1,0) [0|1] ""  FIA_MLS
+ SG_ Team_NDriverPedalMap : 55|8@0+ (1,0) [0|255] ""  FIA_MLS
+ SG_ Team_PERSADCTgt : 39|16@0- (0.02,0) [-655.36|655.34] "kW"  FIA_MLS
+ SG_ Team_NHighPowerTimeScenario : 26|3@0+ (1,0) [0|7] ""  FIA_MLS
+ SG_ Team_BChargerConnected : 10|1@0+ (1,0) [0|1] ""  FIA_MLS
+ SG_ Team_BDerating : 15|1@0+ (1,0) [0|1] ""  FIA_MLS
+ SG_ Team_BSpeedLimiter : 14|1@0+ (1,0) [0|1] ""  FIA_MLS
+ SG_ Team_pBrake : 23|12@0- (0.1,0) [-204.8|204.7] "barA"  FIA_MLS
+ SG_ Team_BReadytoMove : 8|1@0+ (1,0) [0|1] ""  FIA_MLS
+ SG_ Team_BRainLight : 9|1@0+ (1,0) [0|1] ""  FIA_MLS
+ SG_ Team_BFanBoost : 12|1@0+ (1,0) [0|1] ""  FIA_MLS
+ SG_ Team_BAttackMode : 13|1@0+ (1,0) [0|1] ""  FIA_MLS
+ SG_ Team_CarManufacturer : 3|4@0+ (1,0) [0|15] ""  FIA_MLS
+ SG_ Team_NGear : 7|4@0+ (1,0) [0|15] ""  FIA_MLS
+
+BO_ 360 ECU_2_FIA_0x168: 8 TEAM_ECU
+ SG_ Team_BMDRROffsetTriggerReq : 57|1@0+ (1,0) [0|1] ""  FIA_MLS
+ SG_ Team_BMDRLOffsetTriggerReq : 56|1@0+ (1,0) [0|1] ""  FIA_MLS
+ SG_ Team_rThrottlePedal : 55|12@0- (0.1,0) [-204.8|204.7] "%"  FIA_MLS
+ SG_ Team_MMGUTgt : 23|16@0- (0.1,0) [-3276.8|3276.7] "Nm"  FIA_MLS
+ SG_ Team_MMGU : 39|16@0- (0.1,0) [-3276.8|3276.7] "Nm"  FIA_MLS
+ SG_ Team_nMGU : 7|16@0+ (1,0) [0|65535] "rpm"  FIA_MLS
+
+
+
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+CM_ SG_ 3221225472 Team_TAuxBattCell "Team auxiliary battery temperature (if multiple sensors, send max value)";
+CM_ BO_ 385 "FIA Logger accelero - Max power integrators Gen3.5 FPK traction";
+CM_ SG_ 385 PMaxFPK_Control_Level "To help understand the max FPK power calculation of the FIA logger (60Nm limit, or 50kW limit). Rounded to lower value. Must not be used for control as the precision is too low. Precise formula given in Control Strategy document";
+CM_ SG_ 385 PIllegalT_Release "Total RESS release max power integrator - Only when the FIA logger is turn on Gen3.5";
+CM_ SG_ 385 PIllegalF_Release "Front MGU release max power integrator - Only when the FIA logger is turn on Gen3.5";
+CM_ SG_ 385 gLongFIA "FIA logger Longitudinal Acceleration. + acceleration / - braking";
+CM_ SG_ 385 gLatFIA "FIA logger Lateral Acceleration. + left turn / - right turn";
+CM_ BO_ 365 "IVTS 1 Front MGU Voltage / Current";
+CM_ SG_ 365 IVT1_Result_U1_FMGU "IVTS1 Front MGU Voltage measurement. Due to sensor installation the measured Voltage is negative";
+CM_ SG_ 365 IVT1_Result_I_FMGU "IVTS1 Front MGU Current measurement. + Regen / - Release";
+CM_ BO_ 367 "IVTS 2 Rear MGU Current / IVTS 3 DCDC Current";
+CM_ SG_ 367 IVT3_Result_I_DCDC "IVTS3 DCDC Current measurement. + for current consummed from the RESS";
+CM_ SG_ 367 IVT2_Result_I_RMGU "IVTS2 Rear MGU Current measurement. - Regen / + Release";
+CM_ BO_ 1055 "Reserved IDs for Marelli system - DO NOT USE";
+CM_ BO_ 1054 "Reserved IDs for Marelli system - DO NOT USE";
+CM_ BO_ 1053 "Reserved IDs for Marelli system - DO NOT USE";
+CM_ BO_ 1052 "Reserved IDs for Marelli system - DO NOT USE";
+CM_ BO_ 1039 "Reserved IDs for Marelli system - DO NOT USE";
+CM_ BO_ 1038 "Reserved IDs for Marelli system - DO NOT USE";
+CM_ BO_ 1037 "Reserved IDs for Marelli system - DO NOT USE";
+CM_ BO_ 1036 "Reserved IDs for Marelli system - DO NOT USE";
+CM_ BO_ 128 "Reserved IDs for Marelli system - DO NOT USE";
+CM_ BO_ 1147 "Reserved IDs for Marelli system - DO NOT USE";
+CM_ BO_ 1146 "Reserved IDs for Marelli system - DO NOT USE";
+CM_ BO_ 1145 "Reserved IDs for Marelli system - DO NOT USE";
+CM_ BO_ 1144 "Reserved IDs for Marelli system - DO NOT USE";
+CM_ BO_ 98 "Brake temp & SBS press / FPK temps";
+CM_ SG_ 98 TFPKCoolantOutlet_FIA "MLS Temp2";
+CM_ SG_ 98 TFPKAir_FIA "MLS Temp4";
+CM_ SG_ 98 VpBrakeSBSRaw_FIA "MLS Ana07";
+CM_ SG_ 98 NCounter0x62 "Rolling counter - incremented each time a message is sent";
+CM_ SG_ 98 VTBrakeFRRaw_FIA "MLS Ana13";
+CM_ SG_ 98 VTBrakeFLRaw_FIA "MLS Ana12";
+CM_ BO_ 362 "Event message. To be sent to emulate the marshalling flag or LED system or simulate a switch in OnThrottle Control. !!! It is forbidden to send this message during official race event except to test the LED when car in pit !!!";
+CM_ SG_ 362 Team_NLED_Emulate "To be sent ONLY when the car is not running and to test the LED system. Perform a FIA logger power cycle before, as some conditions are set to disable the emulation (track loop detected, wheelspeed, ...)";
+CM_ SG_ 362 Team_NOnThrottleMode "To be sent ONLY outside official race event and to emulate a switch between Torque and Power OnThrottle Control (private test/dyno/simulator)";
+CM_ SG_ 362 Team_NRCS_Flag_Emulate "To be sent ONLY outside official race event and to emulate a marshalling flag (private test/dyno/simulator)";
+CM_ BO_ 363 "Smart antenna firmware version / Torquemeters offsets";
+CM_ SG_ 363 MMDRRMeasuredOffsetUsedFIA "Rear Right Measured torque offset during the offset calculation and used during the FIA control strategy. To be reported in the technical passeport of the car";
+CM_ SG_ 363 MMDRLMeasuredOffsetUsedFIA "Rear Left Measured torque offset during the offset calculation and used during the FIA control strategy. To be reported in the technical passeport of the car";
+CM_ SG_ 363 NSA_VerBugfix "Smart Antenna software version Bugfix";
+CM_ SG_ 363 NSA_VerMaintenance "Smart Antenna software version Maintenance";
+CM_ SG_ 363 NSA_VerMinor "Smart Antenna software version Minor";
+CM_ SG_ 363 NSA_VerMajor "Smart Antenna software version Major";
+CM_ BO_ 357 "Feedback message for audio setting";
+CM_ SG_ 357 tPTTBeep "Duration of PTT beep";
+CM_ SG_ 357 fPTTBeepOFF "PTT OFF beep frequency";
+CM_ SG_ 357 fPTTBeepON "PTT ON beep frequency";
+CM_ SG_ 357 INGARAGEBeepVol "IN GARAGE mean umbilical connected";
+CM_ SG_ 357 OUTGARAGEBeepVol "OUT GARAGE mean umbilical disconnected";
+CM_ SG_ 357 INGARAGEHeadphoneVol "IN GARAGE mean umbilical connected";
+CM_ SG_ 357 OUTGARAGEHeadphoneVol "OUT GARAGE mean umbilical disconnected";
+CM_ SG_ 357 INGARAGEMicVol "IN GARAGE mean umbilical connected";
+CM_ SG_ 357 OUTGARAGEMicVol "OUT GARAGE mean umbilical disconnected";
+CM_ SG_ 357 NMux165 "Multiplexor index for message 0x165";
+CM_ BO_ 356 "Event message, to be sent after each MLS power cycle or when a volume change is required";
+CM_ SG_ 356 tPTTBeepDefaultSet "Duration of PTT beep";
+CM_ SG_ 356 fPTTBeepONDefaultSet "PTT ON beep frequency";
+CM_ SG_ 356 fPTTBeepOFFDefaultSet "PTT OFF beep frequency";
+CM_ SG_ 356 tPTTBeepCustomSet "Duration of PTT beep";
+CM_ SG_ 356 fPTTBeepONCustomSet "PTT ON beep frequency";
+CM_ SG_ 356 fPTTBeepOFFCustomSet "PTT OFF beep frequency";
+CM_ SG_ 356 OUTGARAGEMicVolDefaultSet "OUT GARAGE mean umbilical disconnected";
+CM_ SG_ 356 OUTGARAGEHeadphoneVolDefaultSet "OUT GARAGE mean umbilical disconnected";
+CM_ SG_ 356 OUTGARAGEBeepVolDefaultSet "OUT GARAGE mean umbilical disconnected";
+CM_ SG_ 356 INGARAGEMicVolDefaultSet "IN GARAGE mean umbilical connected";
+CM_ SG_ 356 INGARAGEHeadphoneVolDefaultSet "IN GARAGE mean umbilical connected";
+CM_ SG_ 356 INGARAGEBeepVolDefaultSet "IN GARAGE mean umbilical connected";
+CM_ SG_ 356 OUTGARAGEMicVolCustomSet "OUT GARAGE mean umbilical disconnected";
+CM_ SG_ 356 OUTGARAGEHeadphoneVolCustomSet "OUT GARAGE mean umbilical disconnected";
+CM_ SG_ 356 OUTGARAGEBeepVolCustomSet "OUT GARAGE mean umbilical disconnected";
+CM_ SG_ 356 INGARAGEMicVolCustomSet "IN GARAGE mean umbilical connected";
+CM_ SG_ 356 INGARAGEHeadphoneVolCustomSet "IN GARAGE mean umbilical connected";
+CM_ SG_ 356 INGARAGEBeepVolCustomSet "IN GARAGE mean umbilical connected";
+CM_ SG_ 356 NMux164 "Multiplexor index for message 0x164";
+CM_ BO_ 383 "On Throttle - Power / Boost Charge stop timer";
+CM_ SG_ 383 BBCStopTimeIllegal_FIA "Goes to 1 if the car start to move/leave when the minimum stop time (tBoostCharge_FIA) for boost charge was not achieved";
+CM_ SG_ 383 tBoostCharge_FIA "Timer for the Boost Charge / From plug detected to car allow to move";
+CM_ SG_ 383 PIllegal_TC "FIA on throttle control illegal value - based on IVT power measurements";
+CM_ SG_ 383 PERSADC_Min_FIA "FIA on throttle corridor min value";
+CM_ SG_ 383 PERSADC_Max_FIA "FIA on throttle corridor max value";
+CM_ BO_ 102 "ADR / Rear driveshaft speed";
+CM_ SG_ 102 NOnThrottleMode_FIA "On Throttle control state between Torque and Power. If 0 control on torque maps. If 1 control in power maps. Managed by FIA remote command during race events. Could be emulated using msg 0x16A outside race events ONLY!!!";
+CM_ SG_ 102 ADR_BAccident "ADR accident flag detected by FIA logger. When goes different from 0 the blue medical light will flash.
+15G in X, Y or 25G in Z confirmed for 5ms in any axis";
+CM_ SG_ 102 nDriveshaftRR_FIA "Rear right driveshaft speed. Clipped to 2047.5 rpm, if speed goes over stay at 2047.5";
+CM_ SG_ 102 nDriveshaftRL_FIA "Rear left driveshaft speed. Clipped to 2047.5 rpm, if speed goes over stay at 2047.5";
+CM_ SG_ 102 ADR_AccZ "ADR sensor Vertical Acceleration. + compression / - detente. 0 when on ground";
+CM_ SG_ 102 ADR_AccY "ADR sensor Lateral Acceleration. + left turn / - right turn";
+CM_ SG_ 102 ADR_AccX "ADR sensor Longitudinal Acceleration. + acceleration / - braking";
+CM_ BO_ 381 "Attack mode / Launch mode / FIA Filtered powers";
+CM_ SG_ 381 BLaunchModeActive_FIA "Flag to indicate that the FIA logger is in launch mode (FPK in traction/200Nm). Entry and exit conditions describe in the control document.
+Only when the FIA logger is turn on Gen3.5";
+CM_ SG_ 381 PERSAR_Filtered_FIA "Rear MGU FIA Filtered power - Using IVTS 2 as current measurement and IVTS 1 as voltage measurement, as front and rear MGUs are on the same DC bus. Taking in account DCDC > 1.4kW";
+CM_ SG_ 381 PERSAF_Filtered_FIA "Front MGU FIA Filtered power - Using IVTS 1 as current and voltage measurements. Not taking in account DCDC > 1.4kW";
+CM_ SG_ 381 NHighPower_Mode_ArmedSuccess "Succesfully pass on the attack mode loop1 within the allowed time after pressing the arming button.";
+CM_ SG_ 381 NHighPower_Mode_Active "Attack mode is active.";
+CM_ SG_ 381 NHighPower_Mode_Armed "Attack mode button pressed. Goes OFF after x second. Does not go ON if already activated x times.";
+CM_ SG_ 381 PERSADC_Control_Level "To help understand the status of the FIA logger (Attack mode, race, ramp down, ...). Rounded to lower value. Must not be used for battery derating, ramp down, ... As the precision is too low";
+CM_ SG_ 381 tHighPower_Mode_Timer "Time in RACE High power Mode";
+CM_ BO_ 379 "Speed limiter integrator - ADR Accident severity - Linearised FIA throttle pedal - FPK Launch energy - FIA logger diagnostics";
+CM_ SG_ 379 EnergyReleaseF_Launch_FIA "Release energy from front inverter in Launch mode. Use raw values of IVT1S Current and Voltage. Integrated at 1ms. Not affected by DCDC>1.4kW
+Only when the FIA logger is turn on Gen3.5";
+CM_ SG_ 379 BCarInPit_FIA "Car is detected in pit. Value saved in NVRAM. If BCarInPit, OnThrottleControl is disable, Max pit lane speed control is activated, ...";
+CM_ SG_ 379 BLearnZeroLocked_FIA "1 if the FIA logger is locked and can't accept any learning zeroing process. See manual for conditions to allow";
+CM_ SG_ 379 BGen3_5_FIA "Flag to indicate that the FIA logger has been activated in Gen3.5 mode (FPK in traction). Reset only on the next power cycle";
+CM_ SG_ 379 rThrottlePedal_FIA "FIA throttle pedal sensor direct position. 0% off throttle - 100% Full throttle";
+CM_ SG_ 379 ADR_AccidentSeverity "ADR accident severity computed by FIA logger. When goes different from 0 the blue medical light will flash.
+15G in X, Y or 25G in Z confirmed for 5ms in any axis";
+CM_ SG_ 379 NBox_FIA "FIA Datalogger status
+Bit0: ADR in error
+Bit1: Backup transponder in error
+Bit2: Main transponder in error
+Bit3: CAN1 in error
+Bit4: CAN2 in error
+Bit5: CAN3 in error
+Bit6: CAN4 in error
+Bit7: HaloLED in error
+Bit8: SA in error";
+CM_ SG_ 379 dIllegalFCY_RED_PitSpeed "Illegal integrator for FCY, RED flag or pit lane speed limiter maximum speed";
+CM_ BO_ 358 "Request from team to MLS. Sent as event to require beep.
+Maximum rate: 100Hz. Rates above this limit could lead to packets drops.
+In case one of the bytes is filled with a Value outside the range the complete packet will be discarded and MLS return NACK";
+CM_ SG_ 358 Team_NBeep_Reserved "must be 0x00 (reserved for future use)";
+CM_ SG_ 358 Team_NFreq_Beep_Audio "Strategy BEEP tone frequency in Hz (200 Hz up to 4 KHz)";
+CM_ SG_ 358 Team_NDuration_Beep "Strategy BEEP tone duration in ms (max 2000 ms)";
+CM_ SG_ 358 Team_NVolume_Beep "Strategy BEEP volume";
+CM_ BO_ 359 "Acknowledge from MLS to team. Sent as answer to request packet
+- Confirms request packet with ACK=1 (contains same freq/duration/volume values sent in request packet)
+- Rejects it with NACK=0 (current freq/duration left/volume values are sent)";
+CM_ SG_ 359 NBeep_Reserved_Ack "Must be 0x0 (reserved for future use)";
+CM_ SG_ 359 NACK_Beep "Strategy BEEP acknoledge 
+Bit0 ACK (1: command confirmed, 0: command rejected);
+Bit1-7 are 0";
+CM_ SG_ 359 NVolume_Beep_FIA_Ack "Strategy BEEP acknoledge tone volume in dB";
+CM_ SG_ 359 NDuration_Beep_FIA_Ack "Strategy BEEP acknoledge tone remaining duration in ms";
+CM_ SG_ 359 NFreq_Beep_Audio_Ack "Strategy BEEP acknoledge tone frequency in Hz";
+CM_ BO_ 377 "Max power integrators";
+CM_ SG_ 377 PIllegalRTorq_Regen "Rear MGU regen max power integrator - based on rear driveshaft torquemeters";
+CM_ SG_ 377 PIllegalT_Regen "Total RESS regen max power integrator";
+CM_ SG_ 377 PIllegalR_Regen "Rear MGU regen max power integrator";
+CM_ SG_ 377 PIllegalF_Regen "Front MGU regen max power integrator";
+CM_ SG_ 377 PIllegalR_Release "Rear MGU release max power integrator";
+CM_ BO_ 375 "Front energy / DCDC energy over 1.4kW / Total energy";
+CM_ SG_ 375 EnergyDCDC_FIA "Energy used by DCDC RESS output when power > 1.4kW. Use raw value of IVT4S Current and IV3S Voltage. Integrated at 1ms.";
+CM_ SG_ 375 EnergyReleaseF_FIA "Release energy from front inverter. Use raw values of IVT1S Current and Voltage. Integrated at 1ms. Not affected by DCDC>1.4kW
+Only when the FIA logger is turn on Gen3.5";
+CM_ SG_ 375 EnergyRegenF_FIA "Regen energy from front inverter. Use raw values of IVT1S Current and Voltage. Integrated at 1ms. Affected by regen coefficient. Not affected by DCDC>1.4kW";
+CM_ SG_ 375 EERSA1DC_Total_FIA "FIA Total race energy counter";
+CM_ BO_ 373 "GPS coordinate - delayed by 1s";
+CM_ SG_ 373 aGPSLongitude_FIA "GPS coordinate - delayed by 1s";
+CM_ SG_ 373 aGPSLatitude_FIA "GPS coordinate - delayed by 1s";
+CM_ BO_ 371 "Energy counters - Marshalling flags";
+CM_ SG_ 371 NDBCVersion "FIA Datalogger DBC version number. Valid for all DBCs from the 4 CAN Bus";
+CM_ SG_ 371 BrThrottlePdlLearningMax_FIA "FIA Throttle pedal maximum value learning flag";
+CM_ SG_ 371 BrThrottlePdlLearningMin_FIA "FIA Throttle pedal minimum value learning flag";
+CM_ SG_ 371 BAttackMode_FIA "Feedback of Attack mode arming button wired to FIA logger IN_DIG2 / steering wheel hardwired button output 2";
+CM_ SG_ 371 BPower_ShutDown_Trig "Maximum race energy shutdown triggered";
+CM_ SG_ 371 EnergyRegen_FIA "Regen energy from rear inverter. Use raw value of IVT2S Current and IV1S Voltage. Integrated at 1ms. Affected by regen coefficient. Affected by DCDC>1.4kW";
+CM_ SG_ 371 EnergyRelease_FIA "Release energy from rear inverter. Use raw value of IVT2S Current and IV1S Voltage. Integrated at 1ms. Affected by DCDC>1.4kW";
+CM_ SG_ 371 PitOutBeacon_FIA "In a periodic message, delay to be anticipated compare to raw value of the X2 transponder coming from message 0xCF or 0x161";
+CM_ SG_ 371 PitInBeacon_FIA "In a periodic message, delay to be anticipated compare to raw value of the X2 transponder coming from message 0xCF or 0x161";
+CM_ SG_ 371 StartFinishBeacon_FIA "In a periodic message, delay to be anticipated compare to raw value of the X2 transponder coming from message 0xCF or 0x161";
+CM_ SG_ 371 BFanBoost_FIA "Feedback of FanBoost button wired to FIA logger IN_DIG1 / steering wheel hardwired button output 1";
+CM_ BO_ 361 "Wheelspeeds - Rear MGU power based on torquemeters measurements";
+CM_ SG_ 361 PERSARTorq_Filtered_FIA "Rear MGU FIA Filtered power - Using rear driveshaft torquemeters";
+CM_ SG_ 361 WspRR_FIA "Rear right wheelspeed";
+CM_ SG_ 361 WspRL_FIA "Rear left wheelspeed";
+CM_ SG_ 361 WspFR_FIA "Front right wheelspeed";
+CM_ SG_ 361 WspFL_FIA "Front left wheelspeed";
+CM_ BO_ 372 "Team temperatures / inverter frequency";
+CM_ SG_ 372 Team_TInvPowerMod "Rear Inverter Power Module temperature (if multiple sensors, send max value)";
+CM_ SG_ 372 Team_TOilGB "Rear gearbox oil temperature";
+CM_ SG_ 372 Team_fInverter "Rear Inverter control frequency";
+CM_ SG_ 372 Team_pRadiator "PU cooler pressure (if multiple sensors, send max value)";
+CM_ SG_ 372 Team_TRadiator "Rear PU cooler temperature (if multiple sensors, send output value)";
+CM_ SG_ 372 Team_TInverter "Rear Inverter temperature - Except power module (if multiple sensors, send max value)";
+CM_ SG_ 372 Team_TMGU "Rear MGU temperature (if multiple sensors, send max value)";
+CM_ BO_ 370 "Team inverter current-voltage / Braking torque request";
+CM_ SG_ 370 Team_MFrictionFTgt "Front friction disk braking torque target.";
+CM_ SG_ 370 Team_MDriverBrakeRq "Total braking torque requested from actual pBrake applied by the driver.";
+CM_ SG_ 370 Team_VDCInverter "DC voltage measurement from the rear inverter";
+CM_ SG_ 370 Team_IDCInverter "DC current measurement from the rear inverter. + release / - recover";
+CM_ BO_ 368 "Team Generic";
+CM_ SG_ 368 Team_BLaunchActive "Set to 1 when you want to activate a launch with FPK in traction. Car must be stationnary to activate the Launch mode on FIA Logger side.
+Must go back to 0 after launch. Exit of launch mode on FIA logger will not used this flag, only used for activation.";
+CM_ SG_ 368 Team_BChargeFlapOpen "Set to 1 when the charge flap is open";
+CM_ SG_ 368 Team_NDriverPedalMap "Current driver throttle pedal map active. Need link with real power target
+1: 110kW Only shakedown
+2: 300kW
+3: 350kW Only Qualy duel timed lap/Attack mode
+
+128: activate the Gen3.5 mode (FPK in traction) until the next FIA logger power cycle";
+CM_ SG_ 368 Team_PERSADCTgt "Rear Inverter DC bus power target. + release / - recover";
+CM_ SG_ 368 Team_NHighPowerTimeScenario "Desired Attack mode scenario. Taken in account at the time of the 1st activation. Time given as example, TBC on Event Note
+If number of activations = 1 for a race, this channel will be ignored and the FIA logger will impose the time set in the Event Note";
+CM_ SG_ 368 Team_BChargerConnected "RESS charging status active";
+CM_ SG_ 368 Team_BDerating "Power unit derating mode - must be latched for at least 60s - used for FIA on throttle control";
+CM_ SG_ 368 Team_BSpeedLimiter "Speed limiter active - pit speed or FCY - Could be used ONLY when car is inside the pit lane or when a FCY or red flag is active
+It is tolerate also to be used to go on the dummy grid, outside an official session";
+CM_ SG_ 368 Team_pBrake "Absolute front brake pressure at the level of master cylinder / Spark sensor directly connected to the Team VCU";
+CM_ SG_ 368 Team_BReadytoMove "Current state of Ready to Move light. 0 OFF / 1 ON";
+CM_ SG_ 368 Team_BRainLight "Current state of RainLight. 0 OFF / 1 ON";
+CM_ SG_ 368 Team_BFanBoost "Fan boost activation - CAN redundancy of the steering wheel button output 2
+NRJ reset in private test";
+CM_ SG_ 368 Team_BAttackMode "Attack mode arming button - CAN redundancy of the steering wheel button output 1";
+CM_ SG_ 368 Team_CarManufacturer "Car Manufacturer ID";
+CM_ SG_ 368 Team_NGear "Please send 0 for virtual Neutral and x for virtual InGear. 15 is reverse gear";
+CM_ BO_ 360 "This message could be sent at a higher frequency to have a better update of the MGU speed for the ON THROTTLE control (task rate 1ms). Minimum rate is 10ms.";
+CM_ SG_ 360 Team_BMDRROffsetTriggerReq "Send 1 for the whole time of the offset procedure for Rear Right Tq sensor (3 torq sensor spins in 1 direction, 3 in the opposite direction). Set to 0 at the end. Will activate the logging and reset previous offset";
+CM_ SG_ 360 Team_BMDRLOffsetTriggerReq "Send 1 for the whole time of the offset procedure for Rear Left Tq sensor (3 torq sensor spins in 1 direction, 3 in the opposite direction). Set to 0 at the end. Will activate the logging and reset previous offset";
+CM_ SG_ 360 Team_rThrottlePedal "throttle pedal sensor direct position. 0% off throttle - 100% Full throttle";
+CM_ SG_ 360 Team_MMGUTgt "Rear MGU Torque Target sent to the inverter";
+CM_ SG_ 360 Team_MMGU "Rear MGU Torque estimated feedback from the inverter";
+CM_ SG_ 360 Team_nMGU "Rear MGU speed averaged over 10 rotations";
+BA_DEF_ SG_  "Gatewaysignal" INT 0 1;
+BA_DEF_ SG_  "GenSigAltSetting" STRING ;
+BA_DEF_ SG_  "GenSigAssignSetting" STRING ;
+BA_DEF_ SG_  "GenSigAutoGenDsp" ENUM  "No","Yes";
+BA_DEF_ SG_  "GenSigAutoGenSnd" ENUM  "No","Yes";
+BA_DEF_ SG_  "GenSigConditionalSend" STRING ;
+BA_DEF_ SG_  "GenSigEVName" STRING ;
+BA_DEF_ SG_  "GenSigEnvVarType" ENUM  "int","float","undef";
+BA_DEF_ SG_  "GenSigPostIfSetting" STRING ;
+BA_DEF_ SG_  "GenSigPostSetting" STRING ;
+BA_DEF_ SG_  "GenSigPreIfSetting" STRING ;
+BA_DEF_ SG_  "GenSigPreSetting" STRING ;
+BA_DEF_ SG_  "GenSigReceiveSetting" STRING ;
+BA_DEF_ SG_  "GenSigSNA" STRING ;
+BA_DEF_ SG_  "GenSigSpecialFunction" STRING ;
+BA_DEF_ SG_  "RID" STRING ;
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed";
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 0;
+BA_DEF_ SG_  "GenSigStartValue" INT 0 0;
+BA_DEF_ BO_  "DiagRequest" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagResponse" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagState" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgAltSetting" STRING ;
+BA_DEF_ BO_  "GenMsgAutoGenDsp" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgAutoGenSnd" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgConditionalSend" STRING ;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 0;
+BA_DEF_ BO_  "GenMsgEVName" STRING ;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgMinAcceptLength" INT 0 0;
+BA_DEF_ BO_  "GenMsgPostIfSetting" STRING ;
+BA_DEF_ BO_  "GenMsgPostSetting" STRING ;
+BA_DEF_ BO_  "GenMsgPreIfSetting" STRING ;
+BA_DEF_ BO_  "GenMsgPreSetting" STRING ;
+BA_DEF_ BO_  "GenMsgStartValue" STRING ;
+BA_DEF_ BO_  "NmInmMaster" ENUM  "no","yes";
+BA_DEF_ BO_  "NmMessage" ENUM  "No","Yes";
+BA_DEF_ BO_  "TpTxIndex" INT 0 99;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Cyclic","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed","IfActive","NoMsgSendType","NotUsed";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0;
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 0 0;
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 0;
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 0;
+BA_DEF_ BU_  "ILUsed" ENUM  "No","Yes";
+BA_DEF_ BU_  "NmNode" ENUM  "No","Yes";
+BA_DEF_ BU_  "NmStationAddress" HEX 0 64;
+BA_DEF_ BU_  "TpNodeBaseAddress" HEX 0 65535;
+BA_DEF_ BU_  "TpOwnSystemEcuNumber" HEX 0 255;
+BA_DEF_  "DBName" STRING ;
+BA_DEF_  "GenNWMSleepTime" INT 0 10000000;
+BA_DEF_  "ILTxTimeout" INT 0 10000;
+BA_DEF_  "NBTMax" INT 0 255;
+BA_DEF_  "NBTMin" INT 0 255;
+BA_DEF_  "NmBaseAddress" INT 0 0;
+BA_DEF_  "NmMessageCount" INT 0 64;
+BA_DEF_  "SamplePointMax" FLOAT 0 100;
+BA_DEF_  "SamplePointMin" FLOAT 0 100;
+BA_DEF_  "Version" HEX 0 255;
+BA_DEF_  "VersionWeek" INT 0 53;
+BA_DEF_  "VersionYear" INT 0 99;
+BA_DEF_  "Manufacturer" STRING ;
+BA_DEF_  "NmType" STRING ;
+BA_DEF_  "Baudrate" INT 0 1000000;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "ECU" STRING ;
+BA_DEF_ BU_  "CANoeJitterMax" INT 0 0;
+BA_DEF_ BU_  "CANoeJitterMin" INT 0 0;
+BA_DEF_ BU_  "CANoeDrift" INT 0 0;
+BA_DEF_ BU_  "CANoeStartDelay" INT 0 0;
+BA_DEF_REL_ BU_SG_REL_  "GenSigTimeoutTime" INT 0 0;
+BA_DEF_DEF_  "Gatewaysignal" 0;
+BA_DEF_DEF_  "GenSigAltSetting" "";
+BA_DEF_DEF_  "GenSigAssignSetting" "";
+BA_DEF_DEF_  "GenSigAutoGenDsp" "No";
+BA_DEF_DEF_  "GenSigAutoGenSnd" "No";
+BA_DEF_DEF_  "GenSigConditionalSend" "";
+BA_DEF_DEF_  "GenSigEVName" "";
+BA_DEF_DEF_  "GenSigEnvVarType" "undef";
+BA_DEF_DEF_  "GenSigPostIfSetting" "";
+BA_DEF_DEF_  "GenSigPostSetting" "";
+BA_DEF_DEF_  "GenSigPreIfSetting" "";
+BA_DEF_DEF_  "GenSigPreSetting" "";
+BA_DEF_DEF_  "GenSigReceiveSetting" "";
+BA_DEF_DEF_  "GenSigSNA" "";
+BA_DEF_DEF_  "GenSigSpecialFunction" "";
+BA_DEF_DEF_  "RID" "";
+BA_DEF_DEF_  "GenSigSendType" "Cyclic";
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "DiagRequest" "No";
+BA_DEF_DEF_  "DiagResponse" "No";
+BA_DEF_DEF_  "DiagState" "No";
+BA_DEF_DEF_  "GenMsgAltSetting" "";
+BA_DEF_DEF_  "GenMsgAutoGenDsp" "No";
+BA_DEF_DEF_  "GenMsgAutoGenSnd" "No";
+BA_DEF_DEF_  "GenMsgConditionalSend" "";
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgEVName" "";
+BA_DEF_DEF_  "GenMsgILSupport" "Yes";
+BA_DEF_DEF_  "GenMsgMinAcceptLength" 8;
+BA_DEF_DEF_  "GenMsgPostIfSetting" "";
+BA_DEF_DEF_  "GenMsgPostSetting" "";
+BA_DEF_DEF_  "GenMsgPreIfSetting" "";
+BA_DEF_DEF_  "GenMsgPreSetting" "";
+BA_DEF_DEF_  "GenMsgStartValue" "";
+BA_DEF_DEF_  "NmInmMaster" "no";
+BA_DEF_DEF_  "NmMessage" "No";
+BA_DEF_DEF_  "TpTxIndex" 0;
+BA_DEF_DEF_  "GenMsgSendType" "Cyclic";
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "ILUsed" "Yes";
+BA_DEF_DEF_  "NmNode" "Yes";
+BA_DEF_DEF_  "NmStationAddress" 0;
+BA_DEF_DEF_  "TpNodeBaseAddress" 0;
+BA_DEF_DEF_  "TpOwnSystemEcuNumber" 0;
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_  "GenNWMSleepTime" 10000000;
+BA_DEF_DEF_  "ILTxTimeout" 30;
+BA_DEF_DEF_  "NBTMax" 21;
+BA_DEF_DEF_  "NBTMin" 9;
+BA_DEF_DEF_  "NmBaseAddress" 1024;
+BA_DEF_DEF_  "NmMessageCount" 64;
+BA_DEF_DEF_  "SamplePointMax" 81.25;
+BA_DEF_DEF_  "SamplePointMin" 75;
+BA_DEF_DEF_  "Version" 160;
+BA_DEF_DEF_  "VersionWeek" 6;
+BA_DEF_DEF_  "VersionYear" 7;
+BA_DEF_DEF_  "Manufacturer" "FIA";
+BA_DEF_DEF_  "NmType" "";
+BA_DEF_DEF_  "Baudrate" 125000;
+BA_DEF_DEF_  "BusType" "";
+BA_DEF_DEF_  "NodeLayerModules" "";
+BA_DEF_DEF_  "ECU" "";
+BA_DEF_DEF_  "CANoeJitterMax" 0;
+BA_DEF_DEF_  "CANoeJitterMin" 0;
+BA_DEF_DEF_  "CANoeDrift" 0;
+BA_DEF_DEF_  "CANoeStartDelay" 0;
+BA_DEF_DEF_REL_ "GenSigTimeoutTime" 0;
+BA_ "NmMessageCount" 0;
+BA_ "NmBaseAddress" 0;
+BA_ "BusType" "CAN";
+BA_ "DBName" "FIALogger_FEGen3_CAN2_V12";
+BA_ "ECU" BU_ TEAM_ECU "TEAM_ECU";
+BA_ "ECU" BU_ FIA_MLS "FIA_MLS";
+BA_ "GenMsgCycleTime" BO_ 385 50;
+BA_ "GenMsgCycleTime" BO_ 365 2;
+BA_ "GenMsgCycleTime" BO_ 367 2;
+BA_ "GenMsgCycleTime" BO_ 98 20;
+BA_ "GenMsgCycleTime" BO_ 363 1000;
+BA_ "GenMsgCycleTime" BO_ 357 1000;
+BA_ "GenMsgCycleTime" BO_ 383 10;
+BA_ "GenMsgCycleTime" BO_ 102 1;
+BA_ "GenMsgCycleTime" BO_ 381 10;
+BA_ "GenMsgCycleTime" BO_ 379 50;
+BA_ "GenMsgCycleTime" BO_ 377 50;
+BA_ "GenMsgCycleTime" BO_ 375 100;
+BA_ "GenMsgCycleTime" BO_ 373 100;
+BA_ "GenMsgCycleTime" BO_ 371 100;
+BA_ "GenMsgCycleTime" BO_ 361 10;
+BA_ "GenMsgCycleTime" BO_ 372 200;
+BA_ "GenMsgCycleTime" BO_ 370 10;
+BA_ "GenMsgCycleTime" BO_ 368 10;
+BA_ "GenMsgCycleTime" BO_ 360 10;
+BA_ "GenSigStartValue" SG_ 98 TFPKAir_FIA 50;
+BA_ "GenSigStartValue" SG_ 383 PERSADC_Min_FIA 20000;
+BA_ "GenSigStartValue" SG_ 383 PERSADC_Max_FIA 20000;
+BA_ "GenSigStartValue" SG_ 358 Team_NFreq_Beep_Audio 200;
+BA_ "GenSigStartValue" SG_ 359 NFreq_Beep_Audio_Ack 200;
+VAL_ 362 Team_NLED_Emulate 3 "Attack Mode LED mode" 2 "Boost Charge LED mode" 1 "Ready to Drive LED mode" 0 "OFF" ;
+VAL_ 362 Team_NOnThrottleMode 1 "Power Control" 0 "Torque Control" ;
+VAL_ 362 Team_NRCS_Flag_Emulate 17 "DOUBLE YELLOW" 16 "Do not use" 15 "Do not use" 14 "SC - IN" 13 "SC" 12 "Do not use" 11 "FINISH" 10 "SLIPPERY" 9 "FCY" 8 "WHITE" 7 "YELLOW" 6 "Do not use" 5 "BLACK&WHITE" 4 "BLACK" 3 "RED" 2 "BLUE" 1 "GREEN" 0 "No Flag displayed" ;
+VAL_ 357 NMux165 2 "Current PTT Beep settings" 1 "Current volume config" ;
+VAL_ 102 NOnThrottleMode_FIA 1 "Power Control" 0 "Torque Control" ;
+VAL_ 102 ADR_BAccident 1 "Accident detected and recorded" 0 "No accident detected" ;
+VAL_ 368 Team_NDriverPedalMap 128 "Gen3.5 activation (Season 11&12)" 3 "350kW" 2 "300kW" 1 "110kW" ;
+VAL_ 368 Team_NHighPowerTimeScenario 3 "6 + 2 min" 2 "4 + 4 min" 1 "2 + 6 min" ;
+VAL_ 368 Team_CarManufacturer 10 "Porsche" 9 "Penske" 8 "Mercedes" 7 "NIO" 6 "Mahindra" 5 "Jaguar" 4 "DS" 3 "Nissan" 2 "BMW" 1 "Audi" 0 "None" ;
+

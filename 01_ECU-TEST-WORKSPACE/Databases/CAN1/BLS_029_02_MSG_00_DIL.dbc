@@ -1,0 +1,633 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: VCU DCDC FIA_MLS XAP IMU CIM BMS
+
+
+VAL_TABLE_ BAccident 1 "Accident detected and recorded" 0 "No accident detected" ;
+VAL_TABLE_ NHighPowerScenario 5 "6 + 2 min" 4 "5 + 3 min" 3 "4 + 4 min" 2 "3 + 5 min" 1 "2 + 6 min" ;
+VAL_TABLE_ RCS_Flag 17 "DOUBLE YELLOW" 16 "Do not use" 15 "Do not use" 14 "SC - IN" 13 "SC" 12 "Do not use" 11 "FINISH" 10 "SLIPPERY" 9 "FCY" 8 "WHITE" 7 "YELLOW" 6 "Do not use" 5 "BLACK&WHITE" 4 "BLACK" 3 "RED" 2 "BLUE" 1 "GREEN" 0 "No Flag displayed" ;
+VAL_TABLE_ NMux165 2 "Current PTT Beep settings" 1 "Current volume config" ;
+VAL_TABLE_ NMux164 4 "PTT Default settings" 3 "Audio Default settings" 2 "PTT Custom settings" 1 "Audio Custom settings" ;
+VAL_TABLE_ PowerMode 3 "350kW" 2 "300kW" 1 "110kW" ;
+VAL_TABLE_ CarManufacturer_FIA 10 "Porsche" 9 "Penske" 8 "Mercedes" 7 "NIO" 6 "Mahindra" 5 "Jaguar" 4 "DS" 3 "Nissan" 2 "BMW" 1 "Audi" 0 "None" ;
+VAL_TABLE_ KeyMatched 1 "Correct Key" 0 "Incorrect Key" ;
+VAL_TABLE_ ClearFault 1 "Clear Fault Command" 0 "NA" ;
+
+
+
+BO_ 917 NDCDCValueOutput2: 8 DCDC
+ SG_ IDCDCOutput2Average : 53|10@1+ (0.5,-200) [-200|311.5] "A"  VCU
+ SG_ VDCDCOutput2Average : 22|11@1+ (0.0305884296,0) [0|62.614515391] "V"  VCU
+ SG_ VDCDCOutput2Max : 11|11@1+ (0.0305884296,0) [0|62.614515391] "V"  VCU
+ SG_ VDCDCOutput2Min : 0|11@1+ (0.0305884296,0) [0|62.614515391] "V"  VCU
+
+BO_ 916 NDCDCValueOutput1: 8 DCDC
+ SG_ IDCDCOutput1Average : 53|10@1+ (0.5,-200) [-200|311.5] "A"  VCU
+ SG_ VDCDCOutput1Average : 22|11@1+ (0.0305884296,0) [0|62.614515391] "V"  VCU
+ SG_ VDCDCOutput1Max : 11|11@1+ (0.0305884296,0) [0|62.614515391] "V"  VCU
+ SG_ VDCDCOutput1Min : 0|11@1+ (0.0305884296,0) [0|62.614515391] "V"  VCU
+
+BO_ 915 NDCDCValue: 8 DCDC
+ SG_ BDCDCFlashSubzoneError m5 : 63|1@1+ (1,0) [0|1] ""  VCU
+ SG_ NDCDCXcpFaults m8 : 32|16@1+ (1,0) [0|65535] ""  VCU
+ SG_ NDCDCRcpWarning m5 : 62|1@1+ (1,0) [0|1] ""  VCU
+ SG_ IDCDCHVInAverage m8 : 48|12@1+ (0.0125,-25) [-25|26.1875] "A"  VCU
+ SG_ NDCDCSerial m7 : 32|32@1+ (1,0) [0|4294967295] ""  VCU
+ SG_ NDCDCBootloaderId m6 : 48|16@1+ (1,0) [0|65535] ""  VCU
+ SG_ NDCDCApplicationId m6 : 32|16@1+ (1,0) [0|65535] ""  VCU
+ SG_ NDCDCChecksum m5 : 32|16@1+ (1,0) [0|65535] ""  VCU
+ SG_ NDCDCOutputOverload2Count m4 : 40|8@1+ (1,0) [0|255] ""  VCU
+ SG_ NDCDCOutputOverload1Count m4 : 32|8@1+ (1,0) [0|255] ""  VCU
+ SG_ TDCDCBB4Measured m3 : 56|8@1+ (1,-40) [-40|215] "째C"  VCU
+ SG_ TDCDCBB3Measured m3 : 48|8@1+ (1,-40) [-40|215] "째C"  VCU
+ SG_ TDCDCBB2Measured m3 : 40|8@1+ (1,-40) [-40|215] "째C"  VCU
+ SG_ TDCDCBB1Measured m3 : 32|8@1+ (1,-40) [-40|215] "째C"  VCU
+ SG_ TDCDCSR2Measured m2 : 48|8@1+ (1,-40) [-40|215] "째C"  VCU
+ SG_ TDCDCSR1Measured m2 : 40|8@1+ (1,-40) [-40|215] "째C"  VCU
+ SG_ IDCDCOutput2UnBalance m1 : 56|8@1+ (0.25,0) [0|63.75] "A"  VCU
+ SG_ IDCDCOutput1UnBalance m1 : 48|8@1+ (0.25,0) [0|63.75] "A"  VCU
+ SG_ VDCDCAux5Measured m1 : 40|8@1+ (0.01289377,0) [0|3.28791135] "V"  VCU
+ SG_ VDCDCAux4Measured m1 : 32|8@1+ (0.0386813,0) [0|9.8637315] "V"  VCU
+ SG_ VDCDCAux3Measured m0 : 56|8@1+ (0.015472526,0) [0|3.94549413] "V"  VCU
+ SG_ VDCDCAux2Measured m0 : 48|8@1+ (0.0386813,0) [0|9.8637315] "V"  VCU
+ SG_ VDCDCAux1Measured m0 : 40|8@1+ (0.07723368,0) [0|19.6945884] "V"  VCU
+ SG_ VDCDCHVInAverage m0 : 32|8@1+ (4.894148739,0) [0|1248.0079284] "V"  VCU
+ SG_ Multiplexer M : 27|5@1+ (1,0) [0|31] ""  VCU
+ SG_ VDCDCLVInAverage : 18|9@1+ (0.1223537,0) [0|62.5227407] "V"  VCU
+ SG_ VDCDCLVInMax : 9|9@1+ (0.1223537,0) [0|62.5227407] "V"  VCU
+ SG_ VDCDCLVInMin : 0|9@1+ (0.1223537,0) [0|62.5227407] "V"  VCU
+
+BO_ 914 NDCDCStatus: 4 DCDC
+ SG_ BDCDCRegenerationDemanded : 31|1@1+ (1,0) [0|1] ""  VCU
+ SG_ BDCDCUmbilicalDemanded : 30|1@1+ (1,0) [0|1] ""  VCU
+ SG_ BDCDCSR2OtpError : 29|1@1+ (1,0) [0|1] ""  VCU
+ SG_ BDCDCSR1OtpError : 28|1@1+ (1,0) [0|1] ""  VCU
+ SG_ BDCDCBB4OtpError : 27|1@1+ (1,0) [0|1] ""  VCU
+ SG_ BDCDCBB3OtpError : 26|1@1+ (1,0) [0|1] ""  VCU
+ SG_ BDCDCBB2OtpError : 25|1@1+ (1,0) [0|1] ""  VCU
+ SG_ BDCDCBB1OtpError : 24|1@1+ (1,0) [0|1] ""  VCU
+ SG_ BDCDCOutput2Warning : 17|1@1+ (1,0) [0|1] ""  VCU
+ SG_ BDCDCOutput2OvpError : 16|1@1+ (1,0) [0|1] ""  VCU
+ SG_ BDCDCOutput2Demanded : 15|1@1+ (1,0) [0|1] ""  VCU
+ SG_ BDCDCOutput1Warning : 14|1@1+ (1,0) [0|1] ""  VCU
+ SG_ BDCDCOutput1OvpError : 13|1@1+ (1,0) [0|1] ""  VCU
+ SG_ BDCDCOutput1Demanded : 12|1@1+ (1,0) [0|1] ""  VCU
+ SG_ BDCDCHVOcpError : 11|1@1+ (1,0) [0|1] ""  VCU
+ SG_ BDCDCHVError : 10|1@1+ (1,0) [0|1] ""  VCU
+ SG_ BDCDCLVUvpAlimAuxError : 9|1@1+ (1,0) [0|1] ""  VCU
+ SG_ BDCDCLVUvpInError : 8|1@1+ (1,0) [0|1] ""  VCU
+ SG_ BDCDCLVOvpInError : 7|1@1+ (1,0) [0|1] ""  VCU
+ SG_ BDCDCAuxIsoEnabled : 6|1@1+ (1,0) [0|1] ""  VCU
+ SG_ BDCDCCANError : 5|1@1+ (1,0) [0|1] ""  VCU
+ SG_ BDCDCWakeUp : 4|1@1+ (1,0) [0|1] ""  VCU
+ SG_ NDCDCState : 0|4@1+ (1,0) [0|15] ""  VCU
+
+BO_ 913 NDCDCSetpoints: 4 VCU
+ SG_ VDCDCHVSetpoint m9 : 8|12@1+ (0.25,0) [0|1023.75] "V"  DCDC
+ SG_ IDCDCHVLimit m9 : 20|12@1+ (0.0125,-25) [-25|26.1875] "A"  DCDC
+ SG_ VDCDCLV2Setpoint m2 : 8|12@1+ (0.0152942148,0) [0|62.629809606] "V"  DCDC
+ SG_ VDCDCLV1Setpoint m1 : 8|12@1+ (0.0152942148,0) [0|62.629809606] "V"  DCDC
+ SG_ IDCDCLV2Limit m2 : 20|12@1+ (0.25,-500) [-500|523.75] "A"  DCDC
+ SG_ IDCDCLV1Limit m1 : 20|12@1+ (0.25,-500) [-500|523.75] "A"  DCDC
+ SG_ NDCDCMultiplexer M : 0|8@1+ (1,0) [0|255] ""  DCDC
+
+BO_ 912 NDCDCControl: 3 VCU
+ SG_ BDCDCRegenerationOn : 17|1@1+ (1,0) [0|1] ""  DCDC
+ SG_ BDCDCUmbilicalOn : 16|1@1+ (1,0) [0|1] ""  DCDC
+ SG_ BDCDCOutput2Requested : 9|1@1+ (1,0) [0|1] ""  DCDC
+ SG_ BDCDCOutput1Requested : 8|1@1+ (1,0) [0|1] ""  DCDC
+ SG_ NPDBCounter : 0|8@1+ (1,0) [0|255] ""  DCDC
+
+BO_ 873 FIA_2_XAP_0x369: 8 XAP
+
+BO_ 872 FIA_2_XAP_0x368: 8 XAP
+
+BO_ 1055 FIA_Forbidden13: 8 FIA_MLS
+
+BO_ 1054 FIA_Forbidden12: 8 FIA_MLS
+
+BO_ 1053 FIA_Forbidden11: 8 FIA_MLS
+
+BO_ 1052 FIA_Forbidden10: 8 FIA_MLS
+
+BO_ 1039 FIA_Forbidden09: 8 FIA_MLS
+
+BO_ 1038 FIA_Forbidden08: 8 FIA_MLS
+
+BO_ 1037 FIA_Forbidden07: 8 FIA_MLS
+
+BO_ 1036 FIA_Forbidden06: 8 FIA_MLS
+
+BO_ 128 FIA_Forbidden05: 8 FIA_MLS
+
+BO_ 1147 FIA_Forbidden04: 8 FIA_MLS
+
+BO_ 1146 FIA_Forbidden03: 8 FIA_MLS
+
+BO_ 1145 FIA_Forbidden02: 8 FIA_MLS
+
+BO_ 1144 FIA_Forbidden01: 8 FIA_MLS
+
+BO_ 98 FIA_2_ECU_0x62: 8 FIA_MLS
+ SG_ TFPKCoolantOutlet_FIA : 55|8@0+ (1,-40) [-40|215] "캜"  VCU
+ SG_ TFPKAir_FIA : 47|8@0+ (0.4,-20) [-20|82] "캜"  VCU
+ SG_ VpBrakeSBSRaw_FIA : 27|12@0+ (1.221001221,0) [0|5000] "mV"  VCU
+ SG_ NCounter0x62 : 7|4@0+ (1,0) [0|15] ""  VCU
+ SG_ VTBrakeFRRaw_FIA : 23|12@0+ (1.221001221,0) [0|5000] "mV"  VCU
+ SG_ VTBrakeFLRaw_FIA : 3|12@0+ (1.221001221,0) [0|5000] "mV"  VCU
+
+BO_ 96 FIA_2_ECU_0x60: 8 FIA_MLS
+ SG_ NChecksum0x60 : 63|8@0+ (1,0) [0|255] ""  VCU
+ SG_ NCounter0x60 : 7|4@0+ (1,0) [0|15] ""  VCU
+ SG_ VxBrakeRaw_FIA : 43|12@0+ (1.221001221,0) [0|5000] "mV"  VCU
+ SG_ VpBrakeRaw_FIA : 39|12@0+ (1.221001221,0) [0|5000] "mV"  VCU
+ SG_ VpCaliperRaw_FIA : 19|12@0+ (1.221001221,0) [0|5000] "mV"  VCU
+ SG_ VrThrottle1Raw_FIA : 15|12@0+ (1.221001221,0) [0|5000] "mV"  VCU
+
+BO_ 102 FIA_2_ECU_0x66: 6 FIA_MLS
+ SG_ ADR_AccidentSeverity : 35|12@0+ (0.0763,0) [0|312.4485] "g"  VCU
+ SG_ ADR_AccZ : 31|12@0- (0.1526,0) [-312.5248|312.3722] "g"  VCU
+ SG_ ADR_AccY : 11|12@0- (0.1526,0) [-312.5248|312.3722] "g"  VCU
+ SG_ ADR_AccX : 7|12@0- (0.1526,0) [-312.5248|312.3722] "g"  VCU
+
+BO_ 881 FIA_2_XAP_0x371: 8 FIA_MLS
+ SG_ NRCSLedXAP : 7|8@0+ (1,0) [0|255] ""  XAP,FIA_MLS
+
+BO_ 880 FIA_2_XAP_0x370: 8 FIA_MLS
+ SG_ PrimLedBanner : 63|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ NRCSLedDimXAP : 55|8@0+ (1,0) [0|255] ""  XAP,FIA_MLS
+ SG_ NRCSFlagDimXAP : 31|8@0+ (1,0) [0|255] ""  XAP,FIA_MLS
+ SG_ NRCSFlagXAP : 15|8@0+ (1,0) [0|65535] ""  XAP,FIA_MLS
+
+BO_ 882 FIA_2_XAP_0x372: 8 FIA_MLS
+ SG_ XAP_Sig8 : 63|8@0+ (1,0) [0|255] ""  XAP
+ SG_ XAP_Sig7 : 55|8@0+ (1,0) [0|255] ""  XAP
+ SG_ XAP_Sig6 : 47|8@0+ (1,0) [0|255] ""  XAP
+ SG_ XAP_Sig5 : 39|8@0+ (1,0) [0|255] ""  XAP
+ SG_ XAP_Sig4 : 31|8@0+ (1,0) [0|255] ""  XAP
+ SG_ XAP_Sig3 : 23|8@0+ (1,0) [0|255] ""  XAP
+ SG_ XAP_Sig2 : 15|8@0+ (1,0) [0|255] ""  XAP
+ SG_ XAP_Sig1 : 7|8@0+ (1,0) [0|255] ""  XAP
+
+BO_ 1008 Tx1: 8 IMU
+ SG_ AccTemp : 55|16@0- (0.1,0) [-3276.8|3276.7] "캜" Vector__XXX
+ SG_ AccZ_user : 39|16@0- (0.001,0) [-32.768|32.767] "g" Vector__XXX
+ SG_ AccY_user : 23|16@0- (0.001,0) [-32.768|32.767] "g" Vector__XXX
+ SG_ AccX_user : 7|16@0- (0.001,0) [-32.768|32.767] "g" Vector__XXX
+
+BO_ 1012 Tx2: 8 IMU
+ SG_ GyrTemp : 55|16@0- (0.1,0) [-3276.8|3276.7] "캜" Vector__XXX
+ SG_ GyrZ_user : 39|16@0- (0.01,0) [-327.68|327.67] "�/s" Vector__XXX
+ SG_ GyrY_user : 23|16@0- (0.01,0) [-327.68|327.67] "�/s" Vector__XXX
+ SG_ GyrX_user : 7|16@0- (0.01,0) [-327.68|327.67] "�/s" Vector__XXX
+
+BO_ 274 BMS_HV_12: 8 BMS
+ SG_ nBatteryHV12Multiplexor M : 0|3@1+ (1,0) [0|7] ""  VCU
+ SG_ Batt_SerialNumber m1 : 56|8@1+ (1,0) [0|255] ""  VCU
+ SG_ BMS_Calibration_info m0 : 32|8@1+ (1,0) [0|255] ""  VCU
+ SG_ BMS_Software_info m0 : 24|8@1+ (1,0) [0|255] ""  VCU
+
+BO_ 265 BMS_HV_10: 6 BMS
+ SG_ Batt_RegenPowerLim_5s : 11|11@1+ (0.5,0) [0|1023.5] "kW"  VCU
+ SG_ Batt_RegenPowerLim_2s : 0|11@1+ (0.5,0) [0|1023.5] "kW"  VCU
+ SG_ Batt_DischargePowerLim_5s : 32|10@1+ (0.5,-511.5) [-511.5|0] "kW"  VCU
+ SG_ Batt_DischargePowerLim_2s : 22|10@1+ (0.5,-511.5) [-511.5|0] "kW"  VCU
+
+BO_ 272 BMS_HV_09: 8 BMS
+ SG_ Batt_FaultActive_FR4 : 60|1@1+ (1,0) [0|1] ""  VCU
+ SG_ Batt_ClearFault_Code : 0|14@1+ (1,0) [0|9999] ""  VCU
+ SG_ BMS_LoggingFull : 15|1@1+ (1,0) [0|1] ""  VCU
+ SG_ Batt_MaxSOC : 16|10@1+ (0.1,0) [0|102.3] "%"  VCU
+ SG_ Batt_LoggerPercent : 32|8@1+ (0.5,0) [0|127.5] "%"  VCU
+ SG_ Batt_ClearFault_KeyMatched : 14|1@1+ (1,0) [0|1] ""  VCU
+
+BO_ 264 VCM_FaultClearing: 8 VCU
+ SG_ VCM_ClearBattFault_Key : 8|14@1+ (1,0) [0|9999] ""  BMS
+ SG_ VCM_ClearBattFault_B : 0|1@1+ (1,0) [0|1] ""  BMS
+
+BO_ 262 VCM_WorkingMode: 8 VCU
+ SG_ VCM_VehCCSMaxChrgLim : 54|2@1+ (1,0) [0|3] ""  BMS
+ SG_ VCM_BypassValvePosRef : 32|16@1+ (0.1,0) [0|1000] "%"  BMS
+ SG_ VCM_BypassValvePosition : 16|16@1+ (0.1,0) [0|1000] "%"  BMS
+ SG_ VCM_VehicleWorkingMode : 0|5@1+ (1,0) [0|31] ""  BMS
+
+BO_ 1537 BMS_CCP_TX: 8 BMS
+
+BO_ 1536 BMS_CCP_RX: 8 BMS
+
+BO_ 301 CIM_HV_01: 8 CIM
+ SG_ CIM_PlugPresentHV : 16|2@1+ (1,0) [0|3] ""  BMS,VCU
+ SG_ CIM_ChargingPlugTypeHV : 10|2@1+ (1,0) [0|3] ""  BMS,VCU
+ SG_ CIM_ChargeStatusHV : 18|4@1+ (1,0) [0|15] ""  BMS,VCU
+ SG_ CIM_ChargePlugLockStatusHV : 8|2@1+ (1,0) [0|3] ""  BMS,VCU
+
+BO_ 260 VCM_HV_01: 8 VCU
+ SG_ VCM_Coolant_PumpSpeed : 56|8@1+ (100,0) [0|25500] "RPM"  BMS
+ SG_ VCM_CrashStatus : 32|16@1+ (1,0) [0|65535] ""  BMS
+ SG_ VCM_AliveCounter1 : 8|8@1+ (1,0) [0|255] ""  BMS
+ SG_ VCM_VehicleSpeed : 16|16@1+ (1,-32768) [-32768|32767] "kph"  BMS
+ SG_ VCM_ChargeCancelRequest : 4|1@1+ (1,0) [0|1] ""  BMS
+
+BO_ 261 VCM_HV_02: 8 VCU
+ SG_ VCM_LapNumber : 56|8@1+ (1,0) [0|255] ""  BMS
+ SG_ Time_Year : 0|8@1+ (1,0) [0|255] "min"  BMS
+ SG_ Time_Valid : 48|8@1+ (1,0) [0|255] "min"  BMS
+ SG_ Time_Sec : 40|8@1+ (1,0) [0|255] "min"  BMS
+ SG_ Time_Month : 8|8@1+ (1,0) [0|255] "min"  BMS
+ SG_ Time_Min : 32|8@1+ (1,0) [0|255] "min"  BMS
+ SG_ Time_Hour : 24|8@1+ (1,0) [0|255] "min"  BMS
+ SG_ Time_Day : 16|8@1+ (1,0) [0|255] "min"  BMS
+
+BO_ 210 BMS_HV_08: 8 BMS
+ SG_ Batt_SafetyLightStatRedHV : 47|1@1+ (1,0) [0|1] ""  VCU
+ SG_ Batt_SafetyLightStatGreenHV : 46|1@1+ (1,0) [0|1] ""  VCU
+ SG_ Batt_DischEnergyThroughput : 48|16@1+ (0.5,0) [0|32767.5] "kWh"  VCU
+ SG_ Batt_BoostChargeActive : 30|1@1+ (1,0) [0|1] ""  VCU
+ SG_ Batt_ReadyforBoostCharge : 12|1@1+ (1,0) [0|1] ""  VCU
+
+BO_ 206 BMS_HV_06: 8 BMS
+ SG_ Batt_Isolation1Res_HighRange : 16|16@1+ (1,0) [0|65535] "kOhm"  VCU
+ SG_ Batt_EnergyAvailable : 48|12@1+ (0.1,0) [0|409.5] "kWh"  VCU
+ SG_ Batt_LVVoltage : 32|12@1+ (0.01,0) [0|40.95] "V"  VCU
+ SG_ Batt_Isolation1Resistance : 0|16@1+ (0.1,0) [0|6553.5] "kOhm"  VCU
+
+BO_ 207 BMS_HV_07_Thermal: 8 BMS
+ SG_ Batt_Coolant_OUT_Temp : 56|8@1+ (0.5,-20) [-10|117.5] "C"  VCU
+ SG_ Batt_Coolant_OUT_Pressure : 41|13@1+ (0.001,0) [0|8.191] "Bar"  VCU
+ SG_ Batt_Coolant_IN_Temp : 33|8@1+ (0.5,-20) [-10|117.5] "C"  VCU
+ SG_ Batt_Coolant_IN_Pressure : 20|13@1+ (0.001,0) [0|8.191] "Bar"  VCU
+ SG_ Batt_LVBackupBattVoltage : 8|12@1+ (0.01,0) [0|40.95] "V"  VCU
+ SG_ Batt_ThermalRequest : 0|8@1+ (1,-128) [-128|127] ""  VCU
+
+BO_ 205 BMS_HV_05_CellParam: 8 BMS
+ SG_ Batt_MinCellVoltage : 16|14@1+ (0.001,0) [0|16.383] "V"  VCU
+ SG_ Batt_MaxCellVoltage : 0|14@1+ (0.001,0) [0|16.383] "V"  VCU
+ SG_ Batt_MinCellTemperature : 48|12@1+ (0.05,-60) [-60|144.75] "C"  VCU
+ SG_ Batt_MaxCellTemperature : 32|12@1+ (0.05,-60) [-60|144.75] "C"  VCU
+
+BO_ 204 BMS_HV_04_ContactorStatus: 8 BMS
+ SG_ Batt_InvOutVoltage : 32|14@1+ (0.1,0) [0|1638.3] "V"  VCU
+ SG_ Batt_AncOutVoltage : 16|14@1+ (0.1,0) [0|1638.3] "V"  VCU
+ SG_ Batt_MainContactorStatus : 0|4@1+ (1,0) [0|15] ""  VCU
+ SG_ Batt_ChargeContactorStatus : 4|3@1+ (1,0) [0|7] ""  VCU
+
+BO_ 203 BMS_HV_03_BatteryLimits: 8 BMS
+ SG_ BMS_AliveCounter3 : 54|2@1+ (1,0) [0|3] ""  VCU
+ SG_ Batt_DischargePowerLim : 0|16@1+ (0.05,-3276.75) [-3276.75|0] "kW"  VCU
+ SG_ Batt_RegenPowerLim : 30|13@1+ (0.1,0) [0|819.1] "kW"  VCU
+
+BO_ 202 BMS_HV_02_HVParameter: 8 BMS
+ SG_ BMS_AliveCounter2 : 0|4@1+ (1,0) [0|15] ""  VCU
+ SG_ Batt_Current : 32|16@1+ (0.1,-3276.8) [-3276.8|3276.7] "A"  VCU
+ SG_ Batt_Voltage : 48|14@1+ (0.1,0) [0|1638.3] "V"  VCU
+
+BO_ 201 BMS_HV_01_Status: 8 BMS
+ SG_ Batt_Equity_SoC_Displayed : 9|1@1+ (1,0) [0|1] ""  VCU
+ SG_ BMS_AliveCounter1 : 26|4@1+ (1,0) [0|15] ""  VCU
+ SG_ Batt_UserSOC : 32|10@1+ (0.1,0) [0|102.3] "%"  VCU
+ SG_ Batt_MinSOC : 16|10@1+ (0.1,0) [0|102.3] "%"  VCU
+ SG_ Batt_ReadytoTurnOnHV : 0|1@1+ (1,0) [0|1] ""  VCU
+ SG_ Batt_BMSStatus : 48|5@1+ (1,0) [0|31] ""  VCU
+ SG_ Batt_Isolation2Status : 14|2@1+ (1,0) [0|3] ""  VCU
+ SG_ Batt_Isolation1Status : 42|2@1+ (1,0) [0|3] ""  VCU
+ SG_ Batt_HVILFault : 30|2@1+ (1,0) [0|3] ""  VCU
+ SG_ Batt_Isolation2OnOffStatus : 13|1@1+ (1,0) [0|1] ""  VCU
+ SG_ Batt_Isolation1OnOffStatus : 12|1@1+ (1,0) [0|1] ""  VCU
+ SG_ Batt_BalancingRequired : 10|1@1+ (1,0) [0|1] ""  VCU
+ SG_ Batt_Fault_FR7 : 8|1@1+ (1,0) [0|1] ""  VCU
+ SG_ Batt_Fault_FR6 : 7|1@1+ (1,0) [0|1] ""  VCU
+ SG_ Batt_Fault_FR5 : 6|1@1+ (1,0) [0|1] ""  VCU
+ SG_ Batt_Fault_FR4 : 5|1@1+ (1,0) [0|1] ""  VCU
+ SG_ Batt_Fault_FR3 : 4|1@1+ (1,0) [0|1] ""  VCU
+ SG_ Batt_Fault_FR2 : 3|1@1+ (1,0) [0|1] ""  VCU
+ SG_ Batt_Fault_FR1 : 2|1@1+ (1,0) [0|1] ""  VCU
+ SG_ Batt_Fault_FR0 : 1|1@1+ (1,0) [0|1] ""  VCU
+
+
+
+CM_ BU_ VCU "
+";
+CM_ BU_ DCDC "DCDC Unit";
+CM_ BU_ CIM "Charge Interface Module";
+CM_ BU_ BMS "Battery Management System";
+CM_ BO_ 917 "Values Output 2";
+CM_ SG_ 917 IDCDCOutput2Average "Average value of output current 2";
+CM_ SG_ 917 VDCDCOutput2Average "Average value of output voltage 2";
+CM_ SG_ 917 VDCDCOutput2Max "Maximum value of the output voltage 2 seen since the last message sent";
+CM_ SG_ 917 VDCDCOutput2Min "Minimum value of the output voltage 2 seen since the last message sent";
+CM_ BO_ 916 "Values Output 1";
+CM_ SG_ 916 IDCDCOutput1Average "Average value of output current 1 ";
+CM_ SG_ 916 VDCDCOutput1Average "Average value of output voltage 1 ";
+CM_ SG_ 916 VDCDCOutput1Max "Maximum value of the output voltage 1 seen since the last message sent";
+CM_ SG_ 916 VDCDCOutput1Min "Minimum value of the output voltage 1 seen since the last message sent";
+CM_ BO_ 915 "Global values";
+CM_ SG_ 915 BDCDCFlashSubzoneError "Indicates that the flash subzone dedicated for Config and Settings is corrupted ";
+CM_ SG_ 915 NDCDCXcpFaults "Indicates an internal fault";
+CM_ SG_ 915 NDCDCRcpWarning "Warns the user of a potential problem on reverse current";
+CM_ SG_ 915 IDCDCHVInAverage "Input Current Average of the HV input";
+CM_ SG_ 915 NDCDCSerial "Product Serial Number";
+CM_ SG_ 915 NDCDCBootloaderId "Version number of the bootloader program";
+CM_ SG_ 915 NDCDCApplicationId "Version number of the application program";
+CM_ SG_ 915 NDCDCChecksum "Checksum of the application program";
+CM_ SG_ 915 NDCDCOutputOverload2Count "Counter indicating the number of times an overload is detected on output 2";
+CM_ SG_ 915 NDCDCOutputOverload1Count "Counter indicating the number of times an overload is detected on output 1";
+CM_ SG_ 915 TDCDCBB4Measured "BB4 temperature";
+CM_ SG_ 915 TDCDCBB3Measured "BB3 temperature";
+CM_ SG_ 915 TDCDCBB2Measured "BB2 temperature";
+CM_ SG_ 915 TDCDCBB1Measured "BB1 temperature";
+CM_ SG_ 915 TDCDCSR2Measured "SR2 temperature";
+CM_ SG_ 915 TDCDCSR1Measured "SR1 temperature";
+CM_ SG_ 915 IDCDCOutput2UnBalance "Detection of a current unbalance";
+CM_ SG_ 915 IDCDCOutput1UnBalance "Detection of a current unbalance";
+CM_ SG_ 915 VDCDCAux5Measured "BuckBoost current measurement reference voltage value";
+CM_ SG_ 915 VDCDCAux4Measured "Auxiliary voltage value of each buck-boost channel";
+CM_ SG_ 915 VDCDCAux3Measured "Auxiliary voltage 3V3 value: microcontroller";
+CM_ SG_ 915 VDCDCAux2Measured "Auxiliary voltage 5V value: CAN driver, GaN driver";
+CM_ SG_ 915 VDCDCAux1Measured "Auxiliary voltage LV value";
+CM_ SG_ 915 VDCDCHVInAverage "Input voltage Average of the HV input";
+CM_ SG_ 915 Multiplexer "Multiplexer ID";
+CM_ SG_ 915 VDCDCLVInAverage "Input voltage Average value of the LV stage";
+CM_ SG_ 915 VDCDCLVInMax "Maximum value of the LV input voltage seen since the last sent message";
+CM_ SG_ 915 VDCDCLVInMin "Minimum value of the LV input voltage seen since the last sent message";
+CM_ BO_ 914 "Overal DCDC Status & Diagnostic";
+CM_ SG_ 914 BDCDCRegenerationDemanded "Indicates that the regeneration start command has been received.";
+CM_ SG_ 914 BDCDCUmbilicalDemanded "Indicates that the umbilical start command has been received.";
+CM_ SG_ 914 BDCDCSR2OtpError "Overtemperature fault SR2";
+CM_ SG_ 914 BDCDCSR1OtpError "Overtemperature fault SR1";
+CM_ SG_ 914 BDCDCBB4OtpError "Overtemperature fault BB4";
+CM_ SG_ 914 BDCDCBB3OtpError "Overtemperature fault BB3";
+CM_ SG_ 914 BDCDCBB2OtpError "Overtemperature fault BB2";
+CM_ SG_ 914 BDCDCBB1OtpError "Overtemperature fault BB1";
+CM_ SG_ 914 BDCDCOutput2Warning "Warns the user of a potential problem on output 2, see MUT doc (user manuel) for further explanation.";
+CM_ SG_ 914 BDCDCOutput2OvpError "Output 2 overvoltage fault";
+CM_ SG_ 914 BDCDCOutput2Demanded "Indicates that the output start command has been received.";
+CM_ SG_ 914 BDCDCOutput1Warning "Warns the user of a potential problem on output 1, see MUT doc (user manuel) for further explanation.";
+CM_ SG_ 914 BDCDCOutput1OvpError "Output 1 overvoltage fault";
+CM_ SG_ 914 BDCDCOutput1Demanded "Indicates that the output start command has been received.";
+CM_ SG_ 914 BDCDCHVOcpError "Indicates HV overcurrent detection";
+CM_ SG_ 914 BDCDCHVError "Indicates an undervoltage fault on the HV input or an overtemperature fault on the HV stage";
+CM_ SG_ 914 BDCDCLVUvpAlimAuxError "Indicates an undervoltage fault on one of the auxiliary power supplies of the LV stage.";
+CM_ SG_ 914 BDCDCLVUvpInError "Indicates an undervoltage fault at the input of the LV stage.";
+CM_ SG_ 914 BDCDCLVOvpInError "Indicates an overvoltage fault at the input of the LV stage.";
+CM_ SG_ 914 BDCDCAuxIsoEnabled "Indicates that isolated auxiliary supplies are activated";
+CM_ SG_ 914 BDCDCCANError "Indicates an error on the CAN bus";
+CM_ SG_ 914 BDCDCWakeUp "Indicates the external signal WakeUp status";
+CM_ SG_ 914 NDCDCState "Indicates the overall product status";
+CM_ BO_ 913 "Control  of Setpoints";
+CM_ SG_ 913 VDCDCHVSetpoint "HV voltage's setpoint. Allowed range: 10V-950V";
+CM_ SG_ 913 IDCDCHVLimit "HV current's limitation";
+CM_ SG_ 913 VDCDCLV2Setpoint "Output 2 voltage's setpoint.";
+CM_ SG_ 913 VDCDCLV1Setpoint "Output 1 voltage's setpoint.";
+CM_ SG_ 913 IDCDCLV2Limit "Output 2 current's limitation.";
+CM_ SG_ 913 IDCDCLV1Limit "Output 1 current's limitation.";
+CM_ SG_ 913 NDCDCMultiplexer "Multiplexer ID: allows to select the output to apply the setpoints";
+CM_ BO_ 912 "Control message from the ECU";
+CM_ SG_ 912 BDCDCRegenerationOn "Start/Stop regeneration function command";
+CM_ SG_ 912 BDCDCUmbilicalOn "Start/Stop umbilical function command";
+CM_ SG_ 912 BDCDCOutput2Requested "Start/Stop output 2 command";
+CM_ SG_ 912 BDCDCOutput1Requested "Start/Stop output 1 command";
+CM_ SG_ 912 NPDBCounter "Counter for reception of CAN messages. If it does not change for more than 1sec then an error is detected (CAN error)";
+CM_ BO_ 873 "XAP Dash marshalling - Feedback LED and text displayed";
+CM_ BO_ 872 "XAP Dash marshalling - Feedback CRC from text displayed";
+CM_ BO_ 1055 "Reserved IDs for Marelli system - DO NOT USE";
+CM_ BO_ 1054 "Reserved IDs for Marelli system - DO NOT USE";
+CM_ BO_ 1053 "Reserved IDs for Marelli system - DO NOT USE";
+CM_ BO_ 1052 "Reserved IDs for Marelli system - DO NOT USE";
+CM_ BO_ 1039 "Reserved IDs for Marelli system - DO NOT USE";
+CM_ BO_ 1038 "Reserved IDs for Marelli system - DO NOT USE";
+CM_ BO_ 1037 "Reserved IDs for Marelli system - DO NOT USE";
+CM_ BO_ 1036 "Reserved IDs for Marelli system - DO NOT USE";
+CM_ BO_ 128 "Reserved IDs for Marelli system - DO NOT USE";
+CM_ BO_ 1147 "Reserved IDs for Marelli system - DO NOT USE";
+CM_ BO_ 1146 "Reserved IDs for Marelli system - DO NOT USE";
+CM_ BO_ 1145 "Reserved IDs for Marelli system - DO NOT USE";
+CM_ BO_ 1144 "Reserved IDs for Marelli system - DO NOT USE";
+CM_ BO_ 98 "Brake temp & SBS press / FPK temps";
+CM_ SG_ 98 TFPKCoolantOutlet_FIA "MLS Temp2";
+CM_ SG_ 98 TFPKAir_FIA "MLS Temp4";
+CM_ SG_ 98 VpBrakeSBSRaw_FIA "MLS Ana07";
+CM_ SG_ 98 NCounter0x62 "Rolling counter - incremented each time a message is sent";
+CM_ SG_ 98 VTBrakeFRRaw_FIA "MLS Ana13";
+CM_ SG_ 98 VTBrakeFLRaw_FIA "MLS Ana12";
+CM_ BO_ 96 "Throttle / Brake";
+CM_ SG_ 96 NChecksum0x60 "Sum of the 7 first bytes";
+CM_ SG_ 96 NCounter0x60 "Rolling counter - incremented each time a message is sent";
+CM_ SG_ 96 VxBrakeRaw_FIA "MLS Ana08";
+CM_ SG_ 96 VpBrakeRaw_FIA "MLS Ana06";
+CM_ SG_ 96 VpCaliperRaw_FIA "MLS Ana03";
+CM_ SG_ 96 VrThrottle1Raw_FIA "MLS Ana01";
+CM_ BO_ 102 "ADR";
+CM_ SG_ 102 ADR_AccidentSeverity "ADR accident severity computed by FIA logger. When goes different from 0 the blue medical light will flash.
+15G in X, Y or 25G in Z confirmed for 5ms in any axis";
+CM_ SG_ 102 ADR_AccZ "ADR sensor Vertical Acceleration. + compression / - detente. 0 when on ground";
+CM_ SG_ 102 ADR_AccY "ADR sensor Lateral Acceleration. + left turn / - right turn";
+CM_ SG_ 102 ADR_AccX "ADR sensor Longitudinal Acceleration. + acceleration / - braking";
+CM_ BO_ 881 "XAP Dash marshalling - LED Command";
+CM_ BO_ 880 "XAP Dash marshalling - LED command and text";
+CM_ BO_ 882 "XAP Dash marshalling - Text control";
+CM_ SG_ 274 Batt_SerialNumber "Batt_SerialNumber";
+CM_ SG_ 274 BMS_Calibration_info "BMS_Calibration_information";
+CM_ SG_ 274 BMS_Software_info "BMS_Software_information";
+CM_ SG_ 265 Batt_RegenPowerLim_5s "Battery Power Limit";
+CM_ SG_ 265 Batt_RegenPowerLim_2s "Battery Power Limit";
+CM_ SG_ 265 Batt_DischargePowerLim_5s "Battery Power Limit";
+CM_ SG_ 265 Batt_DischargePowerLim_2s "Battery Power Limit";
+CM_ SG_ 272 Batt_FaultActive_FR4 "BMS Fault Flag";
+CM_ SG_ 272 Batt_ClearFault_Code "Number generate by BMS to clear fault";
+CM_ SG_ 272 BMS_LoggingFull "BMS logger status full";
+CM_ SG_ 272 Batt_MaxSOC "Battery Maximum SoC";
+CM_ SG_ 272 Batt_LoggerPercent "BMS Logger Percentage";
+CM_ SG_ 272 Batt_ClearFault_KeyMatched "Key matched to clear the fault";
+CM_ SG_ 264 VCM_ClearBattFault_Key "Key for clearing latch fault on BMS";
+CM_ SG_ 264 VCM_ClearBattFault_B "Boolean singal to clear latch fault";
+CM_ SG_ 262 VCM_VehCCSMaxChrgLim "CCS charge max power limit if charger used with lower supply.
+Can't be changed mid charge.";
+CM_ SG_ 262 VCM_BypassValvePosRef "RESS SOBEK Coolant valve position reference forwarded from VehicleECU from SOBEK CAN message 0x365. 
+Must be the same signal forwarded, strictly identical as sent to SOBEK Coolant valve";
+CM_ SG_ 262 VCM_BypassValvePosition "RESS SOBEK Coolant valve position feedback forwarded from VehicleECU from SOBEK CAN message 0x375. 
+Must be the same signal forwarded, strictly identical as received by SOBEK valve";
+CM_ SG_ 262 VCM_VehicleWorkingMode "VCM Working Mode";
+CM_ SG_ 301 CIM_PlugPresentHV "Plug preset acknowledgement";
+CM_ SG_ 301 CIM_ChargingPlugTypeHV "Charge Plug Type";
+CM_ SG_ 301 CIM_ChargeStatusHV "Charge Status";
+CM_ SG_ 301 CIM_ChargePlugLockStatusHV "Charge Plug Lock Status";
+CM_ SG_ 260 VCM_Coolant_PumpSpeed "RESS SOBEK Coolant Pump Speed feedback forwarded from VehicleECU from SOBEK CAN message 0x371.";
+CM_ SG_ 260 VCM_CrashStatus "Crash Signal from VehicleECU. A non zero value will trigger crash and open contactors";
+CM_ SG_ 260 VCM_AliveCounter1 "VCM Alive Counter";
+CM_ SG_ 260 VCM_VehicleSpeed "Vehicle Speed";
+CM_ SG_ 260 VCM_ChargeCancelRequest "VCM Request to stop Charging";
+CM_ SG_ 261 Time_Valid "Validity flags ";
+CM_ SG_ 210 Batt_SafetyLightStatRedHV "Bttery safety light status RED";
+CM_ SG_ 210 Batt_SafetyLightStatGreenHV "Bttery safety light status Green";
+CM_ SG_ 210 Batt_DischEnergyThroughput "Discharge Energy Throughput";
+CM_ SG_ 210 Batt_BoostChargeActive "Boost charge active flag";
+CM_ SG_ 210 Batt_ReadyforBoostCharge "Battery Ready for Boost Charge";
+CM_ SG_ 206 Batt_Isolation1Res_HighRange "Isolation Resistance Value";
+CM_ SG_ 206 Batt_EnergyAvailable "Battery Energy Available";
+CM_ SG_ 206 Batt_LVVoltage "LV(KL30) supply Voltage";
+CM_ SG_ 206 Batt_Isolation1Resistance "Isolation Resistance Value";
+CM_ SG_ 207 Batt_Coolant_OUT_Temp "Coolant Temperature";
+CM_ SG_ 207 Batt_Coolant_OUT_Pressure "Coolant Pressure";
+CM_ SG_ 207 Batt_Coolant_IN_Temp "Coolant Temperature";
+CM_ SG_ 207 Batt_Coolant_IN_Pressure "Coolant Pressure";
+CM_ SG_ 207 Batt_LVBackupBattVoltage "LV(KL30) supply Voltage";
+CM_ SG_ 207 Batt_ThermalRequest "BMS Thermal Request
+Negative= Cooling Request
+Positive= Heating Request";
+CM_ SG_ 205 Batt_MinCellVoltage "Module Minimum Cell Voltage";
+CM_ SG_ 205 Batt_MaxCellVoltage "Module Maximum Cell Voltage";
+CM_ SG_ 205 Batt_MinCellTemperature "Minimum Module Temperature";
+CM_ SG_ 205 Batt_MaxCellTemperature "Maximum Module Temperature";
+CM_ SG_ 204 Batt_InvOutVoltage "HV Bus Voltage- Inverter Output";
+CM_ SG_ 204 Batt_AncOutVoltage "HV Bus Voltage- Ancillary Output";
+CM_ SG_ 204 Batt_MainContactorStatus " Main Contactor Status";
+CM_ SG_ 204 Batt_ChargeContactorStatus "Charge contactor status";
+CM_ SG_ 203 BMS_AliveCounter3 "BMS Alive Counter";
+CM_ SG_ 203 Batt_DischargePowerLim "Battery Power Limit";
+CM_ SG_ 203 Batt_RegenPowerLim "Battery Power Limit";
+CM_ SG_ 202 BMS_AliveCounter2 "BMS Alive Counter";
+CM_ SG_ 202 Batt_Current "Battery Current
+Negative Value= Discharge Current
+Positive Value= Regen/Charge Current";
+CM_ SG_ 202 Batt_Voltage "Battery Voltage";
+CM_ SG_ 201 Batt_Equity_SoC_Displayed "BMS Equity SoC displayed";
+CM_ SG_ 201 BMS_AliveCounter1 "BMS Alive Counter";
+CM_ SG_ 201 Batt_UserSOC "Battery User SoC (for Display Purpose)";
+CM_ SG_ 201 Batt_MinSOC "Battery Minimum SoC";
+CM_ SG_ 201 Batt_ReadytoTurnOnHV "BMS Ready to close HV Contactors";
+CM_ SG_ 201 Batt_BMSStatus "BMS Status";
+CM_ SG_ 201 Batt_Isolation2Status "Battery Isolation Status";
+CM_ SG_ 201 Batt_Isolation1Status "Battery Isolation Status";
+CM_ SG_ 201 Batt_HVILFault "Battery HVIL Status";
+CM_ SG_ 201 Batt_Isolation2OnOffStatus "Isolation Enable/Disable Status";
+CM_ SG_ 201 Batt_Isolation1OnOffStatus "Isolation Enable/Disable Status";
+CM_ SG_ 201 Batt_BalancingRequired "Battery Cell balancing required";
+CM_ SG_ 201 Batt_Fault_FR7 "BMS Fault Flag";
+CM_ SG_ 201 Batt_Fault_FR6 "BMS Fault Flag";
+CM_ SG_ 201 Batt_Fault_FR5 "BMS Fault Flag";
+CM_ SG_ 201 Batt_Fault_FR4 "BMS Fault Flag";
+CM_ SG_ 201 Batt_Fault_FR3 "BMS Fault Flag";
+CM_ SG_ 201 Batt_Fault_FR2 "BMS Fault Flag";
+CM_ SG_ 201 Batt_Fault_FR1 "BMS Fault Flag";
+CM_ SG_ 201 Batt_Fault_FR0 "BMS Fault Flag";
+BA_DEF_  "Baudrate" INT 0 1000000;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_  "DBName" STRING ;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Cyclic","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed","IfActive","NoMsgSendType","NotUsed";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 1000;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BU_  "ILUsed" ENUM  "No","Yes";
+BA_DEF_DEF_  "Baudrate" 1000000;
+BA_DEF_DEF_  "BusType" "`CAN";
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_  "GenMsgSendType" "Cyclic";
+BA_DEF_DEF_  "GenMsgCycleTime" 100;
+BA_DEF_DEF_  "GenMsgILSupport" "Yes";
+BA_DEF_DEF_  "ILUsed" "Yes";
+BA_ "BusType" "CAN";
+BA_ "DBName" "DCDC";
+BA_ "BusType" "CAN";
+BA_ "BusType" "CAN";
+BA_ "DBName" "IMU";
+BA_ "Baudrate" 1000000;
+BA_ "BusType" "CAN";
+BA_ "DBName" "BMSv19";
+BA_ "GenMsgCycleTime" BO_ 917 100;
+BA_ "GenMsgCycleTime" BO_ 916 100;
+BA_ "GenMsgCycleTime" BO_ 915 100;
+BA_ "GenMsgCycleTime" BO_ 914 100;
+BA_ "GenMsgCycleTime" BO_ 913 100;
+BA_ "GenMsgCycleTime" BO_ 912 100;
+BA_ "GenMsgCycleTime" BO_ 1008 2;
+BA_ "GenMsgCycleTime" BO_ 1012 2;
+BA_ "GenMsgCycleTime" BO_ 274 1000;
+BA_ "GenMsgCycleTime" BO_ 265 20;
+BA_ "GenMsgCycleTime" BO_ 272 200;
+BA_ "GenMsgSendType" BO_ 272 0;
+BA_ "GenMsgCycleTime" BO_ 264 200;
+BA_ "GenMsgSendType" BO_ 1536 0;
+BA_ "GenMsgCycleTime" BO_ 301 200;
+BA_ "GenMsgSendType" BO_ 301 0;
+BA_ "GenMsgCycleTime" BO_ 261 500;
+BA_ "GenMsgCycleTime" BO_ 210 200;
+BA_ "GenMsgSendType" BO_ 210 0;
+BA_ "GenMsgCycleTime" BO_ 206 200;
+BA_ "GenMsgSendType" BO_ 206 0;
+BA_ "GenMsgCycleTime" BO_ 207 200;
+BA_ "GenMsgSendType" BO_ 207 0;
+BA_ "GenMsgCycleTime" BO_ 205 200;
+BA_ "GenMsgSendType" BO_ 205 0;
+BA_ "GenMsgCycleTime" BO_ 204 100;
+BA_ "GenMsgSendType" BO_ 204 0;
+BA_ "GenMsgCycleTime" BO_ 203 20;
+BA_ "GenMsgCycleTime" BO_ 202 20;
+BA_ "GenMsgCycleTime" BO_ 201 50;
+VAL_ 914 NDCDCState 8 "REGEN_GOOD" 6 "UMBILICALGOOD" 9 "SHUTDOWN" 7 "REGEN_UP" 5 "UMBILICALUP" 4 "POWERGOOD" 3 "POWERUP" 2 "WAKEUP" 1 "SLEEP" ;
+VAL_ 272 Batt_FaultActive_FR4 1 "Fault" 0 "No Fault" ;
+VAL_ 272 BMS_LoggingFull 1 "True" 0 "False" ;
+VAL_ 272 Batt_ClearFault_KeyMatched 1 "Correct Key" 0 "Incorrect Key" ;
+VAL_ 262 VCM_VehCCSMaxChrgLim 2 "32A Supply Lim" 1 "63A Supply Lim" 0 "125A Supply Lim" ;
+VAL_ 262 VCM_VehicleWorkingMode 9 "RaceCharge" 8 "DischargeForTransport" 7 "ReadyToDrive" 6 "HVOn" 5 "N/A" 4 "HVCharge" 3 "HVChargePrep" 2 "N/A" 1 "LVOn" 0 "OFF" ;
+VAL_ 301 CIM_PlugPresentHV 1 "Plug present" 0 "No plug present" ;
+VAL_ 301 CIM_ChargingPlugTypeHV 3 "Discharge for Transport" 2 "CCS2 Charge" 1 "RACE Charge" 0 "No plug detected" ;
+VAL_ 301 CIM_ChargeStatusHV 4 "Discharge for Transport" 3 "Charge finished" 2 "Charge in progress" 1 "Initialising" 0 "Off" ;
+VAL_ 301 CIM_ChargePlugLockStatusHV 3 "Error" 2 "Plug connected - Fault" 1 "Plug connected - OK" 0 "No plug detected" ;
+VAL_ 260 VCM_ChargeCancelRequest 1 "True" 0 "False" ;
+VAL_ 261 Time_Valid 4 "Leap valid" 3 "NOT USED" 2 "Week valid " 1 "Time of Week valid " 0 "NOT USED" ;
+VAL_ 210 Batt_SafetyLightStatRedHV 1 "On" 0 "Off" ;
+VAL_ 210 Batt_SafetyLightStatGreenHV 1 "On" 0 "Off" ;
+VAL_ 210 Batt_BoostChargeActive 1 "True" 0 "False" ;
+VAL_ 210 Batt_ReadyforBoostCharge 1 "True" 0 "False" ;
+VAL_ 204 Batt_MainContactorStatus 7 "MainPosC_AncNegC_InvNegC" 6 "MainPosO_AncNegC_InvNegC" 5 "MainPosC_AncNegO_InvNegC" 4 "MainPosO_AncNegO_InvNegC" 3 "MainPosC_AncNegC_InvNegO" 2 "MainPosO_AncNegC_InvNegO" 1 "MainPosC_AncNegO_InvNegO" 0 "MainPosO_AncNegO_InvNegO" ;
+VAL_ 204 Batt_ChargeContactorStatus 3 "PosC NegC" 2 "PosO NegC" 1 "PosC NegO" 0 "PosO NegO" ;
+VAL_ 201 Batt_Equity_SoC_Displayed 1 "Equity SoC" 0 "Real SoC" ;
+VAL_ 201 Batt_ReadytoTurnOnHV 1 "True" 0 "False" ;
+VAL_ 201 Batt_BMSStatus 14 "Discharge Transport" 13 "Inverters Powered" 12 "Inverters Precharge" 11 "Bus Discharging" 10 "Self Wake" 9 "Fault Mode" 8 "Shutting Down" 7 "CCS2 Charge" 6 "Race Charge" 5 "Charge Prep" 4 "Ancillaries Powered" 3 "Ancillaries Precharge" 2 "Standby" 1 "Initialising" 0 "Off" ;
+VAL_ 201 Batt_Isolation2Status 3 "Device Fault" 2 "Fault" 1 "No Fault" 0 "Measuring" ;
+VAL_ 201 Batt_Isolation1Status 3 "Device Fault" 2 "Fault" 1 "No Fault" 0 "Measuring" ;
+VAL_ 201 Batt_HVILFault 3 "Device Fault" 2 "Open" 1 "Closed" 0 "Measuring" ;
+VAL_ 201 Batt_Isolation2OnOffStatus 1 "Isolation Monitoring ON" 0 "Isolation Monitoring OFF" ;
+VAL_ 201 Batt_Isolation1OnOffStatus 1 "Isolation Monitoring ON" 0 "Isolation Monitoring OFF" ;
+VAL_ 201 Batt_BalancingRequired 1 "True" 0 "False" ;
+VAL_ 201 Batt_Fault_FR7 1 "Fault" 0 "No Fault" ;
+VAL_ 201 Batt_Fault_FR6 1 "Fault" 0 "No Fault" ;
+VAL_ 201 Batt_Fault_FR5 1 "Fault" 0 "No Fault" ;
+VAL_ 201 Batt_Fault_FR4 1 "Fault" 0 "No Fault" ;
+VAL_ 201 Batt_Fault_FR3 1 "Fault" 0 "No Fault" ;
+VAL_ 201 Batt_Fault_FR2 1 "Fault" 0 "No Fault" ;
+VAL_ 201 Batt_Fault_FR1 1 "Fault" 0 "No Fault" ;
+VAL_ 201 Batt_Fault_FR0 1 "Fault" 0 "No Fault" ;
+

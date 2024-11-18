@@ -1,0 +1,102 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: MyLaps_X2 VCU
+VAL_TABLE_ NSessionX2 33 "Race" 21 "Super Pole" 20 "Qualy Group4" 19 "Qualy Group3" 18 "Qualy Group2" 17 "Qualy Group1" 2 "FP2" 1 "FP1" 0 "Shakedown" ;
+VAL_TABLE_ NMux165 2 "Current PTT Beep settings" 1 "Current volume config" ;
+VAL_TABLE_ NMux164 4 "PTT Default settings" 3 "Audio Default settings" 2 "PTT Custom settings" 1 "Audio Custom settings" ;
+VAL_TABLE_ PowerMode 5 "220kW. Active Season8 mode" 4 "250kW" 3 "235kW" 2 "200kW" 1 "110kW" ;
+VAL_TABLE_ CarManufacturer_FIA 10 "Porsche" 9 "Penske" 8 "Mercedes" 7 "NIO" 6 "Mahindra" 5 "Jaguar" 4 "DS" 3 "Nissan" 2 "BMW" 1 "Audi" 0 "None" ;
+VAL_TABLE_ uADR_Status_220 8 "Accident stored" 4 "CAN team OK" 2 "Logging Config OK" 1 "Logging in Progress" 0 "No event" ;
+VAL_TABLE_ uADR_GPS_Status_4bits 8 "Description for the value '0xE'" 4 "No time pulse" 2 "GPS antenna High current" 1 "GPS antenna Low current" 0 "No Fault" ;
+VAL_TABLE_ GPS_status_uADR 5 "Time Only fix" 4 "GPS + DR" 3 "3-D fix" 2 "2-D fix" 1 "dead reckoning" 0 "No GPS fix" ;
+VAL_TABLE_ GPS_Diag 64 "Time Pulse Fault" 3 "3-D Fix" 2 "2-D Fix" 0 "No Fix" ;
+VAL_TABLE_ PDMreset 0 "No Command" 2 "Reset Kalman Filter" 1 "Reset GPS" ;
+
+
+BO_ 202 FromMyLapsX2_CA: 8 MyLaps_X2
+ SG_ X2bak_TAmbient : 0|8@1+ (1,0) [0|255] "°C"  VCU
+ SG_ X2bak_pAtmo : 48|16@1+ (1,0) [0|65535] "mbar"  VCU
+ SG_ X2bak_NSession : 32|16@1+ (1,0) [0|65535] ""  VCU
+ SG_ X2bak_NLeaderLight : 8|8@1+ (1,0) [0|255] ""  VCU
+ SG_ X2bak_NLapNumber : 16|16@1+ (1,0) [0|65535] ""  VCU
+
+BO_ 207 FromMyLapsX2_CF: 5 MyLaps_X2
+ SG_ X2bak_NLoopID : 8|8@1+ (1,0) [0|255] ""  VCU
+
+
+
+CM_ BO_ 202 "Received at least 1 time per lap. Transmitted via the track loops";
+CM_ SG_ 202 X2bak_TAmbient "Official timing ambient temperature";
+CM_ SG_ 202 X2bak_pAtmo "Official timing atmospheric pressure";
+CM_ SG_ 202 X2bak_NSession "Timing session number";
+CM_ SG_ 202 X2bak_NLeaderLight "Timing command for leader light";
+CM_ SG_ 202 X2bak_NLapNumber "Official timing lap number from MyLaps X2";
+CM_ BO_ 207 "Received on each track loop";
+CM_ SG_ 207 X2bak_NLoopID "ID of the last loop";
+BA_DEF_  "Baudrate" INT 0 1000000;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_  "DBName" STRING ;
+BA_DEF_ SG_  "GenSigStartValue" FLOAT 0 100000000000;
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition";
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 100000;
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 100000;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 1000;
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 999999;
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 2 50000;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Cyclic","Spontaneous","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed","IfActive","NoMsgSendType","NotUsed";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 1000;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BU_  "ILUsed" ENUM  "No","Yes";
+BA_DEF_DEF_  "Baudrate" 1000000;
+BA_DEF_DEF_  "BusType" "CAN";
+BA_DEF_DEF_  "DBName" "X2Transponder";
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenSigSendType" "OnWrite";
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 100;
+BA_DEF_DEF_  "GenMsgSendType" "Cyclic";
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenMsgILSupport" "Yes";
+BA_DEF_DEF_  "ILUsed" "Yes";
+BA_ "DBName" "X2Transponder";
+BA_ "GenMsgSendType" BO_ 202 1;
+BA_ "GenMsgSendType" BO_ 207 1;
+VAL_ 202 X2bak_NSession 33 "Race" 21 "Super Pole" 20 "Qualy Group4" 19 "Qualy Group3" 18 "Qualy Group2" 17 "Qualy Group1" 2 "FP2" 1 "FP1" 0 "Shakedown" ;
+VAL_ 207 X2bak_NLoopID 54 "SCL2" 53 "SCL1" 49 "Attack mode loop 3" 48 "Attack mode loop 2" 47 "Attack mode loop 1" 46 "IP2" 45 "IP1" 44 "PIT OUT" 43 "PIT IN" 42 "PIT Finish line" 41 "Finish line" ;
+

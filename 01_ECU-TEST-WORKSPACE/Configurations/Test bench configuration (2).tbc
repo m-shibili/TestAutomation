@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TOOLING format-rev="3" prog-version="2024.4.0.157279+6cc6544af3d9-FeatureSet" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test tooling.xsd">
+	<TOOLS/>
+	<PORTS/>
+	<TOOL-DESCRIPTORS/>
+	<PORT-DESCRIPTORS/>
+</TOOLING>

@@ -1,0 +1,484 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: TPMS VCU FIA_MLS MyLaps_X2
+
+
+VAL_TABLE_ BAccident 1 "Accident detected and recorded" 0 "No accident detected" ;
+VAL_TABLE_ NHighPowerScenario 5 "6 + 2 min" 4 "5 + 3 min" 3 "4 + 4 min" 2 "3 + 5 min" 1 "2 + 6 min" ;
+VAL_TABLE_ RCS_Flag 17 "DOUBLE YELLOW" 16 "Do not use" 15 "Do not use" 14 "SC - IN" 13 "SC" 12 "Do not use" 11 "FINISH" 10 "SLIPPERY" 9 "FCY" 8 "WHITE" 7 "YELLOW" 6 "Do not use" 5 "BLACK&WHITE" 4 "BLACK" 3 "RED" 2 "BLUE" 1 "GREEN" 0 "No Flag displayed" ;
+VAL_TABLE_ NMux165 2 "Current PTT Beep settings" 1 "Current volume config" ;
+VAL_TABLE_ NMux164 4 "PTT Default settings" 3 "Audio Default settings" 2 "PTT Custom settings" 1 "Audio Custom settings" ;
+VAL_TABLE_ PowerMode 3 "350kW" 2 "300kW" 1 "110kW" 5 "220kW. Active Season8 mode" 4 "250kW" ;
+VAL_TABLE_ CarManufacturer_FIA 10 "Porsche" 9 "Penske" 8 "Mercedes" 7 "NIO" 6 "Mahindra" 5 "Jaguar" 4 "DS" 3 "Nissan" 2 "BMW" 1 "Audi" 0 "None" ;
+VAL_TABLE_ NSessionX2 33 "Race" 21 "Super Pole" 20 "Qualy Group4" 19 "Qualy Group3" 18 "Qualy Group2" 17 "Qualy Group1" 2 "FP2" 1 "FP1" 0 "Shakedown" ;
+VAL_TABLE_ uADR_Status_220 8 "Accident stored" 4 "CAN team OK" 2 "Logging Config OK" 1 "Logging in Progress" 0 "No event" ;
+VAL_TABLE_ uADR_GPS_Status_4bits 8 "Description for the value '0xE'" 4 "No time pulse" 2 "GPS antenna High current" 1 "GPS antenna Low current" 0 "No Fault" ;
+VAL_TABLE_ GPS_status_uADR 5 "Time Only fix" 4 "GPS + DR" 3 "3-D fix" 2 "2-D fix" 1 "dead reckoning" 0 "No GPS fix" ;
+VAL_TABLE_ GPS_Diag 64 "Time Pulse Fault" 3 "3-D Fix" 2 "2-D Fix" 0 "No Fix" ;
+VAL_TABLE_ PDMreset 0 "No Command" 2 "Reset Kalman Filter" 1 "Reset GPS" ;
+
+
+
+BO_ 2031 Fixed_frame_Front: 8 TPMS
+ SG_ Front_Time_counter : 7|8@0+ (1,0) [0|255] "s" Vector__XXX
+ SG_ Front_TPMS_CR_Diagnostic_value : 63|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Front_TPMS_CR_Diagnostic_address : 55|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Front_CAN_Rx_error_counter : 39|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Front_CAN_Tx_Error_counter : 31|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Front_CAN_Status : 23|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Front_Car_ID : 15|8@0+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1008 TPMS_FL_1: 8 TPMS
+ SG_ Pressure_FL : 55|16@0+ (0.2,0) [0|13107] "mbar" Vector__XXX
+ SG_ Slave_temp_FL : 35|12@0+ (0.1,0) [0|409.5] "°C" Vector__XXX
+ SG_ Power_mode_FL : 39|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ Battery_voltage_FL : 31|8@0+ (0.01,1.8) [1.8|4.35] "V" Vector__XXX
+ SG_ RSSI_FL : 23|8@0- (1,0) [-128|127] "dBm" Vector__XXX
+ SG_ TPMS_type_FL : 9|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ SN_FL1 : 7|14@0+ (1,0) [0|16383] "" Vector__XXX
+
+BO_ 1009 TPMS_FL_2: 8 TPMS
+ SG_ Diagnostics_FL : 63|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Rx_counter_FL : 47|16@0+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Tx_counter_FL : 31|16@0+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Start_diag_FL : 23|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ SN_FL2 : 7|14@0+ (1,0) [0|16383] "" Vector__XXX
+
+BO_ 1010 TPMS_FL_3: 8 TPMS
+ SG_ Remaining_battery_FL : 47|8@0+ (1,0) [0|255] "%" Vector__XXX
+ SG_ Client_config_value_FL : 63|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Client_config_address_FL : 55|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Tire_type_FL : 35|4@0+ (1,0) [0|1000] "" Vector__XXX
+ SG_ Air_temp_FL : 31|12@0+ (0.1,0) [0|100] "°C" Vector__XXX
+ SG_ Air_humidity_FL : 9|10@0+ (0.1,0) [0|100] "%RH" Vector__XXX
+ SG_ SN_FL3 : 7|14@0+ (1,0) [0|16383] "" Vector__XXX
+
+BO_ 1011 TPMS_FL_4: 8 TPMS
+ SG_ Tire_temp_channel_4_FL : 51|12@0+ (0.1,0) [0|409.5] "°C" Vector__XXX
+ SG_ Tire_temp_channel_3_FL : 47|12@0+ (0.1,0) [0|409.5] "°C" Vector__XXX
+ SG_ Tire_temp_channel_2_FL : 27|12@0+ (0.1,0) [0|409.5] "°C" Vector__XXX
+ SG_ Tire_temp_channel_1_FL : 23|12@0+ (0.1,0) [0|409.5] "°C" Vector__XXX
+ SG_ SN_FL4 : 7|14@0+ (1,0) [0|16383] "" Vector__XXX
+
+BO_ 1012 TPMS_FL_5: 5 TPMS
+ SG_ Rim_temp_FL : 27|12@0+ (0.1,0) [0|409.5] "°C" Vector__XXX
+ SG_ Tire_temp_channel_5_FL : 23|12@0+ (0.1,0) [0|409.5] "°C" Vector__XXX
+ SG_ SN_FL5 : 7|14@0+ (1,0) [0|16383] "" Vector__XXX
+
+BO_ 1013 TPMS_FR_1: 8 TPMS
+ SG_ Pressure_FR : 55|16@0+ (0.2,0) [0|13107] "mbar" Vector__XXX
+ SG_ Slave_temp_FR : 35|12@0+ (0.1,0) [0|409.5] "°C" Vector__XXX
+ SG_ Power_mode_FR : 39|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ Battery_voltage_FR : 31|8@0+ (0.01,1.8) [1.8|4.35] "V" Vector__XXX
+ SG_ RSSI_FR : 23|8@0- (1,0) [-128|127] "dBm" Vector__XXX
+ SG_ TPMS_type_FR : 9|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ SN_FR1 : 7|14@0+ (1,0) [0|16383] "" Vector__XXX
+
+BO_ 1014 TPMS_FR_2: 8 TPMS
+ SG_ Diagnostics_FR : 63|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Rx_counter_FR : 47|16@0+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Tx_counter_FR : 31|16@0+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Start_diag_FR : 23|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ SN_FR2 : 7|14@0+ (1,0) [0|16383] "" Vector__XXX
+
+BO_ 1015 TPMS_FR_3: 8 TPMS
+ SG_ Remaining_battery_FR : 47|8@0+ (1,0) [0|255] "%" Vector__XXX
+ SG_ Client_config_value_FR : 63|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Client_config_address_FR : 55|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Tire_type_FR : 35|4@0+ (1,0) [0|1000] "" Vector__XXX
+ SG_ Air_temp_FR : 31|12@0+ (0.1,0) [0|100] "°C" Vector__XXX
+ SG_ Air_humidity_FR : 9|10@0+ (0.1,0) [0|100] "%RH" Vector__XXX
+ SG_ SN_FR3 : 7|14@0+ (1,0) [0|16383] "" Vector__XXX
+
+BO_ 1016 TPMS_FR_4: 8 TPMS
+ SG_ Tire_temp_channel_4_FR : 51|12@0+ (0.1,0) [0|409.5] "°C" Vector__XXX
+ SG_ Tire_temp_channel_3_FR : 47|12@0+ (0.1,0) [0|409.5] "°C" Vector__XXX
+ SG_ Tire_temp_channel_2_FR : 27|12@0+ (0.1,0) [0|409.5] "°C" Vector__XXX
+ SG_ Tire_temp_channel_1_FR : 23|12@0+ (0.1,0) [0|409.5] "°C" Vector__XXX
+ SG_ SN_FR4 : 7|14@0+ (1,0) [0|16383] "" Vector__XXX
+
+BO_ 1017 TPMS_FR_5: 5 TPMS
+ SG_ Rim_temp_FR : 27|12@0+ (0.1,0) [0|409.5] "°C" Vector__XXX
+ SG_ Tire_temp_channel_5_FR : 23|12@0+ (0.1,0) [0|409.5] "°C" Vector__XXX
+ SG_ SN_FR5 : 7|14@0+ (1,0) [0|16383] "" Vector__XXX
+
+BO_ 1018 TPMS_RL_1: 8 TPMS
+ SG_ Pressure_RL : 55|16@0+ (0.2,0) [0|13107] "mbar" Vector__XXX
+ SG_ Slave_temp_RL : 35|12@0+ (0.1,0) [0|409.5] "°C" Vector__XXX
+ SG_ Power_mode_RL : 39|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ Battery_voltage_RL : 31|8@0+ (0.01,1.8) [1.8|4.35] "V" Vector__XXX
+ SG_ RSSI_RL : 23|8@0- (1,0) [-128|127] "dBm" Vector__XXX
+ SG_ TPMS_type_RL : 9|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ SN_RL1 : 7|14@0+ (1,0) [0|16383] "" Vector__XXX
+
+BO_ 1019 TPMS_RL_2: 8 TPMS
+ SG_ Diagnostics_RL : 63|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Rx_counter_RL : 47|16@0+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Tx_counter_RL : 31|16@0+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Start_diag_RL : 23|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ SN_RL2 : 7|14@0+ (1,0) [0|16383] "" Vector__XXX
+
+BO_ 1020 TPMS_RL_3: 8 TPMS
+ SG_ Remaining_battery_RL : 47|8@0+ (1,0) [0|255] "%" Vector__XXX
+ SG_ Client_config_value_RL : 63|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Client_config_address_RL : 55|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Tire_type_RL : 35|4@0+ (1,0) [0|1000] "" Vector__XXX
+ SG_ Air_temp_RL : 31|12@0+ (0.1,0) [0|100] "°C" Vector__XXX
+ SG_ Air_humidity_RL : 9|10@0+ (0.1,0) [0|100] "%RH" Vector__XXX
+ SG_ SN_RL3 : 7|14@0+ (1,0) [0|16383] "" Vector__XXX
+
+BO_ 1021 TPMS_RL_4: 8 TPMS
+ SG_ Tire_temp_channel_4_RL : 51|12@0+ (0.1,0) [0|409.5] "°C" Vector__XXX
+ SG_ Tire_temp_channel_3_RL : 47|12@0+ (0.1,0) [0|409.5] "°C" Vector__XXX
+ SG_ Tire_temp_channel_2_RL : 27|12@0+ (0.1,0) [0|409.5] "°C" Vector__XXX
+ SG_ Tire_temp_channel_1_RL : 23|12@0+ (0.1,0) [0|409.5] "°C" Vector__XXX
+ SG_ SN_RL4 : 7|14@0+ (1,0) [0|16383] "" Vector__XXX
+
+BO_ 1022 TPMS_RL_5: 5 TPMS
+ SG_ Rim_temp_RL : 27|12@0+ (0.1,0) [0|409.5] "°C" Vector__XXX
+ SG_ Tire_temp_channel_5_RL : 23|12@0+ (0.1,0) [0|409.5] "°C" Vector__XXX
+ SG_ SN_RL5 : 7|14@0+ (1,0) [0|16383] "" Vector__XXX
+
+BO_ 1023 TPMS_RR_1: 8 TPMS
+ SG_ Pressure_RR : 55|16@0+ (0.2,0) [0|13107] "mbar" Vector__XXX
+ SG_ Slave_temp_RR : 35|12@0+ (0.1,0) [0|409.5] "°C" Vector__XXX
+ SG_ Power_mode_RR : 39|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ Battery_voltage_RR : 31|8@0+ (0.01,1.8) [1.8|4.35] "V" Vector__XXX
+ SG_ RSSI_RR : 23|8@0- (1,0) [-128|127] "dBm" Vector__XXX
+ SG_ TPMS_type_RR : 9|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ SN_RR1 : 7|14@0+ (1,0) [0|16383] "" Vector__XXX
+
+BO_ 1024 TPMS_RR_2: 8 TPMS
+ SG_ Diagnostics_RR : 63|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Rx_counter_RR : 47|16@0+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Tx_counter_RR : 31|16@0+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Start_diag_RR : 23|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ SN_RR2 : 7|14@0+ (1,0) [0|16383] "" Vector__XXX
+
+BO_ 1025 TPMS_RR_3: 8 TPMS
+ SG_ Remaining_battery_RR : 47|8@0+ (1,0) [0|255] "%" Vector__XXX
+ SG_ Client_config_value_RR : 63|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Client_config_address_RR : 55|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Tire_type_RR : 35|4@0+ (1,0) [0|1000] "" Vector__XXX
+ SG_ Air_temp_RR : 31|12@0+ (0.1,0) [0|100] "°C" Vector__XXX
+ SG_ Air_humidity_RR : 9|10@0+ (0.1,0) [0|100] "%RH" Vector__XXX
+ SG_ SN_RR3 : 7|14@0+ (1,0) [0|16383] "" Vector__XXX
+
+BO_ 1026 TPMS_RR_4: 8 TPMS
+ SG_ Tire_temp_channel_4_RR : 51|12@0+ (0.1,0) [0|409.5] "°C" Vector__XXX
+ SG_ Tire_temp_channel_3_RR : 47|12@0+ (0.1,0) [0|409.5] "°C" Vector__XXX
+ SG_ Tire_temp_channel_2_RR : 27|12@0+ (0.1,0) [0|409.5] "°C" Vector__XXX
+ SG_ Tire_temp_channel_1_RR : 23|12@0+ (0.1,0) [0|409.5] "°C" Vector__XXX
+ SG_ SN_RR4 : 7|14@0+ (1,0) [0|16383] "" Vector__XXX
+
+BO_ 1027 TPMS_RR_5: 5 TPMS
+ SG_ Rim_temp_RR : 27|12@0+ (0.1,0) [0|409.5] "°C" Vector__XXX
+ SG_ Tire_temp_channel_5_RR : 23|12@0+ (0.1,0) [0|409.5] "°C" Vector__XXX
+ SG_ SN_RR5 : 7|14@0+ (1,0) [0|16383] "" Vector__XXX
+
+BO_ 2032 Fixed_frame_Rear: 8 TPMS
+ SG_ Rear_TPMS_CR_Diagnostic_value : 63|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Rear_TPMS_CR_Diagnostic_address : 55|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Rear_CAN_Rx_error_counter : 39|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Rear_CAN_Tx_Error_counter : 31|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Rear_CAN_Status : 23|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Rear_Car_ID : 15|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Rear_Time_counter : 7|8@0+ (1,0) [0|255] "s" Vector__XXX
+
+BO_ 389 FIA_2_ECU_0x185: 8 FIA_MLS
+ SG_ ERaceAvailable_FIA : 7|12@0+ (0.05,0) [0|204.75] "kWh"  VCU
+
+BO_ 387 FIA_2_ECU_0x183: 8 FIA_MLS
+ SG_ MRearAxle_Min_FIA : 55|16@0+ (0.1,-1000) [-1000|5553.5] "Nm"  VCU
+ SG_ MRearAxle_Max_FIA : 39|16@0+ (0.1,-1000) [-1000|5553.5] "Nm"  VCU
+ SG_ MIllegal_TC_Upper : 7|16@0+ (0.01,0) [0|655.35] "Nm.s"  VCU
+ SG_ MIllegal_TC_Lower : 23|16@0+ (0.01,0) [0|655.35] "Nm.s"  VCU
+
+BO_ 1280 ECU_2_FIA_0x500: 3 VCU
+ SG_ MotTqCmd : 11|12@0+ (0.5,-1000) [-1000|1000] "Nm"  FIA_MLS
+ SG_ vcuPressureTarget : 7|12@0+ (0.05,0) [0|204.75] "bar"  FIA_MLS
+
+BO_ 100 FIA_2_ECU_0x64: 8 FIA_MLS
+ SG_ NCounter0x64 : 7|4@0+ (1,0) [0|15] ""  VCU
+ SG_ VaSteerRaw_FIA : 51|12@0+ (1.221001221,0) [0|5000] "mV"  VCU
+ SG_ VxDamperRRRaw_FIA : 47|12@0+ (1.221001221,0) [0|5000] "mV"  VCU
+ SG_ VxDamperRLRaw_FIA : 27|12@0+ (1.221001221,0) [0|5000] "mV"  VCU
+ SG_ VxDamperFRRaw_FIA : 23|12@0+ (1.221001221,0) [0|5000] "mV"  VCU
+ SG_ VxDamperFLRaw_FIA : 3|12@0+ (1.221001221,0) [0|5000] "mV"  VCU
+
+BO_ 106 DRLFromM: 5 FIA_MLS
+ SG_ MMDRLMeasured : 20|20@1- (0.015625,0) [-8192|8191.984375] "Nm"  VCU
+ SG_ NMDRLFromMMux M : 16|2@1+ (1,0) [0|3] ""  VCU
+ SG_ MMDRLMeasuredPeakNeg m2 : 0|16@1- (0.25,0) [-8192|8191.75] "Nm"  VCU
+ SG_ MMDRLMeasuredPeakPos m1 : 0|16@1- (0.25,0) [-8192|8191.75] "Nm"  VCU
+
+BO_ 111 DRRFromM: 5 FIA_MLS
+ SG_ MMDRRMeasured : 20|20@1- (0.015625,0) [-8192|8191.984375] "Nm"  VCU
+ SG_ NMDRRFromMMux M : 16|2@1+ (1,0) [0|3] ""  VCU
+ SG_ MMDRRMeasuredPeakNeg m2 : 0|16@1- (0.25,0) [-8192|8191.75] "Nm"  VCU
+ SG_ MMDRRMeasuredPeakPos m1 : 0|16@1- (0.25,0) [-8192|8191.75] "Nm"  VCU
+
+BO_ 365 FIA_2_ECU_0x16D: 8 FIA_MLS
+ SG_ IVT1_Result_U1_FMGU : 39|32@0- (1,0) [-2147483648|2147483647] "mV"  VCU
+ SG_ IVT1_Result_I_FMGU : 7|32@0- (1,0) [-2147483648|2147483647] "mA"  VCU
+
+BO_ 367 FIA_2_ECU_0x16F: 8 FIA_MLS
+ SG_ IVT3_Result_I_DCDC : 39|32@0- (1,0) [-2147483648|2147483647] "mA"  VCU
+ SG_ IVT2_Result_I_RMGU : 7|32@0- (1,0) [-2147483648|2147483647] "mA"  VCU
+
+BO_ 376 ECU_2_FIA_0x178: 8 VCU
+ SG_ Team_Vq : 55|16@0- (0.1,0) [-3276.8|3276.7] "V"  FIA_MLS
+ SG_ Team_Vd : 39|16@0- (0.1,0) [-3276.8|3276.7] "V"  FIA_MLS
+ SG_ Team_Iq : 23|16@0- (0.1,0) [-3276.8|3276.7] "A"  FIA_MLS
+ SG_ Team_Id : 7|16@0- (0.1,0) [-3276.8|3276.7] "A"  FIA_MLS
+
+BO_ 114 BMS_RESS_CurrentLimit: 8 FIA_MLS
+ SG_ BattHV_RegenPowLimit : 48|13@1+ (0.1,0) [0|819.1] "kW"  VCU
+ SG_ BattHV_DischargePwrLimit : 32|16@1+ (0.05,-3276.75) [-3276.75|0] "kW"  VCU
+ SG_ BattHV_ChrgCurrLimit : 16|16@1+ (0.05,0) [0|3276.75] "A"  VCU
+
+BO_ 112 BMS_RESS_Status: 8 FIA_MLS
+ SG_ BMS_FaultActive_FR4 : 47|1@1+ (1,0) [0|1] ""  VCU
+ SG_ Batt_SafetyLightStatRedFIA : 46|1@1+ (1,0) [0|1] ""  VCU
+ SG_ Batt_SafetyLightStatGreenFIA : 45|1@1+ (1,0) [0|1] ""  VCU
+ SG_ BMS_CAL_ID : 24|8@1+ (1,0) [0|255] ""  VCU
+ SG_ BMS_SW_ID : 16|8@1+ (1,0) [0|255] ""  VCU
+ SG_ Batt_ReadytoTurnOnHV : 15|1@1+ (1,0) [0|1] ""  VCU
+ SG_ Batt_ReadyforBoostCharge : 14|1@1+ (1,0) [0|1] ""  VCU
+ SG_ Batt_Isolation2Status : 13|1@1+ (1,0) [0|1] ""  VCU
+ SG_ Batt_Isolation1Status : 12|1@1+ (1,0) [0|1] ""  VCU
+ SG_ BMS_ErrorFR7 : 7|1@1+ (1,0) [0|1] ""  VCU
+ SG_ BMS_ErrorFR6 : 6|1@1+ (1,0) [0|1] ""  VCU
+ SG_ BattHV_MinSOC : 56|8@1+ (0.5,0) [0|127.5] "%"  VCU
+ SG_ BattHV_MaxSOC : 48|8@1+ (0.5,0) [0|127.5] "%"  VCU
+ SG_ MainPOS_Contactor_Status : 42|1@1+ (1,0) [0|1] ""  VCU
+ SG_ VehicleWorkingMode : 36|4@1+ (1,0) [0|15] ""  VCU
+ SG_ InvNEG_Contactor_Status : 41|1@1+ (1,0) [0|1] ""  VCU
+ SG_ ChrgPOS_Contactor_Status : 43|1@1+ (1,0) [0|1] ""  VCU
+ SG_ ChrgNEG_Contactor_Status : 44|1@1+ (1,0) [0|1] ""  VCU
+ SG_ Cell_Under_V_Flag : 10|1@1+ (1,0) [0|1] ""  VCU
+ SG_ Cell_Under_T_Flag : 11|1@1+ (1,0) [0|1] ""  VCU
+ SG_ Cell_Over_V_Flag : 8|1@1+ (1,0) [0|1] ""  VCU
+ SG_ Cell_Over_T_Flag : 9|1@1+ (1,0) [0|1] ""  VCU
+ SG_ BMSstatus : 32|4@1+ (1,0) [0|15] ""  VCU
+ SG_ BMS_ErrorFR5 : 5|1@1+ (1,0) [0|1] ""  VCU
+ SG_ BMS_ErrorFR4 : 4|1@1+ (1,0) [0|1] ""  VCU
+ SG_ BMS_ErrorFR3 : 3|1@1+ (1,0) [0|1] ""  VCU
+ SG_ BMS_ErrorFR2 : 2|1@1+ (1,0) [0|1] ""  VCU
+ SG_ BMS_ErrorFR1 : 1|1@1+ (1,0) [0|1] ""  VCU
+ SG_ BMS_ErrorFR0 : 0|1@1+ (1,0) [0|1] ""  VCU
+ SG_ AncNEG_Contactor_Status : 40|1@1+ (1,0) [0|1] ""  VCU
+
+BO_ 1055 FIA_Forbidden13: 8 FIA_MLS
+
+BO_ 1054 FIA_Forbidden12: 8 FIA_MLS
+
+BO_ 1053 FIA_Forbidden11: 8 FIA_MLS
+
+BO_ 1052 FIA_Forbidden10: 8 FIA_MLS
+
+BO_ 1039 FIA_Forbidden09: 8 FIA_MLS
+
+BO_ 1038 FIA_Forbidden08: 8 FIA_MLS
+
+BO_ 1037 FIA_Forbidden07: 8 FIA_MLS
+
+BO_ 1036 FIA_Forbidden06: 8 FIA_MLS
+
+BO_ 128 FIA_Forbidden05: 8 FIA_MLS
+
+BO_ 1147 FIA_Forbidden04: 8 FIA_MLS
+
+BO_ 1146 FIA_Forbidden03: 8 FIA_MLS
+
+BO_ 1145 FIA_Forbidden02: 8 FIA_MLS
+
+BO_ 1144 FIA_Forbidden01: 8 FIA_MLS
+
+BO_ 96 FIA_2_ECU_0x60: 8 FIA_MLS
+ SG_ NChecksum0x60 : 63|8@0+ (1,0) [0|255] ""  VCU
+ SG_ NCounter0x60 : 7|4@0+ (1,0) [0|15] ""  VCU
+ SG_ VxBrakeRaw_FIA : 43|12@0+ (1.221001221,0) [0|5000] "mV"  VCU
+ SG_ VpBrakeRaw_FIA : 39|12@0+ (1.221001221,0) [0|5000] "mV"  VCU
+ SG_ VpCaliperRaw_FIA : 19|12@0+ (1.221001221,0) [0|5000] "mV"  VCU
+ SG_ VrThrottle1Raw_FIA : 15|12@0+ (1.221001221,0) [0|5000] "mV"  VCU
+
+BO_ 369 FIA_2_ECU_0x171: 8 FIA_MLS
+ SG_ IVT4_Result_U1_Charge : 39|32@0- (1,0) [-2147483648|2147483647] "mV"  VCU
+ SG_ IVT4_Result_I_Charge : 7|32@0- (1,0) [-2147483648|2147483647] "mA"  VCU
+
+BO_ 202 FromMyLapsX2_CA: 8 MyLaps_X2
+ SG_ X2bak_TAmbient : 0|8@1+ (1,0) [0|255] "°C"  VCU
+ SG_ X2bak_pAtmo : 48|16@1+ (1,0) [0|65535] "mbar"  VCU
+ SG_ X2bak_NSession : 32|16@1+ (1,0) [0|65535] ""  VCU
+ SG_ X2bak_NLeaderLight : 8|8@1+ (1,0) [0|255] ""  VCU
+ SG_ X2bak_NLapNumber : 16|16@1+ (1,0) [0|65535] ""  VCU
+
+BO_ 207 FromMyLapsX2_CF: 5 MyLaps_X2
+ SG_ X2bak_NLoopID : 8|8@1+ (1,0) [0|255] ""  VCU
+
+
+
+CM_ BO_ 389 "FIA Total race energy available";
+CM_ SG_ 389 ERaceAvailable_FIA "Total race energy available - affected by Boost Charge energy addition. Need to make an energy reset to clear the Boost Charge energy addition";
+CM_ BO_ 387 "On Throttle - Torque - Delta control";
+CM_ SG_ 387 MRearAxle_Min_FIA "FIA on throttle corridor max value";
+CM_ SG_ 387 MRearAxle_Max_FIA "FIA on throttle corridor max value";
+CM_ SG_ 387 MIllegal_TC_Upper "FIA on throttle control illegal value - based on driveshaft torquemeters - Upper band";
+CM_ SG_ 387 MIllegal_TC_Lower "FIA on throttle control illegal value - based on driveshaft torquemeters - Lower band";
+CM_ BO_ 1280 "Copy of OEM VCU requests to CAN BBW-Main and CAN FPK-Main (only for pressure and torque targets)";
+CM_ SG_ 1280 MotTqCmd "Exact copy of FPK Motor Torque Command sent on CAN FPK-Main";
+CM_ SG_ 1280 vcuPressureTarget "Exact copy of BBW Pressure Target sent on CAN BBW-Main";
+CM_ BO_ 100 "Damper / Steer";
+CM_ SG_ 100 NCounter0x64 "Rolling counter - incremented each time a message is sent";
+CM_ SG_ 100 VaSteerRaw_FIA "MLS Ana04";
+CM_ SG_ 100 VxDamperRRRaw_FIA "MLS Ana16";
+CM_ SG_ 100 VxDamperRLRaw_FIA "MLS Ana17";
+CM_ SG_ 100 VxDamperFRRaw_FIA "MLS Ana10";
+CM_ SG_ 100 VxDamperFLRaw_FIA "MLS Ana09";
+CM_ BO_ 106 "Left Driveshaft torquemeter from CAN FIA";
+CM_ BO_ 111 "Right Driveshaft torquemeter from CAN FIA";
+CM_ BO_ 365 "IVTS 1 Front MGU Voltage / Current";
+CM_ SG_ 365 IVT1_Result_U1_FMGU "IVTS1 Front MGU Voltage measurement. Due to sensor installation the measured Voltage is negative";
+CM_ SG_ 365 IVT1_Result_I_FMGU "IVTS1 Front MGU Current measurement. + Regen / - Release";
+CM_ BO_ 367 "IVTS 2 Rear MGU Current / IVTS 3 DCDC Current";
+CM_ SG_ 367 IVT3_Result_I_DCDC "IVTS3 DCDC Current measurement. + for current consummed from the RESS";
+CM_ SG_ 367 IVT2_Result_I_RMGU "IVTS2 Rear MGU Current measurement. - Regen / + Release";
+CM_ BO_ 376 "Rear inverter model field-oriented control Id, Iq, Vd, Vq";
+CM_ SG_ 376 Team_Vq "Rear inverter";
+CM_ SG_ 376 Team_Vd "Rear inverter";
+CM_ SG_ 376 Team_Iq "Rear inverter";
+CM_ SG_ 376 Team_Id "Rear inverter";
+CM_ BO_ 114 "Redundancy message from CAN FIA - BMS. FIA logger act as a CAN bridge, if BMS stop sending this message on CAN FIA the FIA logger will stop sending it back on CAN TPMS.";
+CM_ SG_ 114 BattHV_RegenPowLimit "Regen Power Limit kW";
+CM_ SG_ 114 BattHV_DischargePwrLimit "Discharge Power Limit kW";
+CM_ BO_ 112 "Redundancy message from CAN FIA - BMS. FIA logger act as a CAN bridge, if BMS stop sending this message on CAN FIA the FIA logger will stop sending it back on CAN TPMS.";
+CM_ SG_ 112 BMS_FaultActive_FR4 "FR4 Fault Live Status Signal";
+CM_ SG_ 112 Batt_SafetyLightStatRedFIA "Safety light status Red";
+CM_ SG_ 112 Batt_SafetyLightStatGreenFIA "Safety Light Status Green";
+CM_ SG_ 112 BMS_CAL_ID "Bettery Cal ID";
+CM_ SG_ 112 BMS_SW_ID "SW Release number";
+CM_ BO_ 1055 "Reserved IDs for Marelli system - DO NOT USE";
+CM_ BO_ 1054 "Reserved IDs for Marelli system - DO NOT USE";
+CM_ BO_ 1053 "Reserved IDs for Marelli system - DO NOT USE";
+CM_ BO_ 1052 "Reserved IDs for Marelli system - DO NOT USE";
+CM_ BO_ 1039 "Reserved IDs for Marelli system - DO NOT USE";
+CM_ BO_ 1038 "Reserved IDs for Marelli system - DO NOT USE";
+CM_ BO_ 1037 "Reserved IDs for Marelli system - DO NOT USE";
+CM_ BO_ 1036 "Reserved IDs for Marelli system - DO NOT USE";
+CM_ BO_ 128 "Reserved IDs for Marelli system - DO NOT USE";
+CM_ BO_ 1147 "Reserved IDs for Marelli system - DO NOT USE";
+CM_ BO_ 1146 "Reserved IDs for Marelli system - DO NOT USE";
+CM_ BO_ 1145 "Reserved IDs for Marelli system - DO NOT USE";
+CM_ BO_ 1144 "Reserved IDs for Marelli system - DO NOT USE";
+CM_ BO_ 96 "Throttle / Brake";
+CM_ SG_ 96 NChecksum0x60 "Sum of the 7 first bytes";
+CM_ SG_ 96 NCounter0x60 "Rolling counter - incremented each time a message is sent";
+CM_ SG_ 96 VxBrakeRaw_FIA "MLS Ana08";
+CM_ SG_ 96 VpBrakeRaw_FIA "MLS Ana06";
+CM_ SG_ 96 VpCaliperRaw_FIA "MLS Ana03";
+CM_ SG_ 96 VrThrottle1Raw_FIA "MLS Ana01";
+CM_ BO_ 369 "IVTS 4 Charger input Voltage / Current";
+CM_ SG_ 369 IVT4_Result_U1_Charge "IVTS4 Charger Voltage measurement. Due to sensor installation the measured Voltage is negative";
+CM_ SG_ 369 IVT4_Result_I_Charge "IVTS4 Charger Current measurement. + when charging the RESS";
+CM_ BO_ 202 "Received at least 1 time per lap. Transmitted via the track loops";
+CM_ SG_ 202 X2bak_TAmbient "Official timing ambient temperature";
+CM_ SG_ 202 X2bak_pAtmo "Official timing atmospheric pressure";
+CM_ SG_ 202 X2bak_NSession "Timing session number";
+CM_ SG_ 202 X2bak_NLeaderLight "Timing command for leader light";
+CM_ SG_ 202 X2bak_NLapNumber "Official timing lap number from MyLaps X2";
+CM_ BO_ 207 "Received on each track loop";
+CM_ SG_ 207 X2bak_NLoopID "ID of the last loop";
+BA_DEF_  "Baudrate" INT 0 1000000;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_  "DBName" STRING ;
+BA_DEF_ SG_  "GenSigStartValue" FLOAT 0 1e+11;
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition";
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 100000;
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 100000;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 1000;
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 999999;
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 2 50000;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Cyclic","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed","IfActive","NoMsgSendType","NotUsed";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 1000;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BU_  "ILUsed" ENUM  "No","Yes";
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_DEF_  "Baudrate" 1000000;
+BA_DEF_DEF_  "BusType" "CAN";
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenSigSendType" "Cyclic";
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 100;
+BA_DEF_DEF_  "GenMsgSendType" "Cyclic";
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenMsgILSupport" "Yes";
+BA_DEF_DEF_  "ILUsed" "Yes";
+BA_DEF_DEF_  "NodeLayerModules" "CANoeILNLDefault.dll";
+BA_ "BusType" "CAN";
+BA_ "DBName" "TPMS";
+BA_ "DBName" "X2Transponder";
+BA_ "GenMsgCycleTime" BO_ 2031 1000;
+BA_ "GenMsgCycleTime" BO_ 1008 1000;
+BA_ "GenMsgCycleTime" BO_ 1009 1000;
+BA_ "GenMsgCycleTime" BO_ 1010 1000;
+BA_ "GenMsgCycleTime" BO_ 1011 1000;
+BA_ "GenMsgCycleTime" BO_ 1012 1000;
+BA_ "GenMsgCycleTime" BO_ 1013 1000;
+BA_ "GenMsgCycleTime" BO_ 1014 1000;
+BA_ "GenMsgCycleTime" BO_ 1015 1000;
+BA_ "GenMsgCycleTime" BO_ 1016 1000;
+BA_ "GenMsgCycleTime" BO_ 1017 1000;
+BA_ "GenMsgCycleTime" BO_ 1018 1000;
+BA_ "GenMsgCycleTime" BO_ 1019 1000;
+BA_ "GenMsgCycleTime" BO_ 1020 1000;
+BA_ "GenMsgCycleTime" BO_ 1021 1000;
+BA_ "GenMsgCycleTime" BO_ 1022 1000;
+BA_ "GenMsgCycleTime" BO_ 1023 1000;
+BA_ "GenMsgCycleTime" BO_ 1024 1000;
+BA_ "GenMsgCycleTime" BO_ 1025 1000;
+BA_ "GenMsgCycleTime" BO_ 1026 1000;
+BA_ "GenMsgCycleTime" BO_ 1027 1000;
+BA_ "GenMsgCycleTime" BO_ 2032 1000;
+BA_ "GenMsgSendType" BO_ 202 1;
+BA_ "GenMsgSendType" BO_ 207 1;
+VAL_ 202 X2bak_NSession 33 "Race" 21 "Super Pole" 20 "Qualy Group4" 19 "Qualy Group3" 18 "Qualy Group2" 17 "Qualy Group1" 2 "FP2" 1 "FP1" 0 "Shakedown" ;
+VAL_ 207 X2bak_NLoopID 54 "SCL2" 53 "SCL1" 49 "Attack mode loop 3" 48 "Attack mode loop 2" 47 "Attack mode loop 1" 46 "IP2" 45 "IP1" 44 "PIT OUT" 43 "PIT IN" 42 "PIT Finish line" 41 "Finish line" ;
+

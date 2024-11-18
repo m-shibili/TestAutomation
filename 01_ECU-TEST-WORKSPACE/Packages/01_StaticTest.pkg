@@ -1,0 +1,2652 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PACKAGE format-rev="7" prog-version="2024.4.0.157279+6cc6544af3d9-FeatureSet" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test package.xsd">
+	<INFORMATION format-rev="2" xsi:type="packageInfo">
+		<TAGS>
+			<TAG xsi:type="string">TESTCASE</TAG>
+		</TAGS>
+		<DESCRIPTION xsi:type="string"/>
+		<VERSION xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-ACTION-FIELD-TEMPLATE xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-EXPECTATION-FIELD-TEMPLATE xsi:type="string"/>
+	</INFORMATION>
+	<MAPPING format-rev="1" xsi:type="localMappingSpace">
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">CANoeCANalyzer01.StartMeasurement</ID>
+			<XACCESS xsi:type="xaJob">
+				<TOOL-ID xsi:type="string">CANoeCANalyzer01</TOOL-ID>
+				<JOB-NAME xsi:type="string">StartMeasurement</JOB-NAME>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">DriverInputs/SteerWheel/PB_1</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">HIL_Interface/DriverInputs/SteerWheel/PB_1</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">DriverInputs/SteerWheel/PB_10</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">HIL_Interface/DriverInputs/SteerWheel/PB_10</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">DriverInputs/SteerWheel/PB_11</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">HIL_Interface/DriverInputs/SteerWheel/PB_11</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">DriverInputs/SteerWheel/PB_12</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">HIL_Interface/DriverInputs/SteerWheel/PB_12</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">DriverInputs/SteerWheel/PB_2</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">HIL_Interface/DriverInputs/SteerWheel/PB_2</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">DriverInputs/SteerWheel/PB_3</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">HIL_Interface/DriverInputs/SteerWheel/PB_3</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">DriverInputs/SteerWheel/PB_4</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">HIL_Interface/DriverInputs/SteerWheel/PB_4</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">DriverInputs/SteerWheel/PB_5</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">HIL_Interface/DriverInputs/SteerWheel/PB_5</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">DriverInputs/SteerWheel/PB_6</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">HIL_Interface/DriverInputs/SteerWheel/PB_6</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">DriverInputs/SteerWheel/PB_7</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">HIL_Interface/DriverInputs/SteerWheel/PB_7</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">DriverInputs/SteerWheel/PB_8</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">HIL_Interface/DriverInputs/SteerWheel/PB_8</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">DriverInputs/SteerWheel/PB_9</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">HIL_Interface/DriverInputs/SteerWheel/PB_9</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">DriverInputs/SteerWheel/PDL_1</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">HIL_Interface/DriverInputs/SteerWheel/PDL_1</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">DriverInputs/SteerWheel/PDL_2</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">HIL_Interface/DriverInputs/SteerWheel/PDL_2</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">DriverInputs/SteerWheel/PDL_3</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">HIL_Interface/DriverInputs/SteerWheel/PDL_3</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">DriverInputs/SteerWheel/PDL_4</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">HIL_Interface/DriverInputs/SteerWheel/PDL_4</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">DriverInputs/SteerWheel/PDL_5</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">HIL_Interface/DriverInputs/SteerWheel/PDL_5</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">DriverInputs/SteerWheel/PDL_6</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">HIL_Interface/DriverInputs/SteerWheel/PDL_6</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">DriverInputs/SteerWheel/ROT_1</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">HIL_Interface/DriverInputs/SteerWheel/ROT_1</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">DriverInputs/SteerWheel/ROT_2</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">HIL_Interface/DriverInputs/SteerWheel/ROT_2</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">DriverInputs/SteerWheel/ROT_3</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">HIL_Interface/DriverInputs/SteerWheel/ROT_3</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">Implementation/APP1_Input#MEAS#NSIUSteeringButtonStatus</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelSignal">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Implementation</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">APP1_Input#MEAS#NSIUSteeringButtonStatus</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">Implementation/APP1_Input#MEAS#NSwitchA</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelSignal">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Implementation</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">APP1_Input#MEAS#NSwitchA</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">Implementation/APP1_Input#MEAS#NSwitchB</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelSignal">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Implementation</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">APP1_Input#MEAS#NSwitchB</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">Implementation/APP1_Input#MEAS#NSwitchC</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelSignal">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Implementation</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">APP1_Input#MEAS#NSwitchC</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+	</MAPPING>
+	<TESTSTEPS xsi:type="testCase">
+		<TESTSTEP format-rev="3" id="515" name="TsPrecondBlock" xsi:type="utility-fd32d18b-c16d-45ca-9934-f8bffe11fcc3">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="de_DE">
+						<DVALUE xsi:type="string">Precondition</DVALUE>
+					</ELEMENT>
+					<ELEMENT dkey="en_US">
+						<DVALUE xsi:type="string">Precondition</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="string">de_DE</INITIAL-LANGUAGE>
+			</ACTION>
+			<TESTSTEP format-rev="4" id="65b1ff26-b3ed-4f3f-8a1d-8780c4aeb7ca" xsi:type="tsJob">
+				<MAPPING-REF xsi:type="string">CANoeCANalyzer01.StartMeasurement</MAPPING-REF>
+			</TESTSTEP>
+			<TESTSTEP id="badba22c-8598-4258-92cf-8b930b1bb898" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+				<ENABLED xsi:type="boolean">False</ENABLED>
+				<TIME format-rev="2" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="integer">5000</VALUE>
+				</TIME>
+			</TESTSTEP>
+			<TESTSTEP format-rev="3" id="2de95f0e-8b1c-4338-9c25-d22242bc0780" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+				<ACTION xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="de_DE">
+							<DVALUE xsi:type="string">Action</DVALUE>
+						</ELEMENT>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="string">Reset Sysvar</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="string">de_DE</INITIAL-LANGUAGE>
+				</ACTION>
+				<TESTSTEP id="31e75bc9-5507-4ab3-a2da-e44b8293af45" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/PB_1</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">0</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="11593344-9f23-48c8-bbb3-77b985c576fa" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/PB_2</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">0</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="fc028e4d-481e-4caa-9856-bc9c6b63019f" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/PB_3</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">0</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="4e8f46ee-3b29-4a1d-9545-09566fbe9b63" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/PB_4</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">0</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="918e37d6-b4e0-4aa2-8531-5c0f41642620" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/PB_5</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">0</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="82c7d211-d368-4e5e-9865-b9acc44fff20" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/PB_6</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">0</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="152a9270-7641-4b63-bcc7-2e81a94dd55f" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/PB_7</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">0</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="996510e0-c41d-4ada-98e5-cc7dd15d8d3f" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/PB_8</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">0</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="8fa3c3bf-f1e6-48bb-97c7-9335bd837f40" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/PB_9</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">0</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="7d90578d-9d16-458d-9871-dca722491762" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/PB_10</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">0</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="f02b78f1-b541-458d-a26d-5aaa78001695" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/PB_11</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">0</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="2e6fd3b7-e4f9-44ba-bc59-abae833b4ac6" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/PB_12</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">0</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="19fccb4e-4218-4b01-9ad5-32ceeb9351c5" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/PDL_1</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">0</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="c6df7a51-e61d-4328-883b-0aaf24a86d13" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/PDL_2</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">0</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="cc971d01-539c-4423-ad92-ac3db2fe0a13" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/PDL_3</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">0</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="f6c5381c-08c4-4dc9-a235-c2393cbe800c" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/PDL_4</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">0</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="c36e1e19-f34f-4c3a-920b-c5f675e5750e" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/PDL_5</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">0</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="8b128c34-8441-48c8-8dd6-c57e34d3133f" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/PDL_6</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">0</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+			</TESTSTEP>
+		</TESTSTEP>
+		<TESTSTEP format-rev="3" id="521" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="de_DE">
+						<DVALUE xsi:type="string">Action</DVALUE>
+					</ELEMENT>
+					<ELEMENT dkey="en_US">
+						<DVALUE xsi:type="string">Action</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="string">de_DE</INITIAL-LANGUAGE>
+			</ACTION>
+			<TAGS>
+				<TAG xsi:type="string">TEST</TAG>
+			</TAGS>
+			<TESTSTEP format-rev="3" id="ce52efa0-8ea5-4b0f-85d5-ab25e312397e" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+				<ACTION xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="de_DE">
+							<DVALUE xsi:type="string">Action</DVALUE>
+						</ELEMENT>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="string">PB1</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="string">de_DE</INITIAL-LANGUAGE>
+				</ACTION>
+				<TAGS>
+					<TAG xsi:type="string">TEST</TAG>
+				</TAGS>
+				<TESTSTEP id="b59b7445-b200-4b15-a249-a4e5868aa78d" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/PB_1</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">1</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="a3a9032c-a056-4477-8ac6-661fc1797c0a" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="1e5a51e3-551a-4efd-bc6d-4fbddaa72c57" xsi:type="tsRead">
+					<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#NSIUSteeringButtonStatus</MAPPING-REF>
+					<EXPECTATION xsi:type="timelessOption">
+						<EXPRESSION xsi:type="builtStringExpression">
+							<CASE-SENSITIVE xsi:type="boolean">False</CASE-SENSITIVE>
+							<BASE-EXPRESSION format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="string">DIG01</VALUE>
+							</BASE-EXPRESSION>
+						</EXPRESSION>
+					</EXPECTATION>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">TEXT</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="eba7fe95-09d2-42af-ba81-deda6b0dcb1e" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/PB_1</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">0</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="ef3e826b-1432-4157-9b55-be2a6ee1cdc6" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+			</TESTSTEP>
+			<TESTSTEP format-rev="3" id="a36c028d-5b5e-478e-906e-8eca427f4f84" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+				<ACTION xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="de_DE">
+							<DVALUE xsi:type="string">Action</DVALUE>
+						</ELEMENT>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="string">PB2</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="string">de_DE</INITIAL-LANGUAGE>
+				</ACTION>
+				<TESTSTEP id="de5fee46-807b-42cc-8eb3-026d85b50b2a" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/PB_2</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">1</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="a2a782e0-2fc1-4786-b873-e7eae1c143ff" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="53fb0a08-0be0-4d63-9190-e92475155f69" xsi:type="tsRead">
+					<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#NSIUSteeringButtonStatus</MAPPING-REF>
+					<EXPECTATION xsi:type="timelessOption">
+						<EXPRESSION xsi:type="builtStringExpression">
+							<CASE-SENSITIVE xsi:type="boolean">False</CASE-SENSITIVE>
+							<BASE-EXPRESSION format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="string">DIG02</VALUE>
+							</BASE-EXPRESSION>
+						</EXPRESSION>
+					</EXPECTATION>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">TEXT</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="28569483-4f91-4043-a820-8fdf1b7f75dc" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/PB_2</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">0</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="9648fbb8-6d19-4dde-a509-a0653109b935" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+			</TESTSTEP>
+			<TESTSTEP format-rev="3" id="674138bc-eb42-4ec9-8a1a-2b294b8eddf8" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+				<ACTION xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="de_DE">
+							<DVALUE xsi:type="string">Action</DVALUE>
+						</ELEMENT>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="string">PB3</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="string">de_DE</INITIAL-LANGUAGE>
+				</ACTION>
+				<TESTSTEP id="e02fd183-e1d7-463c-a5c3-ddf388117cf7" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/PB_3</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">1</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="a3cd2778-5d9a-4593-9043-f8416b87ed17" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="3f9113c6-99c7-4d79-aef2-bbd89ce95fb0" xsi:type="tsRead">
+					<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#NSIUSteeringButtonStatus</MAPPING-REF>
+					<EXPECTATION xsi:type="timelessOption">
+						<EXPRESSION xsi:type="builtStringExpression">
+							<CASE-SENSITIVE xsi:type="boolean">False</CASE-SENSITIVE>
+							<TYPE xsi:type="integer">3</TYPE>
+							<BASE-EXPRESSION format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="string">DIG03</VALUE>
+							</BASE-EXPRESSION>
+						</EXPRESSION>
+					</EXPECTATION>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">TEXT</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="9773bc5c-ddfa-4e2c-9346-cb87f54954b9" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/PB_3</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">0</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="e416143c-7398-4492-837e-2fc50519def9" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+			</TESTSTEP>
+			<TESTSTEP format-rev="3" id="00be5a2a-83b3-401d-9902-63fdb272e040" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+				<ACTION xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="de_DE">
+							<DVALUE xsi:type="string">Action</DVALUE>
+						</ELEMENT>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="string">PB4</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="string">de_DE</INITIAL-LANGUAGE>
+				</ACTION>
+				<TESTSTEP id="25798f19-282b-4be8-ab51-8bc63dddb54c" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/PB_4</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">1</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="2ba8faf7-3ec9-403e-b521-0390b84069bb" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="caabcbf5-0060-45f9-b5df-2f09495f3609" xsi:type="tsRead">
+					<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#NSIUSteeringButtonStatus</MAPPING-REF>
+					<EXPECTATION xsi:type="timelessOption">
+						<EXPRESSION xsi:type="builtStringExpression">
+							<CASE-SENSITIVE xsi:type="boolean">False</CASE-SENSITIVE>
+							<TYPE xsi:type="integer">4</TYPE>
+							<BASE-EXPRESSION format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="string">DIG03</VALUE>
+							</BASE-EXPRESSION>
+						</EXPRESSION>
+					</EXPECTATION>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">TEXT</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="ee075a84-ac3f-46d3-a9d2-0de900a6f799" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/PB_4</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">0</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="8cfd9ef8-ba1d-4263-ad48-2f8164b036e2" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+			</TESTSTEP>
+			<TESTSTEP format-rev="3" id="640e82b3-41a8-4792-81c3-98a747ec9b19" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+				<ACTION xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="de_DE">
+							<DVALUE xsi:type="string">Action</DVALUE>
+						</ELEMENT>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="string">PB5</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="string">de_DE</INITIAL-LANGUAGE>
+				</ACTION>
+				<TESTSTEP id="6852330a-91bc-4d72-95ed-d4b04e15fb05" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/PB_5</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">1</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="442f2f56-1095-480e-9272-98e4f15bc916" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="f1386bf5-42fd-401e-afba-7cae5e8a0fbb" xsi:type="tsRead">
+					<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#NSIUSteeringButtonStatus</MAPPING-REF>
+					<EXPECTATION xsi:type="timelessOption">
+						<EXPRESSION xsi:type="builtStringExpression">
+							<CASE-SENSITIVE xsi:type="boolean">False</CASE-SENSITIVE>
+							<TYPE xsi:type="integer">2</TYPE>
+							<BASE-EXPRESSION format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="string">DIG05</VALUE>
+							</BASE-EXPRESSION>
+						</EXPRESSION>
+					</EXPECTATION>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">TEXT</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="6c5d31a0-2df7-4e69-96b4-f49563794fa1" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/PB_5</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">0</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="9db28889-e162-4641-9dfd-70679a4ab006" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+			</TESTSTEP>
+			<TESTSTEP format-rev="3" id="a4cf86b5-dfce-42ab-9821-a34d646bc13e" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+				<ACTION xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="de_DE">
+							<DVALUE xsi:type="string">Action</DVALUE>
+						</ELEMENT>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="string">PB6</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="string">de_DE</INITIAL-LANGUAGE>
+				</ACTION>
+				<TESTSTEP id="df1221c1-c304-46f2-97d1-66d77566dca1" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/PB_6</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">1</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="edd13ee6-91b3-40a6-8a12-dc41bf6dd411" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="463f49e1-9797-400e-abed-ae95f00044c1" xsi:type="tsRead">
+					<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#NSIUSteeringButtonStatus</MAPPING-REF>
+					<EXPECTATION xsi:type="timelessOption">
+						<EXPRESSION xsi:type="builtStringExpression">
+							<CASE-SENSITIVE xsi:type="boolean">False</CASE-SENSITIVE>
+							<BASE-EXPRESSION format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="string">DIG06</VALUE>
+							</BASE-EXPRESSION>
+						</EXPRESSION>
+					</EXPECTATION>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">TEXT</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="0615ccc1-304b-4f0b-a16a-bd5c07f9ffea" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/PB_6</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">0</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="d3693700-af7f-43be-bc32-85a1b1a974c5" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+			</TESTSTEP>
+			<TESTSTEP format-rev="3" id="9f8c055e-6912-4031-944c-93393ac8d1cc" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+				<ACTION xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="de_DE">
+							<DVALUE xsi:type="string">Action</DVALUE>
+						</ELEMENT>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="string">PB7</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="string">de_DE</INITIAL-LANGUAGE>
+				</ACTION>
+				<TESTSTEP id="570ef23b-14f7-41e6-af60-a10f843713c4" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/PB_7</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">1</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="62cf48e1-70ea-4351-b4ea-df2560cfae84" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="99ac2985-2078-41cb-a26b-94a528a0d2eb" xsi:type="tsRead">
+					<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#NSIUSteeringButtonStatus</MAPPING-REF>
+					<EXPECTATION xsi:type="timelessOption">
+						<EXPRESSION xsi:type="builtStringExpression">
+							<CASE-SENSITIVE xsi:type="boolean">False</CASE-SENSITIVE>
+							<BASE-EXPRESSION format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="string">DIG07</VALUE>
+							</BASE-EXPRESSION>
+						</EXPRESSION>
+					</EXPECTATION>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">TEXT</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="174265a3-4a04-4814-b498-f734161d98f2" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/PB_7</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">0</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="8aa03db1-5124-4a54-a21f-d1942535f5d7" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+			</TESTSTEP>
+			<TESTSTEP format-rev="3" id="5ec6d47f-723f-4e6c-affc-64fef966ae6c" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+				<ACTION xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="de_DE">
+							<DVALUE xsi:type="string">Action</DVALUE>
+						</ELEMENT>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="string">PB8</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="string">de_DE</INITIAL-LANGUAGE>
+				</ACTION>
+				<TESTSTEP id="2431835c-f808-44b3-8fc7-4ff216ed0519" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/PB_8</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">1</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="609b72e9-60f6-4294-a946-96b8c47df5f6" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="d44c3f4b-bfbb-4c20-a837-8d9b351539a9" xsi:type="tsRead">
+					<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#NSIUSteeringButtonStatus</MAPPING-REF>
+					<EXPECTATION xsi:type="timelessOption">
+						<EXPRESSION xsi:type="builtStringExpression">
+							<CASE-SENSITIVE xsi:type="boolean">False</CASE-SENSITIVE>
+							<BASE-EXPRESSION format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="string">DIG08</VALUE>
+							</BASE-EXPRESSION>
+						</EXPRESSION>
+					</EXPECTATION>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">TEXT</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="260a6b35-b4a2-4174-8bb4-4ec89ff1f51e" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/PB_8</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">0</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="4e224be4-4382-4a38-8437-283d7299cf55" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+			</TESTSTEP>
+			<TESTSTEP format-rev="3" id="3f63963a-4d5d-4a41-b634-0a7fd6512b52" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+				<ACTION xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="de_DE">
+							<DVALUE xsi:type="string">Action</DVALUE>
+						</ELEMENT>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="string">PB9</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="string">de_DE</INITIAL-LANGUAGE>
+				</ACTION>
+				<TESTSTEP id="9de604e4-222c-41e5-91e9-7ffff9983f2a" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/PB_9</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">1</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="eca90cf6-aa02-4e72-ab6f-fbf17527d7c5" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="1c7f3407-36f0-40b6-b1e0-778171831ef6" xsi:type="tsRead">
+					<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#NSIUSteeringButtonStatus</MAPPING-REF>
+					<EXPECTATION xsi:type="timelessOption">
+						<EXPRESSION xsi:type="builtStringExpression">
+							<CASE-SENSITIVE xsi:type="boolean">False</CASE-SENSITIVE>
+							<BASE-EXPRESSION format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="string">DIG09</VALUE>
+							</BASE-EXPRESSION>
+						</EXPRESSION>
+					</EXPECTATION>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">TEXT</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="a769d516-6fd7-4668-9910-a4b2007b703d" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/PB_9</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">0</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="670de8fa-c65a-4d3b-858f-5b0274301e94" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+			</TESTSTEP>
+			<TESTSTEP format-rev="3" id="22af4024-d0f8-4c11-b3ac-8acceb3435e5" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+				<ACTION xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="de_DE">
+							<DVALUE xsi:type="string">Action</DVALUE>
+						</ELEMENT>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="string">PB10</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="string">de_DE</INITIAL-LANGUAGE>
+				</ACTION>
+				<TESTSTEP id="c945709e-ac6b-4688-9940-446681f94e13" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/PB_10</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">1</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="27a78c05-3200-42f1-9b98-c400ba08b7c3" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="1e02a6ec-9e67-4959-8084-9f5f9f23b021" xsi:type="tsRead">
+					<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#NSIUSteeringButtonStatus</MAPPING-REF>
+					<EXPECTATION xsi:type="timelessOption">
+						<EXPRESSION xsi:type="builtStringExpression">
+							<CASE-SENSITIVE xsi:type="boolean">False</CASE-SENSITIVE>
+							<BASE-EXPRESSION format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="string">DIG10</VALUE>
+							</BASE-EXPRESSION>
+						</EXPRESSION>
+					</EXPECTATION>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">TEXT</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="bb2df23f-f486-4b98-b96b-c1214dd7068f" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/PB_10</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">0</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="4e3c34ef-20bd-44a7-ac79-df5dcff120c5" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+			</TESTSTEP>
+			<TESTSTEP format-rev="3" id="3c26f3fb-736e-4a03-b97d-23e38976adc2" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+				<ACTION xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="de_DE">
+							<DVALUE xsi:type="string">Action</DVALUE>
+						</ELEMENT>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="string">PDL1</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="string">de_DE</INITIAL-LANGUAGE>
+				</ACTION>
+				<TESTSTEP id="356916e3-91eb-4bba-a45b-7c2b1a9c9d63" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/PDL_1</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">1</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="7abaca55-628d-46c6-a0a9-8debce6cc8c2" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="e7e03d63-bd03-4c90-8fd9-e26160f305e2" xsi:type="tsRead">
+					<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#NSIUSteeringButtonStatus</MAPPING-REF>
+					<EXPECTATION xsi:type="timelessOption">
+						<EXPRESSION xsi:type="builtStringExpression">
+							<CASE-SENSITIVE xsi:type="boolean">False</CASE-SENSITIVE>
+							<BASE-EXPRESSION format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="string">DIG11</VALUE>
+							</BASE-EXPRESSION>
+						</EXPRESSION>
+					</EXPECTATION>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">TEXT</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="fc4ab7c4-538a-4980-8574-827119e52842" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/PDL_1</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">0</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="9ab15a64-1715-48a8-8910-7e3bc2794d81" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+			</TESTSTEP>
+			<TESTSTEP format-rev="3" id="265c29dc-a61c-4d3d-a457-3b945590b7b6" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+				<ACTION xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="de_DE">
+							<DVALUE xsi:type="string">Action</DVALUE>
+						</ELEMENT>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="string">PDL2</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="string">de_DE</INITIAL-LANGUAGE>
+				</ACTION>
+				<TESTSTEP id="cddc2566-e0dd-4737-b357-d7a7d9568c1d" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/PDL_2</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">1</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="e0d5b902-ecb2-4351-81a6-8f8c36d49ac5" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="72dda8be-badb-46d3-bd66-406fca2265bb" xsi:type="tsRead">
+					<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#NSIUSteeringButtonStatus</MAPPING-REF>
+					<EXPECTATION xsi:type="timelessOption">
+						<EXPRESSION xsi:type="builtStringExpression">
+							<CASE-SENSITIVE xsi:type="boolean">False</CASE-SENSITIVE>
+							<BASE-EXPRESSION format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="string">DIG12</VALUE>
+							</BASE-EXPRESSION>
+						</EXPRESSION>
+					</EXPECTATION>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">TEXT</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="d5564e88-8b65-4d39-b758-55efb4b03d75" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/PDL_2</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">0</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="b9feb26a-13b6-47e2-aee8-0648db70097e" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+			</TESTSTEP>
+			<TESTSTEP format-rev="3" id="86612477-1833-4d8b-a364-26d22c04e81b" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+				<ACTION xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="de_DE">
+							<DVALUE xsi:type="string">Action</DVALUE>
+						</ELEMENT>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="string">PDL3</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="string">de_DE</INITIAL-LANGUAGE>
+				</ACTION>
+				<TESTSTEP id="640790df-4c2a-4168-ac5f-8dbdca6c2cca" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/PDL_3</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">1</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="d1c2399c-3240-48a6-81a3-900f4bda75db" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="605c175b-730c-4e04-9573-e5524f92bc8b" xsi:type="tsRead">
+					<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#NSIUSteeringButtonStatus</MAPPING-REF>
+					<EXPECTATION xsi:type="timelessOption">
+						<EXPRESSION xsi:type="builtStringExpression">
+							<CASE-SENSITIVE xsi:type="boolean">False</CASE-SENSITIVE>
+							<BASE-EXPRESSION format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="string">DIG13</VALUE>
+							</BASE-EXPRESSION>
+						</EXPRESSION>
+					</EXPECTATION>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">TEXT</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="d39352fc-1e2d-4d61-a06c-2822499aedcd" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/PDL_3</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">0</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="ca804870-1654-49e2-9664-101a27d06a7e" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+			</TESTSTEP>
+			<TESTSTEP format-rev="3" id="a3fed349-3c47-4c1c-91bb-a3bb9d324811" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+				<ACTION xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="de_DE">
+							<DVALUE xsi:type="string">Action</DVALUE>
+						</ELEMENT>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="string">PDL4</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="string">de_DE</INITIAL-LANGUAGE>
+				</ACTION>
+				<TESTSTEP id="ddb25ce1-4f3c-42bc-9140-b0322a47bf86" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/PDL_4</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">1</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="c0d4e018-0c13-479d-94a8-b3a5382acee7" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="af2fcb8b-a06d-40c7-8e27-378ba631def6" xsi:type="tsRead">
+					<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#NSIUSteeringButtonStatus</MAPPING-REF>
+					<EXPECTATION xsi:type="timelessOption">
+						<EXPRESSION xsi:type="builtStringExpression">
+							<CASE-SENSITIVE xsi:type="boolean">False</CASE-SENSITIVE>
+							<BASE-EXPRESSION format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="string">DIG14</VALUE>
+							</BASE-EXPRESSION>
+						</EXPRESSION>
+					</EXPECTATION>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">TEXT</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="03bf2248-1b66-4169-a638-647d6e5850a8" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/PDL_4</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">0</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="0f00f630-6ff8-4de6-9ba3-d3be825d7da3" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+			</TESTSTEP>
+			<TESTSTEP format-rev="3" id="b22ac879-e53b-468a-be46-57567406eae2" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+				<ACTION xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="de_DE">
+							<DVALUE xsi:type="string">Action</DVALUE>
+						</ELEMENT>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="string">PDL5</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="string">de_DE</INITIAL-LANGUAGE>
+				</ACTION>
+				<TESTSTEP id="36192413-090a-4a39-95de-699bc72a67e6" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/PDL_5</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">1</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="7f17610c-6dd0-4bca-ab4f-042e9134acd4" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="ab6bc799-7f19-4e25-b74d-f4727d4faed3" xsi:type="tsRead">
+					<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#NSIUSteeringButtonStatus</MAPPING-REF>
+					<EXPECTATION xsi:type="timelessOption">
+						<EXPRESSION xsi:type="builtStringExpression">
+							<CASE-SENSITIVE xsi:type="boolean">False</CASE-SENSITIVE>
+							<BASE-EXPRESSION format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="string">DIG15</VALUE>
+							</BASE-EXPRESSION>
+						</EXPRESSION>
+					</EXPECTATION>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">TEXT</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="dd4584c8-42c8-4f42-a1b8-444a78a48d23" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/PDL_5</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">0</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="da07176e-fe33-4472-9ea8-ae2f894ca8d7" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+			</TESTSTEP>
+			<TESTSTEP format-rev="3" id="48b97368-168c-4349-a3d1-526fcbcc9e2a" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+				<ACTION xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="de_DE">
+							<DVALUE xsi:type="string">Action</DVALUE>
+						</ELEMENT>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="string">PDL6</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="string">de_DE</INITIAL-LANGUAGE>
+				</ACTION>
+				<TESTSTEP id="a7be7ddf-bbdf-4f23-b903-4268000ba0a6" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/PDL_6</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">1</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="f59b2039-bb61-47e6-ad1e-299874641c84" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="8b8566f7-2c35-4dde-b8cf-e1f457983107" xsi:type="tsRead">
+					<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#NSIUSteeringButtonStatus</MAPPING-REF>
+					<EXPECTATION xsi:type="timelessOption">
+						<EXPRESSION xsi:type="builtStringExpression">
+							<CASE-SENSITIVE xsi:type="boolean">False</CASE-SENSITIVE>
+							<BASE-EXPRESSION format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="string">DIG16</VALUE>
+							</BASE-EXPRESSION>
+						</EXPRESSION>
+					</EXPECTATION>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">TEXT</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="395ecae8-24f2-43ab-8e1b-5962703481c7" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/PDL_6</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">0</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="157b4f5f-2386-43d0-b8a1-44e5440d63c2" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+			</TESTSTEP>
+			<TESTSTEP format-rev="3" id="f1e71c42-2a7c-4b09-8544-357ff8aab0a1" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+				<ACTION xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="string">ROT A</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="string">en_US</INITIAL-LANGUAGE>
+				</ACTION>
+				<TESTSTEP id="0c3d732b-e120-4009-ae2a-e748ed2d228e" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/ROT_1</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">1</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="aed4c02f-9c9a-45fb-b328-8c5d3878d9b8" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="3e8e25fd-f5bb-469c-8b8d-5b217dfba050" xsi:type="tsRead">
+					<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#NSwitchA</MAPPING-REF>
+					<EXPECTATION xsi:type="timelessOption">
+						<EXPRESSION xsi:type="builtNumericExpression">
+							<RELATION xsi:type="string">==</RELATION>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">1</VALUE>
+							</VALUE>
+						</EXPRESSION>
+					</EXPECTATION>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="21283163-7579-4902-8805-6bb567402198" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="576e9b4c-4319-4d11-86c6-c4bf63d677b0" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/ROT_1</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">2</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="bead9f67-84e4-4fee-9afe-5ec2e802c3bf" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="dba5d699-5731-4db5-b279-1b896ebf511e" xsi:type="tsRead">
+					<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#NSwitchA</MAPPING-REF>
+					<EXPECTATION xsi:type="timelessOption">
+						<EXPRESSION xsi:type="builtNumericExpression">
+							<RELATION xsi:type="string">==</RELATION>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">2</VALUE>
+							</VALUE>
+						</EXPRESSION>
+					</EXPECTATION>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="a68ad816-3226-4daa-999f-890f5fe12232" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="7bf4fc34-c38d-4648-af4e-fb005e7631c0" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/ROT_1</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">3</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="049a62c3-90d9-4510-a9db-3e62a0851acb" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="9d5a27da-5da0-49d7-8686-6e783c8f8729" xsi:type="tsRead">
+					<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#NSwitchA</MAPPING-REF>
+					<EXPECTATION xsi:type="timelessOption">
+						<EXPRESSION xsi:type="builtNumericExpression">
+							<RELATION xsi:type="string">==</RELATION>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">3</VALUE>
+							</VALUE>
+						</EXPRESSION>
+					</EXPECTATION>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="ed699885-8577-47c2-90b3-8fa574e1f9fa" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="2f079752-6635-4122-bb49-1a69eee89637" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/ROT_1</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">4</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="56b0abb9-87e8-4d80-adeb-d2e8de328ae1" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="63468afa-6463-444c-ba67-370618389801" xsi:type="tsRead">
+					<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#NSwitchA</MAPPING-REF>
+					<EXPECTATION xsi:type="timelessOption">
+						<EXPRESSION xsi:type="builtNumericExpression">
+							<RELATION xsi:type="string">==</RELATION>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">4</VALUE>
+							</VALUE>
+						</EXPRESSION>
+					</EXPECTATION>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="b23bc1b6-79cd-4551-bcea-8a1d8a881160" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="ad8fd4d5-5a9c-4fb8-8671-392b12964cd0" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/ROT_1</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">5</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="bfca8397-44f5-4459-9192-8060d89cd91d" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="e49c05d9-ca40-4777-bbfc-14a062e84245" xsi:type="tsRead">
+					<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#NSwitchA</MAPPING-REF>
+					<EXPECTATION xsi:type="timelessOption">
+						<EXPRESSION xsi:type="builtNumericExpression">
+							<RELATION xsi:type="string">==</RELATION>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">5</VALUE>
+							</VALUE>
+						</EXPRESSION>
+					</EXPECTATION>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="9122ee1a-95d0-4e03-8cfc-7e531d796c97" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="8d090fdf-9a56-4068-959f-aee80b524e1c" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/ROT_1</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">6</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="81a8bbc5-1de4-4bc9-a54e-3b5fb6f1a1ad" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="9eb64d08-3a71-4d5b-8f26-74f0aa434a42" xsi:type="tsRead">
+					<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#NSwitchA</MAPPING-REF>
+					<EXPECTATION xsi:type="timelessOption">
+						<EXPRESSION xsi:type="builtNumericExpression">
+							<RELATION xsi:type="string">==</RELATION>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">6</VALUE>
+							</VALUE>
+						</EXPRESSION>
+					</EXPECTATION>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="ec2db012-582c-4bd6-ac7f-203d36aa1fca" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="a6064846-aeb3-4365-b3ab-a5126cb5b1c5" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/ROT_1</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">7</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="9c769be0-8f28-4fd6-9415-e1be71690082" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="88978e8d-fb28-463e-a7da-1404cd076054" xsi:type="tsRead">
+					<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#NSwitchA</MAPPING-REF>
+					<EXPECTATION xsi:type="timelessOption">
+						<EXPRESSION xsi:type="builtNumericExpression">
+							<RELATION xsi:type="string">==</RELATION>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">7</VALUE>
+							</VALUE>
+						</EXPRESSION>
+					</EXPECTATION>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="ffb84639-1964-4b18-be3f-fe1888296b2e" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="82e82370-277c-4005-9c31-214f28625c14" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/ROT_1</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">8</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="cd15ab59-ccea-4f44-8778-4ad4efd7d302" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="08b532c8-c386-4176-9ba5-8619615c687e" xsi:type="tsRead">
+					<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#NSwitchA</MAPPING-REF>
+					<EXPECTATION xsi:type="timelessOption">
+						<EXPRESSION xsi:type="builtNumericExpression">
+							<RELATION xsi:type="string">==</RELATION>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">8</VALUE>
+							</VALUE>
+						</EXPRESSION>
+					</EXPECTATION>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="ae336bd3-0bdb-435c-8ef7-89cf2fcd4294" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="b8d827ed-ecf0-44c8-930c-541d1a784a5d" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/ROT_1</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">9</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="22639771-2eff-461c-a0a1-d20aa1764564" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="e475d709-f2ec-4f5c-bea7-b7b42f8e3815" xsi:type="tsRead">
+					<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#NSwitchA</MAPPING-REF>
+					<EXPECTATION xsi:type="timelessOption">
+						<EXPRESSION xsi:type="builtNumericExpression">
+							<RELATION xsi:type="string">==</RELATION>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">9</VALUE>
+							</VALUE>
+						</EXPRESSION>
+					</EXPECTATION>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="a347e957-a6a8-4932-8ff8-bf3cb1fb64dc" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="28a4d4d1-2643-4e77-b6b4-6d82f73be72c" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/ROT_1</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">10</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="4ec81244-1a51-4531-b172-ca7fb3793a1d" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="f9c27822-b922-493d-a739-f085bf0b07d2" xsi:type="tsRead">
+					<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#NSwitchA</MAPPING-REF>
+					<EXPECTATION xsi:type="timelessOption">
+						<EXPRESSION xsi:type="builtNumericExpression">
+							<RELATION xsi:type="string">==</RELATION>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">10</VALUE>
+							</VALUE>
+						</EXPRESSION>
+					</EXPECTATION>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="634f2f8e-2de0-4c73-b600-0858e498aa7b" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+			</TESTSTEP>
+			<TESTSTEP format-rev="3" id="b0214815-cede-4efe-a57c-2df2b6b9de1c" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+				<ACTION xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="string">ROT B</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="string">en_US</INITIAL-LANGUAGE>
+				</ACTION>
+				<TESTSTEP id="32e4dbab-af97-4836-9323-2288da1415c8" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/ROT_2</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">1</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="364d794f-7384-4e11-937c-d8dfc44c8f9a" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="1c336587-9dce-4ab9-addf-e851e4271b0d" xsi:type="tsRead">
+					<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#NSwitchB</MAPPING-REF>
+					<EXPECTATION xsi:type="timelessOption">
+						<EXPRESSION xsi:type="builtNumericExpression">
+							<RELATION xsi:type="string">==</RELATION>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">1</VALUE>
+							</VALUE>
+						</EXPRESSION>
+					</EXPECTATION>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="72515cc6-ee8c-44f5-be33-5ebdf21a0309" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="f9c69c54-c428-4531-bcba-f50cb2e9ee16" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/ROT_2</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">2</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="6c181a13-17ad-4ca9-afc3-435c30b8c0cb" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="2f89c248-ad29-482a-8823-672f709c2035" xsi:type="tsRead">
+					<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#NSwitchB</MAPPING-REF>
+					<EXPECTATION xsi:type="timelessOption">
+						<EXPRESSION xsi:type="builtNumericExpression">
+							<RELATION xsi:type="string">==</RELATION>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">2</VALUE>
+							</VALUE>
+						</EXPRESSION>
+					</EXPECTATION>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="713a52c0-e2ae-4e99-a494-2aca5cc44249" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="fabd5207-edbb-42e9-b823-ea476db0c2aa" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/ROT_2</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">3</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="f7cf5c01-bd8d-4230-878e-b05a4d84fcaf" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="7007a5cc-316a-4b62-9dca-898090e8e71e" xsi:type="tsRead">
+					<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#NSwitchB</MAPPING-REF>
+					<EXPECTATION xsi:type="timelessOption">
+						<EXPRESSION xsi:type="builtNumericExpression">
+							<RELATION xsi:type="string">==</RELATION>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">3</VALUE>
+							</VALUE>
+						</EXPRESSION>
+					</EXPECTATION>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="ad970ca3-088a-42a9-a119-e29377a9323b" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="a971ef2e-b6ee-4788-9082-26c55d7187bb" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/ROT_2</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">4</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="d4d721df-78c1-4f0e-8cd3-84e08e9d52b9" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="0490e4b0-e51b-4eff-8d9c-3677bf1e364f" xsi:type="tsRead">
+					<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#NSwitchB</MAPPING-REF>
+					<EXPECTATION xsi:type="timelessOption">
+						<EXPRESSION xsi:type="builtNumericExpression">
+							<RELATION xsi:type="string">==</RELATION>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">4</VALUE>
+							</VALUE>
+						</EXPRESSION>
+					</EXPECTATION>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="722a21a6-34d3-4a0e-9408-b219b9d70957" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="1c084c8c-d954-4a0b-842a-b1ceb1e1e7ad" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/ROT_2</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">5</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="e98aaf70-8e76-4607-bad7-910528c64407" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="4683dada-a572-4f5b-b4f1-fff26ecb39e4" xsi:type="tsRead">
+					<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#NSwitchB</MAPPING-REF>
+					<EXPECTATION xsi:type="timelessOption">
+						<EXPRESSION xsi:type="builtNumericExpression">
+							<RELATION xsi:type="string">==</RELATION>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">5</VALUE>
+							</VALUE>
+						</EXPRESSION>
+					</EXPECTATION>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="e07b9443-9ab3-4264-8b46-1ed04a8cb456" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="dd68ecdb-8ac6-4b6f-8876-f891445a6840" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/ROT_2</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">6</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="9a8fe9f7-91d6-4262-8507-cf1e4bdd51ff" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="45fb9ce0-6820-44fe-bf1e-3f8c34549faa" xsi:type="tsRead">
+					<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#NSwitchB</MAPPING-REF>
+					<EXPECTATION xsi:type="timelessOption">
+						<EXPRESSION xsi:type="builtNumericExpression">
+							<RELATION xsi:type="string">==</RELATION>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">6</VALUE>
+							</VALUE>
+						</EXPRESSION>
+					</EXPECTATION>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="5a4f872f-409e-4068-9e54-3f0adabe5c15" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="e9770c05-a11e-4e1d-a420-8bbdd132aa49" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/ROT_2</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">7</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="d6db3555-dfc8-4d2a-bcdb-802af310ee1d" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="fa5da40a-c1cc-414f-aa6d-ef12db9e5704" xsi:type="tsRead">
+					<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#NSwitchB</MAPPING-REF>
+					<EXPECTATION xsi:type="timelessOption">
+						<EXPRESSION xsi:type="builtNumericExpression">
+							<RELATION xsi:type="string">==</RELATION>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">7</VALUE>
+							</VALUE>
+						</EXPRESSION>
+					</EXPECTATION>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="44e5dd57-25c8-4409-acd2-b945af0a9dae" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="7380cd30-5517-475b-a33d-4ebe3ea93c95" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/ROT_2</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">8</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="f8ef230a-d4cc-4630-b7fc-f1a90f7bc7a0" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="ed99d902-c625-4d2d-86d9-5b36fcb79311" xsi:type="tsRead">
+					<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#NSwitchB</MAPPING-REF>
+					<EXPECTATION xsi:type="timelessOption">
+						<EXPRESSION xsi:type="builtNumericExpression">
+							<RELATION xsi:type="string">==</RELATION>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">8</VALUE>
+							</VALUE>
+						</EXPRESSION>
+					</EXPECTATION>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="e702a155-7ed2-4ad4-8f4c-af4d18e14693" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="3870c39e-c9b0-44b3-bad4-d31d70ded8ee" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/ROT_2</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">9</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="a1e26c37-b309-4e00-81f1-331d1c969a89" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="2a902b35-a186-46e2-ba66-9a2a300287bc" xsi:type="tsRead">
+					<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#NSwitchB</MAPPING-REF>
+					<EXPECTATION xsi:type="timelessOption">
+						<EXPRESSION xsi:type="builtNumericExpression">
+							<RELATION xsi:type="string">==</RELATION>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">9</VALUE>
+							</VALUE>
+						</EXPRESSION>
+					</EXPECTATION>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="de2dd239-22f8-40f5-bb36-a312ccd141e3" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="be5c74a1-6e99-4905-8af5-ad3d86cf3cc5" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/ROT_2</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">10</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="8ebc40d4-3b4a-40fa-a0bf-6ed737d984bc" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="d62d3f9d-f676-4db9-8126-c352c840c696" xsi:type="tsRead">
+					<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#NSwitchB</MAPPING-REF>
+					<EXPECTATION xsi:type="timelessOption">
+						<EXPRESSION xsi:type="builtNumericExpression">
+							<RELATION xsi:type="string">==</RELATION>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">10</VALUE>
+							</VALUE>
+						</EXPRESSION>
+					</EXPECTATION>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="aa3d337c-00d1-4bad-9b56-9d2416d198ff" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+			</TESTSTEP>
+			<TESTSTEP format-rev="3" id="bd69fafb-af0e-4a3a-99fd-c39137056fbb" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+				<ACTION xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="string">ROT C</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="string">en_US</INITIAL-LANGUAGE>
+				</ACTION>
+				<TESTSTEP id="adcb4cbc-f898-430b-b50c-47c2aa249a87" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/ROT_3</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">1</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="737541a7-0460-4aa2-8992-2e34a2dab5b1" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="ebd6ec25-e1a9-4055-9f98-e326e17d84a3" xsi:type="tsRead">
+					<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#NSwitchC</MAPPING-REF>
+					<EXPECTATION xsi:type="timelessOption">
+						<EXPRESSION xsi:type="builtNumericExpression">
+							<RELATION xsi:type="string">==</RELATION>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">1</VALUE>
+							</VALUE>
+						</EXPRESSION>
+					</EXPECTATION>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="75758f9c-1a05-4652-b4c6-ee99825480e3" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="de20529a-2422-476b-bfcc-9058356efe43" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/ROT_3</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">2</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="d813581a-d126-47c2-ba1b-31e2d76cb1a3" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="cd4c4889-d61d-43bd-83ff-96ce5322e2c0" xsi:type="tsRead">
+					<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#NSwitchC</MAPPING-REF>
+					<EXPECTATION xsi:type="timelessOption">
+						<EXPRESSION xsi:type="builtNumericExpression">
+							<RELATION xsi:type="string">==</RELATION>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">2</VALUE>
+							</VALUE>
+						</EXPRESSION>
+					</EXPECTATION>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="b0ac1375-3747-40e1-8442-d7d6c027d9ae" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="89d68cf8-5d5d-4f3f-b176-f4a46db2c61d" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/ROT_3</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">3</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="f75d2080-d205-4e15-a457-67602fa989ba" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="6988a673-9d2a-4366-ac46-f4fb57db515e" xsi:type="tsRead">
+					<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#NSwitchC</MAPPING-REF>
+					<EXPECTATION xsi:type="timelessOption">
+						<EXPRESSION xsi:type="builtNumericExpression">
+							<RELATION xsi:type="string">==</RELATION>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">3</VALUE>
+							</VALUE>
+						</EXPRESSION>
+					</EXPECTATION>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="951cc4cb-6d7d-45ce-b957-e192f7aa8c11" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="d598b5fd-cc52-4572-a4cb-79c71934a453" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/ROT_3</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">4</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="8b716597-6c71-462e-8464-a2ac65e44996" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="b04b1319-e55e-413a-a4b3-c545c8d9ef62" xsi:type="tsRead">
+					<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#NSwitchC</MAPPING-REF>
+					<EXPECTATION xsi:type="timelessOption">
+						<EXPRESSION xsi:type="builtNumericExpression">
+							<RELATION xsi:type="string">==</RELATION>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">4</VALUE>
+							</VALUE>
+						</EXPRESSION>
+					</EXPECTATION>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="b24773ff-19cf-4112-9e05-557c94d49e87" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="11f750fe-16ea-4c39-a8d2-d4008df6f56c" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/ROT_3</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">5</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="0d6e9cfe-df29-4244-927c-e113cbf589fc" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="7e9be24d-3332-40a3-80fa-04fa50e64b1f" xsi:type="tsRead">
+					<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#NSwitchC</MAPPING-REF>
+					<EXPECTATION xsi:type="timelessOption">
+						<EXPRESSION xsi:type="builtNumericExpression">
+							<RELATION xsi:type="string">==</RELATION>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">5</VALUE>
+							</VALUE>
+						</EXPRESSION>
+					</EXPECTATION>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="edf4926c-84bd-44ba-855d-d2c4a77bd027" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="85f23da7-2033-4412-b2a4-9a01d8b2fe1e" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/ROT_3</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">6</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="74803da2-3fcb-429b-9a04-05a50d7dea1f" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="40b10745-adac-4399-ab45-c8694df1ee39" xsi:type="tsRead">
+					<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#NSwitchC</MAPPING-REF>
+					<EXPECTATION xsi:type="timelessOption">
+						<EXPRESSION xsi:type="builtNumericExpression">
+							<RELATION xsi:type="string">==</RELATION>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">6</VALUE>
+							</VALUE>
+						</EXPRESSION>
+					</EXPECTATION>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="cf4baf79-41f4-4e0e-a889-97582ad8d37b" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="6fcf9f1b-eadd-4c73-b823-954447b17763" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/ROT_3</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">7</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="c8eeb6a6-a564-49b5-9c20-94858e526dcf" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="c124a2fd-6456-4283-baac-9e417878add9" xsi:type="tsRead">
+					<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#NSwitchC</MAPPING-REF>
+					<EXPECTATION xsi:type="timelessOption">
+						<EXPRESSION xsi:type="builtNumericExpression">
+							<RELATION xsi:type="string">==</RELATION>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">7</VALUE>
+							</VALUE>
+						</EXPRESSION>
+					</EXPECTATION>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="2613b164-4384-4118-bc44-2d42735ff755" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="51574ae5-432e-40b8-a968-031808742cab" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/ROT_3</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">8</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="5a795e9b-42c5-4b94-8596-a1337deff3d8" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="7107c5fc-8ca2-49b9-a14f-72dd500d51e5" xsi:type="tsRead">
+					<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#NSwitchC</MAPPING-REF>
+					<EXPECTATION xsi:type="timelessOption">
+						<EXPRESSION xsi:type="builtNumericExpression">
+							<RELATION xsi:type="string">==</RELATION>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">8</VALUE>
+							</VALUE>
+						</EXPRESSION>
+					</EXPECTATION>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="3e48455a-efff-43d9-975f-bfa1862b3763" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="71804470-d796-4b12-9d33-e03bc83fa37e" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/ROT_3</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">9</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="9af588b1-9309-45d2-94fc-290560d8557f" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="0a46518e-274c-4c33-b4f7-b863e2cb951f" xsi:type="tsRead">
+					<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#NSwitchC</MAPPING-REF>
+					<EXPECTATION xsi:type="timelessOption">
+						<EXPRESSION xsi:type="builtNumericExpression">
+							<RELATION xsi:type="string">==</RELATION>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">9</VALUE>
+							</VALUE>
+						</EXPRESSION>
+					</EXPECTATION>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="a16d8154-ba53-4c3f-bac6-acb27c2041cf" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="71970506-110e-41ae-8cf0-42213cb5e3e0" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/ROT_3</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">10</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="e550132f-408f-4892-957d-09e0ba762def" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="11ccf38b-8a01-4e81-87a8-660dbbaffdbd" xsi:type="tsRead">
+					<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#NSwitchC</MAPPING-REF>
+					<EXPECTATION xsi:type="timelessOption">
+						<EXPRESSION xsi:type="builtNumericExpression">
+							<RELATION xsi:type="string">==</RELATION>
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">10</VALUE>
+							</VALUE>
+						</EXPRESSION>
+					</EXPECTATION>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="dcb2ae66-43a1-426d-a2b8-6d0271401e19" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">1000</VALUE>
+					</TIME>
+				</TESTSTEP>
+			</TESTSTEP>
+			<TESTSTEP format-rev="3" id="5093ed0d-1cc8-40b0-a010-4e03f5d29664" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+				<ACTION xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="string">MF Check</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="string">en_US</INITIAL-LANGUAGE>
+				</ACTION>
+			</TESTSTEP>
+		</TESTSTEP>
+		<TESTSTEP format-rev="2" id="517" name="TsPostcondBlock" xsi:type="utility-0d2ac4dc-1d8f-4182-81d1-a5d5ca74a44f">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="de_DE">
+						<DVALUE xsi:type="string">Postcondition</DVALUE>
+					</ELEMENT>
+					<ELEMENT dkey="en_US">
+						<DVALUE xsi:type="string">Postcondition</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="string">de_DE</INITIAL-LANGUAGE>
+			</ACTION>
+			<EFFECT-TEST-RESULT xsi:type="boolean">False</EFFECT-TEST-RESULT>
+		</TESTSTEP>
+	</TESTSTEPS>
+</PACKAGE>

@@ -1,0 +1,61 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               Intel64 Family 6 Model 158 Stepping 9, GenuineIntel
+Number of CPUs:    8
+RAM:               31.9GB
+Diskinfo:          37.3GB/446.5GB
+Operating system:  Windows-10-10.0.19045
+Long path support: False
+-------------------------------------------------------------------------
+
+= 13.11.2024 16:57:48 (UTC +0:00) === ecu.test 2024.4.0.157279+6cc6544af3d9-FeatureSet 157279+6cc6544af3d9 (2024/10/15 14:58:06) (64bit) ===
+Python 3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)] / wx: 4.2.1+tt.5
+Protocol: log level Default. Additional logging active: default output
+
+License: ecu.test
+         - License options:
+             + ecu.test diagnostics
+             + trace.check
+         - valid up to version: 2024.4
+         - valid until: 2025-01-28
+         - licensed for: Mahindra_Racing_UK
+         - runner: False
+         - Server: license01.tracetronic.de
+
+
+
+2024-11-13 16:57:48.563 18080 ToolLibs ERROR:
+                        Traceback (most recent call last):
+                          File "tts\core\toolingFramework\networking\ToolServerConnector.py", line 353, in PrintRemoteException
+                          File "tts\core\toolingFramework\networking\ToollibProcessStarter.py", line 643, in __CallCommandErrback
+                          File ".\Lib\site-packages\twisted\python\failure.py", line 505, in raiseException
+                          File ".\Lib\site-packages\twisted\python\threadpool.py", line 269, in inContext
+                          File ".\Lib\site-packages\twisted\python\threadpool.py", line 285, in <lambda>
+                          File ".\Lib\site-packages\twisted\python\context.py", line 117, in callWithContext
+                          File ".\Lib\site-packages\twisted\python\context.py", line 82, in callWithContext
+                          File "tts\tooling\tool\CANoeCANalyzer\CANoeCANalyzerLib.py", line 681, in CallSystemPort
+                          File "tts\tooling\tool\CANoeCANalyzer\common\SysVarPort.py", line 51, in SetVariableValue
+                          File ".\Lib\site-packages\win32com\client\__init__.py", line 597, in __setattr__
+                        pywintypes.com_error: (-2147352567, 'Exception occurred.', (0, None, None, None, 0, -2147467259), None)
+2024-11-13 16:57:48.587 18080 ManagedWorker-4*PE.Run() DEBUG_EXC_PRINT:
+                        Traceback (most recent call last):
+                          File "tts\core\toolingFramework\toolAccess\LockProxy.py", line 57, in __call__
+                          File "tts\tooling\tool\CANoeCANalyzer\CANoeCANalyzer.py", line 845, in WriteVariableGeneric
+                          File "tts\core\toolingFramework\interface\AbstractAdapter.py", line 1113, in <lambda>
+                          File "tts\core\toolingFramework\toollibLoader\ToolLibLoaderTwisted.py", line 177, in SendCommand
+                          File "tts\core\toolingFramework\toollibLoader\ToolLibLoaderTwisted.py", line 99, in BlockingCallFromThreadWithTimeout
+                          File ".\Lib\site-packages\twisted\python\failure.py", line 505, in raiseException
+                        tt._Exceptions_.TTError: com_error: (-2147352567, 'Exception occurred.', (0, None, None, None, 0, -2147467259), None)
+                        
+                        The above exception was the direct cause of the following exception:
+                        
+                        Traceback (most recent call last):
+                          File "tts\testExecution\engine\TestEngine.py", line 935, in ExecuteTestStep
+                          File "tts\testExecution\testSteps\generic\TestStepWriteExec.py", line 206, in Run
+                          File "tts\testModule\model\mapping\XAModelVariableExec.py", line 184, in Write
+                          File "tts\testModule\model\mapping\XAModelVariableExec.py", line 352, in WriteVariablePath
+                          File "tts\core\toolingFramework\toolAccess\LockProxy.py", line 76, in __call__
+                          File "tts\core\toolingFramework\toolAccess\LockProxy.py", line 96, in ReportToolError
+                        tts.core.toolingFramework.toolAccess.Exceptions.ToolError: Port MDL-SystemVarModel01 (@local): PortWriteVariableGeneric() failed: com_error: (-2147352567, 'Exception occurred.', (0, None, None, None, 0, -2147467259), None)

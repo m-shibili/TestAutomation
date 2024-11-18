@@ -1,0 +1,72 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               Intel64 Family 6 Model 158 Stepping 9, GenuineIntel
+Number of CPUs:    8
+RAM:               31.9GB
+Diskinfo:          37.3GB/446.5GB
+Operating system:  Windows-10-10.0.19045
+Long path support: False
+-------------------------------------------------------------------------
+
+= 13.11.2024 17:06:46 (UTC +0:00) === ecu.test 2024.4.0.157279+6cc6544af3d9-FeatureSet 157279+6cc6544af3d9 (2024/10/15 14:58:06) (64bit) ===
+Python 3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)] / wx: 4.2.1+tt.5
+Protocol: log level Default. Additional logging active: default output
+
+License: ecu.test
+         - License options:
+             + ecu.test diagnostics
+             + trace.check
+         - valid up to version: 2024.4
+         - valid until: 2025-01-28
+         - licensed for: Mahindra_Racing_UK
+         - runner: False
+         - Server: license01.tracetronic.de
+
+
+
+2024-11-13 17:06:46.375 18080 ManagedWorker-4*PE.Run() DEBUG_EXC_PRINT:
+                        Traceback (most recent call last):
+                          File "tts\core\expressions\BaseExpressionChildren.py", line 283, in Evaluate
+                        TypeError: unsupported operand type(s) for -: 'NoRepresentation' and 'NoRepresentation'
+                        
+                        During handling of the above exception, another exception occurred:
+                        
+                        Traceback (most recent call last):
+                          File "tts\testExecution\testSteps\dataoperations\calculationNG\TsCalculationExec.py", line 169, in Call
+                          File "tts\core\expressions\BaseExpressionChildren.py", line 280, in Evaluate
+                          File "tts\core\expressions\BaseExpressionChildren.py", line 295, in Evaluate
+                        tts.core.expressions.BaseExpressionErrors.ExpressionValueError: Operation ~No Representation~<NoRepresentation> - ~No Representation~<NoRepresentation> cannot be executed!
+                        
+                        During handling of the above exception, another exception occurred:
+                        
+                        Traceback (most recent call last):
+                          File "tts\testExecution\engine\TestEngine.py", line 935, in ExecuteTestStep
+                          File "tts\testExecution\testSteps\dataoperations\calculationNG\TsCalculationExec.py", line 234, in Run
+                          File "tts\testExecution\testSteps\dataoperations\calculationNG\TsCalculationExec.py", line 173, in Call
+                        tts.testExecution.testSteps.dataoperations.calculationNG.TsCalculationExec.UserCodeException: Operation ~No Representation~<NoRepresentation> - ~No Representation~<NoRepresentation> cannot be executed!
+2024-11-13 17:06:46.412 18080 ManagedWorker-4*PE.Run() DEBUG_EXC_PRINT:
+                        Traceback (most recent call last):
+                          File "tts\core\expressions\BaseExpressionChildren.py", line 280, in Evaluate
+                          File "tts\core\expressions\BaseExpressionChildren.py", line 601, in Evaluate
+                          File "tts\testExecution\engine\Namespace.py", line 139, in __getitem__
+                          File "tts\core\package\varManager\VariableContainer.py", line 96, in __getitem__
+                          File "tts\core\package\varManager\VariableContainer.py", line 73, in __varToValue
+                        tts.core.package.varManager.Exceptions.VariableError: Read access to uninitialized variable: aSteerGain
+                        
+                        During handling of the above exception, another exception occurred:
+                        
+                        Traceback (most recent call last):
+                          File "tts\testExecution\testSteps\dataoperations\calculationNG\TsCalculationExec.py", line 169, in Call
+                          File "tts\core\expressions\BaseExpressionChildren.py", line 281, in Evaluate
+                          File "tts\core\expressions\BaseExpressionChildren.py", line 297, in Evaluate
+                        tts.core.expressions.BaseExpressionErrors.ExpressionValueError: VariableError: Read access to uninitialized variable: aSteerGain
+                        
+                        During handling of the above exception, another exception occurred:
+                        
+                        Traceback (most recent call last):
+                          File "tts\testExecution\engine\TestEngine.py", line 935, in ExecuteTestStep
+                          File "tts\testExecution\testSteps\dataoperations\calculationNG\TsCalculationExec.py", line 234, in Run
+                          File "tts\testExecution\testSteps\dataoperations\calculationNG\TsCalculationExec.py", line 173, in Call
+                        tts.testExecution.testSteps.dataoperations.calculationNG.TsCalculationExec.UserCodeException: VariableError: Read access to uninitialized variable: aSteerGain

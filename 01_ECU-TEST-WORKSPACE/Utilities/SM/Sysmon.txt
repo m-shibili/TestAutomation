@@ -1,0 +1,198 @@
+''' - MODULE SETUP - '''
+# ---------- Import required modules
+import sys
+import json
+import os
+import configparser
+from time import gmtime, strftime
+import fnmatch
+
+# ---------- SysMon API setup 
+from win32com.client import makepy
+sys.argv = ["makepy", r"C:\\Program Files (x86)\\McLaren Electronic Systems\\System Monitor 8\\SystemMonitor.tlb"]
+makepy.main ()
+from win32com.client import gencache
+SMAPI=gencache.EnsureModule('{86E60CC0-516A-11D2-BE2C-00004B405F8E}', 0, 1, 0)
+#^Located in: C:\Users\<UserName>\AppData\Local\Temp\gen_py\3.11
+sm=SMAPI.TSysMonApi()
+
+
+
+
+
+
+# ---------- App number function
+def get_app_number(number: int) -> int:
+      return 12800 + number 
+
+# ---------- Get data version
+def get_data_ver(AppID):
+    PGVVer=int()
+    #AppID=int(12801)
+    (res,PGVVer)=sm.GetProgramVersionIDEx(AppID,PGVVer)
+    return hex(PGVVer).lstrip("0x")
+
+# ---------- App identifiers: App ID (eg 12801), App name (eg APP1), App version (eg 110c)
+def app_idents() -> list:
+    n = 7
+    app = 'APP'
+    AppIDs = []
+    AppNames = []
+    AppVer = []
+    for x in range(0, n+1):
+        AppIDs.append(get_app_number(x))
+        AppNames.append(f'{app}{x}')
+        AppVer.append(get_data_ver(AppIDs[x]))
+    return AppIDs, AppNames, AppVer
+
+AppIDs, AppNames, AppVer = app_idents()
+
+# ---------- Date function
+def datetime(id: str):
+    strftime(f"%{id}", gmtime()) 
+    return strftime(f'%{id}',gmtime())
+
+year = datetime('y')    
+
+''' - OBTAIN FROM SYSTEM MONITOR - '''
+# ---------- Get string value measurement function 
+def str_val_meas(AppNo: int,parameter:float):
+    (res,parameter) = sm.GetStringValueMeasurement(AppNo,parameter,parameter)
+    return(parameter)
+
+# ---------- Get dtv comments 
+def get_dtv_comments(AppNo:int) -> str:
+    comments: str = None
+    (_, comments) = sm.GetDataVersionComment(AppNo, comments) 
+    return comments
+
+# ---------- Get dtv notes 
+def get_dtv_notes(AppNo:int,notes=None) -> str:
+    notes: str = None
+    (_, notes) = sm.GetDataVersionNotes(AppNo, notes) 
+    return notes
+
+# ---------- Get modified data version 
+def is_dtv_modded(AppNo:int) -> bool:
+    (_, value) = sm.DataVersionModified(AppNo)
+    return value
+#^THIS is how all self / wAppId / (result) type calls should be done
+     
+''' - DO TO SYSTEM MONITOR - '''
+# ---------- Reprogram apps function
+def reprogram(AppNo:int):
+    return sm.Reprogram(AppNo)
+
+# ---------- Reprogram apps function
+def reprogram_list(AppNo:list):
+    return sm.ReprogramEx(AppNo)
+
+# ---------- Download data changes (F7) to ECU function
+def F7(AppNo:int):
+    return sm.DownloadDataChanges(AppNo)
+
+# ---------- Download remote logging config to ECU (Ctrl+Alt+F5) function
+def download_remote():
+    return sm.DownloadRemote()
+
+# ---------- Download remote logging config to ECU (Ctrl+Alt+F5) function
+def upload_remote():
+    return sm.UploadRemote()
+
+# ---------- Save the project file as 
+def save_project_as(newname:str,saveall_bool:bool,comment:str,notes:str):
+    return sm.SaveProjectAs(newname,saveall_bool,comment,notes)
+
+# ---------- DTV save and increment 
+def dtv_save_and_number(AppNo:int,comment:str,notes:str):
+    return sm.DataVersionSaveIncrement(AppNo,comment,f'{notes}\r\r\n') 
+
+# ---------- DTV save as
+def dtv_save_as(AppNo:int,filepath:str,filename:str,comment_notes:str):
+    return sm.DataVersionSave(AppNo,f'{filepath+filename}.dtv',comment_notes,f'{comment_notes}\r\r\n') 
+
+# ---------- Clear DTV notes 
+def clear_notes(AppNo:int):
+    return 	sm.ClearDataVersionNotes(AppNo)
+
+
+''' - UTILITY - ''' 
+# ---------- App increment function
+def app_increment(current_increment:str) ->str:
+    current_increment_int = int(current_increment)
+    next_increment = f'00{current_increment_int+1}'
+    return(next_increment)
+    
+# ---------- .ini file reader function for individual parameters 
+def ini_reader(path:str,filename:str,section:str,parameter:str):
+    config = configparser.ConfigParser()
+    config.read(f'{path}{filename}.ini')
+    ini_param = config.get(section,parameter)
+    return ini_param
+
+# ---------- .ini file reader function for whole sections 
+def ini_reader_sections(path:str,filename:str,section:str): #-> dict:
+    config = configparser.ConfigParser()
+    config.read(f'{path}{filename}.ini')
+    section_clean = section.replace('"','')
+    ini_section = dict(config.items(section_clean))
+    return ini_section
+
+# ---------- .json file reader function 
+def json_reader(path:str,filename:str):
+    json_dict = json.load(open(f'{path}{filename}.json'))
+    return json_dict
+
+# ---------- Report .json file writer function 
+def report_writer(dictionary:dict,file_path:str,file_name:str,sort:bool,indent_level:int):
+    if os.path.exists(file_path):
+        pass
+    else:
+        os.makedirs(file_path)  
+    with open(f'{file_path}{file_name}.json', 'w+') as f:
+        f.write(json.dumps(dictionary, sort_keys=sort, indent=indent_level))
+
+# ---------- Find DIL specific sub folders
+def find_dil_folders(path:str, pattern:str) -> list:
+    dir = os.listdir(path)
+    dil_subdir = []
+    for name in dir:
+        if fnmatch.fnmatch(name,pattern) == True:
+            try: 
+                dil_subdir.append(name)
+            except:
+                pass
+    return dil_subdir
+
+# ---------- Find DIL specific sub folders in an automatic loop
+def find_dil_folders_auto_loop(print_to_console_bool:bool) -> list:
+    season = 9
+    pattern = f'{year}S*'
+    for x in range(1,8):
+        path = f'C:/FormulaE_S{season}_Tag320/MAH_TAG320{AppNames[x]}_S{season}/{AppVer[x]}/' 
+        dir = os.listdir(path)
+        dil_subdir = []      
+        for name in dir:
+            if fnmatch.fnmatch(name,pattern) == True:
+                try: 
+                    dil_subdir.append(name)
+                except:
+                    pass
+        if print_to_console_bool == True: 
+            print(f'{AppNames[x]} DIL subfolders: {dil_subdir}')
+        else: 
+            pass
+    return dil_subdir
+
+''' - CLASSES - '''
+# ---------- Class to obtain basic details in System Monitor
+class BasicSMDetals:
+    # ---------- Get details 
+    _DriverID1 = str_val_meas(AppIDs[1],"cDriverInitial1")
+    _DriverID2 = str_val_meas(AppIDs[1],"cDriverInitial2")
+    _DriverID3 = str_val_meas(AppIDs[1],"cDriverInitial3")
+    DriverID = _DriverID1+_DriverID2+_DriverID3
+    TrackID = str_val_meas(AppIDs[2],"NEventLocationShort")
+    NChassis = ('0'+str_val_meas(AppIDs[2],'NChassis'))
+    _NRun_str =  str_val_meas(AppIDs[2],'NRun') 
+    NRun = NRun = int(_NRun_str)+1 #File writen when logging starts; NRun increment when car moves 

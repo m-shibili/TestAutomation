@@ -1,0 +1,51 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               Intel64 Family 6 Model 158 Stepping 9, GenuineIntel
+Number of CPUs:    8
+RAM:               31.9GB
+Diskinfo:          10.6GB/446.5GB
+Operating system:  Windows-10-10.0.19045
+Long path support: False
+-------------------------------------------------------------------------
+
+= 07.11.2024 10:24:48 (UTC +0:00) === ecu.test 2024.4.0.157279+6cc6544af3d9-FeatureSet 157279+6cc6544af3d9 (2024/10/15 14:58:06) (64bit) ===
+Python 3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)] / wx: 4.2.1+tt.5
+Protocol: log level Default. Additional logging active: default output
+
+License: ecu.test
+         - License options:
+             + ecu.test diagnostics
+             + trace.check
+         - valid up to version: 2024.4
+         - valid until: 2025-01-28
+         - licensed for: Mahindra_Racing_UK
+         - runner: False
+         - Server: license01.tracetronic.de
+
+
+
+2024-11-07 10:24:48.328 15452 ManagedWorker-1*PE.Run() DEBUG_EXC_PRINT:
+                        Traceback (most recent call last):
+                          File "tts\core\package\engine\ExecutionMappingSpaceManager.py", line 567, in __CallRegisterXaObjects
+                        tt._Exceptions_.TTError: Error during initialization: Variable path 'APP1#VRESS' does not exist!
+2024-11-07 10:24:48.354 15452 ManagedWorker-1*PE.Run() DEBUG_EXC_PRINT:
+                        Traceback (most recent call last):
+                          File "tts\core\toolingFramework\toolAccess\LockProxy.py", line 57, in __call__
+                          File "tts\core\toolingFramework\interface\portTypes\AbstractModelPort.py", line 258, in ReadModelSignalGeneric
+                          File "tts\core\toolingFramework\userTool\adapters\UserModelPortAdapter.py", line 250, in ReadVariableGeneric
+                        tt._Exceptions_.TTError: Cannot read value. Datatype is unsupported: <class 'NoneType'>
+                        
+                        The above exception was the direct cause of the following exception:
+                        
+                        Traceback (most recent call last):
+                          File "tts\testExecution\engine\TestEngine.py", line 935, in ExecuteTestStep
+                          File "tts\testExecution\testSteps\generic\TestStepReadExec.py", line 532, in Run
+                          File "tts\testExecution\options\StdOptions.py", line 70, in AppraiseWithGenericDataType
+                          File "tts\testExecution\options\TimeOptions.py", line 362, in _Appraise
+                          File "tts\testModule\model\mapping\XAModelVariableExec.py", line 167, in Read
+                          File "tts\testModule\model\mapping\XAModelVariableExec.py", line 216, in ReadVariablePath
+                          File "tts\core\toolingFramework\toolAccess\LockProxy.py", line 76, in __call__
+                          File "tts\core\toolingFramework\toolAccess\LockProxy.py", line 96, in ReportToolError
+                        tts.core.toolingFramework.toolAccess.Exceptions.ToolError: Port MDL-DEFAULT01 (@local): PortReadModelSignalGeneric() failed: Cannot read value. Datatype is unsupported: <class 'NoneType'>

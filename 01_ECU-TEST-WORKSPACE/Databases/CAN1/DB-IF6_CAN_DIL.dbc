@@ -1,0 +1,85 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: IMU VCU
+
+
+BO_ 1008 Tx1: 8 IMU
+ SG_ AccTemp : 55|16@0- (0.1,0) [-3276.8|3276.7] "°C" Vector__XXX
+ SG_ AccZ_user : 39|16@0- (0.001,0) [-32.768|32.767] "g" Vector__XXX
+ SG_ AccY_user : 23|16@0- (0.001,0) [-32.768|32.767] "g" Vector__XXX
+ SG_ AccX_user : 7|16@0- (0.001,0) [-32.768|32.767] "g" Vector__XXX
+
+BO_ 1012 Tx2: 8 IMU
+ SG_ GyrTemp : 55|16@0- (0.1,0) [-3276.8|3276.7] "°C" Vector__XXX
+ SG_ GyrZ_user : 39|16@0- (0.01,0) [-327.68|327.67] "°/s" Vector__XXX
+ SG_ GyrY_user : 23|16@0- (0.01,0) [-327.68|327.67] "°/s" Vector__XXX
+ SG_ GyrX_user : 7|16@0- (0.01,0) [-327.68|327.67] "°/s" Vector__XXX
+
+
+
+BA_DEF_  "Baudrate" INT 0 1000000;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_  "DBName" STRING ;
+BA_DEF_ SG_  "GenSigStartValue" FLOAT 0 100000000000;
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition";
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 100000;
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 100000;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 1000;
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 999999;
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 2 50000;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Cyclic","Spontaneous","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed","IfActive","NoMsgSendType","NotUsed";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 1000;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BU_  "ILUsed" ENUM  "No","Yes";
+BA_DEF_DEF_  "Baudrate" 1000000;
+BA_DEF_DEF_  "BusType" "CAN";
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenSigSendType" "Cyclic";
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 100;
+BA_DEF_DEF_  "GenMsgSendType" "Cyclic";
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenMsgILSupport" "Yes";
+BA_DEF_DEF_  "ILUsed" "Yes";
+BA_ "BusType" "CAN";
+BA_ "DBName" "IMU";
+BA_ "GenMsgCycleTime" BO_ 1008 2;
+BA_ "GenMsgCycleTime" BO_ 1012 2;
+

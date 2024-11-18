@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ANALYSIS-PACKAGE prog-version="2024.4.0.157279+6cc6544af3d9-FeatureSet" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test analysisPackage.xsd">
+	<INFORMATION format-rev="2" xsi:type="packageInfo">
+		<DESCRIPTION xsi:type="string"/>
+		<VERSION xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-ACTION-FIELD-TEMPLATE xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-EXPECTATION-FIELD-TEMPLATE xsi:type="string"/>
+	</INFORMATION>
+	<MAPPING format-rev="1" xsi:type="localMappingSpace"/>
+	<TRACE-ANALYSIS format-rev="3" uuid="81a581469dba11efa78338d54714d0ed" xsi:type="traceAnalysis">
+		<NAME xsi:type="string">Analysis package</NAME>
+		<ANALYSISITEM format-rev="1" uuid="81a5a8349dba11ef90a738d54714d0ed" xsi:type="episode">
+			<NAME xsi:type="string">New episode</NAME>
+		</ANALYSISITEM>
+		<VIRTUAL-SIGNALS-MANAGER xsi:type="virtualSignalsManager">
+			<VIRTUAL-SIGNALS/>
+		</VIRTUAL-SIGNALS-MANAGER>
+	</TRACE-ANALYSIS>
+</ANALYSIS-PACKAGE>

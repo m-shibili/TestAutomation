@@ -1,0 +1,43 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               Intel64 Family 6 Model 158 Stepping 9, GenuineIntel
+Number of CPUs:    8
+RAM:               31.9GB
+Diskinfo:          18.8GB/446.5GB
+Operating system:  Windows-10-10.0.19045
+Long path support: False
+-------------------------------------------------------------------------
+
+= 03.11.2024 15:47:41 (UTC +0:00) === ecu.test 2024.3.0.156114+c108ea21784a 156114+c108ea21784a (2024/09/19 12:15:31) (64bit) ===
+Python 3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)] / wx: 4.2.1+tt.5
+Protocol: log level Default. Additional logging active: default output
+
+License: ecu.test
+         - License options:
+             + ecu.test diagnostics
+         - valid up to version: 2024.4
+         - valid until: 2025-01-28
+         - licensed for: Mahindra_Racing_UK
+         - runner: False
+         - Server: license01.tracetronic.de
+
+
+
+2024-11-03 15:47:41.600 15240 ManagedWorker-2*PE.Run() INFO:
+                        Start package 'P1.pkg' with test case execution without analysis job execution
+2024-11-03 15:47:41.608 15240 ManagedWorker-2*PE.Run() INFO:
+                        Test case "P1" started
+2024-11-03 15:47:41.611 15240 ManagedWorker-2*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2024-11-03 15:47:41.660 15240 ManagedWorker-2*PE.Run() INFO:
+                        System time mode activated
+2024-11-03 15:47:41.661 15240 ManagedWorker-2*PE.Run() INFO:
+                        Auto-Start/Stop: Complete test case: Recording for Test case variables
+2024-11-03 15:47:41.663 15240 ManagedWorker-2*PE.Run() INFO:
+                        1. Recording for Test case variables: Autostop
+2024-11-03 15:47:41.664 15240 ManagedWorker-2*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2024-11-03 15:47:41.670 15240 ManagedWorker-2*PE.Run() INFO:
+                        Test case "P1" completed

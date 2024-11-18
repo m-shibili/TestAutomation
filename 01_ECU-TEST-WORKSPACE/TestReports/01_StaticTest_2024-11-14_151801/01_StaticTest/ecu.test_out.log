@@ -1,0 +1,42 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               Intel64 Family 6 Model 158 Stepping 9, GenuineIntel
+Number of CPUs:    8
+RAM:               31.9GB
+Diskinfo:          41.4GB/446.5GB
+Operating system:  Windows-10-10.0.19045
+Long path support: False
+-------------------------------------------------------------------------
+
+= 14.11.2024 15:18:01 (UTC +0:00) === ecu.test 2024.4.0.157279+6cc6544af3d9-FeatureSet 157279+6cc6544af3d9 (2024/10/15 14:58:06) (64bit) ===
+Python 3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)] / wx: 4.2.1+tt.5
+Protocol: log level Default. Additional logging active: default output
+
+License: ecu.test
+         - License options:
+             + ecu.test diagnostics
+             + trace.check
+         - valid up to version: 2024.4
+         - valid until: 2025-01-28
+         - licensed for: Mahindra_Racing_UK
+         - runner: False
+         - Server: license01.tracetronic.de
+
+
+
+2024-11-14 15:18:01.535 28344 ManagedWorker-5*PE.Run() INFO:
+                        Start package '01_StaticTest.pkg' with test case execution with sequential analysis job execution
+2024-11-14 15:18:01.544 28344 ManagedWorker-5*PE.Run() INFO:
+                        Test case "01_StaticTest" started
+2024-11-14 15:18:01.549 28344 ManagedWorker-5*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2024-11-14 15:18:01.557 28344 ManagedWorker-5*PE.Run() INFO:
+                        Model time mode with continuous simulation activated, time source is port "MDL-DEFAULT01"
+2024-11-14 15:18:06.647 28344 ManagedWorker-5*PE.Run() ERROR:Read Error : Cannot Convert value to float for NSIUSteeringButtonStatus from app number APP1_Input result Value: NONE
+                        Package "C:\Users\DIL\ecu.test\Workspace\Packages\01_StaticTest.pkg"#7
+2024-11-14 15:18:06.649 28344 ManagedWorker-5*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2024-11-14 15:18:06.701 28344 ManagedWorker-5*PE.Run() INFO:
+                        Test case "01_StaticTest" completed

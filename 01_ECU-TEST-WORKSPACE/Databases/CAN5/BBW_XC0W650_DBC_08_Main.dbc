@@ -1,0 +1,224 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: FLASHING_CLIENT VCU BBW_ECU
+
+
+BO_ 771 RESERVED_Msg303: 8 BBW_ECU
+
+BO_ 774 RESERVED_Msg306: 8 BBW_ECU
+ SG_ bbwDriverFaultCode : 23|32@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bbwEcuSelfStatusCode : 7|16@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1282 RESERVED_Msg502: 8 FLASHING_CLIENT
+
+BO_ 776 RESERVED_Msg308: 8 BBW_ECU
+
+BO_ 770 RESERVED_Msg302: 8 BBW_ECU
+
+BO_ 769 RESERVED_Msg301: 8 BBW_ECU
+
+BO_ 1281 RESERVED_Msg501: 8 FLASHING_CLIENT
+
+BO_ 768 RESERVED_Msg300: 8 BBW_ECU
+
+BO_ 513 CANOut_Msg201: 8 BBW_ECU
+ SG_ bbwChecksum201 : 63|8@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ bbwRollingCounter201 : 7|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ bbwSwVersion : 3|20@0+ (1,0) [0|1048575] "" Vector__XXX
+ SG_ bbwSerialNo : 31|32@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2018 RESERVED_Msg7E2: 8 FLASHING_CLIENT
+
+BO_ 258 CANOut_Msg102: 8 BBW_ECU
+ SG_ bbwControlSensor : 26|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ bbwRollingCounter102 : 7|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ bbwChecksum102 : 63|8@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ bbwGlobalEnable : 3|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ bbwHWEnableStatus : 25|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ bbwEcuSelfStatus : 15|16@0+ (1,0) [0|65535] "" Vector__XXX
+ SG_ bbwCriticalErrorFlag : 2|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ bbwErrorFlag : 1|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ bbwWarningFlag : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1280 CANIn_Req: 4 VCU
+ SG_ vcuChecksum : 31|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ vcuEnableSw : 23|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ vcuStatusReq : 22|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ vcuPressureTarget : 3|12@0+ (0.05,0) [0|0] "bar" Vector__XXX
+ SG_ vcuServiceReq : 20|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ vcuRollingCounter : 7|4@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 512 CANOut_Msg200: 8 BBW_ECU
+ SG_ bbwWrnTargetConsistency : 53|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bbwCErrSafety : 49|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bbwCErrPBIT : 50|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bbwCErrInit : 51|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bbwCErrEV : 52|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bbwCErrEhaCurrent : 47|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bbwCErrBatteryVoltageLow : 44|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bbwCErrBatteryVoltageHigh : 45|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bbwCErrBatteryOverCurrent : 46|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bbwCErrABIT : 48|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bbwCErrHallSens : 43|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bbwCErrEncoderSens : 41|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bbwCErrEhaDisp : 42|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bbwCErr5VSensSupply : 40|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bbwCErrPressSens : 39|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bbwCErrUnitGeneric : 38|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bbwCErrEcuGeneric : 37|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bbwCErrDriverGeneric : 36|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bbwErrThermalIndex : 35|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bbwErrPressUnderTarget : 29|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bbwErrPressOverTarget : 30|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bbwErrPneuCharge : 31|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bbwErrFullFront : 33|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bbwErrFullBack : 32|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bbwErrCanLost : 34|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bbwWrnCanLost : 24|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bbwWrnCan2RollCnt : 25|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bbwWrnCan2Crc : 26|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bbwWrnCan1RollCnt : 27|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bbwWrnCan1Crc : 28|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bbwWrnThermalIndex : 16|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bbwWrnBatteryVoltageLow : 17|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bbwWrnBatteryVoltageHigh : 18|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bbwWrnUnitCharTooSoft : 19|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bbwWrnPressTooHigh : 21|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bbwWrnPneuCharge : 22|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bbwWrnInternalPressDelta : 23|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bbwWrnBrakeCharTooSoft : 20|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bbwWrnPneuSensV : 8|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bbwWrnPneuSens : 9|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bbwWrnCaliperSensV : 10|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bbwWrnCaliperSens : 11|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bbwWrnActuatorSensV : 12|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bbwWrnActuatorSens : 13|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bbwWrn5VASensSupply : 14|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bbwWrn12VSensSupply : 15|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bbwWrnUnitGeneric : 3|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bbwWrnOvp : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bbwWrnEcuGeneric : 2|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bbwWrnDriverGeneric : 1|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bbwRollingCounter200 : 7|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ bbwChecksum200 : 63|8@0+ (1,0) [0|15] "" Vector__XXX
+
+BO_ 257 CANOut_Msg101: 8 BBW_ECU
+ SG_ bbwRollingCounter101 : 7|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ bbwChecksum101 : 63|8@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ bbwBatteryVoltage : 27|10@0+ (0.06,0) [0|61.38] "V" Vector__XXX
+ SG_ bbwBatteryCurrent : 23|12@0+ (0.01465,-10) [-10|49.99175] "A" Vector__XXX
+ SG_ bbwEhaCurrent : 3|12@0- (0.025,0) [-51.2|51.175] "A" Vector__XXX
+ SG_ bbwPneumaticPress : 55|8@0+ (0.05,0) [0|12.75] "bar" Vector__XXX
+ SG_ bbwEhaDisp : 33|10@0+ (0.025,-1) [-1|24.575] "mm" Vector__XXX
+
+BO_ 256 CANOut_Msg100: 8 BBW_ECU
+ SG_ bbwCaliperPress : 31|12@0+ (0.05,-5) [-5|199.75] "bar" Vector__XXX
+ SG_ bbwEhaPress : 11|12@0+ (0.05,-5) [-5|199.75] "bar" Vector__XXX
+ SG_ bbwServiceStatus : 13|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ bbwStatus : 3|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ bbwRollingCounter100 : 7|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ bbwChecksum100 : 63|8@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ bbwCanStatus : 15|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ bbwEcuThermalIndex : 41|10@0+ (0.1,0) [0|102.3] "%" Vector__XXX
+ SG_ bbwEhaThermalIndex : 35|10@0+ (0.1,0) [0|102.3] "%" Vector__XXX
+
+
+
+BA_DEF_  "Baudrate" INT 0 1000000;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_  "DBName" STRING ;
+BA_DEF_ SG_  "GenSigStartValue" FLOAT 0 1E+011;
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition";
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 100000;
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 100000;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 1000;
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 999999;
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 2 50000;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Cyclic","spontaneous","cyclicIfActive","spontaneousWithDelay","cyclicAndSpontaneous","cyclicAndSpontaneousWithDelay","spontaneousWithRepetition","cyclicIfActiveAndSpontaneousWD";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 1000;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BU_  "ILUsed" ENUM  "No","Yes";
+BA_DEF_DEF_  "Baudrate" 1000000;
+BA_DEF_DEF_  "BusType" "CAN";
+BA_DEF_DEF_  "GenMsgSendType" "Cyclic";
+BA_DEF_DEF_  "GenMsgCycleTime" 100;
+BA_DEF_DEF_  "GenMsgILSupport" "Yes";
+BA_DEF_DEF_  "ILUsed" "Yes";
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenSigSendType" "Cyclic";
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 100;
+BA_ "BusType" "CAN";
+BA_ "DBName" "XC0W650_DBC_08_Main";
+BA_ "GenMsgCycleTime" BO_ 771 2;
+BA_ "GenMsgSendType" BO_ 771 2;
+BA_ "GenMsgCycleTime" BO_ 776 10;
+BA_ "GenMsgCycleTime" BO_ 770 4;
+BA_ "GenMsgSendType" BO_ 770 2;
+BA_ "GenMsgCycleTime" BO_ 769 4;
+BA_ "GenMsgSendType" BO_ 769 2;
+BA_ "GenMsgCycleTime" BO_ 768 4;
+BA_ "GenMsgSendType" BO_ 768 2;
+BA_ "GenMsgSendType" BO_ 513 0;
+BA_ "GenMsgCycleTime" BO_ 513 1000;
+BA_ "GenMsgCycleTime" BO_ 2018 10;
+BA_ "GenMsgCycleTime" BO_ 258 10;
+BA_ "GenMsgSendType" BO_ 258 0;
+BA_ "GenMsgSendType" BO_ 1280 0;
+BA_ "GenMsgCycleTime" BO_ 1280 2;
+BA_ "GenMsgCycleTime" BO_ 512 10;
+BA_ "GenMsgSendType" BO_ 512 0;
+BA_ "GenMsgCycleTime" BO_ 257 2;
+BA_ "GenMsgSendType" BO_ 257 0;
+BA_ "GenMsgSendType" BO_ 256 0;
+BA_ "GenMsgCycleTime" BO_ 256 4;
+
+VAL_ 258 bbwControlSensor 1 "CALIPER" 0 "ACTUATOR" ;
+VAL_ 258 bbwGlobalEnable 1 "ENABLED" 0 "DISABLED" ;
+VAL_ 258 bbwHWEnableStatus 3 "ENABLED" 2 "HW_ENABLE_2_ON" 1 "HW_ENABLE_1_ON" 0 "DISABLED" ;
+VAL_ 258 bbwCriticalErrorFlag 1 "TRUE" 0 "FALSE" ;
+VAL_ 258 bbwErrorFlag 1 "TRUE" 0 "FALSE" ;
+VAL_ 258 bbwWarningFlag 1 "TRUE" 0 "FALSE" ;
+VAL_ 1280 vcuEnableSw 1 "ENABLE" 0 "DISABLE" ;
+VAL_ 1280 vcuStatusReq 2 "RESERVED" 1 "SERVICE" 0 "ENABLED" ;
+VAL_ 1280 vcuServiceReq 2 "CHECK" 1 "FULLFRONT" 0 "FULLBACK" ;
+VAL_ 256 bbwServiceStatus 2 "ERROR" 1 "RUNNING" 0 "IDLE" ;
+VAL_ 256 bbwStatus 12 "RESERVED" 11 "RESERVED" 10 "RESERVED" 9 "CRITICAL_ERROR" 8 "ERROR" 7 "DISABLED" 6 "SERVICE_CHECK" 5 "SERVICE_FULLFRONT" 4 "SERVICE_FULLBACK" 3 "ENABLED" 2 "INITIALIZATION" 1 "IDLE" 0 "OFF" ;
+VAL_ 256 bbwCanStatus 3 "CAN_ERROR" 2 "CAN_1_ERROR" 1 "CAN_0_ERROR" 0 "CAN_OK" ;
+

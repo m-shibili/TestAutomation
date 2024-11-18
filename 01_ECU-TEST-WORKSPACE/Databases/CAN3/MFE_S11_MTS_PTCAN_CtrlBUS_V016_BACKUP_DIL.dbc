@@ -1,0 +1,768 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: MCT_MCU MFE_VCU500
+
+
+BO_ 624 MCU_TO_VCU_DEBUG_BACKUP: 64 MCT_MCU
+ SG_ NMCUDebugBuffer32 : 496|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ NMCUDebugBuffer31 : 480|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ NMCUDebugBuffer30 : 464|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ NMCUDebugBuffer29 : 448|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ NMCUDebugBuffer28 : 432|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ NMCUDebugBuffer27 : 416|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ NMCUDebugBuffer26 : 400|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ NMCUDebugBuffer25 : 384|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ NMCUDebugBuffer24 : 368|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ NMCUDebugBuffer23 : 352|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ NMCUDebugBuffer22 : 336|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ NMCUDebugBuffer21 : 320|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ NMCUDebugBuffer20 : 304|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ NMCUDebugBuffer19 : 288|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ NMCUDebugBuffer18 : 272|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ NMCUDebugBuffer17 : 256|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ NMCUDebugBuffer16 : 240|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ NMCUDebugBuffer15 : 224|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ NMCUDebugBuffer14 : 208|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ NMCUDebugBuffer13 : 192|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ NMCUDebugBuffer12 : 176|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ NMCUDebugBuffer11 : 160|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ NMCUDebugBuffer10 : 144|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ NMCUDebugBuffer9 : 128|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ NMCUDebugBuffer8 : 112|16@1+ (1,0) [0|65535] ""  MFE_VCU500
+ SG_ NMCUDebugBuffer7 : 96|16@1+ (1,0) [0|65535] ""  MFE_VCU500
+ SG_ NMCUDebugBuffer6 : 80|16@1+ (1,0) [0|65535] ""  MFE_VCU500
+ SG_ NMCUDebugBuffer5 : 64|16@1+ (1,0) [0|65535] ""  MFE_VCU500
+ SG_ NMCUDebugBuffer4 : 48|16@1+ (1,0) [0|65535] ""  MFE_VCU500
+ SG_ NMCUDebugBuffer3 : 32|16@1+ (1,0) [0|65535] ""  MFE_VCU500
+ SG_ NMCUDebugBuffer2 : 16|16@1+ (1,0) [0|65535] ""  MFE_VCU500
+ SG_ NMCUDebugBuffer1 : 0|16@1+ (1,0) [0|65535] ""  MFE_VCU500
+
+BO_ 1104 VCU_TO_MCU_CALIBRATION_BACKUP: 64 MFE_VCU500
+ SG_ BMCUSensorlessTuningEnableCmd : 9|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ BMCUSensorlessCtrlEnableCmd : 7|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ fMCUADFKdFiltCutoff : 488|8@1+ (0.5,0) [0|127.5] "Hz" Vector__XXX
+ SG_ fMCUSpdLimChgKdFiltCutoff : 480|8@1+ (0.5,0) [0|127.5] "Hz" Vector__XXX
+ SG_ rMCUSpdLimChargeCtrlKd : 464|16@1- (0.01,0) [-327.68|327.67] "" Vector__XXX
+ SG_ NHSBMask : 448|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ rMCUADKd : 432|16@1- (0.01,0) [-327.68|327.67] "" Vector__XXX
+ SG_ tMCUADPhaseDelay : 416|16@1+ (1E-005,0) [0|0.65535] "s"  MCT_MCU
+ SG_ rMCUADKp : 400|16@1+ (0.001,0) [0|65.535] ""  MCT_MCU
+ SG_ fMCUADHPFiltCutoff : 384|10@1+ (0.1,0) [0|102.3] "Hz"  MCT_MCU
+ SG_ fMCUADLPFiltCutoff : 368|10@1+ (0.1,0) [0|102.3] "Hz"  MCT_MCU
+ SG_ nMCUMotorReverseLimitCmd : 352|16@1+ (1,0) [0|65535] "rpm"  MCT_MCU
+ SG_ BMCUAutoMGUConfigEnableCmd : 8|1@1+ (1,0) [0|1] ""  MCT_MCU
+ SG_ MMCUMotorTargetADSLimitMin : 336|11@1- (0.1,0) [-200|0] "Nm"  MCT_MCU
+ SG_ MMCUMotorTargetADSLimitMax : 320|11@1- (0.1,0) [0|200] "Nm"  MCT_MCU
+ SG_ BMCUPowerLimitDischgEnableCmd : 2|1@1+ (1,0) [0|1] ""  MCT_MCU
+ SG_ BMCUPowerLimitChgEnableCmd : 6|1@1+ (1,0) [0|1] ""  MCT_MCU
+ SG_ PMCUFIASnsCtrlLowerErrorEnable : 304|14@1- (0.1,0) [-819.2|819.1] "kW"  MCT_MCU
+ SG_ PMCUFIASnsCtrlUpperErrorEnable : 288|14@1- (0.1,0) [-819.2|819.1] "kW"  MCT_MCU
+ SG_ MMCU1kWPowerLimDischgKiLowerLim : 272|12@1- (0.1,0) [-204.8|204.7] "Nm"  MCT_MCU
+ SG_ rMCUPowerLimDischargeCtrlKi : 144|16@1- (0.01,0) [-327.68|327.67] ""  MCT_MCU
+ SG_ rMCUPowerLimChargeCtrlKi : 112|16@1- (0.01,0) [-327.68|327.67] ""  MCT_MCU
+ SG_ MMCUPowerLimDischgKiUpperLim : 208|12@1- (0.1,0) [-204.8|204.7] "Nm"  MCT_MCU
+ SG_ MMCU1kWPowerLimDischgKiUpperLim : 256|12@1- (0.1,0) [-204.8|204.7] "Nm"  MCT_MCU
+ SG_ rMCUTorqueScalingCmd : 48|12@1+ (0.001,0) [0|4.095] ""  MCT_MCU
+ SG_ rMCUPowerLimDishargeCtrlKp : 128|16@1- (0.01,0) [-327.68|327.67] ""  MCT_MCU
+ SG_ rMCUPowerLimChargeCtrlKp : 96|16@1- (0.01,0) [-327.68|327.67] ""  MCT_MCU
+ SG_ rMCU1kWPowerLimDishgCtrlKp : 160|16@1- (0.01,0) [-327.68|327.67] ""  MCT_MCU
+ SG_ rMCU1kWPowerLimDischgCtrlKi : 176|16@1- (0.01,0) [-327.68|327.67] ""  MCT_MCU
+ SG_ MMCUPowerLimDischgKiLowerLim : 224|12@1- (0.1,0) [-204.8|204.7] "Nm"  MCT_MCU
+ SG_ MMCUPowerLimChgKiLowerLimit : 192|12@1- (0.1,0) [-204.8|204.7] "Nm"  MCT_MCU
+ SG_ MMCUPowerLimChglKiUpperLimit : 240|12@1- (0.1,0) [-204.8|204.7] "Nm"  MCT_MCU
+ SG_ BMCUSpeedLimitDischgEnableCmd : 0|1@1+ (1,0) [0|1] ""  MCT_MCU
+ SG_ BMCUSpeedLimitChgEnableCmd : 1|1@1+ (1,0) [0|1] ""  MCT_MCU
+ SG_ BMCUCurrentSnsZeroEnableCmd : 4|1@1+ (1,0) [0|1] ""  MCT_MCU
+ SG_ BMCUAutoTurnOffEnableCmd : 3|1@1+ (1,0) [0|1] ""  MCT_MCU
+ SG_ TMCURotorTempOffsetCmd : 16|10@1- (0.1,0) [-51.2|51.1] "degC"  MCT_MCU
+ SG_ aMCUResolverOffsetCmd : 32|16@1- (0.001,0) [-32.768|32.767] "rad"  MCT_MCU
+
+BO_ 592 MCU_TO_VCU_RESPONSE1_BACKUP: 64 MCT_MCU
+ SG_ BMCUZPulseLearnError : 79|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ BMCUAutoMGUConfigActive : 78|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ nMCUADFiltered : 416|16@1- (1,0) [-32768|32767] "rpm"  MFE_VCU500
+ SG_ BMCUActiveCANBus : 17|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUZPulseLearnt : 15|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ MMCUMotorMinAvailable : 500|12@1- (0.5,0) [-1024|1023.5] "Nm"  MFE_VCU500
+ SG_ MMCUMotorMaxAvailable : 488|12@1- (0.5,0) [-1024|1023.5] "Nm"  MFE_VCU500
+ SG_ NMCUResponse1MsgCounter : 480|8@1+ (1,0) [0|255] ""  MFE_VCU500
+ SG_ BMCU1kWPwrLimitDischgActive : 12|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCU1kWPwrLimitDischgEnabled : 25|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUPowerLimitDischgActive : 10|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUPowerLimitDischgEnabled : 24|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUPowerLimitChgActive : 11|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUPowerLimitChgEnabled : 26|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ MMCUMotorTargetFinalComp : 64|14@1- (0.1,0) [-819.2|819.1] "Nm"  MFE_VCU500
+ SG_ MMCUMotorTarget1kWDischgPwrLim : 112|14@1- (0.1,0) [-819.2|819.1] "Nm"  MFE_VCU500
+ SG_ MMCUMotorTargetADS : 144|14@1- (0.1,0) [-819.2|819.1] "Nm"  MFE_VCU500
+ SG_ MMCUMotorTargetChargePwrLim : 128|14@1- (0.1,0) [-819.2|819.1] "Nm"  MFE_VCU500
+ SG_ MMCUMotorTargetDischargePwrLim : 96|14@1- (0.1,0) [-819.2|819.1] "Nm"  MFE_VCU500
+ SG_ MMCUMotorTargetChargeSpdLim : 160|14@1- (0.1,0) [-819.2|819.1] "Nm"  MFE_VCU500
+ SG_ MMCUMotorTargetDischgSpLim : 176|14@1- (0.1,0) [-819.2|819.1] "Nm"  MFE_VCU500
+ SG_ BMCUSpdLimChgUpperLimActive : 16|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ MMCUPowerLimDischgKi : 224|12@1- (0.1,0) [-204.8|204.7] "Nms"  MFE_VCU500
+ SG_ MMCUPowerLimChgKi : 192|12@1- (0.1,0) [-204.8|204.7] "Nms"  MFE_VCU500
+ SG_ MMCU1kWPowerLimDischgKi : 208|12@1- (0.1,0) [-204.8|204.7] "Nm"  MFE_VCU500
+ SG_ MMCUMotorTargetFinal : 48|14@1- (0.1,0) [-819.2|819.1] "Nm"  MFE_VCU500
+ SG_ VMCUVqDemand : 304|14@1- (0.1,0) [-819.2|819.1] "V"  MFE_VCU500
+ SG_ VMCUVdDemand : 320|14@1- (0.1,0) [-819.2|819.1] "V"  MFE_VCU500
+ SG_ VMCUDCMeasured : 336|14@1+ (0.1,0) [0|1638.3] "V"  MFE_VCU500
+ SG_ VMCU12VSupply : 472|8@1+ (0.1,0) [0|25.5] "V"  MFE_VCU500
+ SG_ rMCUVrpm : 448|16@1- (0.001,0) [-32.768|32.767] "V/rpm"  MFE_VCU500
+ SG_ rMCUProcessorLoad : 464|8@1+ (0.5,0) [0|127.5] "%"  MFE_VCU500
+ SG_ PMCUDCMeasured : 368|14@1- (0.1,0) [-819.2|819.1] "kW"  MFE_VCU500
+ SG_ nMCUMotorActual : 384|16@1- (2,0) [-65536|65534] "rpm"  MFE_VCU500
+ SG_ NMCUGDBFaults : 432|8@1+ (1,0) [0|255] ""  MFE_VCU500
+ SG_ MMCUMotorTargetMirror : 32|14@1- (0.1,0) [-819.2|819.1] "Nm"  MFE_VCU500
+ SG_ MMCUMotorActual : 80|14@1- (0.1,0) [-819.2|819.1] "Nm"  MFE_VCU500
+ SG_ IMCUIqMeasured : 256|15@1- (0.1,0) [-1638.4|1638.3] "A"  MFE_VCU500
+ SG_ IMCUIqDemand : 240|15@1- (0.1,0) [-1638.4|1638.3] "A"  MFE_VCU500
+ SG_ IMCUIdMeasured : 288|15@1- (0.1,0) [-1638.4|1638.3] "A"  MFE_VCU500
+ SG_ IMCUIdDemand : 272|15@1- (0.1,0) [-1638.4|1638.3] "A"  MFE_VCU500
+ SG_ IMCUDCMeasured : 352|14@1- (0.1,0) [-819.2|819.1] "A"  MFE_VCU500
+ SG_ fMCUSwitching : 440|8@1+ (100,0) [0|25500] "Hz"  MFE_VCU500
+ SG_ BMCUTorqueLimitingActive : 13|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUSpdLimDisTrqTunUppLimActive : 19|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUSpdLimDisTrqTunLwrLimActive : 20|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUSpdLimDisPwrTunLwrLimActive : 18|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUSpinDirection : 5|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUSpeedLimitDischgEnabled : 3|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUSpeedLimitDischgActive : 8|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUSpeedLimitChgEnabled : 2|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUSpeedLimitChgActive : 9|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCURunState : 7|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUReverseActive : 6|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUHWEnablePinState : 1|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUHVBusSafeState : 4|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUFaultSWOverVolt : 47|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUFaultSWOverSpeed : 30|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUFaultSWOverCur : 31|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUFaultInvalidTrqDem : 27|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUFaultHWOverVolt : 29|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUFaultHWOverCurrent : 28|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUFaultGDBUnderVolt : 23|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUFaultDriverOverTemp : 21|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUFaultCurSplit : 46|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUFaultCore1TimeOut : 63|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUFaultCANTimeOut : 62|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUFaultActive : 22|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUAutoTurnOffActive : 0|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUActiveDischargeActive : 14|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ aMGURotorPosition : 400|14@1- (0.001,0) [-8.192|8.191] "rad"  MFE_VCU500
+
+BO_ 336 VCU_TO_MCU_COMMAND1_BACKUP: 64 MFE_VCU500
+ SG_ BVCUActiveCANBus : 8|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ BMCUActiveDampingEnableCmd : 7|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ rMCUSpdLimDischargeCtrlKp : 208|16@1- (0.01,0) [-327.68|327.67] "" Vector__XXX
+ SG_ rMCUSpdLimChargeCtrlKp : 192|16@1- (0.01,0) [-327.68|327.67] "" Vector__XXX
+ SG_ NMCUCommandMsgCounter : 176|8@1+ (1,0) [0|255] ""  MCT_MCU
+ SG_ MMCUMotorSpdLimChgUpperLimit : 96|14@1- (0.1,0) [-819.2|819.1] "Nm"  MCT_MCU
+ SG_ BMCU1kWPwrLimDischgEnableCmd : 6|1@1+ (1,0) [0|1] ""  MCT_MCU
+ SG_ PMCUDischgLimitCmd : 128|16@1+ (0.01,0) [0|655.35] "kW"  MCT_MCU
+ SG_ PMCUSpdLimDischgLowerLimitCmd : 144|14@1- (0.1,0) [-819.2|819.1] "kW"  MCT_MCU
+ SG_ PMCUChargeLimitCmd : 112|16@1+ (0.01,0) [0|655.35] "kW"  MCT_MCU
+ SG_ nMCUMotorDischargeLimitCmd : 48|16@1+ (1,0) [0|65535] "rpm"  MCT_MCU
+ SG_ nMCUMotorChargeLimitCmd : 32|16@1+ (1,0) [0|65535] "rpm"  MCT_MCU
+ SG_ MMCUMotorSpdLimDischgUpperLim : 64|14@1- (0.1,0) [-819.2|819.1] "Nm"  MCT_MCU
+ SG_ MMCUMotorSpdLimDischgLowerLim : 80|14@1- (0.1,0) [-819.2|819.1] "Nm"  MCT_MCU
+ SG_ MMCUMotorTargetCmd : 16|16@1- (0.01,0) [-327.68|327.67] "Nm"  MCT_MCU
+ SG_ MMCUDriveshaftRearTotal : 160|15@1- (0.5,0) [-8192|8191.5] "Nm"  MCT_MCU
+ SG_ BMCUStopRequestBit : 5|1@1+ (1,0) [0|1] ""  MCT_MCU
+ SG_ BMCUStartRequestBit : 4|1@1+ (1,0) [0|1] ""  MCT_MCU
+ SG_ BMCUSpinDirectionRequest : 3|1@1+ (1,0) [0|1] ""  MCT_MCU
+ SG_ BMCUReverseEnableCommand : 2|1@1+ (1,0) [0|1] ""  MCT_MCU
+ SG_ BMCUResetErrorsCommand : 1|1@1+ (1,0) [0|1] ""  MCT_MCU
+ SG_ BMCUActiveDischargeCmd : 0|1@1+ (1,0) [0|1] ""  MCT_MCU
+
+BO_ 608 MCU_TO_VCU_RESPONSE2_BACKUP: 64 MCT_MCU
+ SG_ NMCUResponse2MsgCounter : 112|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ NMCUSettingsVersion : 176|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ NMGUSerialNo : 192|32@1+ (1,0) [0|4294967295] ""  MFE_VCU500
+ SG_ TMCUDCSensor : 64|8@1+ (1,0) [0|255] "°C"  MFE_VCU500
+ SG_ TMGUWinding2 : 160|8@1+ (1,0) [0|255] "°C"  MFE_VCU500
+ SG_ TMGUWinding1 : 152|8@1+ (1,0) [0|255] "°C"  MFE_VCU500
+ SG_ TMGURotor : 144|8@1+ (1,0) [0|255] "°C"  MFE_VCU500
+ SG_ TMGUBearingNDE : 136|8@1+ (1,0) [0|255] "°C"  MFE_VCU500
+ SG_ TMGUBearingDE : 128|8@1+ (1,0) [0|255] "°C"  MFE_VCU500
+ SG_ TMCUModule : 120|8@1+ (1,0) [0|255] "°C"  MFE_VCU500
+ SG_ TMCUISensor3 : 88|8@1+ (1,0) [0|255] "°C"  MFE_VCU500
+ SG_ TMCUISensor2 : 80|8@1+ (1,0) [0|255] "°C"  MFE_VCU500
+ SG_ TMCUISensor1 : 72|8@1+ (1,0) [0|255] "°C"  MFE_VCU500
+ SG_ TMCUISnsDischarge : 56|8@1+ (1,0) [0|255] "°C"  MFE_VCU500
+ SG_ TMCUGDB2 : 48|8@1+ (1,0) [0|255] "°C"  MFE_VCU500
+ SG_ TMCUGDB1 : 40|8@1+ (1,0) [0|255] "°C"  MFE_VCU500
+ SG_ NMCUSerialNo : 224|32@1+ (1,0) [0|4294967295] ""  MFE_VCU500
+ SG_ NMCUFPGASwVersion : 16|16@1+ (0.01,0) [0|655.35] ""  MFE_VCU500
+ SG_ NMCUDSPSwVersion : 0|16@1+ (0.01,0) [0|655.35] ""  MFE_VCU500
+
+BO_ 528 MCU_TO_VCU_RESPONSE2_MAIN: 64 MCT_MCU
+ SG_ NMCUResponse2MsgCounter : 112|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ NMCUSettingsVersion : 176|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ NMGUSerialNo : 192|32@1+ (1,0) [0|4294967295] "" Vector__XXX
+ SG_ TMCUDCSensor : 64|8@1+ (1,0) [0|255] "°C" Vector__XXX
+ SG_ TMGUWinding2 : 160|8@1+ (1,0) [0|255] "°C"  MFE_VCU500
+ SG_ TMGUWinding1 : 152|8@1+ (1,0) [0|255] "°C"  MFE_VCU500
+ SG_ TMGURotor : 144|8@1+ (1,0) [0|255] "°C"  MFE_VCU500
+ SG_ TMGUBearingNDE : 136|8@1+ (1,0) [0|255] "°C"  MFE_VCU500
+ SG_ TMGUBearingDE : 128|8@1+ (1,0) [0|255] "°C"  MFE_VCU500
+ SG_ TMCUModule : 120|8@1+ (1,0) [0|255] "°C"  MFE_VCU500
+ SG_ TMCUISensor3 : 88|8@1+ (1,0) [0|255] "°C"  MFE_VCU500
+ SG_ TMCUISensor2 : 80|8@1+ (1,0) [0|255] "°C"  MFE_VCU500
+ SG_ TMCUISensor1 : 72|8@1+ (1,0) [0|255] "°C"  MFE_VCU500
+ SG_ TMCUISnsDischarge : 56|8@1+ (1,0) [0|255] "°C"  MFE_VCU500
+ SG_ TMCUGDB2 : 48|8@1+ (1,0) [0|255] "°C"  MFE_VCU500
+ SG_ TMCUGDB1 : 40|8@1+ (1,0) [0|255] "°C"  MFE_VCU500
+ SG_ NMCUSerialNo : 224|32@1+ (1,0) [0|4294967295] ""  MFE_VCU500
+ SG_ NMCUFPGASwVersion : 16|16@1+ (0.01,0) [0|655.35] ""  MFE_VCU500
+ SG_ NMCUDSPSwVersion : 0|16@1+ (0.01,0) [0|655.35] ""  MFE_VCU500
+
+BO_ 1024 VCU_TO_MCU_CALIBRATION_MAIN: 64 MFE_VCU500
+ SG_ BMCUSensorlessTuningEnableCmd : 9|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ BMCUSensorlessCtrlEnableCmd : 7|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ fMCUADFKdFiltCutoff : 488|8@1+ (0.5,0) [0|127.5] "Hz" Vector__XXX
+ SG_ fMCUSpdLimChgKdFiltCutoff : 480|8@1+ (0.5,0) [0|127.5] "Hz" Vector__XXX
+ SG_ rMCUSpdLimChargeCtrlKd : 464|16@1- (0.01,0) [-327.68|327.67] "" Vector__XXX
+ SG_ NHSBMask : 448|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ rMCUADKd : 432|16@1- (0.01,0) [-327.68|327.67] "" Vector__XXX
+ SG_ tMCUADPhaseDelay : 416|16@1+ (1E-005,0) [0|0.65535] "s" Vector__XXX
+ SG_ rMCUADKp : 400|16@1+ (0.001,0) [0|65.535] "" Vector__XXX
+ SG_ fMCUADHPFiltCutoff : 384|10@1+ (0.1,0) [0|102.3] "Hz" Vector__XXX
+ SG_ fMCUADLPFiltCutoff : 368|10@1+ (0.1,0) [0|102.3] "Hz" Vector__XXX
+ SG_ nMCUMotorReverseLimitCmd : 352|16@1+ (1,0) [0|65535] "rpm" Vector__XXX
+ SG_ BMCUAutoMGUConfigEnableCmd : 8|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MMCUMotorTargetADSLimitMin : 336|11@1- (0.1,0) [-200|0] "Nm" Vector__XXX
+ SG_ MMCUMotorTargetADSLimitMax : 320|11@1- (0.1,0) [0|200] "Nm" Vector__XXX
+ SG_ BMCUPowerLimitDischgEnableCmd : 2|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ BMCUPowerLimitChgEnableCmd : 6|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PMCUFIASnsCtrlLowerErrorEnable : 304|14@1- (0.1,0) [-819.2|819.1] "kW" Vector__XXX
+ SG_ PMCUFIASnsCtrlUpperErrorEnable : 288|14@1- (0.1,0) [-819.2|819.1] "kW" Vector__XXX
+ SG_ MMCU1kWPowerLimDischgKiLowerLim : 272|12@1- (0.1,0) [-204.8|204.7] "Nm" Vector__XXX
+ SG_ rMCUPowerLimDischargeCtrlKi : 144|16@1- (0.01,0) [-327.68|327.67] ""  MCT_MCU
+ SG_ rMCUPowerLimChargeCtrlKi : 112|16@1- (0.01,0) [-327.68|327.67] ""  MCT_MCU
+ SG_ MMCUPowerLimDischgKiUpperLim : 208|12@1- (0.1,0) [-204.8|204.7] "Nm"  MCT_MCU
+ SG_ MMCU1kWPowerLimDischgKiUpperLim : 256|12@1- (0.1,0) [-204.8|204.7] "Nm"  MCT_MCU
+ SG_ rMCUTorqueScalingCmd : 48|12@1+ (0.001,0) [0|4.095] ""  MCT_MCU
+ SG_ rMCUPowerLimDishargeCtrlKp : 128|16@1- (0.01,0) [-327.68|327.67] ""  MCT_MCU
+ SG_ rMCUPowerLimChargeCtrlKp : 96|16@1- (0.01,0) [-327.68|327.67] ""  MCT_MCU
+ SG_ rMCU1kWPowerLimDishgCtrlKp : 160|16@1- (0.01,0) [-327.68|327.67] ""  MCT_MCU
+ SG_ rMCU1kWPowerLimDischgCtrlKi : 176|16@1- (0.01,0) [-327.68|327.67] ""  MCT_MCU
+ SG_ MMCUPowerLimDischgKiLowerLim : 224|12@1- (0.1,0) [-204.8|204.7] "Nm"  MCT_MCU
+ SG_ MMCUPowerLimChgKiLowerLimit : 192|12@1- (0.1,0) [-204.8|204.7] "Nm"  MCT_MCU
+ SG_ MMCUPowerLimChglKiUpperLimit : 240|12@1- (0.1,0) [-204.8|204.7] "Nm"  MCT_MCU
+ SG_ BMCUSpeedLimitDischgEnableCmd : 0|1@1+ (1,0) [0|1] ""  MCT_MCU
+ SG_ BMCUSpeedLimitChgEnableCmd : 1|1@1+ (1,0) [0|1] ""  MCT_MCU
+ SG_ BMCUCurrentSnsZeroEnableCmd : 4|1@1+ (1,0) [0|1] ""  MCT_MCU
+ SG_ BMCUAutoTurnOffEnableCmd : 3|1@1+ (1,0) [0|1] ""  MCT_MCU
+ SG_ TMCURotorTempOffsetCmd : 16|10@1- (0.1,0) [-51.2|51.1] "degC"  MCT_MCU
+ SG_ aMCUResolverOffsetCmd : 32|16@1- (0.001,0) [-32.768|32.767] "rad"  MCT_MCU
+
+BO_ 512 MCU_TO_VCU_RESPONSE1_MAIN: 64 MCT_MCU
+ SG_ BMCUZPulseLearnError : 79|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ BMCUAutoMGUConfigActive : 78|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ nMCUADFiltered : 416|16@1- (1,0) [-32768|32767] "rpm" Vector__XXX
+ SG_ BMCUActiveCANBus : 17|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ BMCUZPulseLearnt : 15|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MMCUMotorMinAvailable : 500|12@1- (0.5,0) [-1024|1023.5] "Nm" Vector__XXX
+ SG_ MMCUMotorMaxAvailable : 488|12@1- (0.5,0) [-1024|1023.5] "Nm" Vector__XXX
+ SG_ NMCUResponse1MsgCounter : 480|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ BMCU1kWPwrLimitDischgActive : 12|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ BMCU1kWPwrLimitDischgEnabled : 25|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ BMCUPowerLimitDischgActive : 10|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ BMCUPowerLimitDischgEnabled : 24|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ BMCUPowerLimitChgActive : 11|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ BMCUPowerLimitChgEnabled : 26|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MMCUMotorTargetFinalComp : 64|14@1- (0.1,0) [-819.2|819.1] "Nm" Vector__XXX
+ SG_ MMCUMotorTarget1kWDischgPwrLim : 112|14@1- (0.1,0) [-819.2|819.1] "Nm" Vector__XXX
+ SG_ MMCUMotorTargetADS : 144|14@1- (0.1,0) [-819.2|819.1] "Nm" Vector__XXX
+ SG_ MMCUMotorTargetChargePwrLim : 128|14@1- (0.1,0) [-819.2|819.1] "Nm" Vector__XXX
+ SG_ MMCUMotorTargetDischargePwrLim : 96|14@1- (0.1,0) [-819.2|819.1] "Nm" Vector__XXX
+ SG_ MMCUMotorTargetChargeSpdLim : 160|14@1- (0.1,0) [-819.2|819.1] "Nm" Vector__XXX
+ SG_ MMCUMotorTargetDischgSpLim : 176|14@1- (0.1,0) [-819.2|819.1] "Nm" Vector__XXX
+ SG_ BMCUSpdLimChgUpperLimActive : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MMCUPowerLimDischgKi : 224|12@1- (0.1,0) [-204.8|204.7] "Nms"  MFE_VCU500
+ SG_ MMCUPowerLimChgKi : 192|12@1- (0.1,0) [-204.8|204.7] "Nms"  MFE_VCU500
+ SG_ MMCU1kWPowerLimDischgKi : 208|12@1- (0.1,0) [-204.8|204.7] "Nm"  MFE_VCU500
+ SG_ MMCUMotorTargetFinal : 48|14@1- (0.1,0) [-819.2|819.1] "Nm"  MFE_VCU500
+ SG_ VMCUVqDemand : 304|14@1- (0.1,0) [-819.2|819.1] "V"  MFE_VCU500
+ SG_ VMCUVdDemand : 320|14@1- (0.1,0) [-819.2|819.1] "V"  MFE_VCU500
+ SG_ VMCUDCMeasured : 336|14@1+ (0.1,0) [0|1638.3] "V"  MFE_VCU500
+ SG_ VMCU12VSupply : 472|8@1+ (0.1,0) [0|25.5] "V"  MFE_VCU500
+ SG_ rMCUVrpm : 448|16@1- (0.001,0) [-32.768|32.767] "V/rpm"  MFE_VCU500
+ SG_ rMCUProcessorLoad : 464|8@1+ (0.5,0) [0|127.5] "%"  MFE_VCU500
+ SG_ PMCUDCMeasured : 368|14@1- (0.1,0) [-819.2|819.1] "kW"  MFE_VCU500
+ SG_ nMCUMotorActual : 384|16@1- (2,0) [-65536|65534] "rpm"  MFE_VCU500
+ SG_ NMCUGDBFaults : 432|8@1+ (1,0) [0|255] ""  MFE_VCU500
+ SG_ MMCUMotorTargetMirror : 32|14@1- (0.1,0) [-819.2|819.1] "Nm"  MFE_VCU500
+ SG_ MMCUMotorActual : 80|14@1- (0.1,0) [-819.2|819.1] "Nm"  MFE_VCU500
+ SG_ IMCUIqMeasured : 256|15@1- (0.1,0) [-1638.4|1638.3] "A"  MFE_VCU500
+ SG_ IMCUIqDemand : 240|15@1- (0.1,0) [-1638.4|1638.3] "A"  MFE_VCU500
+ SG_ IMCUIdMeasured : 288|15@1- (0.1,0) [-1638.4|1638.3] "A"  MFE_VCU500
+ SG_ IMCUIdDemand : 272|15@1- (0.1,0) [-1638.4|1638.3] "A"  MFE_VCU500
+ SG_ IMCUDCMeasured : 352|14@1- (0.1,0) [-819.2|819.1] "A"  MFE_VCU500
+ SG_ fMCUSwitching : 440|8@1+ (100,0) [0|25500] "Hz"  MFE_VCU500
+ SG_ BMCUTorqueLimitingActive : 13|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUSpdLimDisTrqTunUppLimActive : 19|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUSpdLimDisTrqTunLwrLimActive : 20|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUSpdLimDisPwrTunLwrLimActive : 18|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUSpinDirection : 5|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUSpeedLimitDischgEnabled : 3|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUSpeedLimitDischgActive : 8|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUSpeedLimitChgEnabled : 2|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUSpeedLimitChgActive : 9|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCURunState : 7|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUReverseActive : 6|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUHWEnablePinState : 1|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUHVBusSafeState : 4|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUFaultSWOverVolt : 47|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUFaultSWOverSpeed : 30|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUFaultSWOverCur : 31|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUFaultInvalidTrqDem : 27|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUFaultHWOverVolt : 29|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUFaultHWOverCurrent : 28|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUFaultGDBUnderVolt : 23|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUFaultDriverOverTemp : 21|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUFaultCurSplit : 46|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUFaultCore1TimeOut : 63|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUFaultCANTimeOut : 62|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUFaultActive : 22|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUAutoTurnOffActive : 0|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ BMCUActiveDischargeActive : 14|1@1+ (1,0) [0|1] ""  MFE_VCU500
+ SG_ aMGURotorPosition : 400|14@1- (0.001,0) [-8.192|8.191] "rad"  MFE_VCU500
+
+BO_ 256 VCU_TO_MCU_COMMAND1_MAIN: 64 MFE_VCU500
+ SG_ BVCUActiveCANBus : 8|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ BMCUActiveDampingEnableCmd : 7|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ rMCUSpdLimDischargeCtrlKp : 208|16@1- (0.01,0) [-327.68|327.67] "" Vector__XXX
+ SG_ rMCUSpdLimChargeCtrlKp : 192|16@1- (0.01,0) [-327.68|327.67] "" Vector__XXX
+ SG_ NMCUCommandMsgCounter : 176|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ MMCUMotorSpdLimChgUpperLimit : 96|14@1- (0.1,0) [-819.2|819.1] "Nm" Vector__XXX
+ SG_ BMCU1kWPwrLimDischgEnableCmd : 6|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PMCUDischgLimitCmd : 128|16@1+ (0.01,0) [0|655.35] "kW"  MCT_MCU
+ SG_ PMCUSpdLimDischgLowerLimitCmd : 144|14@1- (0.1,0) [-819.2|819.1] "kW"  MCT_MCU
+ SG_ PMCUChargeLimitCmd : 112|16@1+ (0.01,0) [0|655.35] "kW"  MCT_MCU
+ SG_ nMCUMotorDischargeLimitCmd : 48|16@1+ (1,0) [0|65535] "rpm"  MCT_MCU
+ SG_ nMCUMotorChargeLimitCmd : 32|16@1+ (1,0) [0|65535] "rpm"  MCT_MCU
+ SG_ MMCUMotorSpdLimDischgUpperLim : 64|14@1- (0.1,0) [-819.2|819.1] "Nm"  MCT_MCU
+ SG_ MMCUMotorSpdLimDischgLowerLim : 80|14@1- (0.1,0) [-819.2|819.1] "Nm"  MCT_MCU
+ SG_ MMCUMotorTargetCmd : 16|16@1- (0.01,0) [-327.68|327.67] "Nm"  MCT_MCU
+ SG_ MMCUDriveshaftRearTotal : 160|15@1- (0.5,0) [-8192|8191.5] "Nm"  MCT_MCU
+ SG_ BMCUStopRequestBit : 5|1@1+ (1,0) [0|1] ""  MCT_MCU
+ SG_ BMCUStartRequestBit : 4|1@1+ (1,0) [0|1] ""  MCT_MCU
+ SG_ BMCUSpinDirectionRequest : 3|1@1+ (1,0) [0|1] ""  MCT_MCU
+ SG_ BMCUReverseEnableCommand : 2|1@1+ (1,0) [0|1] ""  MCT_MCU
+ SG_ BMCUResetErrorsCommand : 1|1@1+ (1,0) [0|1] ""  MCT_MCU
+ SG_ BMCUActiveDischargeCmd : 0|1@1+ (1,0) [0|1] ""  MCT_MCU
+
+
+
+CM_ "016:Add flags:
+-AutoMGU active
+-Z pulse error
+-VCU active CAN
+-Msg counter response2
+-Sensorless config
+-Kd filter cutoff chgspdlim/ADF
+
+-Changed name of auto MGU detect enable flag.
+-Removed:
+-ITemp 5/6 
+-SpdLimKps (CALIB)
+-Filled debug msg
+";
+CM_ SG_ 624 NMCUDebugBuffer32 "MCU debug data buffer";
+CM_ SG_ 624 NMCUDebugBuffer31 "MCU debug data buffer";
+CM_ SG_ 624 NMCUDebugBuffer30 "MCU debug data buffer";
+CM_ SG_ 624 NMCUDebugBuffer29 "MCU debug data buffer";
+CM_ SG_ 624 NMCUDebugBuffer28 "MCU debug data buffer";
+CM_ SG_ 624 NMCUDebugBuffer27 "MCU debug data buffer";
+CM_ SG_ 624 NMCUDebugBuffer26 "MCU debug data buffer";
+CM_ SG_ 624 NMCUDebugBuffer25 "MCU debug data buffer";
+CM_ SG_ 624 NMCUDebugBuffer24 "MCU debug data buffer";
+CM_ SG_ 624 NMCUDebugBuffer23 "MCU debug data buffer";
+CM_ SG_ 624 NMCUDebugBuffer22 "MCU debug data buffer";
+CM_ SG_ 624 NMCUDebugBuffer21 "MCU debug data buffer";
+CM_ SG_ 624 NMCUDebugBuffer20 "MCU debug data buffer";
+CM_ SG_ 624 NMCUDebugBuffer19 "MCU debug data buffer";
+CM_ SG_ 624 NMCUDebugBuffer18 "MCU debug data buffer";
+CM_ SG_ 624 NMCUDebugBuffer17 "MCU debug data buffer";
+CM_ SG_ 624 NMCUDebugBuffer16 "MCU debug data buffer";
+CM_ SG_ 624 NMCUDebugBuffer15 "MCU debug data buffer";
+CM_ SG_ 624 NMCUDebugBuffer14 "MCU debug data buffer";
+CM_ SG_ 624 NMCUDebugBuffer13 "MCU debug data buffer";
+CM_ SG_ 624 NMCUDebugBuffer12 "MCU debug data buffer";
+CM_ SG_ 624 NMCUDebugBuffer11 "MCU debug data buffer";
+CM_ SG_ 624 NMCUDebugBuffer10 "MCU debug data buffer";
+CM_ SG_ 624 NMCUDebugBuffer9 "MCU debug data buffer";
+CM_ SG_ 624 NMCUDebugBuffer8 "MCU debug data buffer";
+CM_ SG_ 624 NMCUDebugBuffer7 "MCU debug data buffer";
+CM_ SG_ 624 NMCUDebugBuffer6 "MCU debug data buffer";
+CM_ SG_ 624 NMCUDebugBuffer5 "MCU debug data buffer";
+CM_ SG_ 624 NMCUDebugBuffer4 "MCU debug data buffer";
+CM_ SG_ 624 NMCUDebugBuffer3 "MCU debug data buffer";
+CM_ SG_ 624 NMCUDebugBuffer2 "MCU debug data buffer";
+CM_ SG_ 624 NMCUDebugBuffer1 "MCU debug data buffer";
+CM_ SG_ 1104 BMCUSensorlessTuningEnableCmd "Enable MCU sensorless control tuning function";
+CM_ SG_ 1104 BMCUSensorlessCtrlEnableCmd "Enable MCU sensorless control";
+CM_ SG_ 1104 fMCUADFKdFiltCutoff "MCU active damping derivative function low pass filter cutoff freq";
+CM_ SG_ 1104 fMCUSpdLimChgKdFiltCutoff "MCU charge speed limter derivative function low pass filter cutoff freq";
+CM_ SG_ 1104 rMCUSpdLimChargeCtrlKd "MCU charge speed control limiter Kd term";
+CM_ SG_ 1104 NHSBMask "MCU debug data buffer contents definition";
+CM_ SG_ 1104 rMCUADKd "MCU active damping Kd term";
+CM_ SG_ 1104 tMCUADPhaseDelay "MCU active damping function phase delay";
+CM_ SG_ 1104 rMCUADKp "MCU active damping function Kp gain";
+CM_ SG_ 1104 fMCUADHPFiltCutoff "MCU active damping function high pass filter cutoff freq";
+CM_ SG_ 1104 fMCUADLPFiltCutoff "MCU active damping function low pass filter cutoff freq";
+CM_ SG_ 1104 nMCUMotorReverseLimitCmd "Reverse speed limit";
+CM_ SG_ 1104 BMCUAutoMGUConfigEnableCmd "Enable MCU detection of MGU serial number and auto setup of resolver offset and BEMF configuration";
+CM_ SG_ 1104 MMCUMotorTargetADSLimitMin "Minimum limit for the correction torque that the active damping function can add to the target torque";
+CM_ SG_ 1104 MMCUMotorTargetADSLimitMax "Maximum limit for the correction torque that the active damping function can add to the target torque";
+CM_ SG_ 1104 BMCUPowerLimitDischgEnableCmd "MCU discharge power limit closed loop function enable command";
+CM_ SG_ 1104 BMCUPowerLimitChgEnableCmd "MCU charge power limit closed loop function enable command";
+CM_ SG_ 1104 PMCUFIASnsCtrlLowerErrorEnable "Lower error for the DC sensor power limit control function above which the FIA sensor controller must be disabled.";
+CM_ SG_ 1104 PMCUFIASnsCtrlUpperErrorEnable "Upper error for the DC sensor power limit control function above which the FIA sensor controller must be disabled.";
+CM_ SG_ 1104 MMCU1kWPowerLimDischgKiLowerLim "MCU 1kW discharge power limit control Ki limit";
+CM_ SG_ 1104 rMCUPowerLimDischargeCtrlKi "MCU discharge power limit control Ki gain";
+CM_ SG_ 1104 rMCUPowerLimChargeCtrlKi "MCU charge power limit control Ki gain";
+CM_ SG_ 1104 MMCUPowerLimDischgKiUpperLim "MCU discharge power limit control Ki limit";
+CM_ SG_ 1104 MMCU1kWPowerLimDischgKiUpperLim "MCU 1kW discharge power limit control Ki limit";
+CM_ SG_ 1104 rMCUTorqueScalingCmd "MCU torque scaling command value.";
+CM_ SG_ 1104 rMCUPowerLimDishargeCtrlKp "MCU discharge power limit control Kp gain";
+CM_ SG_ 1104 rMCUPowerLimChargeCtrlKp "MCU charge power limit control Kp gain";
+CM_ SG_ 1104 rMCU1kWPowerLimDishgCtrlKp "MCU 1kW discharge power limit control Kp gain";
+CM_ SG_ 1104 rMCU1kWPowerLimDischgCtrlKi "MCU 1kW discharge power limit control Ki gain";
+CM_ SG_ 1104 MMCUPowerLimDischgKiLowerLim "MCU discharge power limit control Ki limit";
+CM_ SG_ 1104 MMCUPowerLimChgKiLowerLimit "MCU charge power limit control Ki limit";
+CM_ SG_ 1104 MMCUPowerLimChglKiUpperLimit "MCU charge power limit control Ki limit";
+CM_ SG_ 1104 BMCUSpeedLimitDischgEnableCmd "MCU discharge speed limit function enable command";
+CM_ SG_ 1104 BMCUSpeedLimitChgEnableCmd "MCU charge speed limit function enable command";
+CM_ SG_ 1104 BMCUCurrentSnsZeroEnableCmd "Current sensor zero command bit from VCU to MCU.";
+CM_ SG_ 1104 BMCUAutoTurnOffEnableCmd "Auto turn off enable command bit from VCU to MCU.";
+CM_ SG_ 1104 TMCURotorTempOffsetCmd "Commanded rotor temperature offset";
+CM_ SG_ 1104 aMCUResolverOffsetCmd "Commanded MCU resolver angle offset";
+CM_ SG_ 592 BMCUZPulseLearnError "MCU Z pulse learning error occurred";
+CM_ SG_ 592 BMCUAutoMGUConfigActive "Auto MGU serial number and setup detection and configuration is active";
+CM_ SG_ 592 nMCUADFiltered "MCU active damping function filtered speed output";
+CM_ SG_ 592 BMCUActiveCANBus "Indicates that the CAN bus being used by the MCU is the primary (=False) or backup (=True)";
+CM_ SG_ 592 BMCUZPulseLearnt "MCU has a learnt Z pulse and full control is possible if true";
+CM_ SG_ 592 MMCUMotorMinAvailable "Maximum torque available from MCU/MGU.";
+CM_ SG_ 592 MMCUMotorMaxAvailable "Maximum torque available from MCU/MGU.";
+CM_ SG_ 592 NMCUResponse1MsgCounter "Message integrity counter.";
+CM_ SG_ 592 BMCU1kWPwrLimitDischgActive "MCU 1kW discharge power limit closed loop function active";
+CM_ SG_ 592 BMCU1kWPwrLimitDischgEnabled "MCU 1kW discharge power limit closed loop function enabled";
+CM_ SG_ 592 BMCUPowerLimitDischgActive "MCU discharge power limit closed loop function active";
+CM_ SG_ 592 BMCUPowerLimitDischgEnabled "MCU discharge power limit closed loop function enabled";
+CM_ SG_ 592 BMCUPowerLimitChgActive "MCU charge power limit closed loop function active";
+CM_ SG_ 592 BMCUPowerLimitChgEnabled "MCU charge power limit closed loop function enabled";
+CM_ SG_ 592 MMCUMotorTargetFinalComp "MMCUMotorTargetFinal following internal MCU correction functions.";
+CM_ SG_ 592 MMCUMotorTarget1kWDischgPwrLim "Torque demand out of the 1kW discharge power limit control function.";
+CM_ SG_ 592 MMCUMotorTargetADS "Torque demand out of the active damping function.";
+CM_ SG_ 592 MMCUMotorTargetChargePwrLim "Torque demand out of the charge power limit control function.";
+CM_ SG_ 592 MMCUMotorTargetDischargePwrLim "Torque demand out of the discharge power limit control function.";
+CM_ SG_ 592 MMCUMotorTargetChargeSpdLim "Torque demand out of the charge speed limit control function.";
+CM_ SG_ 592 MMCUMotorTargetDischgSpLim "Torque demand out of the discharge speed limit control function.";
+CM_ SG_ 592 BMCUSpdLimChgUpperLimActive "MCU charge speed limit upper torque limit function active";
+CM_ SG_ 592 MMCUPowerLimDischgKi "MCU discharge power limit integrator value";
+CM_ SG_ 592 MMCUPowerLimChgKi "MCU charge power limit integrator value";
+CM_ SG_ 592 MMCU1kWPowerLimDischgKi "MCU 1kW discharge power limit integrator value";
+CM_ SG_ 592 MMCUMotorTargetFinal "Final torque demand before internal MCU correction functions but after all control and derate functions";
+CM_ SG_ 592 VMCUVqDemand "MCU Vq voltage demand";
+CM_ SG_ 592 VMCUVdDemand "MCU Vd voltage demand";
+CM_ SG_ 592 VMCUDCMeasured "MCU internal HV DC bus voltage";
+CM_ SG_ 592 VMCU12VSupply "MCU internal 12V supply feedback";
+CM_ SG_ 592 rMCUVrpm "MGU voltage per 1000rpm";
+CM_ SG_ 592 rMCUProcessorLoad "MCU processor load";
+CM_ SG_ 592 PMCUDCMeasured "MCU internal HV DC bus voltage";
+CM_ SG_ 592 nMCUMotorActual "Actual motor speed.";
+CM_ SG_ 592 NMCUGDBFaults "MCU gate driver fault bits";
+CM_ SG_ 592 MMCUMotorTargetMirror "Motor target torque received by the MCU (fed back to the VCU).";
+CM_ SG_ 592 MMCUMotorActual "Estimated actual motor torque.";
+CM_ SG_ 592 IMCUIqMeasured "MCU measured Iq current";
+CM_ SG_ 592 IMCUIqDemand "MCU Iq current demand";
+CM_ SG_ 592 IMCUIdMeasured "MCU measured Id current";
+CM_ SG_ 592 IMCUIdDemand "MCU Id current demand";
+CM_ SG_ 592 IMCUDCMeasured "MCU measured DC bus current";
+CM_ SG_ 592 fMCUSwitching "MCU current switching frequency";
+CM_ SG_ 592 BMCUTorqueLimitingActive "MCU torque limiting active (any)";
+CM_ SG_ 592 BMCUSpdLimDisTrqTunUppLimActive "MCU upper TC torque tunnel limiting active";
+CM_ SG_ 592 BMCUSpdLimDisTrqTunLwrLimActive "MCU lower TC torque tunnel limiting active";
+CM_ SG_ 592 BMCUSpdLimDisPwrTunLwrLimActive "MCU lower TC power tunnel limiting active";
+CM_ SG_ 592 BMCUSpinDirection "MCU spin direction feedback";
+CM_ SG_ 592 BMCUSpeedLimitDischgEnabled "MCU discharge speed limit function enabled";
+CM_ SG_ 592 BMCUSpeedLimitDischgActive "MCU discharge speed limit function active";
+CM_ SG_ 592 BMCUSpeedLimitChgEnabled "MCU charge speed limit function enabled";
+CM_ SG_ 592 BMCUSpeedLimitChgActive "MCU charge speed limit function active";
+CM_ SG_ 592 BMCURunState "MCU run state feedback";
+CM_ SG_ 592 BMCUReverseActive "MCU Reverse enable state feedback";
+CM_ SG_ 592 BMCUHWEnablePinState "MCU hardware enable pin input status";
+CM_ SG_ 592 BMCUHVBusSafeState "MCU HV DC bus below safe voltage threshold";
+CM_ SG_ 592 BMCUFaultSWOverVolt "MCU software over voltage fault";
+CM_ SG_ 592 BMCUFaultSWOverSpeed "MCU software over speed fault";
+CM_ SG_ 592 BMCUFaultSWOverCur "MCU software overcurrent fault";
+CM_ SG_ 592 BMCUFaultInvalidTrqDem "MCU invalid torque demand fault";
+CM_ SG_ 592 BMCUFaultHWOverVolt "MCU hardware over voltage fault";
+CM_ SG_ 592 BMCUFaultHWOverCurrent "MCU primary side hardware overcurrent fault";
+CM_ SG_ 592 BMCUFaultGDBUnderVolt "MCU gate driver board under voltage fault";
+CM_ SG_ 592 BMCUFaultDriverOverTemp "MCU excutation driver over temp fault";
+CM_ SG_ 592 BMCUFaultCurSplit "MCU current split fault";
+CM_ SG_ 592 BMCUFaultCore1TimeOut "MCU core 1 timeout fault";
+CM_ SG_ 592 BMCUFaultCANTimeOut "MCU CAN timeout fault";
+CM_ SG_ 592 BMCUFaultActive "MCU fault state feedback";
+CM_ SG_ 592 BMCUAutoTurnOffActive "MCU Auto turn off enabled";
+CM_ SG_ 592 BMCUActiveDischargeActive "MCU Active discharge state";
+CM_ SG_ 592 aMGURotorPosition "MCU calculated MGU rotor position";
+CM_ SG_ 336 BVCUActiveCANBus "Indicates that the CAN bus being used by the VCU is the primary (=False) or backup (=True)";
+CM_ SG_ 336 BMCUActiveDampingEnableCmd "Enable MCU active damping function";
+CM_ SG_ 336 rMCUSpdLimDischargeCtrlKp "MCU charge speed limit control Kp gain";
+CM_ SG_ 336 rMCUSpdLimChargeCtrlKp "MCU charge speed limit control Kp gain";
+CM_ SG_ 336 NMCUCommandMsgCounter "Message integrity counter.";
+CM_ SG_ 336 MMCUMotorSpdLimChgUpperLimit "Charge/braking speed limiter upper torque limit.";
+CM_ SG_ 336 BMCU1kWPwrLimDischgEnableCmd "MCU 1kW discharge power limit function enable command";
+CM_ SG_ 336 PMCUDischgLimitCmd "Discharge power upper limit upper 'power tunnel' value) applied to discharge speed limit control when in Power Tunnel mode.";
+CM_ SG_ 336 PMCUSpdLimDischgLowerLimitCmd "Discharge power lower limit (lower 'power tunnel' value) applied to discharge speed limit control when in Power Tunnel mode.";
+CM_ SG_ 336 PMCUChargeLimitCmd "Charge power limit.";
+CM_ SG_ 336 nMCUMotorDischargeLimitCmd "Motor speed limit for discharge / accelerator control (traction control).";
+CM_ SG_ 336 nMCUMotorChargeLimitCmd "Motor speed limit for charge / braking control (anti-lock braking control).";
+CM_ SG_ 336 MMCUMotorSpdLimDischgUpperLim "Motor torque upper 'TC tunnel' limit applied to speed limit control when in Torque Tunnel Mode.";
+CM_ SG_ 336 MMCUMotorSpdLimDischgLowerLim "Motor torque lower 'TC tunnel' limit applied to speed limit control when in Torque Tunnel Mode..";
+CM_ SG_ 336 MMCUMotorTargetCmd "Motor target torque.";
+CM_ SG_ 336 MMCUDriveshaftRearTotal "Sum of the rear driveshaft torque sensor values";
+CM_ SG_ 336 BMCUStopRequestBit "Stop request bit from VCU to MCU.";
+CM_ SG_ 336 BMCUStartRequestBit "Start request bit from VCU to MCU.";
+CM_ SG_ 336 BMCUSpinDirectionRequest "MCU spin direction command bit from VCU to MCU.";
+CM_ SG_ 336 BMCUReverseEnableCommand "Reverse enable command bit from VCU to MCU.";
+CM_ SG_ 336 BMCUResetErrorsCommand "Error reset request bit from VCU to MCU.";
+CM_ SG_ 336 BMCUActiveDischargeCmd "Active discharge enable command bit from VCU to MCU.";
+CM_ SG_ 608 NMCUResponse2MsgCounter "Message integrity counter.";
+CM_ SG_ 608 NMCUSettingsVersion "MCU DSP sofware version";
+CM_ SG_ 608 NMGUSerialNo "MGU serial number";
+CM_ SG_ 608 TMCUDCSensor "MCU current sensor 4 temperature.";
+CM_ SG_ 608 TMGUWinding2 "MGU winding temperature 2";
+CM_ SG_ 608 TMGUWinding1 "MGU winding temperature 1";
+CM_ SG_ 608 TMGURotor "MGU rotor temperature (estimate?)";
+CM_ SG_ 608 TMGUBearingNDE "MGU bearing temperature non-drive end";
+CM_ SG_ 608 TMGUBearingDE "MGU bearing temperature drive end";
+CM_ SG_ 608 TMCUModule "MCU module temperature";
+CM_ SG_ 608 TMCUISensor3 "MCU current sensor 3 temperature.";
+CM_ SG_ 608 TMCUISensor2 "MCU current sensor 2 temperature.";
+CM_ SG_ 608 TMCUISensor1 "MCU current sensor 1 temperature.";
+CM_ SG_ 608 TMCUISnsDischarge "MCU discharge resistor temperature";
+CM_ SG_ 608 TMCUGDB2 "MCU gate driver board temperature 2";
+CM_ SG_ 608 TMCUGDB1 "MCU gate driver board temperature 1";
+CM_ SG_ 608 NMCUSerialNo "MCU serial number";
+CM_ SG_ 608 NMCUFPGASwVersion "MCU FPGA sofware version";
+CM_ SG_ 608 NMCUDSPSwVersion "MCU DSP sofware version";
+CM_ SG_ 528 NMCUResponse2MsgCounter "Message integrity counter.";
+CM_ SG_ 528 NMCUSettingsVersion "MCU DSP sofware version";
+CM_ SG_ 528 NMGUSerialNo "MGU serial number";
+CM_ SG_ 528 TMCUDCSensor "MCU current sensor 4 temperature.";
+CM_ SG_ 528 TMGUWinding2 "MGU winding temperature 2";
+CM_ SG_ 528 TMGUWinding1 "MGU winding temperature 1";
+CM_ SG_ 528 TMGURotor "MGU rotor temperature (estimate?)";
+CM_ SG_ 528 TMGUBearingNDE "MGU bearing temperature non-drive end";
+CM_ SG_ 528 TMGUBearingDE "MGU bearing temperature drive end";
+CM_ SG_ 528 TMCUModule "MCU module temperature";
+CM_ SG_ 528 TMCUISensor3 "MCU current sensor 3 temperature.";
+CM_ SG_ 528 TMCUISensor2 "MCU current sensor 2 temperature.";
+CM_ SG_ 528 TMCUISensor1 "MCU current sensor 1 temperature.";
+CM_ SG_ 528 TMCUISnsDischarge "MCU discharge resistor temperature";
+CM_ SG_ 528 TMCUGDB2 "MCU gate driver board temperature 2";
+CM_ SG_ 528 TMCUGDB1 "MCU gate driver board temperature 1";
+CM_ SG_ 528 NMCUSerialNo "MCU serial number";
+CM_ SG_ 528 NMCUFPGASwVersion "MCU FPGA sofware version";
+CM_ SG_ 528 NMCUDSPSwVersion "MCU DSP sofware version";
+CM_ SG_ 1024 BMCUSensorlessTuningEnableCmd "Enable MCU sensorless control tuning function";
+CM_ SG_ 1024 BMCUSensorlessCtrlEnableCmd "Enable MCU sensorless control";
+CM_ SG_ 1024 fMCUADFKdFiltCutoff "MCU active damping derivative function low pass filter cutoff freq";
+CM_ SG_ 1024 fMCUSpdLimChgKdFiltCutoff "MCU charge speed limter derivative function low pass filter cutoff freq";
+CM_ SG_ 1024 rMCUSpdLimChargeCtrlKd "MCU charge speed control limiter Kd term";
+CM_ SG_ 1024 NHSBMask "MCU debug data buffer contents definition";
+CM_ SG_ 1024 rMCUADKd "MCU active damping Kd term";
+CM_ SG_ 1024 tMCUADPhaseDelay "MCU active damping function phase delay";
+CM_ SG_ 1024 rMCUADKp "MCU active damping function Kp gain";
+CM_ SG_ 1024 fMCUADHPFiltCutoff "MCU active damping function high pass filter cutoff freq";
+CM_ SG_ 1024 fMCUADLPFiltCutoff "MCU active damping function low pass filter cutoff freq";
+CM_ SG_ 1024 nMCUMotorReverseLimitCmd "Reverse speed limit";
+CM_ SG_ 1024 BMCUAutoMGUConfigEnableCmd "Enable MCU detection of MGU serial number and auto setup of resolver offset and BEMF configuration";
+CM_ SG_ 1024 MMCUMotorTargetADSLimitMin "Minimum limit for the correction torque that the active damping function can add to the target torque";
+CM_ SG_ 1024 MMCUMotorTargetADSLimitMax "Maximum limit for the correction torque that the active damping function can add to the target torque";
+CM_ SG_ 1024 BMCUPowerLimitDischgEnableCmd "MCU discharge power limit closed loop function enable command";
+CM_ SG_ 1024 BMCUPowerLimitChgEnableCmd "MCU charge power limit closed loop function enable command";
+CM_ SG_ 1024 PMCUFIASnsCtrlLowerErrorEnable "Lower error for the DC sensor power limit control function above which the FIA sensor controller must be disabled.";
+CM_ SG_ 1024 PMCUFIASnsCtrlUpperErrorEnable "Upper error for the DC sensor power limit control function above which the FIA sensor controller must be disabled.";
+CM_ SG_ 1024 MMCU1kWPowerLimDischgKiLowerLim "MCU 1kW discharge power limit control Ki limit";
+CM_ SG_ 1024 rMCUPowerLimDischargeCtrlKi "MCU discharge power limit control Ki gain";
+CM_ SG_ 1024 rMCUPowerLimChargeCtrlKi "MCU charge power limit control Ki gain";
+CM_ SG_ 1024 MMCUPowerLimDischgKiUpperLim "MCU discharge power limit control Ki limit";
+CM_ SG_ 1024 MMCU1kWPowerLimDischgKiUpperLim "MCU 1kW discharge power limit control Ki limit";
+CM_ SG_ 1024 rMCUTorqueScalingCmd "MCU torque scaling command value.";
+CM_ SG_ 1024 rMCUPowerLimDishargeCtrlKp "MCU discharge power limit control Kp gain";
+CM_ SG_ 1024 rMCUPowerLimChargeCtrlKp "MCU charge power limit control Kp gain";
+CM_ SG_ 1024 rMCU1kWPowerLimDishgCtrlKp "MCU 1kW discharge power limit control Kp gain";
+CM_ SG_ 1024 rMCU1kWPowerLimDischgCtrlKi "MCU 1kW discharge power limit control Ki gain";
+CM_ SG_ 1024 MMCUPowerLimDischgKiLowerLim "MCU discharge power limit control Ki limit";
+CM_ SG_ 1024 MMCUPowerLimChgKiLowerLimit "MCU charge power limit control Ki limit";
+CM_ SG_ 1024 MMCUPowerLimChglKiUpperLimit "MCU charge power limit control Ki limit";
+CM_ SG_ 1024 BMCUSpeedLimitDischgEnableCmd "MCU discharge speed limit function enable command";
+CM_ SG_ 1024 BMCUSpeedLimitChgEnableCmd "MCU charge speed limit function enable command";
+CM_ SG_ 1024 BMCUCurrentSnsZeroEnableCmd "Current sensor zero command bit from VCU to MCU.";
+CM_ SG_ 1024 BMCUAutoTurnOffEnableCmd "Auto turn off enable command bit from VCU to MCU.";
+CM_ SG_ 1024 TMCURotorTempOffsetCmd "Commanded rotor temperature offset";
+CM_ SG_ 1024 aMCUResolverOffsetCmd "Commanded MCU resolver angle offset";
+CM_ SG_ 512 BMCUZPulseLearnError "MCU Z pulse learning error occurred";
+CM_ SG_ 512 BMCUAutoMGUConfigActive "Auto MGU serial number and setup detection and configuration is active";
+CM_ SG_ 512 nMCUADFiltered "MCU active damping function filtered speed output";
+CM_ SG_ 512 BMCUActiveCANBus "Indicates that the CAN bus being used by the MCU is the primary (=False) or backup (=True)";
+CM_ SG_ 512 BMCUZPulseLearnt "MCU has a learnt Z pulse and full control is possible if true";
+CM_ SG_ 512 MMCUMotorMinAvailable "Maximum torque available from MCU/MGU.";
+CM_ SG_ 512 MMCUMotorMaxAvailable "Maximum torque available from MCU/MGU.";
+CM_ SG_ 512 NMCUResponse1MsgCounter "Message integrity counter.";
+CM_ SG_ 512 BMCU1kWPwrLimitDischgActive "MCU 1kW discharge power limit closed loop function active";
+CM_ SG_ 512 BMCU1kWPwrLimitDischgEnabled "MCU 1kW discharge power limit closed loop function enabled";
+CM_ SG_ 512 BMCUPowerLimitDischgActive "MCU discharge power limit closed loop function active";
+CM_ SG_ 512 BMCUPowerLimitDischgEnabled "MCU discharge power limit closed loop function enabled";
+CM_ SG_ 512 BMCUPowerLimitChgActive "MCU charge power limit closed loop function active";
+CM_ SG_ 512 BMCUPowerLimitChgEnabled "MCU charge power limit closed loop function enabled";
+CM_ SG_ 512 MMCUMotorTargetFinalComp "MMCUMotorTargetFinal following internal MCU correction functions.";
+CM_ SG_ 512 MMCUMotorTarget1kWDischgPwrLim "Torque demand out of the 1kW discharge power limit control function.";
+CM_ SG_ 512 MMCUMotorTargetADS "Torque demand out of the active damping function.";
+CM_ SG_ 512 MMCUMotorTargetChargePwrLim "Torque demand out of the charge power limit control function.";
+CM_ SG_ 512 MMCUMotorTargetDischargePwrLim "Torque demand out of the discharge power limit control function.";
+CM_ SG_ 512 MMCUMotorTargetChargeSpdLim "Torque demand out of the charge speed limit control function.";
+CM_ SG_ 512 MMCUMotorTargetDischgSpLim "Torque demand out of the discharge speed limit control function.";
+CM_ SG_ 512 BMCUSpdLimChgUpperLimActive "MCU charge speed limit upper torque limit function active";
+CM_ SG_ 512 MMCUPowerLimDischgKi "MCU discharge power limit integrator value";
+CM_ SG_ 512 MMCUPowerLimChgKi "MCU charge power limit integrator value";
+CM_ SG_ 512 MMCU1kWPowerLimDischgKi "MCU 1kW discharge power limit integrator value";
+CM_ SG_ 512 MMCUMotorTargetFinal "Final torque demand before internal MCU correction functions but after all control and derate functions";
+CM_ SG_ 512 VMCUVqDemand "MCU Vq voltage demand";
+CM_ SG_ 512 VMCUVdDemand "MCU Vd voltage demand";
+CM_ SG_ 512 VMCUDCMeasured "MCU internal HV DC bus voltage";
+CM_ SG_ 512 VMCU12VSupply "MCU internal 12V supply feedback";
+CM_ SG_ 512 rMCUVrpm "MGU voltage per 1000rpm";
+CM_ SG_ 512 rMCUProcessorLoad "MCU processor load";
+CM_ SG_ 512 PMCUDCMeasured "MCU internal HV DC bus voltage";
+CM_ SG_ 512 nMCUMotorActual "Actual motor speed.";
+CM_ SG_ 512 NMCUGDBFaults "MCU gate driver fault bits";
+CM_ SG_ 512 MMCUMotorTargetMirror "Motor target torque received by the MCU (fed back to the VCU).";
+CM_ SG_ 512 MMCUMotorActual "Estimated actual motor torque.";
+CM_ SG_ 512 IMCUIqMeasured "MCU measured Iq current";
+CM_ SG_ 512 IMCUIqDemand "MCU Iq current demand";
+CM_ SG_ 512 IMCUIdMeasured "MCU measured Id current";
+CM_ SG_ 512 IMCUIdDemand "MCU Id current demand";
+CM_ SG_ 512 IMCUDCMeasured "MCU measured DC bus current";
+CM_ SG_ 512 fMCUSwitching "MCU current switching frequency";
+CM_ SG_ 512 BMCUTorqueLimitingActive "MCU torque limiting active (any)";
+CM_ SG_ 512 BMCUSpdLimDisTrqTunUppLimActive "MCU upper TC torque tunnel limiting active";
+CM_ SG_ 512 BMCUSpdLimDisTrqTunLwrLimActive "MCU lower TC torque tunnel limiting active";
+CM_ SG_ 512 BMCUSpdLimDisPwrTunLwrLimActive "MCU lower TC power tunnel limiting active";
+CM_ SG_ 512 BMCUSpinDirection "MCU spin direction feedback";
+CM_ SG_ 512 BMCUSpeedLimitDischgEnabled "MCU discharge speed limit function enabled";
+CM_ SG_ 512 BMCUSpeedLimitDischgActive "MCU discharge speed limit function active";
+CM_ SG_ 512 BMCUSpeedLimitChgEnabled "MCU charge speed limit function enabled";
+CM_ SG_ 512 BMCUSpeedLimitChgActive "MCU charge speed limit function active";
+CM_ SG_ 512 BMCURunState "MCU run state feedback";
+CM_ SG_ 512 BMCUReverseActive "MCU Reverse enable state feedback";
+CM_ SG_ 512 BMCUHWEnablePinState "MCU hardware enable pin input status";
+CM_ SG_ 512 BMCUHVBusSafeState "MCU HV DC bus below safe voltage threshold";
+CM_ SG_ 512 BMCUFaultSWOverVolt "MCU software over voltage fault";
+CM_ SG_ 512 BMCUFaultSWOverSpeed "MCU software over speed fault";
+CM_ SG_ 512 BMCUFaultSWOverCur "MCU software overcurrent fault";
+CM_ SG_ 512 BMCUFaultInvalidTrqDem "MCU invalid torque demand fault";
+CM_ SG_ 512 BMCUFaultHWOverVolt "MCU hardware over voltage fault";
+CM_ SG_ 512 BMCUFaultHWOverCurrent "MCU primary side hardware overcurrent fault";
+CM_ SG_ 512 BMCUFaultGDBUnderVolt "MCU gate driver board under voltage fault";
+CM_ SG_ 512 BMCUFaultDriverOverTemp "MCU excutation driver over temp fault";
+CM_ SG_ 512 BMCUFaultCurSplit "MCU current split fault";
+CM_ SG_ 512 BMCUFaultCore1TimeOut "MCU core 1 timeout fault";
+CM_ SG_ 512 BMCUFaultCANTimeOut "MCU CAN timeout fault";
+CM_ SG_ 512 BMCUFaultActive "MCU fault state feedback";
+CM_ SG_ 512 BMCUAutoTurnOffActive "MCU Auto turn off enabled";
+CM_ SG_ 512 BMCUActiveDischargeActive "MCU Active discharge state";
+CM_ SG_ 512 aMGURotorPosition "MCU calculated MGU rotor position";
+CM_ SG_ 256 BVCUActiveCANBus "Indicates that the CAN bus being used by the VCU is the primary (=False) or backup (=True)";
+CM_ SG_ 256 BMCUActiveDampingEnableCmd "Enable MCU active damping function";
+CM_ SG_ 256 rMCUSpdLimDischargeCtrlKp "MCU charge speed limit control Kp gain";
+CM_ SG_ 256 rMCUSpdLimChargeCtrlKp "MCU charge speed limit control Kp gain";
+CM_ SG_ 256 NMCUCommandMsgCounter "Message integrity counter.";
+CM_ SG_ 256 MMCUMotorSpdLimChgUpperLimit "Charge/braking speed limiter upper torque limit.";
+CM_ SG_ 256 BMCU1kWPwrLimDischgEnableCmd "MCU 1kW discharge power limit function enable command";
+CM_ SG_ 256 PMCUDischgLimitCmd "Discharge power upper limit upper 'power tunnel' value) applied to discharge speed limit control when in Power Tunnel mode.";
+CM_ SG_ 256 PMCUSpdLimDischgLowerLimitCmd "Discharge power lower limit (lower 'power tunnel' value) applied to discharge speed limit control when in Power Tunnel mode.";
+CM_ SG_ 256 PMCUChargeLimitCmd "Charge power limit.";
+CM_ SG_ 256 nMCUMotorDischargeLimitCmd "Motor speed limit for discharge / accelerator control (traction control).";
+CM_ SG_ 256 nMCUMotorChargeLimitCmd "Motor speed limit for charge / braking control (anti-lock braking control).";
+CM_ SG_ 256 MMCUMotorSpdLimDischgUpperLim "Motor torque upper 'TC tunnel' limit applied to speed limit control when in Torque Tunnel Mode.";
+CM_ SG_ 256 MMCUMotorSpdLimDischgLowerLim "Motor torque lower 'TC tunnel' limit applied to speed limit control when in Torque Tunnel Mode..";
+CM_ SG_ 256 MMCUMotorTargetCmd "Motor target torque.";
+CM_ SG_ 256 MMCUDriveshaftRearTotal "Sum of the rear driveshaft torque sensor values";
+CM_ SG_ 256 BMCUStopRequestBit "Stop request bit from VCU to MCU.";
+CM_ SG_ 256 BMCUStartRequestBit "Start request bit from VCU to MCU.";
+CM_ SG_ 256 BMCUSpinDirectionRequest "MCU spin direction command bit from VCU to MCU.";
+CM_ SG_ 256 BMCUReverseEnableCommand "Reverse enable command bit from VCU to MCU.";
+CM_ SG_ 256 BMCUResetErrorsCommand "Error reset request bit from VCU to MCU.";
+CM_ SG_ 256 BMCUActiveDischargeCmd "Active discharge enable command bit from VCU to MCU.";
+BA_DEF_ BO_  "CANFD_BRS" ENUM  "0","1";
+BA_DEF_  "DBName" STRING ;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "ECU" STRING ;
+BA_DEF_ BU_  "CANoeJitterMax" INT 0 0;
+BA_DEF_ BU_  "CANoeJitterMin" INT 0 0;
+BA_DEF_ BU_  "CANoeDrift" INT 0 0;
+BA_DEF_ BU_  "CANoeStartDelay" INT 0 0;
+BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","StandardCAN_FD","ExtendedCAN_FD";
+BA_DEF_DEF_  "CANFD_BRS" "1";
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_  "BusType" "";
+BA_DEF_DEF_  "NodeLayerModules" "";
+BA_DEF_DEF_  "ECU" "";
+BA_DEF_DEF_  "CANoeJitterMax" 0;
+BA_DEF_DEF_  "CANoeJitterMin" 0;
+BA_DEF_DEF_  "CANoeDrift" 0;
+BA_DEF_DEF_  "CANoeStartDelay" 0;
+BA_DEF_DEF_  "VFrameFormat" "StandardCAN";
+BA_ "BusType" "CAN FD";
+BA_ "DBName" "MFE_MTS_PTCAN_CtrlBUS_016_BACKUP";
+BA_ "VFrameFormat" BO_ 624 14;
+BA_ "VFrameFormat" BO_ 1104 14;
+BA_ "VFrameFormat" BO_ 592 14;
+BA_ "VFrameFormat" BO_ 336 14;
+BA_ "VFrameFormat" BO_ 608 14;
+BA_ "VFrameFormat" BO_ 528 14;
+BA_ "VFrameFormat" BO_ 1024 14;
+BA_ "VFrameFormat" BO_ 512 14;
+BA_ "VFrameFormat" BO_ 256 14;
+

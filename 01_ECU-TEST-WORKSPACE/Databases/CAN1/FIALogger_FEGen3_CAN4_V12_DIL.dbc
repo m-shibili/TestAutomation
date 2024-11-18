@@ -1,0 +1,314 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: VCU FIA_MLS XAP
+VAL_TABLE_ BAccident 1 "Accident detected and recorded" 0 "No accident detected" ;
+VAL_TABLE_ NHighPowerScenario 5 "6 + 2 min" 4 "5 + 3 min" 3 "4 + 4 min" 2 "3 + 5 min" 1 "2 + 6 min" ;
+VAL_TABLE_ RCS_Flag 17 "DOUBLE YELLOW" 16 "Do not use" 15 "Do not use" 14 "SC - IN" 13 "SC" 12 "Do not use" 11 "FINISH" 10 "SLIPPERY" 9 "FCY" 8 "WHITE" 7 "YELLOW" 6 "Do not use" 5 "BLACK&WHITE" 4 "BLACK" 3 "RED" 2 "BLUE" 1 "GREEN" 0 "No Flag displayed" ;
+VAL_TABLE_ NMux165 2 "Current PTT Beep settings" 1 "Current volume config" ;
+VAL_TABLE_ NMux164 4 "PTT Default settings" 3 "Audio Default settings" 2 "PTT Custom settings" 1 "Audio Custom settings" ;
+VAL_TABLE_ PowerMode 3 "350kW" 2 "300kW" 1 "110kW" ;
+VAL_TABLE_ CarManufacturer_FIA 10 "Porsche" 9 "Penske" 8 "Mercedes" 7 "NIO" 6 "Mahindra" 5 "Jaguar" 4 "DS" 3 "Nissan" 2 "BMW" 1 "Audi" 0 "None" ;
+
+
+BO_ 873 FIA_2_XAP_0x369: 8 XAP
+
+BO_ 872 FIA_2_XAP_0x368: 8 XAP
+
+BO_ 1055 FIA_Forbidden13: 8 FIA_MLS
+
+BO_ 1054 FIA_Forbidden12: 8 FIA_MLS
+
+BO_ 1053 FIA_Forbidden11: 8 FIA_MLS
+
+BO_ 1052 FIA_Forbidden10: 8 FIA_MLS
+
+BO_ 1039 FIA_Forbidden09: 8 FIA_MLS
+
+BO_ 1038 FIA_Forbidden08: 8 FIA_MLS
+
+BO_ 1037 FIA_Forbidden07: 8 FIA_MLS
+
+BO_ 1036 FIA_Forbidden06: 8 FIA_MLS
+
+BO_ 128 FIA_Forbidden05: 8 FIA_MLS
+
+BO_ 1147 FIA_Forbidden04: 8 FIA_MLS
+
+BO_ 1146 FIA_Forbidden03: 8 FIA_MLS
+
+BO_ 1145 FIA_Forbidden02: 8 FIA_MLS
+
+BO_ 1144 FIA_Forbidden01: 8 FIA_MLS
+
+BO_ 98 FIA_2_ECU_0x62: 8 FIA_MLS
+ SG_ TFPKCoolantOutlet_FIA : 55|8@0+ (1,-40) [-40|215] "°C"  VCU
+ SG_ TFPKAir_FIA : 47|8@0+ (0.4,-20) [-20|82] "°C"  VCU
+ SG_ VpBrakeSBSRaw_FIA : 27|12@0+ (1.2210012210012,0) [0|4999.99999999991] "mV"  VCU
+ SG_ NCounter0x62 : 7|4@0+ (1,0) [0|15] ""  VCU
+ SG_ VTBrakeFRRaw_FIA : 23|12@0+ (1.2210012210012,0) [0|4999.99999999991] "mV"  VCU
+ SG_ VTBrakeFLRaw_FIA : 3|12@0+ (1.2210012210012,0) [0|4999.99999999991] "mV"  VCU
+
+BO_ 96 FIA_2_ECU_0x60: 8 FIA_MLS
+ SG_ NChecksum0x60 : 63|8@0+ (1,0) [0|255] ""  VCU
+ SG_ NCounter0x60 : 7|4@0+ (1,0) [0|15] ""  VCU
+ SG_ VxBrakeRaw_FIA : 43|12@0+ (1.2210012210012,0) [0|4999.99999999991] "mV"  VCU
+ SG_ VpBrakeRaw_FIA : 39|12@0+ (1.2210012210012,0) [0|4999.99999999991] "mV"  VCU
+ SG_ VpCaliperRaw_FIA : 19|12@0+ (1.2210012210012,0) [0|4999.99999999991] "mV"  VCU
+ SG_ VrThrottle1Raw_FIA : 15|12@0+ (1.2210012210012,0) [0|4999.99999999991] "mV"  VCU
+
+BO_ 102 FIA_2_ECU_0x66: 6 FIA_MLS
+ SG_ ADR_AccidentSeverity : 35|12@0+ (0.0763,0) [0|312.4485] "g"  VCU
+ SG_ ADR_AccZ : 31|12@0- (0.1526,0) [-312.5248|312.3722] "g"  VCU
+ SG_ ADR_AccY : 11|12@0- (0.1526,0) [-312.5248|312.3722] "g"  VCU
+ SG_ ADR_AccX : 7|12@0- (0.1526,0) [-312.5248|312.3722] "g"  VCU
+
+BO_ 881 FIA_2_XAP_0x371: 8 FIA_MLS
+ SG_ NRCSLedXAP : 7|8@0+ (1,0) [0|255] ""  XAP,FIA_MLS
+
+BO_ 880 FIA_2_XAP_0x370: 8 FIA_MLS
+ SG_ PrimLedBanner : 63|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ NRCSLedDimXAP : 55|8@0+ (1,0) [0|255] ""  XAP,FIA_MLS
+ SG_ NRCSFlagDimXAP : 31|8@0+ (1,0) [0|255] ""  XAP,FIA_MLS
+ SG_ NRCSFlagXAP : 15|8@0+ (1,0) [0|65535] ""  XAP,FIA_MLS
+
+BO_ 882 FIA_2_XAP_0x372: 8 FIA_MLS
+ SG_ XAP_Sig8 : 63|8@0+ (1,0) [0|255] ""  XAP
+ SG_ XAP_Sig7 : 55|8@0+ (1,0) [0|255] ""  XAP
+ SG_ XAP_Sig6 : 47|8@0+ (1,0) [0|255] ""  XAP
+ SG_ XAP_Sig5 : 39|8@0+ (1,0) [0|255] ""  XAP
+ SG_ XAP_Sig4 : 31|8@0+ (1,0) [0|255] ""  XAP
+ SG_ XAP_Sig3 : 23|8@0+ (1,0) [0|255] ""  XAP
+ SG_ XAP_Sig2 : 15|8@0+ (1,0) [0|255] ""  XAP
+ SG_ XAP_Sig1 : 7|8@0+ (1,0) [0|255] ""  XAP
+
+
+
+CM_ BO_ 873 "XAP Dash marshalling - Feedback LED and text displayed";
+CM_ BO_ 872 "XAP Dash marshalling - Feedback CRC from text displayed";
+CM_ BO_ 1055 "Reserved IDs for Marelli system - DO NOT USE";
+CM_ BO_ 1054 "Reserved IDs for Marelli system - DO NOT USE";
+CM_ BO_ 1053 "Reserved IDs for Marelli system - DO NOT USE";
+CM_ BO_ 1052 "Reserved IDs for Marelli system - DO NOT USE";
+CM_ BO_ 1039 "Reserved IDs for Marelli system - DO NOT USE";
+CM_ BO_ 1038 "Reserved IDs for Marelli system - DO NOT USE";
+CM_ BO_ 1037 "Reserved IDs for Marelli system - DO NOT USE";
+CM_ BO_ 1036 "Reserved IDs for Marelli system - DO NOT USE";
+CM_ BO_ 128 "Reserved IDs for Marelli system - DO NOT USE";
+CM_ BO_ 1147 "Reserved IDs for Marelli system - DO NOT USE";
+CM_ BO_ 1146 "Reserved IDs for Marelli system - DO NOT USE";
+CM_ BO_ 1145 "Reserved IDs for Marelli system - DO NOT USE";
+CM_ BO_ 1144 "Reserved IDs for Marelli system - DO NOT USE";
+CM_ BO_ 98 "Brake temp & SBS press / FPK temps";
+CM_ SG_ 98 TFPKCoolantOutlet_FIA "MLS Temp2";
+CM_ SG_ 98 TFPKAir_FIA "MLS Temp4";
+CM_ SG_ 98 VpBrakeSBSRaw_FIA "MLS Ana07";
+CM_ SG_ 98 NCounter0x62 "Rolling counter - incremented each time a message is sent";
+CM_ SG_ 98 VTBrakeFRRaw_FIA "MLS Ana13";
+CM_ SG_ 98 VTBrakeFLRaw_FIA "MLS Ana12";
+CM_ BO_ 96 "Throttle / Brake";
+CM_ SG_ 96 NChecksum0x60 "Sum of the 7 first bytes";
+CM_ SG_ 96 NCounter0x60 "Rolling counter - incremented each time a message is sent";
+CM_ SG_ 96 VxBrakeRaw_FIA "MLS Ana08";
+CM_ SG_ 96 VpBrakeRaw_FIA "MLS Ana06";
+CM_ SG_ 96 VpCaliperRaw_FIA "MLS Ana03";
+CM_ SG_ 96 VrThrottle1Raw_FIA "MLS Ana01";
+CM_ BO_ 102 "ADR";
+CM_ SG_ 102 ADR_AccidentSeverity "ADR accident severity computed by FIA logger. When goes different from 0 the blue medical light will flash.
+15G in X, Y or 25G in Z confirmed for 5ms in any axis";
+CM_ SG_ 102 ADR_AccZ "ADR sensor Vertical Acceleration. + compression / - detente. 0 when on ground";
+CM_ SG_ 102 ADR_AccY "ADR sensor Lateral Acceleration. + left turn / - right turn";
+CM_ SG_ 102 ADR_AccX "ADR sensor Longitudinal Acceleration. + acceleration / - braking";
+CM_ BO_ 881 "XAP Dash marshalling - LED Command";
+CM_ BO_ 880 "XAP Dash marshalling - LED command and text";
+CM_ BO_ 882 "XAP Dash marshalling - Text control";
+BA_DEF_ SG_  "Gatewaysignal" INT 0 1;
+BA_DEF_ SG_  "GenSigAltSetting" STRING ;
+BA_DEF_ SG_  "GenSigAssignSetting" STRING ;
+BA_DEF_ SG_  "GenSigAutoGenDsp" ENUM  "No","Yes";
+BA_DEF_ SG_  "GenSigAutoGenSnd" ENUM  "No","Yes";
+BA_DEF_ SG_  "GenSigConditionalSend" STRING ;
+BA_DEF_ SG_  "GenSigEVName" STRING ;
+BA_DEF_ SG_  "GenSigEnvVarType" ENUM  "int","float","undef";
+BA_DEF_ SG_  "GenSigPostIfSetting" STRING ;
+BA_DEF_ SG_  "GenSigPostSetting" STRING ;
+BA_DEF_ SG_  "GenSigPreIfSetting" STRING ;
+BA_DEF_ SG_  "GenSigPreSetting" STRING ;
+BA_DEF_ SG_  "GenSigReceiveSetting" STRING ;
+BA_DEF_ SG_  "GenSigSNA" STRING ;
+BA_DEF_ SG_  "GenSigSpecialFunction" STRING ;
+BA_DEF_ SG_  "RID" STRING ;
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed";
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 0;
+BA_DEF_ SG_  "GenSigStartValue" INT 0 0;
+BA_DEF_ BO_  "DiagRequest" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagResponse" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagState" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgAltSetting" STRING ;
+BA_DEF_ BO_  "GenMsgAutoGenDsp" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgAutoGenSnd" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgConditionalSend" STRING ;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 0;
+BA_DEF_ BO_  "GenMsgEVName" STRING ;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgMinAcceptLength" INT 0 0;
+BA_DEF_ BO_  "GenMsgPostIfSetting" STRING ;
+BA_DEF_ BO_  "GenMsgPostSetting" STRING ;
+BA_DEF_ BO_  "GenMsgPreIfSetting" STRING ;
+BA_DEF_ BO_  "GenMsgPreSetting" STRING ;
+BA_DEF_ BO_  "GenMsgStartValue" STRING ;
+BA_DEF_ BO_  "NmInmMaster" ENUM  "no","yes";
+BA_DEF_ BO_  "NmMessage" ENUM  "No","Yes";
+BA_DEF_ BO_  "TpTxIndex" INT 0 99;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Cyclic","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed","IfActive","NoMsgSendType","NotUsed";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0;
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 0 0;
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 0;
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 0;
+BA_DEF_ BU_  "ILUsed" ENUM  "No","Yes";
+BA_DEF_ BU_  "NmNode" ENUM  "No","Yes";
+BA_DEF_ BU_  "NmStationAddress" HEX 0 64;
+BA_DEF_ BU_  "TpNodeBaseAddress" HEX 0 65535;
+BA_DEF_ BU_  "TpOwnSystemEcuNumber" HEX 0 255;
+BA_DEF_  "DBName" STRING ;
+BA_DEF_  "GenNWMSleepTime" INT 0 10000000;
+BA_DEF_  "ILTxTimeout" INT 0 10000;
+BA_DEF_  "NBTMax" INT 0 255;
+BA_DEF_  "NBTMin" INT 0 255;
+BA_DEF_  "NmBaseAddress" INT 0 0;
+BA_DEF_  "NmMessageCount" INT 0 64;
+BA_DEF_  "SamplePointMax" FLOAT 0 100;
+BA_DEF_  "SamplePointMin" FLOAT 0 100;
+BA_DEF_  "Version" HEX 0 255;
+BA_DEF_  "VersionWeek" INT 0 53;
+BA_DEF_  "VersionYear" INT 0 99;
+BA_DEF_  "Manufacturer" STRING ;
+BA_DEF_  "NmType" STRING ;
+BA_DEF_  "Baudrate" INT 0 1000000;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "ECU" STRING ;
+BA_DEF_ BU_  "CANoeJitterMax" INT 0 0;
+BA_DEF_ BU_  "CANoeJitterMin" INT 0 0;
+BA_DEF_ BU_  "CANoeDrift" INT 0 0;
+BA_DEF_ BU_  "CANoeStartDelay" INT 0 0;
+BA_DEF_REL_ BU_SG_REL_  "GenSigTimeoutTime" INT 0 0;
+BA_DEF_DEF_  "Gatewaysignal" 0;
+BA_DEF_DEF_  "GenSigAltSetting" "";
+BA_DEF_DEF_  "GenSigAssignSetting" "";
+BA_DEF_DEF_  "GenSigAutoGenDsp" "No";
+BA_DEF_DEF_  "GenSigAutoGenSnd" "No";
+BA_DEF_DEF_  "GenSigConditionalSend" "";
+BA_DEF_DEF_  "GenSigEVName" "";
+BA_DEF_DEF_  "GenSigEnvVarType" "undef";
+BA_DEF_DEF_  "GenSigPostIfSetting" "";
+BA_DEF_DEF_  "GenSigPostSetting" "";
+BA_DEF_DEF_  "GenSigPreIfSetting" "";
+BA_DEF_DEF_  "GenSigPreSetting" "";
+BA_DEF_DEF_  "GenSigReceiveSetting" "";
+BA_DEF_DEF_  "GenSigSNA" "";
+BA_DEF_DEF_  "GenSigSpecialFunction" "";
+BA_DEF_DEF_  "RID" "";
+BA_DEF_DEF_  "GenSigSendType" "Cyclic";
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "DiagRequest" "No";
+BA_DEF_DEF_  "DiagResponse" "No";
+BA_DEF_DEF_  "DiagState" "No";
+BA_DEF_DEF_  "GenMsgAltSetting" "";
+BA_DEF_DEF_  "GenMsgAutoGenDsp" "No";
+BA_DEF_DEF_  "GenMsgAutoGenSnd" "No";
+BA_DEF_DEF_  "GenMsgConditionalSend" "";
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgEVName" "";
+BA_DEF_DEF_  "GenMsgILSupport" "Yes";
+BA_DEF_DEF_  "GenMsgMinAcceptLength" 8;
+BA_DEF_DEF_  "GenMsgPostIfSetting" "";
+BA_DEF_DEF_  "GenMsgPostSetting" "";
+BA_DEF_DEF_  "GenMsgPreIfSetting" "";
+BA_DEF_DEF_  "GenMsgPreSetting" "";
+BA_DEF_DEF_  "GenMsgStartValue" "";
+BA_DEF_DEF_  "NmInmMaster" "no";
+BA_DEF_DEF_  "NmMessage" "No";
+BA_DEF_DEF_  "TpTxIndex" 0;
+BA_DEF_DEF_  "GenMsgSendType" "Cyclic";
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "ILUsed" "Yes";
+BA_DEF_DEF_  "NmNode" "Yes";
+BA_DEF_DEF_  "NmStationAddress" 0;
+BA_DEF_DEF_  "TpNodeBaseAddress" 0;
+BA_DEF_DEF_  "TpOwnSystemEcuNumber" 0;
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_  "GenNWMSleepTime" 10000000;
+BA_DEF_DEF_  "ILTxTimeout" 30;
+BA_DEF_DEF_  "NBTMax" 21;
+BA_DEF_DEF_  "NBTMin" 9;
+BA_DEF_DEF_  "NmBaseAddress" 1024;
+BA_DEF_DEF_  "NmMessageCount" 64;
+BA_DEF_DEF_  "SamplePointMax" 81.25;
+BA_DEF_DEF_  "SamplePointMin" 75;
+BA_DEF_DEF_  "Version" 160;
+BA_DEF_DEF_  "VersionWeek" 6;
+BA_DEF_DEF_  "VersionYear" 7;
+BA_DEF_DEF_  "Manufacturer" "FIA";
+BA_DEF_DEF_  "NmType" "";
+BA_DEF_DEF_  "Baudrate" 125000;
+BA_DEF_DEF_  "BusType" "";
+BA_DEF_DEF_  "NodeLayerModules" "";
+BA_DEF_DEF_  "ECU" "";
+BA_DEF_DEF_  "CANoeJitterMax" 0;
+BA_DEF_DEF_  "CANoeJitterMin" 0;
+BA_DEF_DEF_  "CANoeDrift" 0;
+BA_DEF_DEF_  "CANoeStartDelay" 0;
+BA_DEF_DEF_REL_ "GenSigTimeoutTime" 0;
+BA_ "BusType" "CAN";
+BA_ "NmBaseAddress" 0;
+BA_ "NmMessageCount" 0;
+BA_ "DBName" "FIALogger_FEGen3_CAN4_V12";
+BA_ "ECU" BU_ VCU "TEAM_ECU";
+BA_ "ECU" BU_ FIA_MLS "FIA_MLS";
+BA_ "GenMsgCycleTime" BO_ 873 50;
+BA_ "GenMsgCycleTime" BO_ 872 50;
+BA_ "GenMsgCycleTime" BO_ 98 20;
+BA_ "GenMsgCycleTime" BO_ 96 1;
+BA_ "GenMsgCycleTime" BO_ 102 1;
+BA_ "GenMsgCycleTime" BO_ 881 50;
+BA_ "GenMsgCycleTime" BO_ 880 50;
+BA_ "GenMsgCycleTime" BO_ 882 50;
+BA_ "GenSigStartValue" SG_ 98 TFPKAir_FIA 50;
+

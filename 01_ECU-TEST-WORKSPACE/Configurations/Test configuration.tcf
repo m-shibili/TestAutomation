@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CONFIGURATION format-rev="9" prog-version="2024.4.0.157279+6cc6544af3d9-FeatureSet" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test application.configuration.xsd">
+	<COMMON format-rev="4" xsi:type="commonData">
+		<QUERY-TESTER xsi:type="integer">2</QUERY-TESTER>
+	</COMMON>
+	<REPORT format-rev="4" xsi:type="reportData">
+		<REPORT-FORMATES/>
+		<INCLUDE-APPLICATION-LOGS xsi:type="boolean">True</INCLUDE-APPLICATION-LOGS>
+	</REPORT>
+	<EXECUTION-DATA format-rev="2" xsi:type="executionData"/>
+	<MODEL-ACCESS format-rev="1" xsi:type="modelAccessData">
+		<DATA dkey="Implementation">
+			<DVALUE format-rev="1" xsi:type="modelData">
+				<MODEL-DATA-SOURCE xsi:type="integer">0</MODEL-DATA-SOURCE>
+				<MODEL-ACCESS-PORT xsi:type="string">MDL-DEFAULT01</MODEL-ACCESS-PORT>
+				<MODEL-POSITION xsi:type="integer">2</MODEL-POSITION>
+			</DVALUE>
+		</DATA>
+		<DATA dkey="Plant model">
+			<DVALUE format-rev="1" xsi:type="modelData">
+				<MODEL-DATA-SOURCE xsi:type="integer">0</MODEL-DATA-SOURCE>
+				<MODEL-ACCESS-PORT xsi:type="string">MDL-SystemVarModel01</MODEL-ACCESS-PORT>
+				<MODEL-POSITION xsi:type="integer">1</MODEL-POSITION>
+			</DVALUE>
+		</DATA>
+	</MODEL-ACCESS>
+	<BUS-ACCESS format-rev="1" xsi:type="busAccessData">
+		<DATA dkey="CAN1-1">
+			<DVALUE format-rev="1" xsi:type="busData">
+				<BUS-ACCESS-PORT-ACTIVENODE xsi:type="string">BUS01</BUS-ACCESS-PORT-ACTIVENODE>
+				<BUS-ACCESS-PORT-SIMULATION xsi:type="string">BUS01</BUS-ACCESS-PORT-SIMULATION>
+				<DATABASE xsi:type="localArtifactReference">
+					<PATH xsi:type="string">Databases/CAN1/CAN1.dbc</PATH>
+				</DATABASE>
+				<CHANNEL xsi:type="string"/>
+				<PROTOCOL xsi:type="string"/>
+				<BUS-POSITION xsi:type="integer">1</BUS-POSITION>
+			</DVALUE>
+		</DATA>
+		<DATA dkey="CAN1-10">
+			<DVALUE format-rev="1" xsi:type="busData">
+				<BUS-ACCESS-PORT-ACTIVENODE xsi:type="string">BUS10</BUS-ACCESS-PORT-ACTIVENODE>
+				<BUS-ACCESS-PORT-SIMULATION xsi:type="string">BUS10</BUS-ACCESS-PORT-SIMULATION>
+				<DATABASE xsi:type="localArtifactReference">
+					<PATH xsi:type="string"/>
+				</DATABASE>
+				<CHANNEL xsi:type="string"/>
+				<PROTOCOL xsi:type="string"/>
+				<BUS-POSITION xsi:type="integer">10</BUS-POSITION>
+			</DVALUE>
+		</DATA>
+		<DATA dkey="CAN1-2">
+			<DVALUE format-rev="1" xsi:type="busData">
+				<BUS-ACCESS-PORT-ACTIVENODE xsi:type="string">BUS02</BUS-ACCESS-PORT-ACTIVENODE>
+				<BUS-ACCESS-PORT-SIMULATION xsi:type="string">BUS02</BUS-ACCESS-PORT-SIMULATION>
+				<DATABASE xsi:type="localArtifactReference">
+					<PATH xsi:type="string">Databases/CAN2/MFE_S11_MTS_PTCAN_CtrlBUS_V016_MAIN_DIL.dbc</PATH>
+				</DATABASE>
+				<CHANNEL xsi:type="string"/>
+				<PROTOCOL xsi:type="string"/>
+				<BUS-POSITION xsi:type="integer">2</BUS-POSITION>
+			</DVALUE>
+		</DATA>
+		<DATA dkey="CAN1-3">
+			<DVALUE format-rev="1" xsi:type="busData">
+				<BUS-ACCESS-PORT-ACTIVENODE xsi:type="string">BUS03</BUS-ACCESS-PORT-ACTIVENODE>
+				<BUS-ACCESS-PORT-SIMULATION xsi:type="string">BUS03</BUS-ACCESS-PORT-SIMULATION>
+				<DATABASE xsi:type="localArtifactReference">
+					<PATH xsi:type="string">Databases/CAN3/MFE_S11_MTS_PTCAN_CtrlBUS_V016_BACKUP_DIL.dbc</PATH>
+				</DATABASE>
+				<CHANNEL xsi:type="string"/>
+				<PROTOCOL xsi:type="string"/>
+				<BUS-POSITION xsi:type="integer">3</BUS-POSITION>
+			</DVALUE>
+		</DATA>
+		<DATA dkey="CAN1-4">
+			<DVALUE format-rev="1" xsi:type="busData">
+				<BUS-ACCESS-PORT-ACTIVENODE xsi:type="string">BUS04</BUS-ACCESS-PORT-ACTIVENODE>
+				<BUS-ACCESS-PORT-SIMULATION xsi:type="string">BUS04</BUS-ACCESS-PORT-SIMULATION>
+				<DATABASE xsi:type="localArtifactReference">
+					<PATH xsi:type="string">Databases/CAN4/CAN4.dbc</PATH>
+				</DATABASE>
+				<CHANNEL xsi:type="string"/>
+				<PROTOCOL xsi:type="string"/>
+				<BUS-POSITION xsi:type="integer">4</BUS-POSITION>
+			</DVALUE>
+		</DATA>
+		<DATA dkey="CAN1-5">
+			<DVALUE format-rev="1" xsi:type="busData">
+				<BUS-ACCESS-PORT-ACTIVENODE xsi:type="string">BUS05</BUS-ACCESS-PORT-ACTIVENODE>
+				<BUS-ACCESS-PORT-SIMULATION xsi:type="string">BUS05</BUS-ACCESS-PORT-SIMULATION>
+				<DATABASE xsi:type="localArtifactReference">
+					<PATH xsi:type="string">Databases/CAN5/BBW_XC0W650_DBC_08_Main.dbc</PATH>
+				</DATABASE>
+				<CHANNEL xsi:type="string"/>
+				<PROTOCOL xsi:type="string"/>
+				<BUS-POSITION xsi:type="integer">5</BUS-POSITION>
+			</DVALUE>
+		</DATA>
+		<DATA dkey="CAN1-6">
+			<DVALUE format-rev="1" xsi:type="busData">
+				<BUS-ACCESS-PORT-ACTIVENODE xsi:type="string">BUS06</BUS-ACCESS-PORT-ACTIVENODE>
+				<BUS-ACCESS-PORT-SIMULATION xsi:type="string">BUS06</BUS-ACCESS-PORT-SIMULATION>
+				<DATABASE xsi:type="localArtifactReference">
+					<PATH xsi:type="string">Databases/CAN6/CAN6.dbc</PATH>
+				</DATABASE>
+				<CHANNEL xsi:type="string"/>
+				<PROTOCOL xsi:type="string"/>
+				<BUS-POSITION xsi:type="integer">6</BUS-POSITION>
+			</DVALUE>
+		</DATA>
+		<DATA dkey="CAN1-7">
+			<DVALUE format-rev="1" xsi:type="busData">
+				<BUS-ACCESS-PORT-ACTIVENODE xsi:type="string">BUS07</BUS-ACCESS-PORT-ACTIVENODE>
+				<BUS-ACCESS-PORT-SIMULATION xsi:type="string">BUS07</BUS-ACCESS-PORT-SIMULATION>
+				<DATABASE xsi:type="localArtifactReference">
+					<PATH xsi:type="string">Databases/CAN7/FPK_Main_CAN_v5.191.1.1_DIL.dbc</PATH>
+				</DATABASE>
+				<CHANNEL xsi:type="string"/>
+				<PROTOCOL xsi:type="string"/>
+				<BUS-POSITION xsi:type="integer">7</BUS-POSITION>
+			</DVALUE>
+		</DATA>
+		<DATA dkey="CAN1-8">
+			<DVALUE format-rev="1" xsi:type="busData">
+				<BUS-ACCESS-PORT-ACTIVENODE xsi:type="string">BUS08</BUS-ACCESS-PORT-ACTIVENODE>
+				<BUS-ACCESS-PORT-SIMULATION xsi:type="string">BUS08</BUS-ACCESS-PORT-SIMULATION>
+				<DATABASE xsi:type="localArtifactReference">
+					<PATH xsi:type="string">Databases/CAN8/CAN8.dbc</PATH>
+				</DATABASE>
+				<CHANNEL xsi:type="string"/>
+				<PROTOCOL xsi:type="string"/>
+				<BUS-POSITION xsi:type="integer">8</BUS-POSITION>
+			</DVALUE>
+		</DATA>
+		<DATA dkey="CAN1-9">
+			<DVALUE format-rev="1" xsi:type="busData">
+				<BUS-ACCESS-PORT-ACTIVENODE xsi:type="string">BUS09</BUS-ACCESS-PORT-ACTIVENODE>
+				<BUS-ACCESS-PORT-SIMULATION xsi:type="string">BUS09</BUS-ACCESS-PORT-SIMULATION>
+				<BUS-POSITION xsi:type="integer">9</BUS-POSITION>
+			</DVALUE>
+		</DATA>
+	</BUS-ACCESS>
+</CONFIGURATION>

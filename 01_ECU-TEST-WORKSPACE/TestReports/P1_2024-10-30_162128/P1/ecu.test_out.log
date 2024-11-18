@@ -1,0 +1,35 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               Intel64 Family 6 Model 158 Stepping 9, GenuineIntel
+Number of CPUs:    8
+RAM:               31.9GB
+Diskinfo:          26.6GB/446.5GB
+Operating system:  Windows-10-10.0.19045
+Long path support: False
+-------------------------------------------------------------------------
+
+= 30.10.2024 16:21:28 (UTC +0:00) === ecu.test 2024.3.0.156114+c108ea21784a 156114+c108ea21784a (2024/09/19 12:15:31) (64bit) ===
+Python 3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)] / wx: 4.2.1+tt.5
+Protocol: log level Default. Additional logging active: default output
+
+License: ecu.test
+         - License options:
+             + Editor Only
+         - valid up to version: 
+         - valid until: 
+         - licensed for: 
+         - runner: False
+         - Server: 
+
+
+
+2024-10-30 16:21:28.808 9080 ManagedWorker-6*PE.Run() INFO:
+                        Start package 'P1.pkg' with test case execution without analysis job execution
+2024-10-30 16:21:54.513 9080 MainThread ERROR:
+                        Manual test termination
+2024-10-30 16:21:59.188 9080 ManagedWorker-6*PE.Run() INFO:
+                        Test case "P1" started
+2024-10-30 16:21:59.189 9080 ManagedWorker-6*PE.Run() ERROR:
+                        Manual test termination

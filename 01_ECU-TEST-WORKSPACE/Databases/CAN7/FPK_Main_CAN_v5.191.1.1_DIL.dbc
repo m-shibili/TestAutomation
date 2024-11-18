@@ -1,0 +1,215 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: FPT VEH
+
+
+BO_ 137 FPK_STS_6: 8 FPT
+ SG_ CoolantInletPresVolt : 48|16@1+ (1,0) [0|5000] "mV"  VEH
+ SG_ WaterPmpSpdFbk : 40|8@1+ (200,-20000) [-20000|20000] "RPM"  VEH
+ SG_ WaterPmpSpdCmd : 32|8@1+ (200,-20000) [-20000|20000] "RPM"  VEH
+ SG_ WhlDiffSpd : 16|16@1+ (0.5,-16000) [-16000|16500] "rpm"  VEH
+ SG_ PmpSpdFbk : 8|8@1+ (200,-20000) [-20000|20000] "RPM"  VEH
+ SG_ PmpSpdCmd : 0|8@1+ (200,-20000) [-20000|20000] "RPM"  VEH
+
+BO_ 142 FPK_VehCmd_1: 8 VEH
+ SG_ VehSpd : 0|16@1+ (0.5,0) [0|500] "kph"  FPT
+ SG_ ReserveRx6 : 16|16@1+ (1,0) [0|65535] ""  FPT
+ SG_ ReserveRx5 : 32|16@1+ (1,0) [0|65535] ""  FPT
+ SG_ MotTqCmd : 48|12@1+ (0.5,-1000) [-1000|1000] "Nm"  FPT
+ SG_ PtSt : 60|4@1+ (1,0) [0|15] "enum"  FPT
+
+BO_ 143 FPK_VehCmd_2: 2 VEH
+ SG_ OilPumpCtrl : 5|3@1+ (1,0) [0|7] ""  FPT
+ SG_ WaterPumpCtrl : 2|3@1+ (1,0) [0|7] ""  FPT
+ SG_ VcuCounter : 8|8@1+ (1,0) [0|255] ""  FPT
+ SG_ DynoModeFlag : 1|1@1+ (1,0) [0|1] ""  FPT
+ SG_ DischargeFlag : 0|1@1+ (1,0) [0|1] ""  FPT
+
+BO_ 144 FPK_RxRsvd_1: 8 VEH
+ SG_ ReserveRx4 : 48|16@1+ (1,0) [0|65535] ""  FPT
+ SG_ EnaCusFltTrig : 32|16@1+ (1,0) [0|65535] ""  FPT
+ SG_ ReserveRx1 : 0|16@1+ (1,0) [0|65535] ""  FPT
+ SG_ ReserveRx2 : 16|16@1+ (1,0) [0|65535] ""  FPT
+
+BO_ 145 FPK_EpochTmr: 4 VEH
+ SG_ EpochTimeSec : 0|32@1+ (1,0) [0|4294967295] ""  FPT
+
+BO_ 146 FPK_STS_1: 8 FPT
+ SG_ MaxTqCpbyDrive : 48|16@1+ (0.03125,-1000) [-1000|1000] "Nm"  VEH
+ SG_ DiagcSrcLtch_FPGA : 0|32@1+ (1,0) [0|4294967295] ""  VEH
+ SG_ FltSts : 32|4@1+ (1,0) [0|15] "enum"  VEH
+ SG_ MCUState : 36|4@1+ (1,0) [0|15] "enum"  VEH
+ SG_ TqDerateFac : 40|8@1+ (0.005,0) [0|1] ""  VEH
+
+BO_ 147 FPK_STS_2: 8 FPT
+ SG_ DiagcSrcLtch_MCU1 : 0|32@1+ (1,0) [0|4294967295] ""  VEH
+ SG_ DiagcSrcLtch_MCU2 : 32|32@1+ (1,0) [0|4294967295] ""  VEH
+
+BO_ 148 FPK_STS_3: 8 FPT
+ SG_ CoolantInletTemp : 40|10@1+ (0.5,-40) [-40|460] "degC"  VEH
+ SG_ RotorTemp : 50|10@1+ (0.5,-40) [-40|460] "degC"  VEH
+ SG_ IvtrTemp : 0|10@1+ (0.5,-40) [-40|460] "degC"  VEH
+ SG_ OilTemp : 10|10@1+ (0.5,-40) [-40|460] "degC"  VEH
+ SG_ StatorTempAverage : 20|10@1+ (0.5,-40) [-40|460] "degC"  VEH
+ SG_ StatorTempPeak : 30|10@1+ (0.5,-40) [-40|460] "degC"  VEH
+
+BO_ 149 FPK_STS_4: 8 FPT
+ SG_ Odometer : 40|16@1+ (0.2,0) [0|13107] "km"  VEH
+ SG_ FpkCounter : 32|8@1+ (1,0) [0|255] ""  VEH
+ SG_ MotSpd : 0|16@1+ (0.62,-20000) [-20000|20002.4] "rpm"  VEH
+ SG_ TqEstimn : 16|16@1+ (0.03125,-1000) [-1000|1000] "Nm"  VEH
+ SG_ PwrSply12V : 56|8@1+ (0.08,0) [0|20] "V"  VEH
+
+BO_ 150 FPK_STS_5: 8 FPT
+ SG_ FinalTqCmd : 0|16@1+ (0.03125,-1000) [-1000|1000] "Nm"  VEH
+ SG_ MaxTqCpby : 16|16@1+ (0.03125,-1000) [-1000|1000] "Nm"  VEH
+ SG_ MotBaseSpd : 32|16@1+ (0.62,-20000) [-20000|20002.4] "rpm"  VEH
+ SG_ IvtrDcVolt : 48|16@1+ (0.025,0) [0|1600] "V"  VEH
+
+BO_ 151 FPK_SerialNr: 8 FPT
+ SG_ IvtrSerlNr : 0|32@1+ (1,0) [0|4294967295] ""  VEH
+ SG_ McuSwVerNr : 32|32@1+ (1,0) [0|4294967295] ""  VEH
+
+
+
+CM_ SG_ 137 CoolantInletPresVolt "Coolant inlet pressure voltage";
+CM_ SG_ 137 WaterPmpSpdFbk "Water pump speed feedback";
+CM_ SG_ 137 WaterPmpSpdCmd "Water pump speed command";
+CM_ SG_ 137 WhlDiffSpd "Wheel Differential Speed";
+CM_ SG_ 137 PmpSpdFbk "Oil pump speed feedback";
+CM_ SG_ 137 PmpSpdCmd "Oil pump speed command";
+CM_ SG_ 142 VehSpd "Vehicle speed";
+CM_ SG_ 142 ReserveRx6 "reserved msg";
+CM_ SG_ 142 ReserveRx5 "reserved msg";
+CM_ SG_ 142 MotTqCmd "Motor Torque Command";
+CM_ SG_ 142 PtSt "Powertain State request";
+CM_ SG_ 143 OilPumpCtrl "Flag to control the oil pump
+0: forced OFF
+1: forced ON
+2: automatic control";
+CM_ SG_ 143 WaterPumpCtrl "Flag to control the water pump
+0: forced OFF
+1: forced ON
+2: automatic control";
+CM_ SG_ 143 VcuCounter "Wrap-around alive counter";
+CM_ SG_ 143 DynoModeFlag "Flag to enter test mode";
+CM_ SG_ 143 DischargeFlag "Flag to start DC-Link active discharge";
+CM_ SG_ 144 ReserveRx4 "reserved msg";
+CM_ SG_ 144 EnaCusFltTrig "reserved msg";
+CM_ SG_ 144 ReserveRx1 "reserved msg";
+CM_ SG_ 144 ReserveRx2 "reserved msg";
+CM_ SG_ 145 EpochTimeSec "Current time in seconds after January 1st, 1970 at UTC (Unix Time Stamp)
+";
+CM_ SG_ 146 MaxTqCpbyDrive "Maximum torque capability in drive";
+CM_ SG_ 146 DiagcSrcLtch_FPGA "FPGA fault word";
+CM_ SG_ 146 FltSts "Fault Status";
+CM_ SG_ 146 MCUState "MCU State feedback";
+CM_ SG_ 146 TqDerateFac "Torque derate factor";
+CM_ SG_ 147 DiagcSrcLtch_MCU1 "MCU fault word 1";
+CM_ SG_ 147 DiagcSrcLtch_MCU2 "MCU fault word 2";
+CM_ SG_ 148 CoolantInletTemp "Coolant inlet temperature";
+CM_ SG_ 148 RotorTemp "Rotor temperature";
+CM_ SG_ 148 IvtrTemp "Maximum power module temperature";
+CM_ SG_ 148 OilTemp "Oil temperature";
+CM_ SG_ 148 StatorTempAverage "Average stator temperature";
+CM_ SG_ 148 StatorTempPeak "Peak stator temperature";
+CM_ SG_ 149 Odometer "Current unit mileage";
+CM_ SG_ 149 FpkCounter "Wrap-around alive counter";
+CM_ SG_ 149 MotSpd "Actual Motor speed ";
+CM_ SG_ 149 TqEstimn "Estimated rotor torque";
+CM_ SG_ 149 PwrSply12V "12V Power supply voltage";
+CM_ SG_ 150 FinalTqCmd "Final torque command ";
+CM_ SG_ 150 MaxTqCpby "Maximum torque capability";
+CM_ SG_ 150 MotBaseSpd "Motor base speed";
+CM_ SG_ 150 IvtrDcVolt "Inverter Dc Voltage";
+CM_ SG_ 151 IvtrSerlNr "FPK serial number";
+CM_ SG_ 151 McuSwVerNr "Mcu sofware version number";
+BA_DEF_  "Baudrate" INT 0 1000000;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0;
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 0 0;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 0;
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 0;
+BA_DEF_ BO_  "GenMsgRequestable" STRING ;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "cyclic","Unknown","spontaneous","Unknown","immediately","fast","changed","BAF","notSet";
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 0;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BU_  "ILUsed" ENUM  "No","Yes";
+BA_DEF_  "Manufacturer" STRING ;
+BA_DEF_ BO_  "Type" STRING ;
+BA_DEF_DEF_  "Baudrate" 1000000;
+BA_DEF_DEF_  "BusType" "CAN";
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "GenMsgRequestable" "";
+BA_DEF_DEF_  "GenMsgSendType" "cyclic";
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "Manufacturer" "";
+BA_DEF_DEF_  "GenMsgILSupport" "Yes";
+BA_DEF_DEF_  "ILUsed" "Yes";
+BA_ "Baudrate" 1000000;
+BA_ "GenMsgCycleTime" BO_ 137 5;
+BA_ "GenMsgSendType" BO_ 142 0;
+BA_ "GenMsgCycleTime" BO_ 142 5;
+BA_ "GenMsgSendType" BO_ 143 0;
+BA_ "GenMsgCycleTime" BO_ 143 5;
+BA_ "GenMsgSendType" BO_ 144 0;
+BA_ "GenMsgCycleTime" BO_ 144 5;
+BA_ "GenMsgSendType" BO_ 145 0;
+BA_ "GenMsgCycleTime" BO_ 145 5;
+BA_ "GenMsgSendType" BO_ 146 0;
+BA_ "GenMsgCycleTime" BO_ 146 5;
+BA_ "GenMsgSendType" BO_ 147 0;
+BA_ "GenMsgCycleTime" BO_ 147 5;
+BA_ "GenMsgSendType" BO_ 148 0;
+BA_ "GenMsgCycleTime" BO_ 148 5;
+BA_ "GenMsgSendType" BO_ 149 0;
+BA_ "GenMsgCycleTime" BO_ 149 5;
+BA_ "GenMsgSendType" BO_ 150 0;
+BA_ "GenMsgCycleTime" BO_ 150 5;
+BA_ "GenMsgSendType" BO_ 151 0;
+BA_ "GenMsgCycleTime" BO_ 151 1000;
+VAL_ 142 PtSt 4 "Power down" 5 "Drive" 1 "Ready" 0 "Alive" ;
+VAL_ 143 OilPumpCtrl 4 "Force OFF" 3 "Force ON high speed" 2 "Force ON mid speed" 1 "Force ON low speed" 0 "Automatic control" ;
+VAL_ 143 WaterPumpCtrl 4 "Force OFF" 3 "Force ON high speed" 2 "Force ON mid speed" 1 "Force ON low speed" 0 "Automatic control" ;
+VAL_ 146 DiagcSrcLtch_FPGA 512 "Gate driver L fault" 256 "Gate driver H fault" 128 "Phase W overcurrent" 64 "Phase V overcurrent" 32 "Phase U overcurrent" 8 "SPI Timeout" 1 "DC-Link overvoltage" ;
+VAL_ 146 FltSts 0 "No fault" 2 "Critical fault" 1 "Warning" ;
+VAL_ 146 MCUState 5 "Drive" 4 "Power down" 3 "Critical fault" 1 "Ready" 0 "Alive" ;
+VAL_ 147 DiagcSrcLtch_MCU1 8388608 "Lvl2 fault" 4194304 "MGU currents sum" 2097152 "Powermodule overtermperature" 1048576 "PLL fault" 524288 "Resolver fault" 262144 "CAN3 communication error" 131072 "CAN2 communication error" 65536 "CAN1 communication error" 32768 "Resolver signal BH fault" 16384 "Resolver signal AH fault" 8192 "Resolver signal BL fault" 4096 "Resolver signal AL fault" 2048 "Phase W overcurrent" 1024 "Phase V overcurrent" 512 "Phase U overcurrent" 256 "DC-Link overcurrent" 128 "Gate driver fault" 64 "Gate driver config fail" 32 "Inverter overtemperature" 16 "MGU overtemperature" 8 "MGU overspeed" 4 "DC-Link overvoltage" 2 "DC-Link undervoltage" 1 "Safe state request" ;
+VAL_ 147 DiagcSrcLtch_MCU2 262144 "FiA logger not present" 131072 "Oil pump warning" 65536 "Differential speed sensor fault" 32768 "BackupFront CAN used" 16384 "Logger not present" 8192 "Ambient temperature sensor fault" 4096 "MCU 1V3 supply fault" 2048 "FPGA 3V3 supply fault" 1024 "FPGA 1V2 supply fault" 512 "not used" 256 "not used" 128 "not used" 64 "Module W temp sensor fault" 32 "Module V  temp sensor fault" 16 "Module U temp sensor fault" 8 "15V supply fault" 4 "12V supply fault" 2 "Winding temperature sensor fault" 1 "Oil temperature sensor fault" ;
+

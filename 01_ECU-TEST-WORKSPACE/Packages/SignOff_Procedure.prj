@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PROJECT format-rev="11" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<NAME xsi:type="string">Project</NAME>
+	<ENABLED xsi:type="boolean">True</ENABLED>
+	<REPORTING xsi:type="boolean">True</REPORTING>
+	<ID xsi:type="string">5a8a879096a711ef9f2338d54714d0ed</ID>
+	<COMPONENTS>
+		<COMPONENT format-rev="6" xsi:type="packageTest">
+			<NAME xsi:type="string">01_StaticTest</NAME>
+			<ENABLED xsi:type="boolean">True</ENABLED>
+			<REPORTING xsi:type="boolean">True</REPORTING>
+			<ID xsi:type="string">75123102a29711ef83b338d54714d0ed</ID>
+			<COMPONENTS/>
+			<PACKAGE-REF xsi:type="expressionref">
+				<PATH-EXPRESSION format-rev="2" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="string">01_StaticTest.pkg</VALUE>
+				</PATH-EXPRESSION>
+			</PACKAGE-REF>
+		</COMPONENT>
+	</COMPONENTS>
+</PROJECT>

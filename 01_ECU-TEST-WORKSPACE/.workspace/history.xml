@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HISTORY-SETTINGS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<RECENT-TCFFILES>
+		<ELEMENT xsi:type="string">Configurations\Test configuration.tcf</ELEMENT>
+	</RECENT-TCFFILES>
+	<LAST-TCF-SAVED xsi:type="boolean">True</LAST-TCF-SAVED>
+	<RECENT-TBC-FILES>
+		<ELEMENT xsi:type="string">Configurations\Test bench configuration.tbc</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\Test bench configuration (2).tbc</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\Test bench configuration (9).tbc</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\Test bench configuration (8).tbc</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\Test bench configuration (6).tbc</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\Test bench configuration (5).tbc</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\Test bench configuration (4).tbc</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\Test bench configuration (3).tbc</ELEMENT>
+	</RECENT-TBC-FILES>
+	<LAST-TBC-SAVED xsi:type="boolean">True</LAST-TBC-SAVED>
+	<RECENT-PROJECTS-PACKAGES>
+		<ELEMENT xsi:type="string">Packages\01_StaticTest.pkg</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\Test bench configuration (2).tbc</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\Test bench configuration.tbc</ELEMENT>
+		<ELEMENT xsi:type="string">Packages\CaliberationPackage.pkg</ELEMENT>
+		<ELEMENT xsi:type="string">C:\Users\DIL\AppData\Local\Temp\ecu.test 2024.4\__template__.trf</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\Test configuration.tcf</ELEMENT>
+		<ELEMENT xsi:type="string">Packages\XAP_TEST.pkg</ELEMENT>
+		<ELEMENT xsi:type="string">Packages\P1.pkg</ELEMENT>
+		<ELEMENT xsi:type="string">Packages\Analysis package.ta</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\Test bench configuration (9).tbc</ELEMENT>
+	</RECENT-PROJECTS-PACKAGES>
+	<RECENT-SEARCH-REQUESTS>
+		<ELEMENT xsi:type="string">User defined image filters</ELEMENT>
+	</RECENT-SEARCH-REQUESTS>
+</HISTORY-SETTINGS>

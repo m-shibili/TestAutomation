@@ -1,0 +1,65 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               Intel64 Family 6 Model 158 Stepping 9, GenuineIntel
+Number of CPUs:    8
+RAM:               31.9GB
+Diskinfo:          8.5GB/446.5GB
+Operating system:  Windows-10-10.0.19045
+Long path support: False
+-------------------------------------------------------------------------
+
+= 07.11.2024 16:49:15 (UTC +0:00) === ecu.test 2024.4.0.157279+6cc6544af3d9-FeatureSet 157279+6cc6544af3d9 (2024/10/15 14:58:06) (64bit) ===
+Python 3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)] / wx: 4.2.1+tt.5
+Protocol: log level Default. Additional logging active: default output
+
+License: ecu.test
+         - License options:
+             + ecu.test diagnostics
+             + trace.check
+         - valid up to version: 2024.4
+         - valid until: 2025-01-28
+         - licensed for: Mahindra_Racing_UK
+         - runner: False
+         - Server: license01.tracetronic.de
+
+
+
+2024-11-07 16:49:15.207 18060 ManagedWorker-5*PE.Run() DEBUG_EXC_PRINT:
+                        Traceback (most recent call last):
+                          File "tts\core\toolingFramework\toolAccess\LockProxy.py", line 57, in __call__
+                          File "tts\core\toolingFramework\userTool\adapters\UserModelPortAdapter.py", line 250, in ReadVariableGeneric
+                        tt._Exceptions_.TTError: Cannot read value. Datatype is unsupported: <class 'System.Collections.Generic.List[String]'>
+                        
+                        The above exception was the direct cause of the following exception:
+                        
+                        Traceback (most recent call last):
+                          File "tts\testExecution\engine\TestEngine.py", line 935, in ExecuteTestStep
+                          File "tts\testExecution\testSteps\generic\TestStepReadExec.py", line 532, in Run
+                          File "tts\testExecution\options\StdOptions.py", line 70, in AppraiseWithGenericDataType
+                          File "tts\testExecution\options\StdOptions.py", line 174, in _Appraise
+                          File "tts\testModule\model\mapping\XAModelVariableExec.py", line 167, in Read
+                          File "tts\testModule\model\mapping\XAModelVariableExec.py", line 348, in ReadVariablePath
+                          File "tts\core\toolingFramework\toolAccess\LockProxy.py", line 76, in __call__
+                          File "tts\core\toolingFramework\toolAccess\LockProxy.py", line 96, in ReportToolError
+                        tts.core.toolingFramework.toolAccess.Exceptions.ToolError: Port MDL-DEFAULT01 (@local): PortReadVariableGeneric() failed: Cannot read value. Datatype is unsupported: <class 'System.Collections.Generic.List[String]'>
+2024-11-07 16:49:15.249 18060 ManagedWorker-5*PE.Run() DEBUG_EXC_PRINT:
+                        Traceback (most recent call last):
+                          File "tts\core\toolingFramework\toolAccess\LockProxy.py", line 57, in __call__
+                          File "tts\core\toolingFramework\userTool\adapters\UserModelPortAdapter.py", line 258, in WriteVariableGeneric
+                          File "C:\Users\DIL\ecu.test\Workspace\Utilities\SM\SM_Adapter.py", line 646, in Write
+                            SysMon.SetStringValueScalar(int(self._AppNameDict[app]),str(parameter),str(value))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        AttributeError: 'SM_Adapter' object has no attribute 'SetStringValueScalar'
+                        
+                        The above exception was the direct cause of the following exception:
+                        
+                        Traceback (most recent call last):
+                          File "tts\testExecution\engine\TestEngine.py", line 935, in ExecuteTestStep
+                          File "tts\testExecution\testSteps\generic\TestStepWriteExec.py", line 206, in Run
+                          File "tts\testModule\model\mapping\XAModelVariableExec.py", line 184, in Write
+                          File "tts\testModule\model\mapping\XAModelVariableExec.py", line 352, in WriteVariablePath
+                          File "tts\core\toolingFramework\toolAccess\LockProxy.py", line 76, in __call__
+                          File "tts\core\toolingFramework\toolAccess\LockProxy.py", line 96, in ReportToolError
+                        tts.core.toolingFramework.toolAccess.Exceptions.ToolError: Port MDL-DEFAULT01 (@local): PortWriteVariableGeneric() failed: 'SM_Adapter' object has no attribute 'SetStringValueScalar'

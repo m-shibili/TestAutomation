@@ -1,0 +1,876 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PACKAGE format-rev="7" prog-version="2024.4.0.157279+6cc6544af3d9-FeatureSet" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test package.xsd">
+	<INFORMATION format-rev="2" xsi:type="packageInfo">
+		<DESCRIPTION xsi:type="string"/>
+		<VERSION xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-ACTION-FIELD-TEMPLATE xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-EXPECTATION-FIELD-TEMPLATE xsi:type="string"/>
+	</INFORMATION>
+	<VARIABLES xsi:type="variableContainer">
+		<VARIABLE format-rev="1" tracing="true" xsi:type="variable">
+			<NAME xsi:type="string">Unnamed</NAME>
+			<DESCRIPTION xsi:type="string"/>
+			<DEFAULT-VALUE xsi:type="folder">
+				<PATH xsi:type="string">C:/Users/DIL/Downloads/SM_API_TEST</PATH>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">Y2</NAME>
+			<DEFAULT-VALUE xsi:type="undefined"/>
+		</VARIABLE>
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">Y1</NAME>
+			<DEFAULT-VALUE xsi:type="undefined"/>
+		</VARIABLE>
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">pBrakeGain</NAME>
+			<DEFAULT-VALUE xsi:type="undefined"/>
+		</VARIABLE>
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">pBrakeOffset</NAME>
+			<DEFAULT-VALUE xsi:type="undefined"/>
+		</VARIABLE>
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">aSteerGain</NAME>
+			<DEFAULT-VALUE xsi:type="undefined"/>
+		</VARIABLE>
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">aSteerOffset</NAME>
+			<DEFAULT-VALUE xsi:type="undefined"/>
+		</VARIABLE>
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">V2</NAME>
+			<DEFAULT-VALUE xsi:type="undefined"/>
+		</VARIABLE>
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">V</NAME>
+			<DEFAULT-VALUE xsi:type="undefined"/>
+		</VARIABLE>
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">Detla_aSteer</NAME>
+			<DEFAULT-VALUE xsi:type="undefined"/>
+		</VARIABLE>
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">Gain</NAME>
+			<DEFAULT-VALUE xsi:type="undefined"/>
+		</VARIABLE>
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">Offset</NAME>
+			<DEFAULT-VALUE xsi:type="undefined"/>
+		</VARIABLE>
+	</VARIABLES>
+	<MAPPING format-rev="1" xsi:type="localMappingSpace">
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">Brake/pBrake/pBrakeF</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">HIL_Interface/DriverInputs/Brake/pBrake/pBrakeF</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">Brake/pBrake/pBrakeFGain</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">HIL_Interface/DriverInputs/Brake/pBrake/pBrakeFGain</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">Brake/pBrake/pBrakeFOfffset</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">HIL_Interface/DriverInputs/Brake/pBrake/pBrakeFOfffset</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">Brake/pBrake/pBrakeF_TestInput</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">HIL_Interface/DriverInputs/Brake/pBrake/pBrakeF_TestInput</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">DriverInputs/SteerWheel/aSteerWheel</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">HIL_Interface/DriverInputs/SteerWheel/aSteerWheel</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">DriverInputs/SteerWheel/aSteerWheelGain</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">HIL_Interface/DriverInputs/SteerWheel/aSteerWheelGain</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">DriverInputs/SteerWheel/aSteerWheelOffset</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">HIL_Interface/DriverInputs/SteerWheel/aSteerWheelOffset</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">DriverInputs/SteerWheel/aSteerWheel_TestInput</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">HIL_Interface/DriverInputs/SteerWheel/aSteerWheel_TestInput</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">DriverInputs/Throttle/rThrotlleOffset</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">HIL_Interface/DriverInputs/Throttle/rThrotlleOffset</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">DriverInputs/Throttle/rThrottle</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">HIL_Interface/DriverInputs/Throttle/rThrottle</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">DriverInputs/Throttle/rThrottleGain</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">HIL_Interface/DriverInputs/Throttle/rThrottleGain</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">DriverInputs/Throttle/rThrottle_TestInput</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">HIL_Interface/DriverInputs/Throttle/rThrottle_TestInput</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">HIL_Interface/HiLModeControl/TestMode_Global</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">HIL_Interface/HiLModeControl/TestMode_Global</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">Implementation/APP1_Input#MEAS#aSteerWheelRaw</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelSignal">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Implementation</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">APP1_Input#MEAS#aSteerWheelRaw</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">Implementation/APP1_Input#MEAS#pBrakeF1</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelSignal">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Implementation</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">APP1_Input#MEAS#pBrakeF1</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">Implementation/APP1_Input#MEAS#rThrottlePedal1</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelSignal">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Implementation</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">APP1_Input#MEAS#rThrottlePedal1</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+	</MAPPING>
+	<TRACE-RECORDING format-rev="4" xsi:type="recordingManager">
+		<SIGNAL-GROUPS>
+			<ELEMENT format-rev="2" xsi:type="signalGroup">
+				<NAME xsi:type="string">Signal group</NAME>
+				<DESCRIPTION xsi:type="string"/>
+				<SIGNALS>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="string">Brake/pBrake/pBrakeFGain</MAPPING-REF>
+					</ELEMENT>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="string">Brake/pBrake/pBrakeF_TestInput</MAPPING-REF>
+					</ELEMENT>
+				</SIGNALS>
+			</ELEMENT>
+		</SIGNAL-GROUPS>
+		<RECORDING-GROUP>
+			<ELEMENT format-rev="3" xsi:type="recordingGroup">
+				<NAME xsi:type="string">Recording group for Signal group</NAME>
+				<UUID xsi:type="string">5ad989159dc011efa4c738d54714d0ed</UUID>
+				<SIGNAL-GROUP-REF>Signal group</SIGNAL-GROUP-REF>
+			</ELEMENT>
+		</RECORDING-GROUP>
+		<SYNCHRONISATION-CONFIG xsi:type="syncConfig"/>
+		<TRACE-MERGE-CONFIG xsi:type="traceMergeConfig">
+			<MODE xsi:type="integer">0</MODE>
+			<PATH format-rev="2" xsi:type="valueBaseExpression">
+				<VALUE xsi:type="string">merged</VALUE>
+			</PATH>
+		</TRACE-MERGE-CONFIG>
+		<TC-VARS-RECORDING-MODE xsi:type="integer">2</TC-VARS-RECORDING-MODE>
+	</TRACE-RECORDING>
+	<TESTSTEPS xsi:type="testCase">
+		<TESTSTEP id="93f42da0-5685-41f9-951f-839911f45db1" xsi:type="tsWrite">
+			<MAPPING-REF xsi:type="string">HIL_Interface/HiLModeControl/TestMode_Global</MAPPING-REF>
+			<VALUE xsi:type="expressionValue">
+				<DATA format-rev="2" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="integer">1</VALUE>
+				</DATA>
+			</VALUE>
+			<METRIC format-rev="1" xsi:type="metricInfo">
+				<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+				<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+			</METRIC>
+		</TESTSTEP>
+		<TESTSTEP format-rev="3" id="fe1cac60-6921-46c0-b04a-2399ee9b7fae" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="en_US">
+						<DVALUE xsi:type="string">Caliberating SteerWheel</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="string">en_US</INITIAL-LANGUAGE>
+			</ACTION>
+			<TESTSTEP id="29e0b9b9-cfcb-489e-be29-7f360e479850" xsi:type="tsWrite">
+				<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/aSteerWheel_TestInput</MAPPING-REF>
+				<VALUE xsi:type="expressionValue">
+					<DATA xsi:type="unaryOpBaseExpression">
+						<NAME xsi:type="string">UNARY_NEGATIVE</NAME>
+						<COMPONENT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">175.0</VALUE>
+						</COMPONENT>
+					</DATA>
+				</VALUE>
+				<METRIC format-rev="1" xsi:type="metricInfo">
+					<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+					<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+				</METRIC>
+			</TESTSTEP>
+			<TESTSTEP id="dfecac54-8285-4e87-bedb-93459dbf5809" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+				<TIME format-rev="2" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="integer">3000</VALUE>
+				</TIME>
+			</TESTSTEP>
+			<TESTSTEP id="bd0b97da-59f5-497b-9c27-f6f00d539139" xsi:type="tsRead">
+				<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#aSteerWheelRaw</MAPPING-REF>
+				<VARIABLE-REFS>
+					<VARIABLE-NAME dkey="default">
+						<DVALUE xsi:type="string">Y1</DVALUE>
+					</VARIABLE-NAME>
+				</VARIABLE-REFS>
+				<METRIC format-rev="1" xsi:type="metricInfo">
+					<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+					<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+				</METRIC>
+			</TESTSTEP>
+			<TESTSTEP id="cde28cba-56c2-4c1f-8cbf-aca23f3a0c7a" xsi:type="tsWrite">
+				<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/aSteerWheel_TestInput</MAPPING-REF>
+				<VALUE xsi:type="expressionValue">
+					<DATA format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="float">175.0</VALUE>
+					</DATA>
+				</VALUE>
+				<METRIC format-rev="1" xsi:type="metricInfo">
+					<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+					<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+				</METRIC>
+			</TESTSTEP>
+			<TESTSTEP id="d48a42af-7a44-4aed-a5d8-5ff1c4c3798f" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+				<TIME format-rev="2" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="integer">3000</VALUE>
+				</TIME>
+			</TESTSTEP>
+			<TESTSTEP id="314eeab4-67d0-4097-befd-3b5838739537" xsi:type="tsRead">
+				<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#aSteerWheelRaw</MAPPING-REF>
+				<VARIABLE-REFS>
+					<VARIABLE-NAME dkey="default">
+						<DVALUE xsi:type="string">Y2</DVALUE>
+					</VARIABLE-NAME>
+				</VARIABLE-REFS>
+				<METRIC format-rev="1" xsi:type="metricInfo">
+					<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+					<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+				</METRIC>
+			</TESTSTEP>
+			<TESTSTEP format-rev="3" id="eebde493-25d2-40f5-a5ab-220418241e49" name="TsCalculation" xsi:type="utility-4115fa00-5f3c-11df-8a53-001c233b3528">
+				<VARIABLE-REFS>
+					<VARIABLE-NAME dkey="default">
+						<DVALUE xsi:type="string">Gain</DVALUE>
+					</VARIABLE-NAME>
+				</VARIABLE-REFS>
+				<FORMULA xsi:type="binaryOpBaseExpression">
+					<NAME xsi:type="string">BINARY_DIVIDE</NAME>
+					<FIRST-COMPONENT xsi:type="binaryOpBaseExpression">
+						<NAME xsi:type="string">BINARY_SUBTRACT</NAME>
+						<FIRST-COMPONENT xsi:type="varBaseExpression">
+							<NAME xsi:type="string">Y2</NAME>
+						</FIRST-COMPONENT>
+						<SECOND-COMPONENT xsi:type="varBaseExpression">
+							<NAME xsi:type="string">Y1</NAME>
+						</SECOND-COMPONENT>
+					</FIRST-COMPONENT>
+					<SECOND-COMPONENT format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">350</VALUE>
+					</SECOND-COMPONENT>
+				</FORMULA>
+			</TESTSTEP>
+			<TESTSTEP format-rev="3" id="cbcbd74b-5847-49cb-8d10-77e2ef68eb11" name="TsCalculation" xsi:type="utility-4115fa00-5f3c-11df-8a53-001c233b3528">
+				<VARIABLE-REFS>
+					<VARIABLE-NAME dkey="default">
+						<DVALUE xsi:type="string">Offset</DVALUE>
+					</VARIABLE-NAME>
+				</VARIABLE-REFS>
+				<FORMULA xsi:type="binaryOpBaseExpression">
+					<NAME xsi:type="string">BINARY_MULTIPLY</NAME>
+					<FIRST-COMPONENT xsi:type="binaryOpBaseExpression">
+						<NAME xsi:type="string">BINARY_SUBTRACT</NAME>
+						<FIRST-COMPONENT xsi:type="varBaseExpression">
+							<NAME xsi:type="string">Y1</NAME>
+						</FIRST-COMPONENT>
+						<SECOND-COMPONENT xsi:type="binaryOpBaseExpression">
+							<NAME xsi:type="string">BINARY_MULTIPLY</NAME>
+							<FIRST-COMPONENT xsi:type="varBaseExpression">
+								<NAME xsi:type="string">Gain</NAME>
+							</FIRST-COMPONENT>
+							<SECOND-COMPONENT xsi:type="unaryOpBaseExpression">
+								<NAME xsi:type="string">UNARY_NEGATIVE</NAME>
+								<COMPONENT format-rev="2" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="integer">175</VALUE>
+								</COMPONENT>
+							</SECOND-COMPONENT>
+						</SECOND-COMPONENT>
+					</FIRST-COMPONENT>
+					<SECOND-COMPONENT xsi:type="unaryOpBaseExpression">
+						<NAME xsi:type="string">UNARY_NEGATIVE</NAME>
+						<COMPONENT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">1</VALUE>
+						</COMPONENT>
+					</SECOND-COMPONENT>
+				</FORMULA>
+			</TESTSTEP>
+			<TESTSTEP id="61511ae2-f7e7-4fbd-8aac-21657ab8e963" xsi:type="tsWrite">
+				<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/aSteerWheelGain</MAPPING-REF>
+				<VALUE xsi:type="expressionValue">
+					<DATA xsi:type="varBaseExpression">
+						<NAME xsi:type="string">Gain</NAME>
+					</DATA>
+				</VALUE>
+				<METRIC format-rev="1" xsi:type="metricInfo">
+					<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+					<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+				</METRIC>
+			</TESTSTEP>
+			<TESTSTEP id="675fa683-db06-4237-898c-ce4b23bae963" xsi:type="tsWrite">
+				<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/aSteerWheelOffset</MAPPING-REF>
+				<VALUE xsi:type="expressionValue">
+					<DATA xsi:type="varBaseExpression">
+						<NAME xsi:type="string">Offset</NAME>
+					</DATA>
+				</VALUE>
+				<METRIC format-rev="1" xsi:type="metricInfo">
+					<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+					<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+				</METRIC>
+			</TESTSTEP>
+			<TESTSTEP id="bd76cfff-b651-4fd1-b6ac-dd387b83491f" xsi:type="tsWrite">
+				<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/aSteerWheel</MAPPING-REF>
+				<VALUE xsi:type="expressionValue">
+					<DATA format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="float">50.0</VALUE>
+					</DATA>
+				</VALUE>
+				<METRIC format-rev="1" xsi:type="metricInfo">
+					<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+					<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+				</METRIC>
+			</TESTSTEP>
+			<TESTSTEP id="4f193a8b-4e79-49ec-8251-637e9163b8fa" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+				<TIME format-rev="2" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="integer">2000</VALUE>
+				</TIME>
+			</TESTSTEP>
+			<TESTSTEP id="76c2ca62-60bd-4edd-b3a3-0632df10fcb7" xsi:type="tsRead">
+				<MAPPING-REF xsi:type="string">DriverInputs/SteerWheel/aSteerWheel_TestInput</MAPPING-REF>
+				<METRIC format-rev="1" xsi:type="metricInfo">
+					<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+					<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+				</METRIC>
+			</TESTSTEP>
+			<TESTSTEP id="0f222b38-edd5-461c-a437-003a33bbb5cc" xsi:type="tsRead">
+				<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#aSteerWheelRaw</MAPPING-REF>
+				<VARIABLE-REFS>
+					<VARIABLE-NAME dkey="default">
+						<DVALUE xsi:type="string">V</DVALUE>
+					</VARIABLE-NAME>
+				</VARIABLE-REFS>
+				<EXPECTATION xsi:type="timelessOption">
+					<EXPRESSION xsi:type="builtNumericExpression">
+						<RELATION xsi:type="string">==</RELATION>
+						<VALUE format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">50</VALUE>
+						</VALUE>
+						<TOLERANCE style="absolute-value" xsi:type="Tolerance">
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.7</VALUE>
+							</VALUE>
+						</TOLERANCE>
+					</EXPRESSION>
+				</EXPECTATION>
+				<METRIC format-rev="1" xsi:type="metricInfo">
+					<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+					<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+				</METRIC>
+			</TESTSTEP>
+			<TESTSTEP format-rev="3" id="d399f97a-7ef5-4354-8db1-92e9e3179960" name="TsCalculation" xsi:type="utility-4115fa00-5f3c-11df-8a53-001c233b3528">
+				<ENABLED xsi:type="boolean">False</ENABLED>
+				<VARIABLE-REFS>
+					<VARIABLE-NAME dkey="default">
+						<DVALUE xsi:type="string">Detla_aSteer</DVALUE>
+					</VARIABLE-NAME>
+				</VARIABLE-REFS>
+				<FORMULA xsi:type="binaryOpBaseExpression">
+					<NAME xsi:type="string">BINARY_SUBTRACT</NAME>
+					<FIRST-COMPONENT format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">50</VALUE>
+					</FIRST-COMPONENT>
+					<SECOND-COMPONENT xsi:type="varBaseExpression">
+						<NAME xsi:type="string">V</NAME>
+					</SECOND-COMPONENT>
+				</FORMULA>
+			</TESTSTEP>
+		</TESTSTEP>
+		<TESTSTEP format-rev="3" id="11e18df8-65bb-45f8-b09a-54923245e271" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="en_US">
+						<DVALUE xsi:type="string">Caliberating Brake</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="string">en_US</INITIAL-LANGUAGE>
+			</ACTION>
+			<TESTSTEP id="d712dff1-7d2c-41d3-afc3-1e9ad88ffaa1" xsi:type="tsWrite">
+				<MAPPING-REF xsi:type="string">Brake/pBrake/pBrakeF_TestInput</MAPPING-REF>
+				<VALUE xsi:type="expressionValue">
+					<DATA format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="float">1.0</VALUE>
+					</DATA>
+				</VALUE>
+				<METRIC format-rev="1" xsi:type="metricInfo">
+					<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+					<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+				</METRIC>
+			</TESTSTEP>
+			<TESTSTEP id="9d30b410-10ab-4335-997c-6629318f6b08" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+				<TIME format-rev="2" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="integer">2000</VALUE>
+				</TIME>
+			</TESTSTEP>
+			<TESTSTEP id="b7e8e604-df47-4e9e-ad52-c858eef91d84" xsi:type="tsRead">
+				<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#pBrakeF1</MAPPING-REF>
+				<VARIABLE-REFS>
+					<VARIABLE-NAME dkey="default">
+						<DVALUE xsi:type="string">Y1</DVALUE>
+					</VARIABLE-NAME>
+				</VARIABLE-REFS>
+				<METRIC format-rev="1" xsi:type="metricInfo">
+					<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+					<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+				</METRIC>
+			</TESTSTEP>
+			<TESTSTEP id="eb13bfda-1e66-415c-a978-7dd49204e40c" xsi:type="tsWrite">
+				<MAPPING-REF xsi:type="string">Brake/pBrake/pBrakeF_TestInput</MAPPING-REF>
+				<VALUE xsi:type="expressionValue">
+					<DATA format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="float">100.0</VALUE>
+					</DATA>
+				</VALUE>
+				<METRIC format-rev="1" xsi:type="metricInfo">
+					<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+					<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+				</METRIC>
+			</TESTSTEP>
+			<TESTSTEP id="4a05ab73-2ee5-489c-801e-8a8af23eaf23" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+				<TIME format-rev="2" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="integer">2000</VALUE>
+				</TIME>
+			</TESTSTEP>
+			<TESTSTEP id="cc77431c-bdc5-4b8d-96d3-7553a6dcc872" xsi:type="tsRead">
+				<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#pBrakeF1</MAPPING-REF>
+				<VARIABLE-REFS>
+					<VARIABLE-NAME dkey="default">
+						<DVALUE xsi:type="string">Y2</DVALUE>
+					</VARIABLE-NAME>
+				</VARIABLE-REFS>
+				<METRIC format-rev="1" xsi:type="metricInfo">
+					<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+					<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+				</METRIC>
+			</TESTSTEP>
+			<TESTSTEP format-rev="3" id="8851e402-1113-4ac5-9afe-11eed9bc27af" name="TsCalculation" xsi:type="utility-4115fa00-5f3c-11df-8a53-001c233b3528">
+				<VARIABLE-REFS>
+					<VARIABLE-NAME dkey="default">
+						<DVALUE xsi:type="string">Gain</DVALUE>
+					</VARIABLE-NAME>
+				</VARIABLE-REFS>
+				<FORMULA xsi:type="binaryOpBaseExpression">
+					<NAME xsi:type="string">BINARY_DIVIDE</NAME>
+					<FIRST-COMPONENT xsi:type="binaryOpBaseExpression">
+						<NAME xsi:type="string">BINARY_SUBTRACT</NAME>
+						<FIRST-COMPONENT xsi:type="varBaseExpression">
+							<NAME xsi:type="string">Y2</NAME>
+						</FIRST-COMPONENT>
+						<SECOND-COMPONENT xsi:type="varBaseExpression">
+							<NAME xsi:type="string">Y1</NAME>
+						</SECOND-COMPONENT>
+					</FIRST-COMPONENT>
+					<SECOND-COMPONENT format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">100</VALUE>
+					</SECOND-COMPONENT>
+				</FORMULA>
+			</TESTSTEP>
+			<TESTSTEP format-rev="3" id="8121521b-38f7-4dbc-8dbd-188881139565" name="TsCalculation" xsi:type="utility-4115fa00-5f3c-11df-8a53-001c233b3528">
+				<VARIABLE-REFS>
+					<VARIABLE-NAME dkey="default">
+						<DVALUE xsi:type="string">Offset</DVALUE>
+					</VARIABLE-NAME>
+				</VARIABLE-REFS>
+				<FORMULA xsi:type="binaryOpBaseExpression">
+					<NAME xsi:type="string">BINARY_MULTIPLY</NAME>
+					<FIRST-COMPONENT xsi:type="binaryOpBaseExpression">
+						<NAME xsi:type="string">BINARY_SUBTRACT</NAME>
+						<FIRST-COMPONENT xsi:type="varBaseExpression">
+							<NAME xsi:type="string">Y1</NAME>
+						</FIRST-COMPONENT>
+						<SECOND-COMPONENT xsi:type="binaryOpBaseExpression">
+							<NAME xsi:type="string">BINARY_MULTIPLY</NAME>
+							<FIRST-COMPONENT xsi:type="varBaseExpression">
+								<NAME xsi:type="string">Gain</NAME>
+							</FIRST-COMPONENT>
+							<SECOND-COMPONENT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">1</VALUE>
+							</SECOND-COMPONENT>
+						</SECOND-COMPONENT>
+					</FIRST-COMPONENT>
+					<SECOND-COMPONENT xsi:type="unaryOpBaseExpression">
+						<NAME xsi:type="string">UNARY_NEGATIVE</NAME>
+						<COMPONENT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">1</VALUE>
+						</COMPONENT>
+					</SECOND-COMPONENT>
+				</FORMULA>
+			</TESTSTEP>
+			<TESTSTEP id="a67b6429-2129-475e-845c-c57a1e89f825" xsi:type="tsWrite">
+				<MAPPING-REF xsi:type="string">Brake/pBrake/pBrakeFGain</MAPPING-REF>
+				<VALUE xsi:type="expressionValue">
+					<DATA xsi:type="varBaseExpression">
+						<NAME xsi:type="string">Gain</NAME>
+					</DATA>
+				</VALUE>
+				<METRIC format-rev="1" xsi:type="metricInfo">
+					<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+					<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+				</METRIC>
+			</TESTSTEP>
+			<TESTSTEP id="9939bf6e-f608-4012-9d31-accc1e90b3cf" xsi:type="tsWrite">
+				<MAPPING-REF xsi:type="string">Brake/pBrake/pBrakeFOfffset</MAPPING-REF>
+				<VALUE xsi:type="expressionValue">
+					<DATA xsi:type="varBaseExpression">
+						<NAME xsi:type="string">Offset</NAME>
+					</DATA>
+				</VALUE>
+				<METRIC format-rev="1" xsi:type="metricInfo">
+					<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+					<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+				</METRIC>
+			</TESTSTEP>
+			<TESTSTEP id="1e278f51-d2db-4af0-8669-f7524509833a" xsi:type="tsWrite">
+				<MAPPING-REF xsi:type="string">Brake/pBrake/pBrakeF</MAPPING-REF>
+				<VALUE xsi:type="expressionValue">
+					<DATA format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="float">50.0</VALUE>
+					</DATA>
+				</VALUE>
+				<METRIC format-rev="1" xsi:type="metricInfo">
+					<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+					<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+				</METRIC>
+			</TESTSTEP>
+			<TESTSTEP id="26d5aeda-50ae-4a4f-aeca-60ca194a79ee" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+				<TIME format-rev="2" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="integer">2000</VALUE>
+				</TIME>
+			</TESTSTEP>
+			<TESTSTEP id="3d53d086-33bb-4c9f-abaa-181c00c4e7b3" xsi:type="tsRead">
+				<MAPPING-REF xsi:type="string">Brake/pBrake/pBrakeF_TestInput</MAPPING-REF>
+				<METRIC format-rev="1" xsi:type="metricInfo">
+					<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+					<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+				</METRIC>
+			</TESTSTEP>
+			<TESTSTEP id="6bab7141-9665-4ec0-b82c-fcd09192db3b" xsi:type="tsRead">
+				<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#pBrakeF1</MAPPING-REF>
+				<EXPECTATION xsi:type="timelessOption">
+					<EXPRESSION xsi:type="builtNumericExpression">
+						<RELATION xsi:type="string">==</RELATION>
+						<VALUE format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">50</VALUE>
+						</VALUE>
+						<TOLERANCE style="absolute-value" xsi:type="Tolerance">
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.7</VALUE>
+							</VALUE>
+						</TOLERANCE>
+					</EXPRESSION>
+				</EXPECTATION>
+				<METRIC format-rev="1" xsi:type="metricInfo">
+					<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+					<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+				</METRIC>
+			</TESTSTEP>
+		</TESTSTEP>
+		<TESTSTEP format-rev="3" id="3d11446d-82c4-4fc8-a5fd-0fdada0a4713" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="en_US">
+						<DVALUE xsi:type="string">Caliberating Throttle</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="string">en_US</INITIAL-LANGUAGE>
+			</ACTION>
+			<TESTSTEP id="6d0b6086-4128-4d7f-9e2a-9ea12a12096b" xsi:type="tsWrite">
+				<MAPPING-REF xsi:type="string">DriverInputs/Throttle/rThrottle_TestInput</MAPPING-REF>
+				<VALUE xsi:type="expressionValue">
+					<DATA format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="float">1.0</VALUE>
+					</DATA>
+				</VALUE>
+				<METRIC format-rev="1" xsi:type="metricInfo">
+					<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+					<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+				</METRIC>
+			</TESTSTEP>
+			<TESTSTEP id="6523c24f-b1ec-45ce-83ad-862403d592e3" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+				<TIME format-rev="2" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="integer">2000</VALUE>
+				</TIME>
+			</TESTSTEP>
+			<TESTSTEP id="0fe3d365-70f8-4afe-89bc-5cfe902d6683" xsi:type="tsRead">
+				<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#rThrottlePedal1</MAPPING-REF>
+				<VARIABLE-REFS>
+					<VARIABLE-NAME dkey="default">
+						<DVALUE xsi:type="string">Y1</DVALUE>
+					</VARIABLE-NAME>
+				</VARIABLE-REFS>
+				<METRIC format-rev="1" xsi:type="metricInfo">
+					<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+					<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+				</METRIC>
+			</TESTSTEP>
+			<TESTSTEP id="e5087112-951b-4e05-83cb-f976fb1f8eb7" xsi:type="tsWrite">
+				<MAPPING-REF xsi:type="string">DriverInputs/Throttle/rThrottle_TestInput</MAPPING-REF>
+				<VALUE xsi:type="expressionValue">
+					<DATA format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="float">100.0</VALUE>
+					</DATA>
+				</VALUE>
+				<METRIC format-rev="1" xsi:type="metricInfo">
+					<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+					<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+				</METRIC>
+			</TESTSTEP>
+			<TESTSTEP id="98112a97-08fb-461b-b94b-c7299d91430b" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+				<TIME format-rev="2" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="integer">2000</VALUE>
+				</TIME>
+			</TESTSTEP>
+			<TESTSTEP id="11926aec-e9c5-4317-b7a6-d487b0a922cb" xsi:type="tsRead">
+				<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#rThrottlePedal1</MAPPING-REF>
+				<VARIABLE-REFS>
+					<VARIABLE-NAME dkey="default">
+						<DVALUE xsi:type="string">Y2</DVALUE>
+					</VARIABLE-NAME>
+				</VARIABLE-REFS>
+				<METRIC format-rev="1" xsi:type="metricInfo">
+					<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+					<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+				</METRIC>
+			</TESTSTEP>
+			<TESTSTEP format-rev="3" id="f5c85af7-b40b-4d94-afef-82b945d1e38e" name="TsCalculation" xsi:type="utility-4115fa00-5f3c-11df-8a53-001c233b3528">
+				<VARIABLE-REFS>
+					<VARIABLE-NAME dkey="default">
+						<DVALUE xsi:type="string">Gain</DVALUE>
+					</VARIABLE-NAME>
+				</VARIABLE-REFS>
+				<FORMULA xsi:type="binaryOpBaseExpression">
+					<NAME xsi:type="string">BINARY_DIVIDE</NAME>
+					<FIRST-COMPONENT xsi:type="binaryOpBaseExpression">
+						<NAME xsi:type="string">BINARY_SUBTRACT</NAME>
+						<FIRST-COMPONENT xsi:type="varBaseExpression">
+							<NAME xsi:type="string">Y2</NAME>
+						</FIRST-COMPONENT>
+						<SECOND-COMPONENT xsi:type="varBaseExpression">
+							<NAME xsi:type="string">Y1</NAME>
+						</SECOND-COMPONENT>
+					</FIRST-COMPONENT>
+					<SECOND-COMPONENT format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">100</VALUE>
+					</SECOND-COMPONENT>
+				</FORMULA>
+			</TESTSTEP>
+			<TESTSTEP format-rev="3" id="02bc0d94-cfc5-4c4a-ab3b-a95bde715864" name="TsCalculation" xsi:type="utility-4115fa00-5f3c-11df-8a53-001c233b3528">
+				<VARIABLE-REFS>
+					<VARIABLE-NAME dkey="default">
+						<DVALUE xsi:type="string">Offset</DVALUE>
+					</VARIABLE-NAME>
+				</VARIABLE-REFS>
+				<FORMULA xsi:type="binaryOpBaseExpression">
+					<NAME xsi:type="string">BINARY_MULTIPLY</NAME>
+					<FIRST-COMPONENT xsi:type="binaryOpBaseExpression">
+						<NAME xsi:type="string">BINARY_SUBTRACT</NAME>
+						<FIRST-COMPONENT xsi:type="varBaseExpression">
+							<NAME xsi:type="string">Y1</NAME>
+						</FIRST-COMPONENT>
+						<SECOND-COMPONENT xsi:type="binaryOpBaseExpression">
+							<NAME xsi:type="string">BINARY_MULTIPLY</NAME>
+							<FIRST-COMPONENT xsi:type="varBaseExpression">
+								<NAME xsi:type="string">Gain</NAME>
+							</FIRST-COMPONENT>
+							<SECOND-COMPONENT format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">1</VALUE>
+							</SECOND-COMPONENT>
+						</SECOND-COMPONENT>
+					</FIRST-COMPONENT>
+					<SECOND-COMPONENT xsi:type="unaryOpBaseExpression">
+						<NAME xsi:type="string">UNARY_NEGATIVE</NAME>
+						<COMPONENT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">1</VALUE>
+						</COMPONENT>
+					</SECOND-COMPONENT>
+				</FORMULA>
+			</TESTSTEP>
+			<TESTSTEP id="f8cc4e95-f8b2-41d5-8556-b47dad86db26" xsi:type="tsWrite">
+				<MAPPING-REF xsi:type="string">DriverInputs/Throttle/rThrottleGain</MAPPING-REF>
+				<VALUE xsi:type="expressionValue">
+					<DATA xsi:type="varBaseExpression">
+						<NAME xsi:type="string">Gain</NAME>
+					</DATA>
+				</VALUE>
+				<METRIC format-rev="1" xsi:type="metricInfo">
+					<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+					<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+				</METRIC>
+			</TESTSTEP>
+			<TESTSTEP id="d466eecc-4309-4e00-827b-458f3b37773e" xsi:type="tsWrite">
+				<MAPPING-REF xsi:type="string">DriverInputs/Throttle/rThrotlleOffset</MAPPING-REF>
+				<VALUE xsi:type="expressionValue">
+					<DATA xsi:type="varBaseExpression">
+						<NAME xsi:type="string">Offset</NAME>
+					</DATA>
+				</VALUE>
+				<METRIC format-rev="1" xsi:type="metricInfo">
+					<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+					<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+				</METRIC>
+			</TESTSTEP>
+			<TESTSTEP id="2e535714-406b-459b-9473-0350cc1fb5ad" xsi:type="tsWrite">
+				<MAPPING-REF xsi:type="string">DriverInputs/Throttle/rThrottle</MAPPING-REF>
+				<VALUE xsi:type="expressionValue">
+					<DATA format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="float">50.0</VALUE>
+					</DATA>
+				</VALUE>
+				<METRIC format-rev="1" xsi:type="metricInfo">
+					<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+					<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+				</METRIC>
+			</TESTSTEP>
+			<TESTSTEP id="0040413b-31d8-439d-b13c-8ac602535253" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+				<TIME format-rev="2" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="integer">2000</VALUE>
+				</TIME>
+			</TESTSTEP>
+			<TESTSTEP id="2ddae8e9-c4e8-4b55-bc16-d2c65b45800e" xsi:type="tsRead">
+				<MAPPING-REF xsi:type="string">DriverInputs/Throttle/rThrottle_TestInput</MAPPING-REF>
+				<METRIC format-rev="1" xsi:type="metricInfo">
+					<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+					<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+				</METRIC>
+			</TESTSTEP>
+			<TESTSTEP id="57dee465-e307-420e-8283-c9ebdeca25af" xsi:type="tsRead">
+				<MAPPING-REF xsi:type="string">Implementation/APP1_Input#MEAS#rThrottlePedal1</MAPPING-REF>
+				<EXPECTATION xsi:type="timelessOption">
+					<EXPRESSION xsi:type="builtNumericExpression">
+						<RELATION xsi:type="string">==</RELATION>
+						<VALUE format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">50</VALUE>
+						</VALUE>
+						<TOLERANCE style="absolute-value" xsi:type="Tolerance">
+							<VALUE format-rev="2" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">1</VALUE>
+							</VALUE>
+						</TOLERANCE>
+					</EXPRESSION>
+				</EXPECTATION>
+				<METRIC format-rev="1" xsi:type="metricInfo">
+					<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+					<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+				</METRIC>
+			</TESTSTEP>
+		</TESTSTEP>
+	</TESTSTEPS>
+	<TRACE-ANALYSES format-rev="1" xsi:type="traceAnalyses">
+		<TRACE-ANALYSIS format-rev="3" uuid="7a8b9e5f9dc011ef9a1338d54714d0ed" xsi:type="traceAnalysis">
+			<NAME xsi:type="string">Trace analysis 1</NAME>
+			<ANALYSISITEM format-rev="1" uuid="7a8b9e609dc011ef914938d54714d0ed" xsi:type="episode">
+				<NAME xsi:type="string">New episode</NAME>
+				<ANALYSISITEM format-rev="1" uuid="4dbedc12a27611ef84ef38d54714d0ed" xsi:type="calculation">
+					<NAME xsi:type="string">Calculation</NAME>
+					<FORMULA xsi:type="string">Brake_pBrake_pBrakeF_TestInput</FORMULA>
+					<EXPECTATION xsi:type="builtNumericExpression">
+						<RELATION xsi:type="string">&gt;=</RELATION>
+						<VALUE format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">20</VALUE>
+						</VALUE>
+					</EXPECTATION>
+					<REPORT-CONFIG xsi:type="trcpReportConfig">
+						<MAX-SPOTS xsi:type="integer">100</MAX-SPOTS>
+						<MIN-DELTA xsi:type="float">0.0</MIN-DELTA>
+					</REPORT-CONFIG>
+				</ANALYSISITEM>
+			</ANALYSISITEM>
+			<VIRTUAL-SIGNALS-MANAGER xsi:type="virtualSignalsManager">
+				<VIRTUAL-SIGNALS>
+					<VIRTUAL-SIGNAL uuid="413d4504a27611efbf9138d54714d0ed" xsi:type="virtualSessionSignal">
+						<NAME xsi:type="string">Brake_pBrake_pBrakeFGain</NAME>
+						<SIGNAL-FOR-ANALYSIS xsi:type="recordingSignalForAnalysis">
+							<KEY xsi:type="string">Brake/pBrake/pBrakeFGain</KEY>
+							<SOURCE-TYPE xsi:type="string">RECORDING-GROUP</SOURCE-TYPE>
+							<SOURCE-REF xsi:type="string">5ad989159dc011efa4c738d54714d0ed</SOURCE-REF>
+						</SIGNAL-FOR-ANALYSIS>
+						<EVENT-TYPE xsi:type="string">PHY</EVENT-TYPE>
+					</VIRTUAL-SIGNAL>
+					<VIRTUAL-SIGNAL uuid="66686d46a27611efb22e38d54714d0ed" xsi:type="virtualSessionSignal">
+						<NAME xsi:type="string">Brake_pBrake_pBrakeF_TestInput</NAME>
+						<SIGNAL-FOR-ANALYSIS xsi:type="recordingSignalForAnalysis">
+							<KEY xsi:type="string">Brake/pBrake/pBrakeF_TestInput</KEY>
+							<SOURCE-TYPE xsi:type="string">RECORDING-GROUP</SOURCE-TYPE>
+							<SOURCE-REF xsi:type="string">5ad989159dc011efa4c738d54714d0ed</SOURCE-REF>
+						</SIGNAL-FOR-ANALYSIS>
+						<EVENT-TYPE xsi:type="string">PHY</EVENT-TYPE>
+					</VIRTUAL-SIGNAL>
+				</VIRTUAL-SIGNALS>
+			</VIRTUAL-SIGNALS-MANAGER>
+		</TRACE-ANALYSIS>
+	</TRACE-ANALYSES>
+</PACKAGE>
