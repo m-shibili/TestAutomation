@@ -1,0 +1,53 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               Intel64 Family 6 Model 158 Stepping 9, GenuineIntel
+Number of CPUs:    8
+RAM:               31.9GB
+Diskinfo:          35.3GB/446.5GB
+Operating system:  Windows-10-10.0.19045
+Long path support: False
+-------------------------------------------------------------------------
+
+= 18.11.2024 15:33:40 (UTC +0:00) === ecu.test 2024.4.0.157279+6cc6544af3d9-FeatureSet 157279+6cc6544af3d9 (2024/10/15 14:58:06) (64bit) ===
+Python 3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)] / wx: 4.2.1+tt.5
+Protocol: log level Default. Additional logging active: default output
+
+License: ecu.test
+         - License options:
+             + ecu.test diagnostics
+             + trace.check
+         - valid up to version: 2024.4
+         - valid until: 2025-01-28
+         - licensed for: Mahindra_Racing_UK
+         - runner: False
+         - Server: license01.tracetronic.de
+
+
+
+2024-11-18 15:33:40.109 2292 ManagedWorker-5*PE.Run() ERROR:
+                        Traceback (most recent call last):
+                          File "tts\core\toolingFramework\toolAccess\LockProxy.py", line 57, in __call__
+                          File "tts\core\toolingFramework\interface\Proxy.py", line 70, in __call__
+                          File "tts\tooling\tool\CANoeCANalyzer\CANoeCANalyzer.py", line 266, in ExecuteJob
+                          File "tts\core\toolingFramework\interface\AbstractAdapter.py", line 1042, in <lambda>
+                          File "tts\core\toolingFramework\toollibLoader\ToolLibLoaderTwisted.py", line 177, in SendCommand
+                          File "tts\core\toolingFramework\toollibLoader\ToolLibLoaderTwisted.py", line 99, in BlockingCallFromThreadWithTimeout
+                          File ".\Lib\site-packages\twisted\python\failure.py", line 505, in raiseException
+                          File "tts\core\toolingFramework\toollibLoader\ToolLibLoaderTwisted.py", line 118, in WaitForToolAbort
+                        RuntimeError: Tool call aborted.
+                        
+                        The above exception was the direct cause of the following exception:
+                        
+                        Traceback (most recent call last):
+                          File "tts\testExecution\testSteps\generic\TestStepJobExec.py", line 220, in __Call
+                          File "tts\core\mapping\xa\XAJobExec.py", line 83, in Call
+                          File "tts\core\toolingFramework\toolAccess\LockProxy.py", line 76, in __call__
+                          File "tts\core\toolingFramework\toolAccess\LockProxy.py", line 89, in ReportToolError
+                        tts.core.toolingFramework.toolAccess.Exceptions.ToolError: Tool CANoeCANalyzer01 (@local): ExecuteJob() failed: Tool call aborted.
+2024-11-18 15:33:40.155 2292 ManagedWorker-5*PE.Run() DEBUG_EXC_PRINT:
+                        Traceback (most recent call last):
+                          File "tts\testExecution\engine\TestEngine.py", line 935, in ExecuteTestStep
+                          File "tts\testExecution\testSteps\generic\TestStepJobExec.py", line 306, in Run
+                        tt._Exceptions_.TTError: Tool CANoeCANalyzer01 (@local): ExecuteJob() failed: Tool call aborted.

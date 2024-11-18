@@ -16,12 +16,14 @@ from typing import TYPE_CHECKING, Literal, NotRequired, TypedDict
 
 
 # <_____________Custom import___________>
-import sys
+import os
 import subprocess
 import psutil
 
 import clr
-clr.AddReference(r"C:\Users\DIL\Downloads\SM_API_TEST\SM_Adapter.dll")
+assets_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../..', '02_SM_ADAPTER_API_SLN'))
+print(assets_dir)
+clr.AddReference(r"..\..\..\02_SM_ADAPTER_API_SLN\SM_Adapter\SM_Adapter\bin\Debug\netstandard2.1\SM_Adapter.dll")
 from SM_Adapter import SM_Adapter
 SysMon = SM_Adapter()
 
