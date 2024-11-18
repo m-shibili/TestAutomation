@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SM_Adapter")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bc822ecb4f1215fc8e129c12a4ecb166a610cb87")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f256bc83436a4a91f2d35f826db40c2fbb55155e")]
 [assembly: System.Reflection.AssemblyProductAttribute("SM_Adapter")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SM_Adapter")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
