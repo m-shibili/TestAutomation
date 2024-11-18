@@ -1,0 +1,12 @@
+C:\Users\Muhammed.Shibili\source\repos\SM_Adapter\SM_Adapter\bin\Debug\netstandard2.1\SM_Adapter.deps.json
+C:\Users\Muhammed.Shibili\source\repos\SM_Adapter\SM_Adapter\bin\Debug\netstandard2.1\SM_Adapter.dll
+C:\Users\Muhammed.Shibili\source\repos\SM_Adapter\SM_Adapter\bin\Debug\netstandard2.1\SM_Adapter.pdb
+C:\Users\Muhammed.Shibili\source\repos\SM_Adapter\SM_Adapter\bin\Debug\netstandard2.1\Interop.SystemMonitor.dll
+C:\Users\Muhammed.Shibili\source\repos\SM_Adapter\SM_Adapter\obj\Debug\netstandard2.1\SM_Adapter.csproj.AssemblyReference.cache
+C:\Users\Muhammed.Shibili\source\repos\SM_Adapter\SM_Adapter\obj\Debug\netstandard2.1\SM_Adapter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Muhammed.Shibili\source\repos\SM_Adapter\SM_Adapter\obj\Debug\netstandard2.1\SM_Adapter.AssemblyInfoInputs.cache
+C:\Users\Muhammed.Shibili\source\repos\SM_Adapter\SM_Adapter\obj\Debug\netstandard2.1\SM_Adapter.AssemblyInfo.cs
+C:\Users\Muhammed.Shibili\source\repos\SM_Adapter\SM_Adapter\obj\Debug\netstandard2.1\SM_Adapter.csproj.CoreCompileInputs.cache
+C:\Users\Muhammed.Shibili\source\repos\SM_Adapter\SM_Adapter\obj\Debug\netstandard2.1\SM_Adapter.csproj.Up2Date
+C:\Users\Muhammed.Shibili\source\repos\SM_Adapter\SM_Adapter\obj\Debug\netstandard2.1\SM_Adapter.dll
+C:\Users\Muhammed.Shibili\source\repos\SM_Adapter\SM_Adapter\obj\Debug\netstandard2.1\SM_Adapter.pdb
