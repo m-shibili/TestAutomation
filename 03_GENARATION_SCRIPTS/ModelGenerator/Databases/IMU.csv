@@ -1,0 +1,8 @@
+AccTemp;Tx1;-;56;16;Motorola;Signed;0;0.1;0;-3276.8;3276.7;�C;<none>;;0x3F0;0;Cyclic;0
+AccX_user;Tx1;-;8;16;Motorola;Signed;0;0.001;0;-32.768;32.767;g;<none>;;0x3F0;0;Cyclic;0
+AccY_user;Tx1;-;24;16;Motorola;Signed;0;0.001;0;-32.768;32.767;g;<none>;;0x3F0;0;Cyclic;0
+AccZ_user;Tx1;-;40;16;Motorola;Signed;0;0.001;0;-32.768;32.767;g;<none>;;0x3F0;0;Cyclic;0
+GyrTemp;Tx2;-;56;16;Motorola;Signed;0;0.1;0;-3276.8;3276.7;�C;<none>;;0x3F4;0;Cyclic;0
+GyrX_user;Tx2;-;8;16;Motorola;Signed;0;0.01;0;-327.68;327.67;�/s;<none>;;0x3F4;0;Cyclic;0
+GyrY_user;Tx2;-;24;16;Motorola;Signed;0;0.01;0;-327.68;327.67;�/s;<none>;;0x3F4;0;Cyclic;0
+GyrZ_user;Tx2;-;40;16;Motorola;Signed;0;0.01;0;-327.68;327.67;�/s;<none>;;0x3F4;0;Cyclic;0

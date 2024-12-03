@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<systemvariables version="4">
+<namespace name="" comment="" interface="">
+   <namespace name="HIL_Interface" comment="" interface="">
+      <namespace name="CAN_OverRide" comment="" interface="">
+<namespace name="NodeName" comment="" interface="">
+  <namespace name="xCC_BMS_HV_04_ContactorStatus" comment="" interface="">
+    <namespace name="Batt_AncOutVoltage" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_AncOutVoltage" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_AncOutVoltage" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" startValue="0" minValue="0" minValuePhys="0" maxValue="1638.3" maxValuePhys="1638.3"/>
+    </namespace>
+    <namespace name="Batt_ChargeContactorStatus" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_ChargeContactorStatus" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_ChargeContactorStatus" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="7" maxValuePhys="7"/>
+    </namespace>
+    <namespace name="Batt_InvOutVoltage" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_InvOutVoltage" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_InvOutVoltage" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" startValue="0" minValue="0" minValuePhys="0" maxValue="1638.3" maxValuePhys="1638.3"/>
+    </namespace>
+    <namespace name="Batt_MainContactorStatus" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_MainContactorStatus" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_MainContactorStatus" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="15" maxValuePhys="15"/>
+    </namespace>
+  </namespace>
+  <namespace name="xC9_BMS_HV_01_Status" comment="" interface="">
+    <namespace name="Batt_BalancingRequired" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_BalancingRequired" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_BalancingRequired" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+    </namespace>
+    <namespace name="Batt_BMSStatus" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_BMSStatus" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_BMSStatus" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="31" maxValuePhys="31"/>
+    </namespace>
+    <namespace name="Batt_Equity_SoC_Displayed" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_Equity_SoC_Displayed" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_Equity_SoC_Displayed" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+    </namespace>
+    <namespace name="Batt_Fault_FR0" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_Fault_FR0" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_Fault_FR0" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+    </namespace>
+    <namespace name="Batt_Fault_FR1" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_Fault_FR1" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_Fault_FR1" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+    </namespace>
+    <namespace name="Batt_Fault_FR2" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_Fault_FR2" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_Fault_FR2" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+    </namespace>
+    <namespace name="Batt_Fault_FR3" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_Fault_FR3" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_Fault_FR3" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+    </namespace>
+    <namespace name="Batt_Fault_FR4" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_Fault_FR4" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_Fault_FR4" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+    </namespace>
+    <namespace name="Batt_Fault_FR5" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_Fault_FR5" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_Fault_FR5" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+    </namespace>
+    <namespace name="Batt_Fault_FR6" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_Fault_FR6" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_Fault_FR6" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+    </namespace>
+    <namespace name="Batt_Fault_FR7" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_Fault_FR7" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_Fault_FR7" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+    </namespace>
+    <namespace name="Batt_HVILFault" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_HVILFault" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_HVILFault" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="3" maxValuePhys="3"/>
+    </namespace>
+    <namespace name="Batt_Isolation1OnOffStatus" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_Isolation1OnOffStatus" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_Isolation1OnOffStatus" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+    </namespace>
+    <namespace name="Batt_Isolation1Status" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_Isolation1Status" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_Isolation1Status" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="3" maxValuePhys="3"/>
+    </namespace>
+    <namespace name="Batt_Isolation2OnOffStatus" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_Isolation2OnOffStatus" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_Isolation2OnOffStatus" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+    </namespace>
+    <namespace name="Batt_Isolation2Status" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_Isolation2Status" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_Isolation2Status" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="3" maxValuePhys="3"/>
+    </namespace>
+    <namespace name="Batt_MinSOC" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_MinSOC" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_MinSOC" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" startValue="0" minValue="0" minValuePhys="0" maxValue="102.3" maxValuePhys="102.3"/>
+    </namespace>
+    <namespace name="Batt_ReadytoTurnOnHV" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_ReadytoTurnOnHV" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_ReadytoTurnOnHV" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+    </namespace>
+    <namespace name="Batt_UserSOC" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_UserSOC" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_UserSOC" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" startValue="0" minValue="0" minValuePhys="0" maxValue="102.3" maxValuePhys="102.3"/>
+    </namespace>
+    <namespace name="BMS_AliveCounter1" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_BMS_AliveCounter1" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_BMS_AliveCounter1" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="15" maxValuePhys="15"/>
+    </namespace>
+  </namespace>
+  <namespace name="xD2_BMS_HV_08" comment="" interface="">
+    <namespace name="Batt_BoostChargeActive" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_BoostChargeActive" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_BoostChargeActive" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+    </namespace>
+    <namespace name="Batt_DischEnergyThroughput" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_DischEnergyThroughput" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_DischEnergyThroughput" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" startValue="0" minValue="0" minValuePhys="0" maxValue="32767.5" maxValuePhys="32767.5"/>
+    </namespace>
+    <namespace name="Batt_ReadyforBoostCharge" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_ReadyforBoostCharge" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_ReadyforBoostCharge" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+    </namespace>
+    <namespace name="Batt_SafetyLightStatGreenHV" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_SafetyLightStatGreenHV" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_SafetyLightStatGreenHV" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+    </namespace>
+    <namespace name="Batt_SafetyLightStatRedHV" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_SafetyLightStatRedHV" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_SafetyLightStatRedHV" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+    </namespace>
+  </namespace>
+  <namespace name="x110_BMS_HV_09" comment="" interface="">
+    <namespace name="Batt_ClearFault_Code" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_ClearFault_Code" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_ClearFault_Code" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="9999" maxValuePhys="9999"/>
+    </namespace>
+    <namespace name="Batt_ClearFault_KeyMatched" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_ClearFault_KeyMatched" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_ClearFault_KeyMatched" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+    </namespace>
+    <namespace name="Batt_FaultActive_FR4" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_FaultActive_FR4" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_FaultActive_FR4" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+    </namespace>
+    <namespace name="Batt_LoggerPercent" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_LoggerPercent" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_LoggerPercent" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" startValue="0" minValue="0" minValuePhys="0" maxValue="127.5" maxValuePhys="127.5"/>
+    </namespace>
+    <namespace name="Batt_MaxSOC" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_MaxSOC" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_MaxSOC" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" startValue="0" minValue="0" minValuePhys="0" maxValue="102.3" maxValuePhys="102.3"/>
+    </namespace>
+    <namespace name="BMS_LoggingFull" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_BMS_LoggingFull" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_BMS_LoggingFull" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+    </namespace>
+  </namespace>
+  <namespace name="xCF_BMS_HV_07_Thermal" comment="" interface="">
+    <namespace name="Batt_Coolant_IN_Pressure" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_Coolant_IN_Pressure" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_Coolant_IN_Pressure" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" startValue="0" minValue="0" minValuePhys="0" maxValue="8.191" maxValuePhys="8.191"/>
+    </namespace>
+    <namespace name="Batt_Coolant_IN_Temp" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_Coolant_IN_Temp" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_Coolant_IN_Temp" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" startValue="0" minValue="-10" minValuePhys="-10" maxValue="117.5" maxValuePhys="117.5"/>
+    </namespace>
+    <namespace name="Batt_Coolant_OUT_Pressure" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_Coolant_OUT_Pressure" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_Coolant_OUT_Pressure" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" startValue="0" minValue="0" minValuePhys="0" maxValue="8.191" maxValuePhys="8.191"/>
+    </namespace>
+    <namespace name="Batt_Coolant_OUT_Temp" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_Coolant_OUT_Temp" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_Coolant_OUT_Temp" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" startValue="0" minValue="-10" minValuePhys="-10" maxValue="117.5" maxValuePhys="117.5"/>
+    </namespace>
+    <namespace name="Batt_LVBackupBattVoltage" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_LVBackupBattVoltage" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_LVBackupBattVoltage" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" startValue="0" minValue="0" minValuePhys="0" maxValue="40.95" maxValuePhys="40.95"/>
+    </namespace>
+    <namespace name="Batt_ThermalRequest" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_ThermalRequest" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_ThermalRequest" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="-128" minValuePhys="-128" maxValue="127" maxValuePhys="127"/>
+    </namespace>
+  </namespace>
+  <namespace name="xCA_BMS_HV_02_HVParameter" comment="" interface="">
+    <namespace name="Batt_Current" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_Current" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_Current" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" startValue="0" minValue="-3276.8" minValuePhys="-3276.8" maxValue="3276.7" maxValuePhys="3276.7"/>
+    </namespace>
+    <namespace name="Batt_Voltage" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_Voltage" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_Voltage" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" startValue="0" minValue="0" minValuePhys="0" maxValue="1638.3" maxValuePhys="1638.3"/>
+    </namespace>
+    <namespace name="BMS_AliveCounter2" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_BMS_AliveCounter2" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_BMS_AliveCounter2" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="15" maxValuePhys="15"/>
+    </namespace>
+  </namespace>
+  <namespace name="xCB_BMS_HV_03_BatteryLimits" comment="" interface="">
+    <namespace name="Batt_DischargePowerLim" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_DischargePowerLim" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_DischargePowerLim" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" startValue="0" minValue="-3276.75" minValuePhys="-3276.75" maxValue="0" maxValuePhys="0"/>
+    </namespace>
+    <namespace name="Batt_RegenPowerLim" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_RegenPowerLim" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_RegenPowerLim" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" startValue="0" minValue="0" minValuePhys="0" maxValue="819.1" maxValuePhys="819.1"/>
+    </namespace>
+    <namespace name="BMS_AliveCounter3" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_BMS_AliveCounter3" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_BMS_AliveCounter3" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="3" maxValuePhys="3"/>
+    </namespace>
+  </namespace>
+  <namespace name="x109_BMS_HV_10" comment="" interface="">
+    <namespace name="Batt_DischargePowerLim_2s" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_DischargePowerLim_2s" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_DischargePowerLim_2s" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" startValue="0" minValue="-511.5" minValuePhys="-511.5" maxValue="0" maxValuePhys="0"/>
+    </namespace>
+    <namespace name="Batt_DischargePowerLim_5s" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_DischargePowerLim_5s" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_DischargePowerLim_5s" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" startValue="0" minValue="-511.5" minValuePhys="-511.5" maxValue="0" maxValuePhys="0"/>
+    </namespace>
+    <namespace name="Batt_RegenPowerLim_2s" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_RegenPowerLim_2s" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_RegenPowerLim_2s" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" startValue="0" minValue="0" minValuePhys="0" maxValue="1023.5" maxValuePhys="1023.5"/>
+    </namespace>
+    <namespace name="Batt_RegenPowerLim_5s" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_RegenPowerLim_5s" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_RegenPowerLim_5s" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" startValue="0" minValue="0" minValuePhys="0" maxValue="1023.5" maxValuePhys="1023.5"/>
+    </namespace>
+  </namespace>
+  <namespace name="xCE_BMS_HV_06" comment="" interface="">
+    <namespace name="Batt_EnergyAvailable" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_EnergyAvailable" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_EnergyAvailable" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" startValue="0" minValue="0" minValuePhys="0" maxValue="409.5" maxValuePhys="409.5"/>
+    </namespace>
+    <namespace name="Batt_Isolation1Res_HighRange" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_Isolation1Res_HighRange" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_Isolation1Res_HighRange" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="65535" maxValuePhys="65535"/>
+    </namespace>
+    <namespace name="Batt_Isolation1Resistance" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_Isolation1Resistance" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_Isolation1Resistance" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" startValue="0" minValue="0" minValuePhys="0" maxValue="6553.5" maxValuePhys="6553.5"/>
+    </namespace>
+    <namespace name="Batt_LVVoltage" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_LVVoltage" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_LVVoltage" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" startValue="0" minValue="0" minValuePhys="0" maxValue="40.95" maxValuePhys="40.95"/>
+    </namespace>
+  </namespace>
+  <namespace name="xCD_BMS_HV_05_CellParam" comment="" interface="">
+    <namespace name="Batt_MaxCellTemperature" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_MaxCellTemperature" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_MaxCellTemperature" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" startValue="0" minValue="-60" minValuePhys="-60" maxValue="144.75" maxValuePhys="144.75"/>
+    </namespace>
+    <namespace name="Batt_MaxCellVoltage" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_MaxCellVoltage" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_MaxCellVoltage" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" startValue="0" minValue="0" minValuePhys="0" maxValue="16.383" maxValuePhys="16.383"/>
+    </namespace>
+    <namespace name="Batt_MinCellTemperature" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_MinCellTemperature" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_MinCellTemperature" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" startValue="0" minValue="-60" minValuePhys="-60" maxValue="144.75" maxValuePhys="144.75"/>
+    </namespace>
+    <namespace name="Batt_MinCellVoltage" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Batt_MinCellVoltage" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Batt_MinCellVoltage" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" startValue="0" minValue="0" minValuePhys="0" maxValue="16.383" maxValuePhys="16.383"/>
+    </namespace>
+  </namespace>
+  <namespace name="x112_BMS_HV_12" comment="" interface="">
+    <namespace name="nBatteryHV12Multiplexor" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_nBatteryHV12Multiplexor" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_nBatteryHV12Multiplexor" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" startValue="0" minValue="0" minValuePhys="0" maxValue="16.383" maxValuePhys="16.383"/>
+      <namespace name="M1_Batt_SerialNumber" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_1_Batt_SerialNumber" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_1_Batt_SerialNumber" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="255" maxValuePhys="255"/>
+      </namespace>
+      <namespace name="M0_BMS_Calibration_info" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_0_BMS_Calibration_info" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_0_BMS_Calibration_info" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="255" maxValuePhys="255"/>
+      </namespace>
+      <namespace name="M0_BMS_Software_info" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_0_BMS_Software_info" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_0_BMS_Software_info" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="255" maxValuePhys="255"/>
+      </namespace>
+    </namespace>
+  </namespace>
+  <namespace name="x12D_CIM_HV_01" comment="" interface="">
+    <namespace name="CIM_ChargePlugLockStatusHV" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_CIM_ChargePlugLockStatusHV" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_CIM_ChargePlugLockStatusHV" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="3" maxValuePhys="3"/>
+    </namespace>
+    <namespace name="CIM_ChargeStatusHV" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_CIM_ChargeStatusHV" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_CIM_ChargeStatusHV" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="15" maxValuePhys="15"/>
+    </namespace>
+    <namespace name="CIM_ChargingPlugTypeHV" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_CIM_ChargingPlugTypeHV" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_CIM_ChargingPlugTypeHV" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="3" maxValuePhys="3"/>
+    </namespace>
+    <namespace name="CIM_PlugPresentHV" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_CIM_PlugPresentHV" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_CIM_PlugPresentHV" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="3" maxValuePhys="3"/>
+    </namespace>
+  </namespace>
+</namespace>
+      </namespace>
+  </namespace>
+</namespace>
+</systemvariables>

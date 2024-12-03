@@ -1,0 +1,186 @@
+aMGURotorPosition;MCU_TO_VCU_RESPONSE1_MAIN;-;400;14;Intel;Signed;0;0.001;0;-8.192;8.191;rad;<none>;MCU calculated MGU rotor position;0x200
+aMGURotorPosition;MCU_TO_VCU_RESPONSE1_BACKUP;-;400;14;Intel;Signed;0;0.001;0;-8.192;8.191;rad;<none>;MCU calculated MGU rotor position;0x250
+BMCU1kWPwrLimitDischgActive;MCU_TO_VCU_RESPONSE1_MAIN;-;12;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU 1kW discharge power limit closed loop function active;0x200
+BMCU1kWPwrLimitDischgActive;MCU_TO_VCU_RESPONSE1_BACKUP;-;12;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU 1kW discharge power limit closed loop function active;0x250
+BMCU1kWPwrLimitDischgEnabled;MCU_TO_VCU_RESPONSE1_MAIN;-;25;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU 1kW discharge power limit closed loop function enabled;0x200
+BMCU1kWPwrLimitDischgEnabled;MCU_TO_VCU_RESPONSE1_BACKUP;-;25;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU 1kW discharge power limit closed loop function enabled;0x250
+BMCUActiveCANBus;MCU_TO_VCU_RESPONSE1_MAIN;-;17;1;Intel;Unsigned;0;1;0;0;1;;<none>;Indicates that the CAN bus being used by the MCU is the primary (=False) or backup (=True);0x200
+BMCUActiveCANBus;MCU_TO_VCU_RESPONSE1_BACKUP;-;17;1;Intel;Unsigned;0;1;0;0;1;;<none>;Indicates that the CAN bus being used by the MCU is the primary (=False) or backup (=True);0x250
+BMCUActiveDischargeActive;MCU_TO_VCU_RESPONSE1_MAIN;-;14;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU Active discharge state;0x200
+BMCUActiveDischargeActive;MCU_TO_VCU_RESPONSE1_BACKUP;-;14;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU Active discharge state;0x250
+BMCUAutoTurnOffActive;MCU_TO_VCU_RESPONSE1_MAIN;-;0;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU Auto turn off enabled;0x200
+BMCUAutoTurnOffActive;MCU_TO_VCU_RESPONSE1_BACKUP;-;0;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU Auto turn off enabled;0x250
+BMCUFaultActive;MCU_TO_VCU_RESPONSE1_MAIN;-;22;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU fault state feedback;0x200
+BMCUFaultActive;MCU_TO_VCU_RESPONSE1_BACKUP;-;22;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU fault state feedback;0x250
+BMCUFaultCANTimeOut;MCU_TO_VCU_RESPONSE1_MAIN;-;62;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU CAN timeout fault;0x200
+BMCUFaultCANTimeOut;MCU_TO_VCU_RESPONSE1_BACKUP;-;62;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU CAN timeout fault;0x250
+BMCUFaultCore1TimeOut;MCU_TO_VCU_RESPONSE1_MAIN;-;63;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU core 1 timeout fault;0x200
+BMCUFaultCore1TimeOut;MCU_TO_VCU_RESPONSE1_BACKUP;-;63;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU core 1 timeout fault;0x250
+BMCUFaultCurSplit;MCU_TO_VCU_RESPONSE1_MAIN;-;46;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU current split fault;0x200
+BMCUFaultCurSplit;MCU_TO_VCU_RESPONSE1_BACKUP;-;46;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU current split fault;0x250
+BMCUFaultDriverOverTemp;MCU_TO_VCU_RESPONSE1_MAIN;-;21;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU excutation driver over temp fault;0x200
+BMCUFaultDriverOverTemp;MCU_TO_VCU_RESPONSE1_BACKUP;-;21;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU excutation driver over temp fault;0x250
+BMCUFaultGDBUnderVolt;MCU_TO_VCU_RESPONSE1_MAIN;-;23;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU gate driver board under voltage fault;0x200
+BMCUFaultGDBUnderVolt;MCU_TO_VCU_RESPONSE1_BACKUP;-;23;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU gate driver board under voltage fault;0x250
+BMCUFaultHWOverCurrent;MCU_TO_VCU_RESPONSE1_MAIN;-;28;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU primary side hardware overcurrent fault;0x200
+BMCUFaultHWOverCurrent;MCU_TO_VCU_RESPONSE1_BACKUP;-;28;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU primary side hardware overcurrent fault;0x250
+BMCUFaultHWOverVolt;MCU_TO_VCU_RESPONSE1_MAIN;-;29;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU hardware over voltage fault;0x200
+BMCUFaultHWOverVolt;MCU_TO_VCU_RESPONSE1_BACKUP;-;29;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU hardware over voltage fault;0x250
+BMCUFaultInvalidTrqDem;MCU_TO_VCU_RESPONSE1_MAIN;-;27;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU invalid torque demand fault;0x200
+BMCUFaultInvalidTrqDem;MCU_TO_VCU_RESPONSE1_BACKUP;-;27;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU invalid torque demand fault;0x250
+BMCUFaultSWOverCur;MCU_TO_VCU_RESPONSE1_MAIN;-;31;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU software overcurrent fault;0x200
+BMCUFaultSWOverCur;MCU_TO_VCU_RESPONSE1_BACKUP;-;31;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU software overcurrent fault;0x250
+BMCUFaultSWOverSpeed;MCU_TO_VCU_RESPONSE1_MAIN;-;30;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU software over speed fault;0x200
+BMCUFaultSWOverSpeed;MCU_TO_VCU_RESPONSE1_BACKUP;-;30;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU software over speed fault;0x250
+BMCUFaultSWOverVolt;MCU_TO_VCU_RESPONSE1_MAIN;-;47;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU software over voltage fault;0x200
+BMCUFaultSWOverVolt;MCU_TO_VCU_RESPONSE1_BACKUP;-;47;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU software over voltage fault;0x250
+BMCUHVBusSafeState;MCU_TO_VCU_RESPONSE1_MAIN;-;4;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU HV DC bus below safe voltage threshold;0x200
+BMCUHVBusSafeState;MCU_TO_VCU_RESPONSE1_BACKUP;-;4;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU HV DC bus below safe voltage threshold;0x250
+BMCUHWEnablePinState;MCU_TO_VCU_RESPONSE1_MAIN;-;1;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU hardware enable pin input status;0x200
+BMCUHWEnablePinState;MCU_TO_VCU_RESPONSE1_BACKUP;-;1;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU hardware enable pin input status;0x250
+BMCUPowerLimitChgActive;MCU_TO_VCU_RESPONSE1_MAIN;-;11;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU charge power limit closed loop function active;0x200
+BMCUPowerLimitChgActive;MCU_TO_VCU_RESPONSE1_BACKUP;-;11;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU charge power limit closed loop function active;0x250
+BMCUPowerLimitChgEnabled;MCU_TO_VCU_RESPONSE1_MAIN;-;26;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU charge power limit closed loop function enabled;0x200
+BMCUPowerLimitChgEnabled;MCU_TO_VCU_RESPONSE1_BACKUP;-;26;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU charge power limit closed loop function enabled;0x250
+BMCUPowerLimitDischgActive;MCU_TO_VCU_RESPONSE1_MAIN;-;10;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU discharge power limit closed loop function active;0x200
+BMCUPowerLimitDischgActive;MCU_TO_VCU_RESPONSE1_BACKUP;-;10;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU discharge power limit closed loop function active;0x250
+BMCUPowerLimitDischgEnabled;MCU_TO_VCU_RESPONSE1_MAIN;-;24;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU discharge power limit closed loop function enabled;0x200
+BMCUPowerLimitDischgEnabled;MCU_TO_VCU_RESPONSE1_BACKUP;-;24;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU discharge power limit closed loop function enabled;0x250
+BMCUReverseActive;MCU_TO_VCU_RESPONSE1_MAIN;-;6;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU Reverse enable state feedback;0x200
+BMCUReverseActive;MCU_TO_VCU_RESPONSE1_BACKUP;-;6;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU Reverse enable state feedback;0x250
+BMCURunState;MCU_TO_VCU_RESPONSE1_MAIN;-;7;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU run state feedback;0x200
+BMCURunState;MCU_TO_VCU_RESPONSE1_BACKUP;-;7;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU run state feedback;0x250
+BMCUSpdLimChgUpperLimActive;MCU_TO_VCU_RESPONSE1_MAIN;-;16;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU charge speed limit upper torque limit function active;0x200
+BMCUSpdLimChgUpperLimActive;MCU_TO_VCU_RESPONSE1_BACKUP;-;16;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU charge speed limit upper torque limit function active;0x250
+BMCUSpdLimDisPwrTunLwrLimActive;MCU_TO_VCU_RESPONSE1_MAIN;-;18;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU lower TC power tunnel limiting active;0x200
+BMCUSpdLimDisPwrTunLwrLimActive;MCU_TO_VCU_RESPONSE1_BACKUP;-;18;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU lower TC power tunnel limiting active;0x250
+BMCUSpdLimDisTrqTunLwrLimActive;MCU_TO_VCU_RESPONSE1_MAIN;-;20;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU lower TC torque tunnel limiting active;0x200
+BMCUSpdLimDisTrqTunLwrLimActive;MCU_TO_VCU_RESPONSE1_BACKUP;-;20;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU lower TC torque tunnel limiting active;0x250
+BMCUSpdLimDisTrqTunUppLimActive;MCU_TO_VCU_RESPONSE1_MAIN;-;19;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU upper TC torque tunnel limiting active;0x200
+BMCUSpdLimDisTrqTunUppLimActive;MCU_TO_VCU_RESPONSE1_BACKUP;-;19;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU upper TC torque tunnel limiting active;0x250
+BMCUSpeedLimitChgActive;MCU_TO_VCU_RESPONSE1_MAIN;-;9;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU charge speed limit function active;0x200
+BMCUSpeedLimitChgActive;MCU_TO_VCU_RESPONSE1_BACKUP;-;9;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU charge speed limit function active;0x250
+BMCUSpeedLimitChgEnabled;MCU_TO_VCU_RESPONSE1_MAIN;-;2;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU charge speed limit function enabled;0x200
+BMCUSpeedLimitChgEnabled;MCU_TO_VCU_RESPONSE1_BACKUP;-;2;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU charge speed limit function enabled;0x250
+BMCUSpeedLimitDischgActive;MCU_TO_VCU_RESPONSE1_MAIN;-;8;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU discharge speed limit function active;0x200
+BMCUSpeedLimitDischgActive;MCU_TO_VCU_RESPONSE1_BACKUP;-;8;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU discharge speed limit function active;0x250
+BMCUSpeedLimitDischgEnabled;MCU_TO_VCU_RESPONSE1_MAIN;-;3;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU discharge speed limit function enabled;0x200
+BMCUSpeedLimitDischgEnabled;MCU_TO_VCU_RESPONSE1_BACKUP;-;3;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU discharge speed limit function enabled;0x250
+BMCUSpinDirection;MCU_TO_VCU_RESPONSE1_MAIN;-;5;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU spin direction feedback;0x200
+BMCUSpinDirection;MCU_TO_VCU_RESPONSE1_BACKUP;-;5;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU spin direction feedback;0x250
+BMCUTorqueLimitingActive;MCU_TO_VCU_RESPONSE1_MAIN;-;13;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU torque limiting active (any);0x200
+BMCUTorqueLimitingActive;MCU_TO_VCU_RESPONSE1_BACKUP;-;13;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU torque limiting active (any);0x250
+BMCUZPulseLearnt;MCU_TO_VCU_RESPONSE1_MAIN;-;15;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU has a learnt Z pulse and full control is possible if true;0x200
+BMCUZPulseLearnt;MCU_TO_VCU_RESPONSE1_BACKUP;-;15;1;Intel;Unsigned;0;1;0;0;1;;<none>;MCU has a learnt Z pulse and full control is possible if true;0x250
+fMCUSwitching;MCU_TO_VCU_RESPONSE1_MAIN;-;440;8;Intel;Unsigned;0;100;0;0;25500;Hz;<none>;MCU current switching frequency;0x200
+fMCUSwitching;MCU_TO_VCU_RESPONSE1_BACKUP;-;440;8;Intel;Unsigned;0;100;0;0;25500;Hz;<none>;MCU current switching frequency;0x250
+IMCUDCMeasured;MCU_TO_VCU_RESPONSE1_MAIN;-;352;14;Intel;Signed;0;0.1;0;-819.2;819.1;A;<none>;MCU measured DC bus current;0x200
+IMCUDCMeasured;MCU_TO_VCU_RESPONSE1_BACKUP;-;352;14;Intel;Signed;0;0.1;0;-819.2;819.1;A;<none>;MCU measured DC bus current;0x250
+IMCUIdDemand;MCU_TO_VCU_RESPONSE1_MAIN;-;272;15;Intel;Signed;0;0.1;0;-1638.4;1638.3;A;<none>;MCU Id current demand;0x200
+IMCUIdDemand;MCU_TO_VCU_RESPONSE1_BACKUP;-;272;15;Intel;Signed;0;0.1;0;-1638.4;1638.3;A;<none>;MCU Id current demand;0x250
+IMCUIdMeasured;MCU_TO_VCU_RESPONSE1_MAIN;-;288;15;Intel;Signed;0;0.1;0;-1638.4;1638.3;A;<none>;MCU measured Id current;0x200
+IMCUIdMeasured;MCU_TO_VCU_RESPONSE1_BACKUP;-;288;15;Intel;Signed;0;0.1;0;-1638.4;1638.3;A;<none>;MCU measured Id current;0x250
+IMCUIqDemand;MCU_TO_VCU_RESPONSE1_MAIN;-;240;15;Intel;Signed;0;0.1;0;-1638.4;1638.3;A;<none>;MCU Iq current demand;0x200
+IMCUIqDemand;MCU_TO_VCU_RESPONSE1_BACKUP;-;240;15;Intel;Signed;0;0.1;0;-1638.4;1638.3;A;<none>;MCU Iq current demand;0x250
+IMCUIqMeasured;MCU_TO_VCU_RESPONSE1_MAIN;-;256;15;Intel;Signed;0;0.1;0;-1638.4;1638.3;A;<none>;MCU measured Iq current;0x200
+IMCUIqMeasured;MCU_TO_VCU_RESPONSE1_BACKUP;-;256;15;Intel;Signed;0;0.1;0;-1638.4;1638.3;A;<none>;MCU measured Iq current;0x250
+MMCU1kWPowerLimDischgKi;MCU_TO_VCU_RESPONSE1_MAIN;-;208;12;Intel;Signed;0;0.1;0;-204.8;204.7;Nm;<none>;MCU 1kW discharge power limit integrator value;0x200
+MMCU1kWPowerLimDischgKi;MCU_TO_VCU_RESPONSE1_BACKUP;-;208;12;Intel;Signed;0;0.1;0;-204.8;204.7;Nm;<none>;MCU 1kW discharge power limit integrator value;0x250
+MMCUMotorActual;MCU_TO_VCU_RESPONSE1_MAIN;-;80;14;Intel;Signed;0;0.1;0;-819.2;819.1;Nm;<none>;Estimated actual motor torque.;0x200
+MMCUMotorActual;MCU_TO_VCU_RESPONSE1_BACKUP;-;80;14;Intel;Signed;0;0.1;0;-819.2;819.1;Nm;<none>;Estimated actual motor torque.;0x250
+MMCUMotorMaxAvailable;MCU_TO_VCU_RESPONSE1_MAIN;-;488;12;Intel;Signed;0;0.5;0;-1024;1023.5;Nm;<none>;Maximum torque available from MCU/MGU.;0x200
+MMCUMotorMaxAvailable;MCU_TO_VCU_RESPONSE1_BACKUP;-;488;12;Intel;Signed;0;0.5;0;-1024;1023.5;Nm;<none>;Maximum torque available from MCU/MGU.;0x250
+MMCUMotorMinAvailable;MCU_TO_VCU_RESPONSE1_MAIN;-;500;12;Intel;Signed;0;0.5;0;-1024;1023.5;Nm;<none>;Maximum torque available from MCU/MGU.;0x200
+MMCUMotorMinAvailable;MCU_TO_VCU_RESPONSE1_BACKUP;-;500;12;Intel;Signed;0;0.5;0;-1024;1023.5;Nm;<none>;Maximum torque available from MCU/MGU.;0x250
+MMCUMotorTarget1kWDischgPwrLim;MCU_TO_VCU_RESPONSE1_MAIN;-;112;14;Intel;Signed;0;0.1;0;-819.2;819.1;Nm;<none>;Torque demand out of the 1kW discharge power limit control function.;0x200
+MMCUMotorTarget1kWDischgPwrLim;MCU_TO_VCU_RESPONSE1_BACKUP;-;112;14;Intel;Signed;0;0.1;0;-819.2;819.1;Nm;<none>;Torque demand out of the 1kW discharge power limit control function.;0x250
+MMCUMotorTargetADS;MCU_TO_VCU_RESPONSE1_MAIN;-;144;14;Intel;Signed;0;0.1;0;-819.2;819.1;Nm;<none>;Torque demand out of the active damping function.;0x200
+MMCUMotorTargetADS;MCU_TO_VCU_RESPONSE1_BACKUP;-;144;14;Intel;Signed;0;0.1;0;-819.2;819.1;Nm;<none>;Torque demand out of the active damping function.;0x250
+MMCUMotorTargetChargePwrLim;MCU_TO_VCU_RESPONSE1_MAIN;-;128;14;Intel;Signed;0;0.1;0;-819.2;819.1;Nm;<none>;Torque demand out of the charge power limit control function.;0x200
+MMCUMotorTargetChargePwrLim;MCU_TO_VCU_RESPONSE1_BACKUP;-;128;14;Intel;Signed;0;0.1;0;-819.2;819.1;Nm;<none>;Torque demand out of the charge power limit control function.;0x250
+MMCUMotorTargetChargeSpdLim;MCU_TO_VCU_RESPONSE1_MAIN;-;160;14;Intel;Signed;0;0.1;0;-819.2;819.1;Nm;<none>;Torque demand out of the charge speed limit control function.;0x200
+MMCUMotorTargetChargeSpdLim;MCU_TO_VCU_RESPONSE1_BACKUP;-;160;14;Intel;Signed;0;0.1;0;-819.2;819.1;Nm;<none>;Torque demand out of the charge speed limit control function.;0x250
+MMCUMotorTargetDischargePwrLim;MCU_TO_VCU_RESPONSE1_MAIN;-;96;14;Intel;Signed;0;0.1;0;-819.2;819.1;Nm;<none>;Torque demand out of the discharge power limit control function.;0x200
+MMCUMotorTargetDischargePwrLim;MCU_TO_VCU_RESPONSE1_BACKUP;-;96;14;Intel;Signed;0;0.1;0;-819.2;819.1;Nm;<none>;Torque demand out of the discharge power limit control function.;0x250
+MMCUMotorTargetDischgSpLim;MCU_TO_VCU_RESPONSE1_MAIN;-;176;14;Intel;Signed;0;0.1;0;-819.2;819.1;Nm;<none>;Torque demand out of the discharge speed limit control function.;0x200
+MMCUMotorTargetDischgSpLim;MCU_TO_VCU_RESPONSE1_BACKUP;-;176;14;Intel;Signed;0;0.1;0;-819.2;819.1;Nm;<none>;Torque demand out of the discharge speed limit control function.;0x250
+MMCUMotorTargetFinal;MCU_TO_VCU_RESPONSE1_MAIN;-;48;14;Intel;Signed;0;0.1;0;-819.2;819.1;Nm;<none>;Final torque demand before internal MCU correction functions but after all control and derate functions;0x200
+MMCUMotorTargetFinal;MCU_TO_VCU_RESPONSE1_BACKUP;-;48;14;Intel;Signed;0;0.1;0;-819.2;819.1;Nm;<none>;Final torque demand before internal MCU correction functions but after all control and derate functions;0x250
+MMCUMotorTargetFinalComp;MCU_TO_VCU_RESPONSE1_MAIN;-;64;14;Intel;Signed;0;0.1;0;-819.2;819.1;Nm;<none>;MMCUMotorTargetFinal following internal MCU correction functions.;0x200
+MMCUMotorTargetFinalComp;MCU_TO_VCU_RESPONSE1_BACKUP;-;64;14;Intel;Signed;0;0.1;0;-819.2;819.1;Nm;<none>;MMCUMotorTargetFinal following internal MCU correction functions.;0x250
+MMCUMotorTargetMirror;MCU_TO_VCU_RESPONSE1_MAIN;-;32;14;Intel;Signed;0;0.1;0;-819.2;819.1;Nm;<none>;Motor target torque received by the MCU (fed back to the VCU).;0x200
+MMCUMotorTargetMirror;MCU_TO_VCU_RESPONSE1_BACKUP;-;32;14;Intel;Signed;0;0.1;0;-819.2;819.1;Nm;<none>;Motor target torque received by the MCU (fed back to the VCU).;0x250
+MMCUPowerLimChgKi;MCU_TO_VCU_RESPONSE1_MAIN;-;192;12;Intel;Signed;0;0.1;0;-204.8;204.7;Nms;<none>;MCU charge power limit integrator value;0x200
+MMCUPowerLimChgKi;MCU_TO_VCU_RESPONSE1_BACKUP;-;192;12;Intel;Signed;0;0.1;0;-204.8;204.7;Nms;<none>;MCU charge power limit integrator value;0x250
+MMCUPowerLimDischgKi;MCU_TO_VCU_RESPONSE1_MAIN;-;224;12;Intel;Signed;0;0.1;0;-204.8;204.7;Nms;<none>;MCU discharge power limit integrator value;0x200
+MMCUPowerLimDischgKi;MCU_TO_VCU_RESPONSE1_BACKUP;-;224;12;Intel;Signed;0;0.1;0;-204.8;204.7;Nms;<none>;MCU discharge power limit integrator value;0x250
+nMCUADFiltered;MCU_TO_VCU_RESPONSE1_MAIN;-;416;16;Intel;Signed;0;1;0;-32768;32767;rpm;<none>;MCU active damping function filtered speed output;0x200
+nMCUADFiltered;MCU_TO_VCU_RESPONSE1_BACKUP;-;416;16;Intel;Signed;0;1;0;-32768;32767;rpm;<none>;MCU active damping function filtered speed output;0x250
+NMCUDebugBuffer1;MCU_TO_VCU_DEBUG_BACKUP;-;0;16;Intel;Unsigned;0;1;0;0;65535;;<none>;MCU debug data buffer 1 - Move to Data CAN;0x270
+NMCUDebugBuffer2;MCU_TO_VCU_DEBUG_BACKUP;-;16;16;Intel;Unsigned;0;1;0;0;65535;;<none>;MCU debug data buffer 2 - Move to Data CAN;0x270
+NMCUDebugBuffer3;MCU_TO_VCU_DEBUG_BACKUP;-;32;16;Intel;Unsigned;0;1;0;0;65535;;<none>;MCU debug data buffer 3 - Move to Data CAN;0x270
+NMCUDebugBuffer4;MCU_TO_VCU_DEBUG_BACKUP;-;48;16;Intel;Unsigned;0;1;0;0;65535;;<none>;MCU debug data buffer 4 - Move to Data CAN;0x270
+NMCUDebugBuffer5;MCU_TO_VCU_DEBUG_BACKUP;-;64;16;Intel;Unsigned;0;1;0;0;65535;;<none>;MCU debug data buffer 5 - Move to Data CAN;0x270
+NMCUDebugBuffer6;MCU_TO_VCU_DEBUG_BACKUP;-;80;16;Intel;Unsigned;0;1;0;0;65535;;<none>;MCU debug data buffer 6 - Move to Data CAN;0x270
+NMCUDebugBuffer7;MCU_TO_VCU_DEBUG_BACKUP;-;96;16;Intel;Unsigned;0;1;0;0;65535;;<none>;MCU debug data buffer 7 - Move to Data CAN;0x270
+NMCUDebugBuffer8;MCU_TO_VCU_DEBUG_BACKUP;-;112;16;Intel;Unsigned;0;1;0;0;65535;;<none>;MCU debug data buffer 8 - Move to Data CAN;0x270
+NMCUDSPSwVersion;MCU_TO_VCU_RESPONSE2_MAIN;-;0;16;Intel;Unsigned;0;0.01;0;0;655.35;;<none>;MCU DSP sofware version;0x210
+NMCUDSPSwVersion;MCU_TO_VCU_RESPONSE2_BACKUP;-;0;16;Intel;Unsigned;0;0.01;0;0;655.35;;<none>;MCU DSP sofware version;0x260
+NMCUFPGASwVersion;MCU_TO_VCU_RESPONSE2_MAIN;-;16;16;Intel;Unsigned;0;0.01;0;0;655.35;;<none>;MCU FPGA sofware version;0x210
+NMCUFPGASwVersion;MCU_TO_VCU_RESPONSE2_BACKUP;-;16;16;Intel;Unsigned;0;0.01;0;0;655.35;;<none>;MCU FPGA sofware version;0x260
+NMCUGDBFaults;MCU_TO_VCU_RESPONSE1_MAIN;-;432;8;Intel;Unsigned;0;1;0;0;255;;<none>;MCU gate driver fault bits;0x200
+NMCUGDBFaults;MCU_TO_VCU_RESPONSE1_BACKUP;-;432;8;Intel;Unsigned;0;1;0;0;255;;<none>;MCU gate driver fault bits;0x250
+nMCUMotorActual;MCU_TO_VCU_RESPONSE1_MAIN;-;384;16;Intel;Signed;0;2;0;-65536;65534;rpm;<none>;Actual motor speed.;0x200
+nMCUMotorActual;MCU_TO_VCU_RESPONSE1_BACKUP;-;384;16;Intel;Signed;0;2;0;-65536;65534;rpm;<none>;Actual motor speed.;0x250
+NMCUResponse1MsgCounter;MCU_TO_VCU_RESPONSE1_MAIN;-;480;8;Intel;Unsigned;0;1;0;0;255;;<none>;Message integrity counter.;0x200
+NMCUResponse1MsgCounter;MCU_TO_VCU_RESPONSE1_BACKUP;-;480;8;Intel;Unsigned;0;1;0;0;255;;<none>;Message integrity counter.;0x250
+NMCUSerialNo;MCU_TO_VCU_RESPONSE2_MAIN;-;32;8;Intel;Unsigned;0;1;0;0;255;;<none>;MCU serial number;0x210
+NMCUSerialNo;MCU_TO_VCU_RESPONSE2_BACKUP;-;32;8;Intel;Unsigned;0;1;0;0;255;;<none>;MCU serial number;0x260
+NMCUSettingsVersion;MCU_TO_VCU_RESPONSE2_MAIN;-;176;16;Intel;Unsigned;0;0.01;0;0;655.35;;<none>;MCU DSP sofware version;0x210
+NMCUSettingsVersion;MCU_TO_VCU_RESPONSE2_BACKUP;-;176;16;Intel;Unsigned;0;0.01;0;0;655.35;;<none>;MCU DSP sofware version;0x260
+NMGUSerialNo;MCU_TO_VCU_RESPONSE2_MAIN;-;112;8;Intel;Unsigned;0;1;0;0;255;;<none>;MGU serial number;0x210
+NMGUSerialNo;MCU_TO_VCU_RESPONSE2_BACKUP;-;112;8;Intel;Unsigned;0;1;0;0;255;;<none>;MGU serial number;0x260
+PMCUDCMeasured;MCU_TO_VCU_RESPONSE1_MAIN;-;368;14;Intel;Signed;0;0.1;0;-819.2;819.1;kW;<none>;MCU internal HV DC bus voltage;0x200
+PMCUDCMeasured;MCU_TO_VCU_RESPONSE1_BACKUP;-;368;14;Intel;Signed;0;0.1;0;-819.2;819.1;kW;<none>;MCU internal HV DC bus voltage;0x250
+rMCUProcessorLoad;MCU_TO_VCU_RESPONSE1_MAIN;-;464;8;Intel;Unsigned;0;0.5;0;0;127.5;%;<none>;MCU processor load;0x200
+rMCUProcessorLoad;MCU_TO_VCU_RESPONSE1_BACKUP;-;464;8;Intel;Unsigned;0;0.5;0;0;127.5;%;<none>;MCU processor load;0x250
+rMCUVrpm;MCU_TO_VCU_RESPONSE1_MAIN;-;448;16;Intel;Signed;0;0.001;0;-32.768;32.767;V/rpm;<none>;MGU voltage per 1000rpm;0x200
+rMCUVrpm;MCU_TO_VCU_RESPONSE1_BACKUP;-;448;16;Intel;Signed;0;0.001;0;-32.768;32.767;V/rpm;<none>;MGU voltage per 1000rpm;0x250
+TMCUGDB1;MCU_TO_VCU_RESPONSE2_MAIN;-;40;8;Intel;Unsigned;0;1;0;0;255; C;<none>;MCU gate driver board temperature 1;0x210
+TMCUGDB1;MCU_TO_VCU_RESPONSE2_BACKUP;-;40;8;Intel;Unsigned;0;1;0;0;255; C;<none>;MCU gate driver board temperature 1;0x260
+TMCUGDB2;MCU_TO_VCU_RESPONSE2_MAIN;-;48;8;Intel;Unsigned;0;1;0;0;255; C;<none>;MCU gate driver board temperature 2;0x210
+TMCUGDB2;MCU_TO_VCU_RESPONSE2_BACKUP;-;48;8;Intel;Unsigned;0;1;0;0;255; C;<none>;MCU gate driver board temperature 2;0x260
+TMCUISensor1;MCU_TO_VCU_RESPONSE2_MAIN;-;72;8;Intel;Unsigned;0;1;0;0;255; C;<none>;MCU current sensor 1 temperature.;0x210
+TMCUISensor1;MCU_TO_VCU_RESPONSE2_BACKUP;-;72;8;Intel;Unsigned;0;1;0;0;255; C;<none>;MCU current sensor 1 temperature.;0x260
+TMCUISensor2;MCU_TO_VCU_RESPONSE2_MAIN;-;80;8;Intel;Unsigned;0;1;0;0;255; C;<none>;MCU current sensor 2 temperature.;0x210
+TMCUISensor2;MCU_TO_VCU_RESPONSE2_BACKUP;-;80;8;Intel;Unsigned;0;1;0;0;255; C;<none>;MCU current sensor 2 temperature.;0x260
+TMCUISensor3;MCU_TO_VCU_RESPONSE2_MAIN;-;88;8;Intel;Unsigned;0;1;0;0;255; C;<none>;MCU current sensor 3 temperature.;0x210
+TMCUISensor3;MCU_TO_VCU_RESPONSE2_BACKUP;-;88;8;Intel;Unsigned;0;1;0;0;255; C;<none>;MCU current sensor 3 temperature.;0x260
+TMCUISensor4;MCU_TO_VCU_RESPONSE2_MAIN;-;64;8;Intel;Unsigned;0;1;0;0;255; C;<none>;MCU current sensor 4 temperature.;0x210
+TMCUISensor4;MCU_TO_VCU_RESPONSE2_BACKUP;-;64;8;Intel;Unsigned;0;1;0;0;255; C;<none>;MCU current sensor 4 temperature.;0x260
+TMCUISensor5;MCU_TO_VCU_RESPONSE2_MAIN;-;96;8;Intel;Unsigned;0;1;0;0;255; C;<none>;MCU current sensor 5 temperature.;0x210
+TMCUISensor5;MCU_TO_VCU_RESPONSE2_BACKUP;-;96;8;Intel;Unsigned;0;1;0;0;255; C;<none>;MCU current sensor 5 temperature.;0x260
+TMCUISensor6;MCU_TO_VCU_RESPONSE2_MAIN;-;104;8;Intel;Unsigned;0;1;0;0;255; C;<none>;MCU current sensor 6 temperature.;0x210
+TMCUISensor6;MCU_TO_VCU_RESPONSE2_BACKUP;-;104;8;Intel;Unsigned;0;1;0;0;255; C;<none>;MCU current sensor 6 temperature.;0x260
+TMCUISnsDischarge;MCU_TO_VCU_RESPONSE2_MAIN;-;56;8;Intel;Unsigned;0;1;0;0;255; C;<none>;MCU discharge resistor temperature;0x210
+TMCUISnsDischarge;MCU_TO_VCU_RESPONSE2_BACKUP;-;56;8;Intel;Unsigned;0;1;0;0;255; C;<none>;MCU discharge resistor temperature;0x260
+TMCUModule;MCU_TO_VCU_RESPONSE2_MAIN;-;120;8;Intel;Unsigned;0;1;0;0;255; C;<none>;MCU module temperature;0x210
+TMCUModule;MCU_TO_VCU_RESPONSE2_BACKUP;-;120;8;Intel;Unsigned;0;1;0;0;255; C;<none>;MCU module temperature;0x260
+TMGUBearingDE;MCU_TO_VCU_RESPONSE2_MAIN;-;128;8;Intel;Unsigned;0;1;0;0;255; C;<none>;MGU bearing temperature drive end;0x210
+TMGUBearingDE;MCU_TO_VCU_RESPONSE2_BACKUP;-;128;8;Intel;Unsigned;0;1;0;0;255; C;<none>;MGU bearing temperature drive end;0x260
+TMGUBearingNDE;MCU_TO_VCU_RESPONSE2_MAIN;-;136;8;Intel;Unsigned;0;1;0;0;255; C;<none>;MGU bearing temperature non-drive end;0x210
+TMGUBearingNDE;MCU_TO_VCU_RESPONSE2_BACKUP;-;136;8;Intel;Unsigned;0;1;0;0;255; C;<none>;MGU bearing temperature non-drive end;0x260
+TMGURotor;MCU_TO_VCU_RESPONSE2_MAIN;-;144;8;Intel;Unsigned;0;1;0;0;255; C;<none>;MGU rotor temperature (estimate?);0x210
+TMGURotor;MCU_TO_VCU_RESPONSE2_BACKUP;-;144;8;Intel;Unsigned;0;1;0;0;255; C;<none>;MGU rotor temperature (estimate?);0x260
+TMGUWinding1;MCU_TO_VCU_RESPONSE2_MAIN;-;152;8;Intel;Unsigned;0;1;0;0;255; C;<none>;MGU winding temperature 1;0x210
+TMGUWinding1;MCU_TO_VCU_RESPONSE2_BACKUP;-;152;8;Intel;Unsigned;0;1;0;0;255; C;<none>;MGU winding temperature 1;0x260
+TMGUWinding2;MCU_TO_VCU_RESPONSE2_MAIN;-;160;8;Intel;Unsigned;0;1;0;0;255; C;<none>;MGU winding temperature 2;0x210
+TMGUWinding2;MCU_TO_VCU_RESPONSE2_BACKUP;-;160;8;Intel;Unsigned;0;1;0;0;255; C;<none>;MGU winding temperature 2;0x260
+VMCU12VSupply;MCU_TO_VCU_RESPONSE1_MAIN;-;472;8;Intel;Unsigned;0;0.1;0;0;25.5;V;<none>;MCU internal 12V supply feedback;0x200
+VMCU12VSupply;MCU_TO_VCU_RESPONSE1_BACKUP;-;472;8;Intel;Unsigned;0;0.1;0;0;25.5;V;<none>;MCU internal 12V supply feedback;0x250
+VMCUDCMeasured;MCU_TO_VCU_RESPONSE1_MAIN;-;336;14;Intel;Unsigned;0;0.1;0;0;1638.3;V;<none>;MCU internal HV DC bus voltage;0x200
+VMCUDCMeasured;MCU_TO_VCU_RESPONSE1_BACKUP;-;336;14;Intel;Unsigned;0;0.1;0;0;1638.3;V;<none>;MCU internal HV DC bus voltage;0x250
+VMCUVdDemand;MCU_TO_VCU_RESPONSE1_MAIN;-;320;14;Intel;Signed;0;0.1;0;-819.2;819.1;V;<none>;MCU Vd voltage demand;0x200
+VMCUVdDemand;MCU_TO_VCU_RESPONSE1_BACKUP;-;320;14;Intel;Signed;0;0.1;0;-819.2;819.1;V;<none>;MCU Vd voltage demand;0x250
+VMCUVqDemand;MCU_TO_VCU_RESPONSE1_MAIN;-;304;14;Intel;Signed;0;0.1;0;-819.2;819.1;V;<none>;MCU Vq voltage demand;0x200
+VMCUVqDemand;MCU_TO_VCU_RESPONSE1_BACKUP;-;304;14;Intel;Signed;0;0.1;0;-819.2;819.1;V;<none>;MCU Vq voltage demand;0x250

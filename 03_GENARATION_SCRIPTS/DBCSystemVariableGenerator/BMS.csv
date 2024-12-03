@@ -1,0 +1,67 @@
+Batt_AncOutVoltage;BMS_HV_04_ContactorStatus;-;16;14;Intel;Unsigned;0;0.1;0;0;1638.3;V;<none>;HV Bus Voltage- Ancillary Output;0xCC
+Batt_BalancingRequired;BMS_HV_01_Status;-;10;1;Intel;Unsigned;0;1;0;0;1;;VtSig_Batt_BalancingRequired;Battery Cell balancing required;0xC9
+Batt_BMSStatus;BMS_HV_01_Status;-;48;5;Intel;Unsigned;0;1;0;0;31;;VtSig_Batt_BMSStatus;BMS Status;0xC9
+Batt_BoostChargeActive;BMS_HV_08;-;30;1;Intel;Unsigned;0;1;0;0;1;;VtSig_Batt_BoostChargeActive;Boost charge active flag;0xD2
+Batt_ChargeContactorStatus;BMS_HV_04_ContactorStatus;-;4;3;Intel;Unsigned;0;1;0;0;7;;VtSig_Batt_ChargeContactorStatus;Charge contactor status;0xCC
+Batt_ClearFault_Code;BMS_HV_09;-;0;14;Intel;Unsigned;0;1;0;0;9999;;<none>;Number generate by BMS to clear fault;0x110
+Batt_ClearFault_KeyMatched;BMS_HV_09;-;14;1;Intel;Unsigned;0;1;0;0;1;;VtSig_Batt_ClearFault_KeyMatched;Key matched to clear the fault;0x110
+Batt_Coolant_IN_Pressure;BMS_HV_07_Thermal;-;20;13;Intel;Unsigned;0;0.001;0;0;8.191;Bar;<none>;Coolant Pressure;0xCF
+Batt_Coolant_IN_Temp;BMS_HV_07_Thermal;-;33;8;Intel;Unsigned;0;0.5;-20;-10;117.5;C;<none>;Coolant Temperature;0xCF
+Batt_Coolant_OUT_Pressure;BMS_HV_07_Thermal;-;41;13;Intel;Unsigned;0;0.001;0;0;8.191;Bar;<none>;Coolant Pressure;0xCF
+Batt_Coolant_OUT_Temp;BMS_HV_07_Thermal;-;56;8;Intel;Unsigned;0;0.5;-20;-10;117.5;C;<none>;Coolant Temperature;0xCF
+Batt_Current;BMS_HV_02_HVParameter;-;32;16;Intel;Unsigned;0;0.1;-3276.8;-3276.8;3276.7;A;<none>;Battery Current...;0xCA
+Batt_DischargePowerLim;BMS_HV_03_BatteryLimits;-;0;16;Intel;Unsigned;0;0.05;-3276.75;-3276.75;0;kW;<none>;Battery Power Limit;0xCB
+Batt_DischargePowerLim_2s;BMS_HV_10;-;22;10;Intel;Unsigned;0;0.5;-511.5;-511.5;0;kW;<none>;Battery Power Limit;0x109
+Batt_DischargePowerLim_5s;BMS_HV_10;-;32;10;Intel;Unsigned;0;0.5;-511.5;-511.5;0;kW;<none>;Battery Power Limit;0x109
+Batt_DischEnergyThroughput;BMS_HV_08;-;48;16;Intel;Unsigned;0;0.5;0;0;32767.5;kWh;<none>;Discharge Energy Throughput;0xD2
+Batt_EnergyAvailable;BMS_HV_06;-;48;12;Intel;Unsigned;0;0.1;0;0;409.5;kWh;<none>;Battery Energy Available;0xCE
+Batt_Equity_SoC_Displayed;BMS_HV_01_Status;-;9;1;Intel;Unsigned;0;1;0;0;1;;VtSig_Batt_Equity_SoC_Displayed;BMS Equity SoC displayed;0xC9
+Batt_Fault_FR0;BMS_HV_01_Status;-;1;1;Intel;Unsigned;0;1;0;0;1;;VtSig_Batt_Fault_FR0;BMS Fault Flag;0xC9
+Batt_Fault_FR1;BMS_HV_01_Status;-;2;1;Intel;Unsigned;0;1;0;0;1;;VtSig_Batt_Fault_FR1;BMS Fault Flag;0xC9
+Batt_Fault_FR2;BMS_HV_01_Status;-;3;1;Intel;Unsigned;0;1;0;0;1;;VtSig_Batt_Fault_FR2;BMS Fault Flag;0xC9
+Batt_Fault_FR3;BMS_HV_01_Status;-;4;1;Intel;Unsigned;0;1;0;0;1;;VtSig_Batt_Fault_FR3;BMS Fault Flag;0xC9
+Batt_Fault_FR4;BMS_HV_01_Status;-;5;1;Intel;Unsigned;0;1;0;0;1;;VtSig_Batt_Fault_FR4;BMS Fault Flag;0xC9
+Batt_Fault_FR5;BMS_HV_01_Status;-;6;1;Intel;Unsigned;0;1;0;0;1;;VtSig_Batt_Fault_FR5;BMS Fault Flag;0xC9
+Batt_Fault_FR6;BMS_HV_01_Status;-;7;1;Intel;Unsigned;0;1;0;0;1;;VtSig_Batt_Fault_FR6;BMS Fault Flag;0xC9
+Batt_Fault_FR7;BMS_HV_01_Status;-;8;1;Intel;Unsigned;0;1;0;0;1;;VtSig_Batt_Fault_FR7;BMS Fault Flag;0xC9
+Batt_FaultActive_FR4;BMS_HV_09;-;60;1;Intel;Unsigned;0;1;0;0;1;;VtSig_Batt_FaultActive_FR4;BMS Fault Flag;0x110
+Batt_HVILFault;BMS_HV_01_Status;-;30;2;Intel;Unsigned;0;1;0;0;3;;VtSig_Batt_HVILFault;Battery HVIL Status;0xC9
+Batt_InvOutVoltage;BMS_HV_04_ContactorStatus;-;32;14;Intel;Unsigned;0;0.1;0;0;1638.3;V;<none>;HV Bus Voltage- Inverter Output;0xCC
+Batt_Isolation1OnOffStatus;BMS_HV_01_Status;-;12;1;Intel;Unsigned;0;1;0;0;1;;VtSig_Batt_Isolation1OnOffStatus;Isolation Enable/Disable Status;0xC9
+Batt_Isolation1Res_HighRange;BMS_HV_06;-;16;16;Intel;Unsigned;0;1;0;0;65535;kOhm;<none>;Isolation Resistance Value;0xCE
+Batt_Isolation1Resistance;BMS_HV_06;-;0;16;Intel;Unsigned;0;0.1;0;0;6553.5;kOhm;<none>;Isolation Resistance Value;0xCE
+Batt_Isolation1Status;BMS_HV_01_Status;-;42;2;Intel;Unsigned;0;1;0;0;3;;VtSig_Batt_Isolation1Status;Battery Isolation Status;0xC9
+Batt_Isolation2OnOffStatus;BMS_HV_01_Status;-;13;1;Intel;Unsigned;0;1;0;0;1;;VtSig_Batt_Isolation2OnOffStatus;Isolation Enable/Disable Status;0xC9
+Batt_Isolation2Status;BMS_HV_01_Status;-;14;2;Intel;Unsigned;0;1;0;0;3;;VtSig_Batt_Isolation2Status;Battery Isolation Status;0xC9
+Batt_LoggerPercent;BMS_HV_09;-;32;8;Intel;Unsigned;0;0.5;0;0;127.5;%;<none>;BMS Logger Percentage;0x110
+Batt_LVBackupBattVoltage;BMS_HV_07_Thermal;-;8;12;Intel;Unsigned;0;0.01;0;0;40.95;V;<none>;LV(KL30) supply Voltage;0xCF
+Batt_LVVoltage;BMS_HV_06;-;32;12;Intel;Unsigned;0;0.01;0;0;40.95;V;<none>;LV(KL30) supply Voltage;0xCE
+Batt_MainContactorStatus;BMS_HV_04_ContactorStatus;-;0;4;Intel;Unsigned;0;1;0;0;15;;VtSig_Batt_MainContactorStatus; Main Contactor Status;0xCC
+Batt_MaxCellTemperature;BMS_HV_05_CellParam;-;32;12;Intel;Unsigned;0;0.05;-60;-60;144.75;C;<none>;Maximum Module Temperature;0xCD
+Batt_MaxCellVoltage;BMS_HV_05_CellParam;-;0;14;Intel;Unsigned;0;0.001;0;0;16.383;V;<none>;Module Maximum Cell Voltage;0xCD
+Batt_MaxSOC;BMS_HV_09;-;16;10;Intel;Unsigned;0;0.1;0;0;102.3;%;<none>;Battery Maximum SoC;0x110
+Batt_MinCellTemperature;BMS_HV_05_CellParam;-;48;12;Intel;Unsigned;0;0.05;-60;-60;144.75;C;<none>;Minimum Module Temperature;0xCD
+Batt_MinCellVoltage;BMS_HV_05_CellParam;-;16;14;Intel;Unsigned;0;0.001;0;0;16.383;V;<none>;Module Minimum Cell Voltage;0xCD
+Batt_MinSOC;BMS_HV_01_Status;-;16;10;Intel;Unsigned;0;0.1;0;0;102.3;%;<none>;Battery Minimum SoC;0xC9
+Batt_ReadyforBoostCharge;BMS_HV_08;-;12;1;Intel;Unsigned;0;1;0;0;1;;VtSig_Batt_ReadyforBoostCharge;Battery Ready for Boost Charge;0xD2
+Batt_ReadytoTurnOnHV;BMS_HV_01_Status;-;0;1;Intel;Unsigned;0;1;0;0;1;;VtSig_Batt_ReadytoTurnOnHV;BMS Ready to close HV Contactors;0xC9
+Batt_RegenPowerLim;BMS_HV_03_BatteryLimits;-;30;13;Intel;Unsigned;0;0.1;0;0;819.1;kW;<none>;Battery Power Limit;0xCB
+Batt_RegenPowerLim_2s;BMS_HV_10;-;0;11;Intel;Unsigned;0;0.5;0;0;1023.5;kW;<none>;Battery Power Limit;0x109
+Batt_RegenPowerLim_5s;BMS_HV_10;-;11;11;Intel;Unsigned;0;0.5;0;0;1023.5;kW;<none>;Battery Power Limit;0x109
+Batt_SafetyLightStatGreenHV;BMS_HV_08;-;46;1;Intel;Unsigned;0;1;0;0;1;;VtSig_Batt_SafetyLightStatGreenHV;Bttery safety light status Green;0xD2
+Batt_SafetyLightStatRedHV;BMS_HV_08;-;47;1;Intel;Unsigned;0;1;0;0;1;;VtSig_Batt_SafetyLightStatRedHV;Bttery safety light status RED;0xD2
+Batt_SerialNumber;BMS_HV_12;nBatteryHV12Multiplexor = 0x1;56;8;Intel;Unsigned;0;1;0;0;255;;<none>;Batt_SerialNumber;0x112
+Batt_ThermalRequest;BMS_HV_07_Thermal;-;0;8;Intel;Unsigned;0;1;-128;-128;127;;<none>;BMS Thermal Request...;0xCF
+Batt_UserSOC;BMS_HV_01_Status;-;32;10;Intel;Unsigned;0;0.1;0;0;102.3;%;<none>;Battery User SoC (for Display Purpose);0xC9
+Batt_Voltage;BMS_HV_02_HVParameter;-;48;14;Intel;Unsigned;0;0.1;0;0;1638.3;V;<none>;Battery Voltage;0xCA
+BMS_AliveCounter1;BMS_HV_01_Status;-;26;4;Intel;Unsigned;0;1;0;0;15;;<none>;BMS Alive Counter;0xC9
+BMS_AliveCounter2;BMS_HV_02_HVParameter;-;0;4;Intel;Unsigned;0;1;0;0;15;;<none>;BMS Alive Counter;0xCA
+BMS_AliveCounter3;BMS_HV_03_BatteryLimits;-;54;2;Intel;Unsigned;0;1;0;0;3;;<none>;BMS Alive Counter;0xCB
+BMS_Calibration_info;BMS_HV_12;nBatteryHV12Multiplexor = 0x0;32;8;Intel;Unsigned;0;1;0;0;255;;<none>;BMS_Calibration_information;0x112
+BMS_LoggingFull;BMS_HV_09;-;15;1;Intel;Unsigned;0;1;0;0;1;;VtSig_BMS_LoggingFull;BMS logger status full;0x110
+BMS_Software_info;BMS_HV_12;nBatteryHV12Multiplexor = 0x0;24;8;Intel;Unsigned;0;1;0;0;255;;<none>;BMS_Software_information;0x112
+CIM_ChargePlugLockStatusHV;CIM_HV_01;-;8;2;Intel;Unsigned;0;1;0;0;3;;VtSig_CIM_ChargePlugLockStatusHV;Charge Plug Lock Status;0x12D
+CIM_ChargeStatusHV;CIM_HV_01;-;18;4;Intel;Unsigned;0;1;0;0;15;;VtSig_CIM_ChargeStatusHV;Charge Status;0x12D
+CIM_ChargingPlugTypeHV;CIM_HV_01;-;10;2;Intel;Unsigned;0;1;0;0;3;;VtSig_CIM_ChargingPlugTypeHV;Charge Plug Type;0x12D
+CIM_PlugPresentHV;CIM_HV_01;-;16;2;Intel;Unsigned;0;1;0;0;3;;VtSig_CIM_PlugPresentHV;Plug preset acknowledgement;0x12D
+nBatteryHV12Multiplexor;BMS_HV_12;Multiplexor;0;3;Intel;Unsigned;0;1;0;0;7;;<none>;;0x112

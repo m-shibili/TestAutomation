@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<systemvariables version="4">
+<namespace name="" comment="" interface="">
+   <namespace name="HIL_Interface" comment="" interface="">
+      <namespace name="CAN_OverRide" comment="" interface="">
+<namespace name="IMU" comment="" interface="">
+  <namespace name="Message ID_Message" comment="" interface=""/>
+  <namespace name="Ox3FO_Tx1" comment="" interface="">
+    <namespace name="AccX_user" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_AccX_user" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_AccX_user" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" startValue="0" minValue="-32.768" minValuePhys="-32.768" maxValue="32.767" maxValuePhys="32.767"/>
+    </namespace>
+    <namespace name="AccY_user" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_AccY_user" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_AccY_user" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" startValue="0" minValue="-32.768" minValuePhys="-32.768" maxValue="32.767" maxValuePhys="32.767"/>
+    </namespace>
+    <namespace name="AccZ_user" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_AccZ_user" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_AccZ_user" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" startValue="0" minValue="-32.768" minValuePhys="-32.768" maxValue="32.767" maxValuePhys="32.767"/>
+    </namespace>
+  </namespace>
+  <namespace name="Ox3F4_Tx2" comment="" interface="">
+    <namespace name="GyrX_user" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_GyrX_user" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_GyrX_user" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" startValue="0" minValue="-327.68" minValuePhys="-327.68" maxValue="327.67" maxValuePhys="327.67"/>
+    </namespace>
+    <namespace name="GyrY_user" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_GyrY_user" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_GyrY_user" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" startValue="0" minValue="-327.68" minValuePhys="-327.68" maxValue="327.67" maxValuePhys="327.67"/>
+    </namespace>
+    <namespace name="GyrZ_user" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_GyrZ_user" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_GyrZ_user" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" startValue="0" minValue="-327.68" minValuePhys="-327.68" maxValue="327.67" maxValuePhys="327.67"/>
+    </namespace>
+  </namespace>
+</namespace>
+      </namespace>
+  </namespace>
+</namespace>
+</systemvariables>

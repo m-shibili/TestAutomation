@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<systemvariables version="4">
+  <namespace name="" comment="" interface="">
+    <namespace name="HIL_Interface" comment="" interface="">
+      <namespace name="GlobalOverride" comment="" interface="">
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="EN_GLOBAL_OverRide" comment="" bitcount="64" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" maxValue="1" />
+        </namespace>
+      </namespace>
+    </namespace>
+  </namespace>
+</systemvariables>

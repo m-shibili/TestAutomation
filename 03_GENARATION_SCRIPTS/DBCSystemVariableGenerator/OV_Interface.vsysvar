@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<systemvariables version="4">
+  <namespace name="" comment="" interface="">
+    <namespace name="NodeName" comment="" interface="">
+    <namespace name="0x392_NDCDCStatus" comment="" interface="">
+        <namespace name="BDCDCBB1OtpError" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_BDCDCBB1OtpError" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_BDCDCBB1OtpError" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        </namespace>
+        <namespace name="BDCDCBB2OtpError" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_BDCDCBB2OtpError" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_BDCDCBB2OtpError" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        </namespace>
+        <namespace name="BDCDCBB3OtpError" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_BDCDCBB3OtpError" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_BDCDCBB3OtpError" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        </namespace>
+        <namespace name="BDCDCBB4OtpError" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_BDCDCBB4OtpError" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_BDCDCBB4OtpError" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        </namespace>
+        <namespace name="BDCDCCANError" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_BDCDCCANError" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_BDCDCCANError" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        </namespace>
+        <namespace name="BDCDCHVError" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_BDCDCHVError" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_BDCDCHVError" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        </namespace>
+        <namespace name="BDCDCHVOcpError" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_BDCDCHVOcpError" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_BDCDCHVOcpError" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        </namespace>
+        <namespace name="BDCDCLVOvpInError" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_BDCDCLVOvpInError" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_BDCDCLVOvpInError" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        </namespace>
+        <namespace name="BDCDCLVUvpAlimAuxError" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_BDCDCLVUvpAlimAuxError" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_BDCDCLVUvpAlimAuxError" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        </namespace>
+        <namespace name="BDCDCLVUvpInError" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_BDCDCLVUvpInError" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_BDCDCLVUvpInError" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        </namespace>
+        <namespace name="BDCDCOutput1Demanded" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_BDCDCOutput1Demanded" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_BDCDCOutput1Demanded" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        </namespace>
+        <namespace name="BDCDCOutput1OvpError" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_BDCDCOutput1OvpError" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_BDCDCOutput1OvpError" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        </namespace>
+        <namespace name="BDCDCOutput1Warning" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_BDCDCOutput1Warning" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_BDCDCOutput1Warning" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        </namespace>
+        <namespace name="BDCDCOutput2Demanded" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_BDCDCOutput2Demanded" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_BDCDCOutput2Demanded" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        </namespace>
+        <namespace name="BDCDCOutput2OvpError" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_BDCDCOutput2OvpError" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_BDCDCOutput2OvpError" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        </namespace>
+        <namespace name="BDCDCOutput2Warning" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_BDCDCOutput2Warning" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_BDCDCOutput2Warning" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        </namespace>
+        <namespace name="BDCDCRegenerationDemanded" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_BDCDCRegenerationDemanded" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_BDCDCRegenerationDemanded" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        </namespace>
+        <namespace name="BDCDCSR1OtpError" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_BDCDCSR1OtpError" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_BDCDCSR1OtpError" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        </namespace>
+        <namespace name="BDCDCSR2OtpError" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_BDCDCSR2OtpError" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_BDCDCSR2OtpError" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        </namespace>
+        <namespace name="BDCDCUmbilicalDemanded" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_BDCDCUmbilicalDemanded" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_BDCDCUmbilicalDemanded" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        </namespace>
+        <namespace name="BDCDCWakeUp" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_BDCDCWakeUp" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_BDCDCWakeUp" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        </namespace>
+        <namespace name="NDCDCState" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_NDCDCState" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_NDCDCState" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="15" maxValuePhys="15"/>
+        </namespace>
+    </namespace>
+    <namespace name="0x393_NDCDCValue" comment="" interface="">
+        <namespace name="IDCDCHVInAverage" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_IDCDCHVInAverage" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_IDCDCHVInAverage" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" startValue="0" minValue="-25" minValuePhys="-25" maxValue="26.1875" maxValuePhys="26.1875"/>
+        </namespace>
+        <namespace name="IDCDCOutput1UnBalance" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_IDCDCOutput1UnBalance" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_IDCDCOutput1UnBalance" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" startValue="0" minValue="0" minValuePhys="0" maxValue="63.75" maxValuePhys="63.75"/>
+        </namespace>
+        <namespace name="IDCDCOutput2UnBalance" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_IDCDCOutput2UnBalance" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_IDCDCOutput2UnBalance" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" startValue="0" minValue="0" minValuePhys="0" maxValue="63.75" maxValuePhys="63.75"/>
+        </namespace>
+        <namespace name="Multiplexer" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_Multiplexer" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_Multiplexer" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="31" maxValuePhys="31"/>
+        </namespace>
+        <namespace name="NDCDCApplicationId" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_NDCDCApplicationId" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_NDCDCApplicationId" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="65535" maxValuePhys="65535"/>
+        </namespace>
+        <namespace name="NDCDCBootloaderId" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_NDCDCBootloaderId" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_NDCDCBootloaderId" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="65535" maxValuePhys="65535"/>
+        </namespace>
+        <namespace name="NDCDCChecksum" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_NDCDCChecksum" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_NDCDCChecksum" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="65535" maxValuePhys="65535"/>
+        </namespace>
+        <namespace name="NDCDCOutputOverload1Count" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_NDCDCOutputOverload1Count" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_NDCDCOutputOverload1Count" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="255" maxValuePhys="255"/>
+        </namespace>
+        <namespace name="NDCDCOutputOverload2Count" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_NDCDCOutputOverload2Count" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_NDCDCOutputOverload2Count" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="255" maxValuePhys="255"/>
+        </namespace>
+        <namespace name="NDCDCRcpWarning" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_NDCDCRcpWarning" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_NDCDCRcpWarning" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        </namespace>
+        <namespace name="NDCDCSerial" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_NDCDCSerial" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_NDCDCSerial" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" startValue="0" minValue="0" minValuePhys="0" maxValue="4294967295" maxValuePhys="4294967295"/>
+        </namespace>
+        <namespace name="NDCDCXcpFaults" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_NDCDCXcpFaults" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_NDCDCXcpFaults" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="65535" maxValuePhys="65535"/>
+        </namespace>
+        <namespace name="TDCDCBB1Measured" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_TDCDCBB1Measured" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_TDCDCBB1Measured" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="-40" minValuePhys="-40" maxValue="215" maxValuePhys="215"/>
+        </namespace>
+        <namespace name="TDCDCBB2Measured" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_TDCDCBB2Measured" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_TDCDCBB2Measured" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="-40" minValuePhys="-40" maxValue="215" maxValuePhys="215"/>
+        </namespace>
+        <namespace name="TDCDCBB3Measured" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_TDCDCBB3Measured" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_TDCDCBB3Measured" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="-40" minValuePhys="-40" maxValue="215" maxValuePhys="215"/>
+        </namespace>
+        <namespace name="TDCDCBB4Measured" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_TDCDCBB4Measured" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_TDCDCBB4Measured" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="-40" minValuePhys="-40" maxValue="215" maxValuePhys="215"/>
+        </namespace>
+        <namespace name="TDCDCSR1Measured" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_TDCDCSR1Measured" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_TDCDCSR1Measured" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="-40" minValuePhys="-40" maxValue="215" maxValuePhys="215"/>
+        </namespace>
+        <namespace name="TDCDCSR2Measured" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_TDCDCSR2Measured" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_TDCDCSR2Measured" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="-40" minValuePhys="-40" maxValue="215" maxValuePhys="215"/>
+        </namespace>
+        <namespace name="VDCDCAux1Measured" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_VDCDCAux1Measured" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_VDCDCAux1Measured" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" startValue="0" minValue="0" minValuePhys="0" maxValue="19.6945884" maxValuePhys="19.6945884"/>
+        </namespace>
+        <namespace name="VDCDCAux2Measured" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_VDCDCAux2Measured" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_VDCDCAux2Measured" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" startValue="0" minValue="0" minValuePhys="0" maxValue="9.8637315" maxValuePhys="9.8637315"/>
+        </namespace>
+        <namespace name="VDCDCAux3Measured" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_VDCDCAux3Measured" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_VDCDCAux3Measured" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" startValue="0" minValue="0" minValuePhys="0" maxValue="3.94549413" maxValuePhys="3.94549413"/>
+        </namespace>
+        <namespace name="VDCDCAux4Measured" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_VDCDCAux4Measured" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_VDCDCAux4Measured" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" startValue="0" minValue="0" minValuePhys="0" maxValue="9.8637315" maxValuePhys="9.8637315"/>
+        </namespace>
+        <namespace name="VDCDCAux5Measured" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_VDCDCAux5Measured" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_VDCDCAux5Measured" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" startValue="0" minValue="0" minValuePhys="0" maxValue="3.28791135" maxValuePhys="3.28791135"/>
+        </namespace>
+        <namespace name="VDCDCHVInAverage" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_VDCDCHVInAverage" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_VDCDCHVInAverage" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1248.007928445" maxValuePhys="1248.007928445"/>
+        </namespace>
+        <namespace name="VDCDCLVInAverage" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_VDCDCLVInAverage" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_VDCDCLVInAverage" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" startValue="0" minValue="0" minValuePhys="0" maxValue="62.5227407" maxValuePhys="62.5227407"/>
+        </namespace>
+        <namespace name="VDCDCLVInMax" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_VDCDCLVInMax" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_VDCDCLVInMax" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" startValue="0" minValue="0" minValuePhys="0" maxValue="62.5227407" maxValuePhys="62.5227407"/>
+        </namespace>
+        <namespace name="VDCDCLVInMin" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_VDCDCLVInMin" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_VDCDCLVInMin" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" startValue="0" minValue="0" minValuePhys="0" maxValue="62.5227407" maxValuePhys="62.5227407"/>
+        </namespace>
+    </namespace>
+    <namespace name="0x394_NDCDCValueOutput1" comment="" interface="">
+        <namespace name="VDCDCOutput1Average" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_VDCDCOutput1Average" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_VDCDCOutput1Average" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" startValue="0" minValue="0" minValuePhys="0" maxValue="62.6145153912" maxValuePhys="62.6145153912"/>
+        </namespace>
+        <namespace name="VDCDCOutput1Max" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_VDCDCOutput1Max" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_VDCDCOutput1Max" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" startValue="0" minValue="0" minValuePhys="0" maxValue="62.6145153912" maxValuePhys="62.6145153912"/>
+        </namespace>
+        <namespace name="VDCDCOutput1Min" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_VDCDCOutput1Min" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_VDCDCOutput1Min" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" startValue="0" minValue="0" minValuePhys="0" maxValue="62.6145153912" maxValuePhys="62.6145153912"/>
+        </namespace>
+    </namespace>
+    <namespace name="0x395_NDCDCValueOutput2" comment="" interface="">
+        <namespace name="VDCDCOutput2Average" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_VDCDCOutput2Average" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_VDCDCOutput2Average" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" startValue="0" minValue="0" minValuePhys="0" maxValue="62.6145153912" maxValuePhys="62.6145153912"/>
+        </namespace>
+        <namespace name="VDCDCOutput2Max" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_VDCDCOutput2Max" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_VDCDCOutput2Max" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" startValue="0" minValue="0" minValuePhys="0" maxValue="62.6145153912" maxValuePhys="62.6145153912"/>
+        </namespace>
+        <namespace name="VDCDCOutput2Min" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="En_OverRide_VDCDCOutput2Min" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1"/>
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Val_OverRide_VDCDCOutput2Min" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" startValue="0" minValue="0" minValuePhys="0" maxValue="62.6145153912" maxValuePhys="62.6145153912"/>
+        </namespace>
+    </namespace>
+    </namespace>
+  </namespace>
+</systemvariables>
